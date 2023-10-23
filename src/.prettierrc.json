@@ -6,5 +6,6 @@
   "bracketSpacing": true,
   "bracketSameLine": true,
   "editor.formatOnSave": true,
-  "htmlWhitespaceSensitivity": "ignore"
+  "htmlWhitespaceSensitivity": "ignore",
+  "endOfLine": "auto"
 }

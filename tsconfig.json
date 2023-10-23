@@ -24,6 +24,10 @@
     "useDefineForClassFields": false,
     "lib": ["ES2022", "dom"],
     "paths": {
+      "@core/*": ["src/app/core/*"],
+      "@features/*": ["src/app/features/*"],
+      "@shared/*": ["src/app/shared/*"],
+      "@envs/*": ["src/environments/*"],
       "@assets/*": ["src/assets/*"]
     },
     "typeRoots": ["node_modules/@types", "node_modules/@angular"]

@@ -1,0 +1,16 @@
+@mixin icon-mask($iconUrl, $width, $height, $color-default, $color-hover: $color-default, $color-active: $color-default) {
+  mask: url($iconUrl) no-repeat;
+  -webkit-mask: url($iconUrl) no-repeat;
+  background-color: $color-default;
+  mask-size: contain;
+  width: $width;
+  height: $height;
+
+  &:hover {
+    background-color: $color-hover;
+  }
+
+  &:active {
+    background-color: $color-active;
+  }
+}
