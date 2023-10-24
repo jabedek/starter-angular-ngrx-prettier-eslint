@@ -1,0 +1,32 @@
+<canvas
+  #canvasEl
+  class="canvas"
+  (mousedown)="handleMouseDownCanvas($event)"
+  (mousemove)="handleMouseMoveCanvas($event)"
+  (touchstart)="handleTouchStartCanvas($event)"
+  (touchmove)="handleTouchMoveCanvas($event)"
+  (mouseup)="mousePressed = false"
+  (mouseleave)="mousePressed = false"
+  (touchend)="mousePressed = false"
+  (touchcancel)="mousePressed = false"></canvas>
+
+<div class="paint-interface">
+  <ul class="color-palette">
+    <li *ngFor="let color of colors">
+      <p
+        class="color"
+        [ngClass]="{ 'color--picked': color === brushColor }"
+        [ngStyle]="{ 'background-color': color }"
+        appAccess
+        (access)="brushColor = color"></p>
+    </li>
+  </ul>
+
+  <app-range [(ngModel)]="brushSize" [min]="1" [max]="11" [step]="2" label="Brush size"></app-range>
+
+  <div class="actions">
+    <app-button (click)="clearArea()">Clear</app-button>
+    <app-button (click)="downloadImg()">Save image</app-button>
+    <app-checkbox [(ngModel)]="saveWithBg" label="Save with background" [disabled]="!true"></app-checkbox>
+  </div>
+</div>

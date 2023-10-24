@@ -1,0 +1,8 @@
+@use "/src/assets/styles/controls";
+
+:host {
+  display: flex;
+  div {
+    @include controls.app_checkbox_0;
+  }
+}

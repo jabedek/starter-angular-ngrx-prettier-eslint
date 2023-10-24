@@ -1,0 +1,8 @@
+@use "/src/assets/styles/controls";
+
+:host {
+  display: flex;
+  button {
+    @include controls.app_button_0;
+  }
+}
