@@ -10,7 +10,7 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
+    "noPropertyAccessFromIndexSignature": false,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
@@ -25,9 +25,10 @@
     "lib": ["ES2022", "dom"],
     "paths": {
       "@core/*": ["src/app/core/*"],
+      "@store/*": ["src/app/store/*"],
       "@features/*": ["src/app/features/*"],
       "@shared/*": ["src/app/shared/*"],
-      "@envs/*": ["src/environments/*"],
+      "@env/*": ["src/environments/*"],
       "@assets/*": ["src/assets/*"]
     },
     "typeRoots": ["node_modules/@types", "node_modules/@angular"]

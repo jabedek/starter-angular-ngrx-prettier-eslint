@@ -83,6 +83,10 @@
                 {
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.prod.ts"
+                },
+                {
+                  "replace": "src/environments/build-specifics/index.ts",
+                  "with": "src/environments/build-specifics/index.prod.ts"
                 }
               ],
               "outputHashing": "all"
@@ -94,6 +98,14 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "tests": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.tests.ts"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
