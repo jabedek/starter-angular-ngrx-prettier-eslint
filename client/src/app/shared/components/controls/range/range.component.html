@@ -1,4 +1,8 @@
 <div>
-  <p>{{ label }}</p>
+  <p class="desc">
+    {{ label }}
+    <span *ngIf="showValues" class="">{{ value }}</span>
+  </p>
   <input type="range" class="slider" [(ngModel)]="value" [min]="min" [max]="max" [step]="step" />
+  <p *ngIf="showValues" class="ranges">{{ min }} - {{ max }}</p>
 </div>

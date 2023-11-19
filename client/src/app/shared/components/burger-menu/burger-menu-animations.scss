@@ -1,0 +1,108 @@
+$burger-animation-speed: 300ms;
+$burger-line-height: 3px;
+
+@keyframes grow-height {
+  from {
+    height: 0;
+  }
+
+  30% {
+    height: 0;
+  }
+
+  50% {
+    height: $burger-line-height;
+  }
+
+  to {
+    height: $burger-line-height;
+  }
+}
+
+@keyframes line-top {
+  from {
+    top: 0;
+    rotate: 0deg;
+  }
+
+  30% {
+    top: 10px;
+    rotate: 0deg;
+  }
+
+  50% {
+    top: 10px;
+    rotate: 0deg;
+  }
+
+  to {
+    top: 10px;
+    rotate: -45deg;
+  }
+}
+
+@keyframes line-top-reverse {
+  from {
+    top: 10px;
+    rotate: -45deg;
+  }
+
+  30% {
+    top: 10px;
+    rotate: 0deg;
+  }
+
+  50% {
+    top: 10px;
+    rotate: 0deg;
+  }
+
+  to {
+    top: 0;
+    rotate: 0deg;
+  }
+}
+
+@keyframes line-bottom {
+  from {
+    top: 20px;
+    rotate: 0deg;
+  }
+
+  30% {
+    top: 10px;
+    rotate: 0deg;
+  }
+
+  50% {
+    top: 10px;
+    rotate: 0deg;
+  }
+
+  to {
+    top: 10px;
+    rotate: -135deg;
+  }
+}
+
+@keyframes line-bottom-reverse {
+  from {
+    top: 10px;
+    rotate: -135deg;
+  }
+
+  30% {
+    top: 10px;
+    rotate: 0deg;
+  }
+
+  50% {
+    top: 10px;
+    rotate: 0deg;
+  }
+
+  to {
+    top: 20px;
+    rotate: 0deg;
+  }
+}

@@ -1,3 +1,5 @@
+@use "/src/assets/styles/variables";
+
 :host {
   background: gray;
   width: 100vw;
@@ -10,9 +12,12 @@
 
 .wrapper {
   width: 100vw;
-  min-height: 100vh;
+  min-height: 600px;
   height: auto;
   display: flex;
   justify-content: center;
-  position: absolute;
+  position: relative;
+
+  top: variables.$header-height;
+  // position: absolute;
 }

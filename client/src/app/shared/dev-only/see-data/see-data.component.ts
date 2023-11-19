@@ -9,5 +9,5 @@ import { Component, Input } from '@angular/core';
 })
 export class SeeDataComponent {
   @Input() data: any; // tslint:disable-line
-  @Input() position = 'absolute';
+  @Input() position = 'relative';
 }

@@ -25,8 +25,8 @@
   <app-range [(ngModel)]="brushSize" [min]="1" [max]="11" [step]="2" label="Brush size"></app-range>
 
   <div class="actions">
-    <app-button (click)="clearArea()">Clear</app-button>
-    <app-button (click)="downloadImg()">Save image</app-button>
-    <app-checkbox [(ngModel)]="saveWithBg" label="Save with background" [disabled]="!true"></app-checkbox>
+    <app-button (click)="clearArea()">CLEAR</app-button>
+    <app-button (click)="downloadImg()">SAVE IMAGE</app-button>
+    <app-checkbox class="outlined" [(ngModel)]="saveWithBg" label="Save with background" [disabled]="!true"></app-checkbox>
   </div>
 </div>

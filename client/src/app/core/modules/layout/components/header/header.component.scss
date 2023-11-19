@@ -1,0 +1,35 @@
+@use "/src/assets/styles/variables";
+
+:host {
+  position: absolute;
+  height: variables.$header-height !important;
+  width: 100%;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  app-burger-menu {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  .navbar-wrapper {
+    position: absolute;
+    right: 60px;
+    top: 10px;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    transition: all 200ms ease;
+    max-width: 0;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+
+    app-navbar {
+      position: relative;
+    }
+
+    &.burgerOpen {
+      max-width: 260px;
+    }
+  }
+}

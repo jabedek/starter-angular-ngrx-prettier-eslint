@@ -3,6 +3,7 @@
 :host {
   div {
     display: flex;
+    width: fit-content;
     @include controls.app_range_0;
   }
 }

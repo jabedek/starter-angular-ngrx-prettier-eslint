@@ -1,0 +1,67 @@
+<p>streaming-studio works!</p>
+
+<div>
+  video {{ track?.label }}
+  <video #videoEl autoplay controls></video>
+</div>
+
+<div>
+  <ul>
+    <li *ngFor="let item of capabilitiesRanged.ptz | keyvalue">
+      <app-range
+        [min]="item.value.min"
+        [max]="item.value.max"
+        [step]="item.value.step"
+        [label]="item.key"
+        [showValues]="true"
+        [ngModel]="item.value.value"
+        (ngModelChange)="applyChanges.next({ key: item.key, value: $event })"></app-range>
+    </li>
+  </ul>
+  <ul>
+    <li *ngFor="let item of capabilitiesRanged.working | keyvalue">
+      <app-range
+        [min]="item.value.min"
+        [max]="item.value.max"
+        [step]="item.value.step"
+        [label]="item.key"
+        [showValues]="true"
+        [ngModel]="item.value.value"
+        (ngModelChange)="applyChanges.next({ key: item.key, value: $event })"></app-range>
+    </li>
+  </ul>
+  <ul>
+    <li *ngFor="let item of capabilitiesRanged.notWorking | keyvalue">
+      <app-range
+        [min]="item.value.min"
+        [max]="item.value.max"
+        [step]="item.value.step"
+        [label]="item.key"
+        [showValues]="true"
+        [ngModel]="item.value.value"
+        (ngModelChange)="applyChanges.next({ key: item.key, value: $event })"></app-range>
+    </li>
+  </ul>
+</div>
+<!--
+<div *ngIf="userMediaDevice">
+  <div>
+    supportedConstraints:
+    <app-see-data [data]="supportedConstraints"></app-see-data>
+  </div>
+
+  <div>
+    trackConstraints:
+    <app-see-data [data]="trackConstraints"></app-see-data>
+  </div>
+
+  <div>
+    trackCapabilities:
+    <app-see-data [data]="trackCapabilities"></app-see-data>
+  </div>
+
+  <div>
+    trackSettings:
+    <app-see-data [data]="trackSettings"></app-see-data>
+  </div>
+</div> -->

@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 
+const HEADER_HEIGHT_OFFSET_px = 60;
 @Component({
   selector: 'app-paint',
   templateUrl: './paint.component.html',
@@ -13,6 +14,7 @@ export class PaintComponent implements AfterViewInit {
   mousePressed = false;
   colors = ['firebrick', 'royalblue', 'black', 'gold', 'white', 'seagreen'];
   saveWithBg = true;
+  mode: 'pen' | 'eraser' = 'pen';
 
   @ViewChild('canvasEl') set canvasEl(canvasEl: ElementRef<HTMLCanvasElement> | undefined) {
     this._canvasEl = canvasEl;
@@ -54,9 +56,11 @@ export class PaintComponent implements AfterViewInit {
         ctx.fillRect(0, 0, canvas.width, canvas.height);
       }
 
+      const name = new Date().toISOString().substring(0, 19).replaceAll('-', '').replaceAll(':', '').replace('T', '');
+
       const a = document.createElement('a');
       a.href = canvas.toDataURL('image/png');
-      a.download = 'image.png';
+      a.download = `${name}.png`;
       a.click();
 
       if (ctx) {
@@ -113,7 +117,7 @@ export class PaintComponent implements AfterViewInit {
         canvas.height = 0.65 * window.innerHeight;
       } else {
         canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight / 1.2;
+        canvas.height = 500;
       }
     }
   }
@@ -124,11 +128,12 @@ export class PaintComponent implements AfterViewInit {
       canvasCtx.strokeStyle = this.brushColor;
       canvasCtx.lineWidth = this.brushSize;
       canvasCtx.lineJoin = 'round';
-      canvasCtx.filter = 'blur(0.2px)';
+      canvasCtx.filter = 'blur(0.35px)';
       canvasCtx.miterLimit;
       canvasCtx.beginPath();
-      canvasCtx.moveTo(this.lastX, this.lastY);
-      canvasCtx.lineTo(x, y);
+      canvasCtx.globalCompositeOperation = 'source-over';
+      canvasCtx.moveTo(this.lastX, this.lastY - HEADER_HEIGHT_OFFSET_px);
+      canvasCtx.lineTo(x, y - HEADER_HEIGHT_OFFSET_px);
       canvasCtx.closePath();
       canvasCtx.stroke();
     }

@@ -5,4 +5,10 @@
   div {
     @include controls.app_checkbox_0;
   }
+
+  &.outlined {
+    div {
+      @include controls.app_button_1;
+    }
+  }
 }

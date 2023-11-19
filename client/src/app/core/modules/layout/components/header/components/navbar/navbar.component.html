@@ -1,0 +1,34 @@
+<nav>
+  <ul class="routes">
+    <li *ngFor="let route of routes" class="route" routerLinkActive="active">
+      <!-- # ROUTE ITEM content (left) -->
+      <div [ngSwitch]="route.type" class="route__content">
+        <!-- Multi route root -->
+        <div *ngSwitchCase="'multi'" class="multi-wrapper" [ngClass]="{ open: $any(route).uiOpen }">
+          <div class="multi-route-title" appAccess (access)="$any(route).uiOpen = !$any(route).uiOpen">
+            <span>{{ route.label }}</span>
+          </div>
+
+          <!-- Nested routes -->
+          <ul class="subroutes max-height-items-{{ $any(route).subPaths.length }}">
+            <li *ngFor="let subroute of $any(route).subPaths" class="subroute-title" routerLinkActive="active">
+              <a [routerLink]="route.path + subroute.path" routerLinkActive="active">
+                <span>{{ subroute.label }}</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Singular route -->
+        <div *ngSwitchCase="'single'" class="singular single-route-title">
+          <a routerLink="{{ route.path }}" routerLinkActive="active">
+            <span>{{ route.label }}</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- # ROUTE ITEM side (right) -->
+      <div class="route__side"></div>
+    </li>
+  </ul>
+</nav>

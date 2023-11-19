@@ -13,7 +13,12 @@ const routes: Routes = [
         path: '',
         component: LayoutComponent,
         canActivateChild: [authGuard],
-        children: [{ path: '', pathMatch: 'full', component: PersonalsComponent }],
+        children: [
+          { path: '', pathMatch: 'full', component: PersonalsComponent },
+          { path: 'birthdays', component: PersonalsComponent },
+          { path: 'events', component: PersonalsComponent },
+          { path: 'fundraising', component: PersonalsComponent },
+        ],
       },
     ],
   },

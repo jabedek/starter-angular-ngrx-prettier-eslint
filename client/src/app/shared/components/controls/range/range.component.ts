@@ -15,6 +15,7 @@ import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
 })
 export class RangeComponent implements ControlValueAccessor {
   @Input() label = '';
+  @Input() showValues = false;
   @Input({ required: true }) min = 0;
   @Input({ required: true }) max = 0;
   @Input({ required: true }) step = 0;

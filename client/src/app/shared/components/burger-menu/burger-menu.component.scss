@@ -1,0 +1,56 @@
+@use "burger-menu-animations";
+
+.burger {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  height: 24px;
+  width: 34px;
+
+  &__line {
+    position: absolute;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    height: burger-menu-animations.$burger-line-height;
+    width: 34px;
+
+    &:nth-of-type(1) {
+      top: 20px;
+      rotate: 0deg;
+
+      &.open {
+        animation: line-top burger-menu-animations.$burger-animation-speed forwards;
+      }
+
+      &:not(.open) {
+        animation: line-top-reverse burger-menu-animations.$burger-animation-speed;
+      }
+    }
+
+    &:nth-of-type(2) {
+      top: 10px;
+      height: burger-menu-animations.$burger-line-height;
+
+      &.open {
+        height: 0;
+      }
+
+      &:not(.open) {
+        animation: grow-height burger-menu-animations.$burger-animation-speed;
+      }
+    }
+
+    &:nth-of-type(3) {
+      top: 0;
+      rotate: 0deg;
+      &.open {
+        animation: line-bottom burger-menu-animations.$burger-animation-speed forwards;
+      }
+
+      &:not(.open) {
+        animation: line-bottom-reverse burger-menu-animations.$burger-animation-speed;
+      }
+    }
+  }
+}

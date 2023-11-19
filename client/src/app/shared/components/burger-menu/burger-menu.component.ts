@@ -1,8 +1,30 @@
 import { Component } from '@angular/core';
+import { Store } from '@ngrx/store';
+import { AppState } from '@store/app-state';
+import { setBurger } from '@store/layout/layout.actions';
+import { selectBurgerOpen } from '@store/layout/layout.selectors';
 
 @Component({
   selector: 'app-burger-menu',
-  templateUrl: './burger-menu.component.html',
+  template: `
+    <div class="burger" appAccess (access)="toggle()" (escape)="close()">
+      <div class="burger__line" [ngClass]="{ open: (burgerOpen$ | async) === true }"></div>
+      <div class="burger__line" [ngClass]="{ open: (burgerOpen$ | async) === true }"></div>
+      <div class="burger__line" [ngClass]="{ open: (burgerOpen$ | async) === true }"></div>
+    </div>
+  `,
   styleUrls: ['./burger-menu.component.scss'],
 })
-export class BurgerMenuComponent {}
+export class BurgerMenuComponent {
+  burgerOpen$ = this.store.select(selectBurgerOpen);
+
+  constructor(private store: Store<AppState>) {}
+
+  toggle(): void {
+    this.store.dispatch(setBurger({ set: 'toggle' }));
+  }
+
+  close(): void {
+    this.store.dispatch(setBurger({ set: 'close' }));
+  }
+}

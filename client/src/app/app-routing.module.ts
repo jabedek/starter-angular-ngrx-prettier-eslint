@@ -1,7 +1,26 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LandingPageComponent } from '@core/modules/layout/pages/landing-page/landing-page.component';
+import { LayoutComponent } from '@core/modules/layout/layout.component';
 
 const routes: Routes = [
+  {
+    path: '',
+    canActivate: [],
+    children: [
+      {
+        path: '',
+        component: LayoutComponent,
+        canActivateChild: [],
+        children: [{ path: '', pathMatch: 'full', component: LandingPageComponent }],
+      },
+    ],
+  },
+  {
+    path: 'asian-poker',
+    canActivate: [],
+    loadChildren: () => import('@features/entertainment/asian-poker/asian-poker.module').then((m) => m.AsianPokerModule),
+  },
   {
     path: 'casino',
     canActivate: [],
@@ -37,6 +56,22 @@ const routes: Routes = [
     path: 'socialities',
     canActivate: [],
     loadChildren: () => import('@features/management/socialities/socialities.module').then((m) => m.SocialitiesModule),
+  },
+  {
+    path: 'streaming-studio',
+    canActivate: [],
+    loadChildren: () =>
+      import('@features/entertainment/streaming-studio/streaming-studio.module').then((m) => m.StreamingStudioModule),
+  },
+  {
+    path: 'decision-tree',
+    canActivate: [],
+    loadChildren: () => import('@features/misc/decision-tree/decision-tree.module').then((m) => m.DecisionTreeModule),
+  },
+  {
+    path: 'weather-archive',
+    canActivate: [],
+    loadChildren: () => import('@features/misc/weather-archive/weather-archive.module').then((m) => m.WeatherArchiveModule),
   },
 ];
 

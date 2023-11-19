@@ -1,0 +1,5 @@
+<app-burger-menu></app-burger-menu>
+
+<div class="navbar-wrapper" [ngClass]="{ burgerOpen: (burgerOpen$ | async) === true }">
+  <app-navbar></app-navbar>
+</div>

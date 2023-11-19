@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StoreModule } from '@ngrx/store';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { CoreModule } from '@core/core.module';
 import { SharedModule } from '@shared/shared.module';
 
@@ -17,16 +18,48 @@ import { PersonalsModule } from '@features/management/personals/personals.module
 import { PlaylistsModule } from '@features/entertainment/playlists/playlists.module';
 import { SocialitiesModule } from '@features/management/socialities/socialities.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { StoreRouterConnectingModule, routerReducer } from '@ngrx/router-store';
+import { EffectsModule } from '@ngrx/effects';
+
+import { extModules } from '@env/build-specifics';
+import { environment } from '@env/environment';
+import { metaReducers } from '@store/meta-reducers';
+import { layoutState as layout } from '@store/layout/layout.reducer';
+import { CustomSerializer } from '@store/router/custom-route-serializer';
+import { AsianPokerModule } from '@features/entertainment/asian-poker/asian-poker.module';
+import { StreamingStudioModule } from '@features/entertainment/streaming-studio/streaming-studio.module';
+import { DecisionTreeModule } from '@features/misc/decision-tree/decision-tree.module';
+import { WeatherArchiveModule } from '@features/misc/weather-archive/weather-archive.module';
+
+if (environment.environmentName === 'production') {
+  console.log = () => ({});
+} else {
+  const ports = ['4200', '4201'];
+  if (!ports.includes(`${window.location.port}`)) {
+    console.error(
+      `[${environment.environmentName}] Wrong port. Use only these ports: ` +
+        ports.join(', ') +
+        '. Otherwise external services like Auth0 may not work.',
+    );
+  }
+}
 
 export const Features = [
-  AgoModule,
+  // Entertainment
+  AsianPokerModule,
   CasinoModule,
   CbbgModule,
-  FinancesModule,
   PaintchatModule,
-  PersonalsModule,
   PlaylistsModule,
+  StreamingStudioModule,
+  // Management
+  AgoModule,
+  FinancesModule,
+  PersonalsModule,
   SocialitiesModule,
+  // Misc
+  DecisionTreeModule,
+  WeatherArchiveModule,
 ];
 
 @NgModule({
@@ -35,12 +68,16 @@ export const Features = [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    AppRoutingModule,
-    RouterModule,
-    StoreModule.forRoot({}, {}),
+    //
+    StoreModule.forRoot({ router: routerReducer, layout }, { metaReducers }),
+    StoreRouterConnectingModule.forRoot({ serializer: CustomSerializer }),
+    EffectsModule.forRoot([]),
+    // App
     CoreModule,
     SharedModule,
     ...Features,
+    extModules,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
