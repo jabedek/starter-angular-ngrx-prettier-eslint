@@ -55,8 +55,10 @@ nav {
     width: 220px;
     display: flex;
     align-items: center;
+  }
 
-    &:not(:last-child) {
+  &:not(:last-child) {
+    .route__content {
       border-bottom: 1px solid #aaa;
     }
   }
@@ -88,6 +90,10 @@ nav {
 .multi-wrapper {
   overflow: hidden;
   width: 100%;
+
+  &:hover {
+    background-color: #eee;
+  }
 
   &.open {
     .multi-route-title::before {
