@@ -1,5 +1,16 @@
-<app-burger-menu></app-burger-menu>
+<header>
+  <!-- Regular header stuff -->
+  <ng-container *ngIf="currentUrl$ | async as url">
+    <h4 class="url">
+      <span *ngFor="let part of url.parts" class="url-part">
+        {{ part }}
+      </span>
+    </h4>
+  </ng-container>
 
-<div class="navbar-wrapper" [ngClass]="{ burgerOpen: (burgerOpen$ | async) === true }">
-  <app-navbar></app-navbar>
-</div>
+  <!-- Absolute 'most top' elements -->
+  <app-burger-menu></app-burger-menu>
+  <div class="navbar-wrapper" [ngClass]="{ burgerOpen: (burgerOpen$ | async) === true }">
+    <app-navbar></app-navbar>
+  </div>
+</header>

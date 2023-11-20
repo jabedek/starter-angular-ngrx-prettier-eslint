@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { AppState } from '@store/app-state';
 import { selectBurgerOpen } from '@store/layout/layout.selectors';
+import { selectUrlParts } from '@store/router/router.selectors';
 
 @Component({
   selector: 'app-header',
@@ -11,6 +12,7 @@ import { selectBurgerOpen } from '@store/layout/layout.selectors';
 })
 export class HeaderComponent {
   burgerOpen$ = this.store.select(selectBurgerOpen);
+  currentUrl$ = this.store.select(selectUrlParts);
 
   constructor(private store: Store<AppState>) {}
 }

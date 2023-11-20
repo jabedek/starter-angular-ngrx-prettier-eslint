@@ -1,0 +1,34 @@
+.wrapper {
+}
+
+.playing-table {
+  display: flex;
+  height: 800px;
+  width: 800px;
+
+  background: rgba(184, 100, 5, 1);
+}
+
+.holder {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+}
+
+.deck {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  &__content {
+    display: flex;
+  }
+
+  &__color {
+  }
+
+  &__figure {
+    font-weight: 700;
+  }
+}

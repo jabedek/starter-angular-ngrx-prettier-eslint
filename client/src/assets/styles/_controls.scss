@@ -11,7 +11,7 @@
   width: max-content;
   padding: 10px 24px;
   border: none;
-  border-top: variables.$border-top-width solid variables.$bg-top-main;
+  border-top: variables.$border-top-width solid variables.$bg-roof;
   background-color: variables.$bg-main;
 
   font-size: 0.8rem;
@@ -49,7 +49,7 @@
   background-color: #ddd;
   color: #000;
   text-shadow: none;
-  border-top: variables.$border-top-width solid variables.$bg-top-main;
+  border-top: variables.$border-top-width solid variables.$bg-roof;
 
   &:not(.disabled):hover {
     color: #000;
@@ -105,7 +105,7 @@
   background-color: #ddd;
   color: #000;
   text-shadow: none;
-  border-top: variables.$border-top-width solid variables.$bg-top-main;
+  border-top: variables.$border-top-width solid variables.$bg-roof;
 
   &:not(.disabled):hover {
     color: #000;
@@ -149,7 +149,7 @@
     transition: opacity 0.2s;
     border-radius: 3px;
     border: none;
-    border-top: variables.$border-top-width solid variables.$bg-top-main;
+    border-top: variables.$border-top-width solid variables.$bg-roof;
     background-color: variables.$bg-main;
 
     cursor: pointer;
@@ -162,7 +162,7 @@
       height: 22px;
       cursor: pointer;
       transition: filter 0.2s ease-in-out;
-      background-color: variables.$bg-intermed-main;
+      background-color: variables.$bg-medium-0;
       box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
       border-radius: 3px;
 

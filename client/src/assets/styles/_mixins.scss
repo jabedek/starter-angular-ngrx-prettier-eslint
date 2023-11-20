@@ -14,3 +14,11 @@
     background-color: $color-active;
   }
 }
+
+@mixin simple-flex-parent($justifyContent: center, $alignItems: center, $flexDir: row) {
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  align-content: center;
+  flex-direction: $flexDir;
+}

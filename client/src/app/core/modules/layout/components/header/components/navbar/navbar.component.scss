@@ -18,7 +18,7 @@ nav {
   overflow: hidden;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
   border: none;
-  border-top: variables.$border-top-width solid variables.$bg-top-main;
+  border-top: variables.$border-top-width solid variables.$bg-roof;
   border-radius: 3px;
   display: flex;
   align-items: stretch;
@@ -77,12 +77,12 @@ nav {
     &__content {
       .multi-route-title,
       .single-route-title {
-        background-color: variables.$bg-highlight;
+        background-color: variables.$bg-light-0;
       }
     }
 
     &__side {
-      border-left-color: variables.$bg-intermed-main;
+      border-left-color: variables.$bg-medium-0;
     }
   }
 }
@@ -198,7 +198,8 @@ nav {
   }
 
   &.active {
-    background-color: variables.$bg-highlight-lighter;
+    background-color: variables.$bg-light-0-lighter;
+    border-right: 4px solid variables.$bg-medium-0-lighter;
   }
 
   &:hover,

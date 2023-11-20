@@ -1,6 +1,7 @@
 import { Params } from '@angular/router';
 import { getRouterSelectors, RouterReducerState } from '@ngrx/router-store';
 import { createSelector } from '@ngrx/store';
+import { splitRouteUrl } from '@shared/helpers/url.utils';
 
 // `router` is used as the default feature name. You can use the feature name
 // of your choice by creating a feature selector and pass it to the `getRouterSelectors` function
@@ -17,6 +18,8 @@ export const {
   selectUrl, // select the current url
   selectTitle, // Select the title if available
 } = getRouterSelectors();
+
+export const selectUrlParts = createSelector(selectUrl, (url) => splitRouteUrl(url));
 
 export const selectRouteNestedParams = createSelector(selectCurrentRoute, (router) => {
   let currentRoute = router?.state?.root;
