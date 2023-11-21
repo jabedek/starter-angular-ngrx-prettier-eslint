@@ -1,45 +1,23 @@
 import { Component } from '@angular/core';
 import 'frotsi';
 import { loop } from 'frotsi';
-
-type BaseCard = {
-  color: string;
-  figure: string;
-};
-
-type CardSet = {
-  name: string;
-  cards: BaseCard[];
-};
-
-const colors = ['WINO', 'CZERWO', 'ZOLEDZ', 'DZWONEK'];
-const figures = ['9', '10', 'J', 'Q', 'K', 'A'];
-
-interface Player {
-  id: string;
-  nickname: string;
-  mandatoryDraws: number;
-  hand: BaseCard[];
-}
-
-class PlayerInfo implements Player {
-  id: string;
-  nickname: string;
-  mandatoryDraws = 1;
-  hand: BaseCard[] = [];
-
-  constructor(id: string, nickname: string, mandatoryDraws = 1) {
-    this.id = id;
-    this.nickname = nickname;
-    this.mandatoryDraws = mandatoryDraws;
-  }
-}
+import {
+  AsianPokerPlayerInfo,
+  BaseCard,
+  CardSet,
+  SuitsWithHierarchy,
+  StandardDeckAmount,
+  RanksWithHierarchyExtended,
+  RanksWithHierarchyStandard,
+  AsianPokerSession,
+} from './asian-poker.model';
 
 const somePlayers = [
-  new PlayerInfo('123', 'John', 1),
-  new PlayerInfo('456', 'Simon', 3),
-  new PlayerInfo('789', 'Mark', 2),
-  new PlayerInfo('091', 'Pamela', 1),
+  new AsianPokerPlayerInfo('456', 'Simon', 3),
+  new AsianPokerPlayerInfo('45116', 'Kat', 4),
+  new AsianPokerPlayerInfo('789', 'Mark', 2),
+  new AsianPokerPlayerInfo('17891', 'Helga', 5),
+  new AsianPokerPlayerInfo('091', 'Pamela', 1),
 ];
 @Component({
   selector: 'app-asian-poker',
@@ -47,48 +25,70 @@ const somePlayers = [
   styleUrls: ['./asian-poker.component.scss'],
 })
 export class AsianPokerComponent {
-  session: {
-    players: PlayerInfo[];
-    publicCards: BaseCard[];
-    currentTurn: number;
-    currentPlayer: string;
-  } = {
-    players: [...somePlayers], // [],
-    publicCards: [],
-    currentTurn: 0,
-    currentPlayer: '0',
-  };
-  cards: { highestAvailableSet: CardSet | undefined } = { highestAvailableSet: undefined };
+  currentUser = new AsianPokerPlayerInfo('123', 'John', 1);
+  gameStarted = false;
+
+  session: AsianPokerSession | undefined;
+  cardsAnalyzer: { highestAvailableSet: CardSet | undefined } = { highestAvailableSet: undefined };
 
   constructor() {
-    const shuffledCards = this.shuffleNewDeck();
-    const playersHands = this.drawCards(shuffledCards);
-    const publicCards = this.drawPublicCards(shuffledCards);
-
-    this.session.players.forEach((player) => (player.hand = playersHands[player.id]));
-    this.session.publicCards = publicCards;
+    const startingPlayers = [this.currentUser, ...somePlayers];
+    const session = this.createNewSession(startingPlayers);
+    this.session = session;
   }
 
-  shuffleNewDeck() {
+  createNewSession(players: AsianPokerPlayerInfo[]) {
+    const newSession: AsianPokerSession = {
+      turnsCounter: 0,
+      turnCycleCounter: 0,
+      turnPlayers: [...players],
+      turnHasStarted: false,
+      currentPlayerIndex: 0,
+      currentDealerIndex: 0,
+      publicCards: [],
+      playerCalls: [],
+    };
+
+    const shuffledCards = this.shuffleDeck(this.createNewDeck(newSession.turnPlayers));
+    const { playersCards, publicCards, undealt } = this.drawCards(shuffledCards, newSession.turnPlayers);
+
+    newSession.turnPlayers.forEach((player) => (player.hand = playersCards[player.id]));
+    newSession.publicCards = publicCards;
+
+    return newSession;
+  }
+
+  createNewDeck(players: AsianPokerPlayerInfo[]) {
+    const publicCardsAmount = players.every((player) => player.mandatoryDraws > 1) ? 1 : 2;
+    const playersCardsAmount = players.reduce((acc, player) => acc + player.mandatoryDraws, 0);
+    const cardsNeeded = publicCardsAmount + playersCardsAmount;
+    const deckToDealFrom = cardsNeeded > StandardDeckAmount ? RanksWithHierarchyExtended : RanksWithHierarchyStandard;
     const cards: BaseCard[] = [];
-    figures.forEach((figure) => {
-      colors.forEach((color) => cards.push({ color, figure }));
+
+    deckToDealFrom.forEach((rank) => {
+      SuitsWithHierarchy.forEach((suit) => cards.push({ suit, rank }));
     });
 
+    return cards;
+  }
+
+  shuffleDeck(cards: BaseCard[]) {
+    const cardsCopied = [...cards];
     const shuffledCards = [];
-    for (let i = 0; i < cards.length; i++) {
-      const element = cards.popRandom();
+
+    while (cardsCopied.length > 0) {
+      const element = cardsCopied.popRandom();
       if (element) {
-        shuffledCards[i] = element;
+        shuffledCards.push(element);
       }
     }
 
     return shuffledCards;
   }
 
-  drawCards(cards: BaseCard[]) {
-    // 'cards' has to be mutated directly.
-    const draws = this.session.players.map(({ id, mandatoryDraws }) => ({
+  drawCards(cards: BaseCard[], players: AsianPokerPlayerInfo[]) {
+    const cardsCopied = [...cards];
+    const draws = players.map(({ id, mandatoryDraws }) => ({
       id,
       mandatoryDraws,
     }));
@@ -105,34 +105,28 @@ export class AsianPokerComponent {
       });
     }
 
-    const playerCards: Record<string, BaseCard[]> = {};
+    const playersCards: Record<string, BaseCard[]> = {};
     drawsStack.forEach((playerId) => {
-      if (!playerCards[playerId]) {
-        playerCards[playerId] = [];
+      if (!playersCards[playerId]) {
+        playersCards[playerId] = [];
       }
 
-      const card = cards.popRandom();
+      const card = cardsCopied.popRandom();
       if (card) {
-        playerCards[playerId].push(card);
+        playersCards[playerId].push(card);
       }
     });
 
-    return playerCards;
-  }
-
-  drawPublicCards(cards: BaseCard[]) {
-    // 'cards' has to be mutated directly.
-
-    const cardsAmount = this.session.players.every((player) => player.mandatoryDraws > 1) ? 1 : 2;
+    const cardsAmount = players.every((player) => player.mandatoryDraws > 1) ? 1 : 2;
     const publicCards: BaseCard[] = [];
 
     loop(cardsAmount).forEach(() => {
-      const card = cards.popRandom();
+      const card = cardsCopied.popRandom();
       if (card) {
         publicCards.push(card);
       }
     });
 
-    return publicCards;
+    return { playersCards, publicCards, undealt: [...cardsCopied] };
   }
 }

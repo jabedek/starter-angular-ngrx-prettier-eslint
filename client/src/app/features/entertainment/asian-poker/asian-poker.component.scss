@@ -1,34 +1,51 @@
-.wrapper {
+:host {
+  position: absolute;
+  top: 60px;
 }
 
-.playing-table {
-  display: flex;
-  height: 800px;
-  width: 800px;
-
-  background: rgba(184, 100, 5, 1);
+.table-wrapper {
+  position: relative;
+  animation: 1000ms rotate-view 500ms forwards;
+  border-radius: 100%;
 }
 
-.holder {
-  width: 150px;
-  height: 150px;
-  border: 1px solid black;
+.gui-wrapper {
+  position: relative;
+  animation: 500ms expand-section 1500ms forwards;
+  overflow: hidden;
+  max-height: 0;
+
+  filter: blur(0);
+  height: auto;
 }
 
-.deck {
-  display: flex;
-  flex-direction: column;
-}
-
-.card {
-  &__content {
-    display: flex;
+@keyframes rotate-view {
+  0% {
+    top: 0px;
+    filter: blur(0);
+    transform: rotate3d(0);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0);
   }
 
-  &__color {
+  50% {
+    filter: blur(1px);
   }
 
-  &__figure {
-    font-weight: 700;
+  100% {
+    top: -30px;
+    filter: blur(0);
+
+    transform: rotate3d(10, -4, 5, 30deg);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75);
+  }
+}
+
+@keyframes expand-section {
+  from {
+    max-height: 0;
+  }
+
+  to {
+    max-height: 160px;
   }
 }

@@ -1,38 +1,7 @@
-<div class="wrapper">
-  <div class="playing-table">
-    <!-- Public cards -->
-    <div class="holder">
-      <p>KARTY PUBLICZNE</p>
-      <ul class="deck">
-        <li *ngFor="let card of session.publicCards" class="card">
-          <div class="card__content">
-            <span class="card__color">
-              {{ card.color }}
-            </span>
-            <span class="card__figure">
-              {{ card.figure }}
-            </span>
-          </div>
-        </li>
-      </ul>
-    </div>
+<div class="table-wrapper">
+  <app-playing-table [session]="session" [currentUser]="currentUser"></app-playing-table>
+</div>
 
-    <!-- Players -->
-    <div *ngFor="let player of session.players" class="holder">
-      <p>{{ player.nickname }}</p>
-
-      <ul class="deck">
-        <li *ngFor="let card of player.hand" class="card">
-          <div class="card__content">
-            <span class="card__color">
-              {{ card.color }}
-            </span>
-            <span class="card__figure">
-              {{ card.figure }}
-            </span>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
+<div class="gui-wrapper">
+  <app-player-gui [session]="session" [currentUser]="currentUser"></app-player-gui>
 </div>

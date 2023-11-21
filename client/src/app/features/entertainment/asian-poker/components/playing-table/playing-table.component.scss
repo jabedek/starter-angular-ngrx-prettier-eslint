@@ -1,0 +1,218 @@
+@use "/src/assets/styles/mixins";
+@use "variants-players.scss";
+@use "variants-decks.scss";
+
+$table-radius: 700px;
+
+:host {
+  position: relative;
+}
+
+.playing-table {
+  display: flex;
+  height: $table-radius;
+  width: $table-radius;
+  border-radius: 100%;
+  flex-wrap: wrap;
+  background: rgba(184, 100, 5, 1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+
+.public-wrapper {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  background-color: transparent;
+  position: absolute;
+
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+
+  .public-deck {
+    padding: 2px;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+
+    flex-direction: column;
+    background-color: rgb(10, 133, 92);
+    flex-direction: row;
+    background-color: rgb(10, 78, 133);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 100%;
+    width: 120px; // 112;
+    height: 120px; // 112;
+  }
+
+  .holder__label {
+    opacity: 0;
+    overflow: hidden;
+  }
+}
+
+.card {
+  width: 32px;
+  height: 36px;
+  border-radius: 3px;
+  @include mixins.simple-flex-parent();
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  margin: 4px;
+
+  text-align: center;
+  background-color: #fff;
+  user-select: none;
+  overflow: hidden;
+
+  .content {
+    border-radius: 3px;
+    text-align: center;
+
+    background-color: #fff;
+    @include mixins.simple-flex-parent();
+    flex-direction: column;
+
+    .suit {
+    }
+
+    .rank {
+      font-weight: 700;
+    }
+  }
+}
+
+.card-hidden {
+  .content {
+    border-radius: 3px;
+    background: rgb(187, 187, 187);
+    background: linear-gradient(
+      90deg,
+      rgba(187, 187, 187, 1) 0%,
+      rgba(119, 119, 119, 1) 20%,
+      rgba(154, 104, 104, 1) 50%,
+      rgba(119, 119, 119, 1) 80%,
+      rgba(187, 187, 187, 1) 100%
+    );
+    width: 100%;
+    height: 100%;
+
+    .suit,
+    .rank {
+      position: relative;
+      display: none !important;
+      content: "";
+    }
+  }
+}
+
+.players {
+  display: flex;
+  height: $table-radius;
+  width: $table-radius;
+  border-radius: 100%;
+  position: relative;
+}
+
+.player {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  background-color: transparent;
+  height: 90px;
+  width: 90px;
+  border-radius: 100%;
+  border: 1px solid white;
+  background-color: rgb(10, 133, 92);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5) inset;
+  position: absolute;
+
+  &.dealer {
+    background-color: rgb(220, 165, 0);
+  }
+
+  &.currentPlayer {
+    .name-label {
+      border: 4px solid rgba(255, 255, 0, 0.5);
+    }
+
+    box-shadow: 0 0 16px rgb(255, 255, 0);
+  }
+
+  &.userPlayer {
+    outline: 4px dotted rgb(255, 180, 160);
+  }
+
+  left: calc(50% - 45px);
+  top: calc(50% - 45px);
+  z-index: 200;
+
+  &::after {
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    border-radius: 100%;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.85);
+  }
+
+  .name-label {
+    position: relative;
+
+    height: 24px;
+    z-index: 600;
+
+    background-color: white;
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 4px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+
+    height: 70.5px;
+    width: 70.5px;
+    line-height: 70.5px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 100%;
+    border: 4px solid transparent;
+  }
+}
+
+.decks {
+  display: flex;
+  height: $table-radius;
+  width: $table-radius;
+  border-radius: 100%;
+  position: relative;
+}
+
+.deck {
+  height: 60px;
+  min-width: 224px;
+  width: 224px;
+  padding: 2px;
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 3px;
+  background-color: rgb(10, 133, 92);
+
+  z-index: 200;
+  position: absolute;
+}

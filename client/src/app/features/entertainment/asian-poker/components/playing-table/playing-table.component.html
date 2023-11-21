@@ -1,0 +1,54 @@
+<!-- Todo:
+click on player to see a 3-second tooltip (also throttled for next 5 seconds) with info what they called - only most-last call;
+-->
+
+<div *ngIf="session" class="playing-table">
+  <!-- Public cards -->
+  <div class="public-wrapper">
+    <ul class="public-deck">
+      <li *ngFor="let card of session.publicCards" class="card" [ngClass]="{ 'card-hidden': cardsHidden }" [appCardStyle]="card">
+        <div class="card__content">
+          <span *ngIf="!cardsHidden" class="card__suit">
+            {{ card.suit.symbol }}
+          </span>
+          <span *ngIf="!cardsHidden" class="card__rank">
+            {{ card.rank.name }}
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Players -->
+  <div class="players">
+    <div
+      *ngFor="let player of players; let i = index"
+      class="player player-x-{{ players.length }}"
+      [ngClass]="{
+        dealer: currentDealerIndex === i,
+        currentPlayer: currentPlayerIndex === i,
+        userPlayer: player.id === currentUser?.id
+      }">
+      <div class="name-label">{{ player.nickname }}</div>
+    </div>
+  </div>
+
+  <div class="decks">
+    <ul *ngFor="let player of players" class="deck deck-x-{{ players.length }}">
+      <li
+        *ngFor="let card of player.hand"
+        class="card"
+        [ngClass]="{ 'card-hidden': player.id !== currentUser?.id }"
+        [appCardStyle]="card">
+        <div class="content">
+          <span *ngIf="player.id === currentUser?.id" class="suit">
+            {{ card.suit.symbol }}
+          </span>
+          <span *ngIf="player.id === currentUser?.id" class="rank">
+            {{ card.rank.name }}
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
