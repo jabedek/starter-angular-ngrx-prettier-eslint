@@ -9,10 +9,23 @@ import { NavbarComponent } from './components/header/components/navbar/navbar.co
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { SharedModule } from '@shared/shared.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HomePageComponent } from './components/home-page/home-page.component';
+import { LogoComponent } from './components/header/components/logo/logo.component';
+import { PopupComponent } from './components/popup/popup.component';
 
 @NgModule({
-  declarations: [LayoutComponent, FooterComponent, SidebarComponent, HeaderComponent, NavbarComponent, LandingPageComponent],
+  declarations: [
+    LayoutComponent,
+    FooterComponent,
+    SidebarComponent,
+    HeaderComponent,
+    NavbarComponent,
+    LandingPageComponent,
+    HomePageComponent,
+    LogoComponent,
+    PopupComponent,
+  ],
   imports: [CommonModule, RouterModule.forChild([]), SharedModule, FormsModule, ReactiveFormsModule],
-  exports: [LayoutComponent, LandingPageComponent],
+  exports: [LayoutComponent, LandingPageComponent, HomePageComponent, PopupComponent],
 })
 export class LayoutModule {}

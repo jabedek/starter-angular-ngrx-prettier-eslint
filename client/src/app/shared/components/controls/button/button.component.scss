@@ -3,8 +3,11 @@
 
 :host {
   display: flex;
-  button {
-    @include controls.app_button_0;
+
+  &:not(.outlined) {
+    button {
+      @include controls.app_button_0;
+    }
   }
 
   &.outlined {

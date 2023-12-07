@@ -1,18 +1,39 @@
+import { Flatten } from 'frotsi';
+
 export const HandsWithHierarchy = [
-  { name: 'high-card', desc: 'a card' },
-  { name: 'pair', desc: 'two same ranks' },
-  { name: 'two-pairs', desc: 'two pairs' },
-  { name: 'straight', desc: 'five cards of sequential rank, not all of the same suit ' },
-  { name: 'three', desc: 'three same ranks' },
-  { name: 'full-house', desc: 'five cards - combination of a Pair and a Three' },
-  { name: 'color/flush', desc: 'five cards with same suit' },
-  { name: 'four/quads', desc: 'four same ranks' },
-  { name: 'poker/straight-flush', desc: 'five cards of sequential rank, all of the same suit' },
-  { name: 'royal-flush', desc: 'five cards of sequential rank, all of the same suit, 10-to-Ace' },
+  { namePL: 'wysoka karta', descPL: 'pojedyncza karta', nameEN: 'high card', descEN: 'a card' },
+  { namePL: 'para', descPL: '', nameEN: 'pair', descEN: 'two same ranks' },
+  { namePL: 'dwie pary', descPL: '', nameEN: 'two pairs', descEN: 'two pairs' },
+  { namePL: 'strit', descPL: '', nameEN: 'straight', descEN: 'five cards of sequential rank, not all of the same suit ' },
+  { namePL: 'trójka', descPL: '', nameEN: 'three', descEN: 'three same ranks' },
+  { namePL: 'full', descPL: '', nameEN: 'full house', descEN: 'five cards - combination of a Pair and a Three' },
+  { namePL: 'kolor', descPL: '', nameEN: 'color/flush', descEN: 'five cards with same suit' },
+  { namePL: 'kareta', descPL: '', nameEN: 'four/quads', descEN: 'four same ranks' },
+  { namePL: 'poker', descPL: '', nameEN: 'poker/straight flush', descEN: 'five cards of sequential rank, all of the same suit' },
+  // {
+  //   namePL: 'poker królewski',
+  //   descPL: '',
+  //   nameEN: 'royal flush',
+  //   descEN: 'five cards of sequential rank, all of the same suit, 10-to-Ace',
+  // },
 ] as const;
 
 export const SuitsBlack = ['SPADES', 'CLUBS'] as const;
 export const SuitsRed = ['HEARTS', 'DIAMONDS'] as const;
+
+export const Suits = ['SPADES', 'HEARTS', 'DIAMONDS', 'CLUBS'] as const;
+export const Ranks = ['8', '9', '10', 'J', 'Q', 'K', 'A'] as const;
+
+export const SuitsSymbols = ['♠', '♥', '♦', '♣'];
+export const RanksFull = ['EIGHT', 'NINE', 'TEN', 'JACK', 'QUEEN', 'KING', 'ACE'] as const;
+
+export type SimpleSuit = Flatten<(typeof Suits)[number]>;
+export type SimpleRank = Flatten<(typeof Ranks)[number]>;
+
+export type SimpleCard = {
+  suit: SimpleSuit;
+  rank: SimpleRank;
+};
 
 export const SuitsWithHierarchy = [
   { name: 'SPADES', pl: 'WINO/PIK', symbol: '♠' },
@@ -64,39 +85,64 @@ export type CardSet = {
   cards: BaseCard[];
 };
 
+export type GameState = 'ready' | 'running' | 'paused' | 'finished';
+
 export type AsianPokerSession = {
+  id: string;
+  gameState: GameState;
   turnsCounter: number;
   turnCycleCounter: number;
   turnPlayers: AsianPokerPlayerInfo[];
-  turnHasStarted: boolean;
   currentPlayerIndex: number;
   currentDealerIndex: number;
   publicCards: BaseCard[];
-  playerCalls: PlayerCall[];
+  playersCalls: PlayAction[];
 };
 
 interface AsianPokerPlayer {
   id: string;
   nickname: string;
-  mandatoryDraws: number;
+  handSize: number;
   hand: BaseCard[];
 }
-
-type PlayerCall = {
-  turnCycleIndex: string;
-  playerId: string;
-  calledCardSet: CardSet;
-};
 
 export class AsianPokerPlayerInfo implements AsianPokerPlayer {
   id: string;
   nickname: string;
-  mandatoryDraws = 1;
+  handSize = 1;
   hand: BaseCard[] = [];
 
-  constructor(id: string, nickname: string, mandatoryDraws = 1) {
+  constructor(id: string, nickname: string, handSize = 1) {
     this.id = id;
     this.nickname = nickname;
-    this.mandatoryDraws = mandatoryDraws;
+    this.handSize = handSize;
   }
 }
+
+export enum PlayerActions {
+  SESSION_START = 'SESSION_START',
+  PLAY_CALL = 'PLAY_CALL',
+  PLAY_CHECK = 'PLAY_CHECK',
+  PAUSE_PROPOSE = 'PAUSE_PROPOSE',
+  PAUSE_VOTE_YES = 'PAUSE_VOTE_YES',
+  PAUSE_VOTE_NO = 'PAUSE_VOTE_NO',
+}
+
+export type PlayAction =
+  | {
+      type: PlayerActions.PLAY_CALL;
+      data: {
+        turnCycleIndex: number;
+        playerId: string;
+        playerIndex: number;
+        calledCardSet: CardSet;
+      };
+    }
+  | {
+      type: PlayerActions.PLAY_CHECK;
+      data: {
+        turnCycleIndex: number;
+        playerId: string;
+        playerIndex: number;
+      };
+    };

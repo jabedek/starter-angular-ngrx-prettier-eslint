@@ -7,12 +7,12 @@ import { LayoutComponent } from '@core/modules/layout/layout.component';
 const routes: Routes = [
   {
     path: '',
-    canActivate: [authGuard],
+    // canActivate: [authGuard],
     children: [
       {
         path: '',
         component: LayoutComponent,
-        canActivateChild: [authGuard],
+        // canActivateChild: [authGuard],
         children: [{ path: '', pathMatch: 'full', component: AsianPokerComponent }],
       },
     ],

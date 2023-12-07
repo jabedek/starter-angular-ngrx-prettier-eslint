@@ -10,7 +10,7 @@ export interface LayoutState {
   };
 }
 
-export const layoutInitialState: LayoutState = {
+export const initialState: LayoutState = {
   ui: {
     burgerOpen: false,
   },

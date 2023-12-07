@@ -1,0 +1,26 @@
+<div class="popup" *ngIf="currentContent$ | async as content">
+  <div class="popup__card">
+    <div class="popup__body">
+      <div *ngIf="content.config?.buttons?.close" class="close" appAccess (access)="userAction('close-no-decision')">
+        <div class="icon-close"></div>
+      </div>
+      <div class="content">
+        <ng-container *ngComponentOutlet="content.popupComponent.component; inputs: content.popupComponent.inputs" />
+      </div>
+      <!-- <div class="header">
+        <ng-content select="[popupUserHeader]"></ng-content>
+      </div>
+      <div class="content">
+        <slot>
+          <ng-content select="[popupUserContent]"></ng-content>
+        </slot>
+      </div> -->
+      <div class="footer">
+        <div class="actions">
+          <button *ngIf="content.config?.buttons?.accept" (click)="userAction('accept')">Accept</button>
+          <button *ngIf="content.config?.buttons?.decline" (click)="userAction('decline')">Decline</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

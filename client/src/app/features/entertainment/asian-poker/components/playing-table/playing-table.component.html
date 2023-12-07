@@ -2,12 +2,12 @@
 click on player to see a 3-second tooltip (also throttled for next 5 seconds) with info what they called - only most-last call;
 -->
 
-<div *ngIf="session" class="playing-table">
+<div *ngIf="currentUser && session" class="playing-table">
   <!-- Public cards -->
   <div class="public-wrapper">
     <ul class="public-deck">
       <li *ngFor="let card of session.publicCards" class="card" [ngClass]="{ 'card-hidden': cardsHidden }" [appCardStyle]="card">
-        <div class="card__content">
+        <div class="content">
           <span *ngIf="!cardsHidden" class="card__suit">
             {{ card.suit.symbol }}
           </span>
@@ -22,29 +22,31 @@ click on player to see a 3-second tooltip (also throttled for next 5 seconds) wi
   <!-- Players -->
   <div class="players">
     <div
-      *ngFor="let player of players; let i = index"
-      class="player player-x-{{ players.length }}"
+      *ngFor="let player of session.turnPlayers; let i = index"
+      class="player player-x-{{ session.turnPlayers.length }}"
       [ngClass]="{
-        dealer: currentDealerIndex === i,
-        currentPlayer: currentPlayerIndex === i,
+        dealer: session.currentDealerIndex === i,
+        currentPlayer: session.currentPlayerIndex === i,
         userPlayer: player.id === currentUser?.id
       }">
-      <div class="name-label">{{ player.nickname }}</div>
+      <div class="name-label">
+        <span>{{ player.nickname }}</span>
+      </div>
     </div>
   </div>
 
   <div class="decks">
-    <ul *ngFor="let player of players" class="deck deck-x-{{ players.length }}">
+    <ul *ngFor="let player of session.turnPlayers" class="deck deck-x-{{ session.turnPlayers.length }}">
       <li
         *ngFor="let card of player.hand"
         class="card"
-        [ngClass]="{ 'card-hidden': player.id !== currentUser?.id }"
+        [ngClass]="{ 'card-hidden': player.id !== currentUser.id }"
         [appCardStyle]="card">
         <div class="content">
-          <span *ngIf="player.id === currentUser?.id" class="suit">
+          <span *ngIf="player.id === currentUser.id" class="suit">
             {{ card.suit.symbol }}
           </span>
-          <span *ngIf="player.id === currentUser?.id" class="rank">
+          <span *ngIf="player.id === currentUser.id" class="rank">
             {{ card.rank.name }}
           </span>
         </div>

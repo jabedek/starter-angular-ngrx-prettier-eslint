@@ -18,13 +18,14 @@ import { PersonalsModule } from '@features/management/personals/personals.module
 import { PlaylistsModule } from '@features/entertainment/playlists/playlists.module';
 import { SocialitiesModule } from '@features/management/socialities/socialities.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { StoreRouterConnectingModule, routerReducer } from '@ngrx/router-store';
+import { StoreRouterConnectingModule, routerReducer as router } from '@ngrx/router-store';
 import { EffectsModule } from '@ngrx/effects';
 
 import { extModules } from '@env/build-specifics';
 import { environment } from '@env/environment';
 import { metaReducers } from '@store/meta-reducers';
-import { layoutState as layout } from '@store/layout/layout.reducer';
+import { featureState as layout } from '@store/layout/layout.reducer';
+import { featureState as auth } from '@store/auth/auth.reducer';
 import { CustomSerializer } from '@store/router/custom-route-serializer';
 import { AsianPokerModule } from '@features/entertainment/asian-poker/asian-poker.module';
 import { StreamingStudioModule } from '@features/entertainment/streaming-studio/streaming-studio.module';
@@ -69,7 +70,9 @@ export const Features = [
     FormsModule,
     ReactiveFormsModule,
     //
-    StoreModule.forRoot({ router: routerReducer, layout }, { metaReducers }),
+    AppRoutingModule,
+    //
+    StoreModule.forRoot({ router, layout, auth }, { metaReducers }),
     StoreRouterConnectingModule.forRoot({ serializer: CustomSerializer }),
     EffectsModule.forRoot([]),
     // App
@@ -77,7 +80,6 @@ export const Features = [
     SharedModule,
     ...Features,
     extModules,
-    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

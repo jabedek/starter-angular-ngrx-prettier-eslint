@@ -1,31 +1,89 @@
-<!-- <app-see-data [data]="session" position="fixed"></app-see-data> -->
-<div *ngIf="session && currentUser" class="gui-wrapper">
-  <div class="gui general">
-    <ng-container *ngIf="showGeneralGUI">
-      <div class="gui__wall">
-        <div class="gui__info">
-          <p>Turn</p>
-          <p>{{ session?.turnsCounter }}</p>
+<div *ngIf="currentUser && session" class="gui-wrapper">
+  <!-- <app-see-data [data]="session"></app-see-data> -->
+  <div class="gui current-player">
+    <div class="top">
+      <ng-container *ngIf="session.gameState !== 'ready' && currentUser">
+        <p class="current-user__name">{{ currentUser.nickname }}</p>
+
+        <div class="current-user__time">
+          <div>{{ "Czas: " }}</div>
+          <p class="monotype">1m 20s</p>
         </div>
-        <div class="gui__info">
-          <p>Who are you?</p>
-          <p>{{ currentUser?.nickname }}</p>
+
+        <div class="deck">
+          <div *ngFor="let card of currentPlayer?.hand" class="card" [appCardStyle]="card">
+            <div class="content">
+              <span class="suit">
+                {{ card.suit.symbol }}
+              </span>
+              <span class="rank">
+                {{ card.rank.name }}
+              </span>
+            </div>
+          </div>
         </div>
-        <div class="gui__info">
-          <p>Who's move is it?</p>
-          <p>{{ players[currentPlayerIndex]?.nickname }}</p>
-        </div>
-        <div class="gui__info">
-          <p>Who's the dealer?</p>
-          <p>{{ players[currentDealerIndex]?.nickname }}</p>
-        </div>
+      </ng-container>
+    </div>
+
+    <div class="center" *ngIf="session.gameState === 'ready'">
+      <app-asian-poker-button *ngIf="isCurrentUserDealer" variant="default" (click)="startTurn()" class="">
+        <span>Start</span>
+      </app-asian-poker-button>
+    </div>
+
+    <div class="bottom" *ngIf="session.gameState !== 'ready'">
+      <div class="gui__actions">
+        <ng-container>
+          <app-asian-poker-button
+            [disabled]="!isCurrentUserMoving"
+            variant="action0"
+            [round]="true"
+            class="call"
+            (click)="isCurrentUserMoving && call()">
+            <span>Licytuj</span>
+          </app-asian-poker-button>
+
+          <app-asian-poker-button
+            [disabled]="!isCurrentUserMoving"
+            variant="action1"
+            [round]="true"
+            class="check"
+            (click)="isCurrentUserMoving && check()">
+            <span>Sprawdź</span>
+          </app-asian-poker-button>
+
+          <app-asian-poker-button variant="default" [round]="true" class="">
+            <span>GŁOSUJ: PAUZA 5 MIN.</span>
+          </app-asian-poker-button>
+
+          <app-asian-poker-button variant="mini--confirm"></app-asian-poker-button>
+          <app-asian-poker-button variant="mini--reject"></app-asian-poker-button>
+        </ng-container>
       </div>
-    </ng-container>
+    </div>
   </div>
 
-  <div class="gui current-player">
-    <ng-container *ngIf="showPlayerGUI">
-      <div class="gui__actions"></div>
+  <div class="gui general" *ngIf="session.gameState !== 'ready'">
+    <ng-container>
+      <div class="gui__wall">
+        <div class="gui__info">
+          <p>Game status</p>
+          <p>{{ session.gameState || "loading..." }}</p>
+        </div>
+        <div class="gui__info">
+          <p>Turn</p>
+          <p># {{ session.turnsCounter }}</p>
+        </div>
+
+        <div class="gui__info" *ngIf="currentDealer">
+          <p>Who's the dealer?</p>
+          <p>{{ currentDealer.nickname }}</p>
+        </div>
+        <div class="gui__info" *ngIf="currentPlayer">
+          <p>Whose move is it?</p>
+          <p>{{ currentPlayer.nickname }}</p>
+        </div>
+      </div>
     </ng-container>
   </div>
 </div>

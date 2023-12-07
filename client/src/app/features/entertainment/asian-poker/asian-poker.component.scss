@@ -1,3 +1,5 @@
+@use "/src/app/features/entertainment/asian-poker/asian-poker.scss";
+
 :host {
   position: absolute;
   top: 60px;
@@ -11,12 +13,18 @@
 
 .gui-wrapper {
   position: relative;
-  animation: 500ms expand-section 1500ms forwards;
+  animation: expand-section 1500ms forwards;
   overflow: hidden;
+  height: auto;
   max-height: 0;
+  top: 70px;
+
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 
   filter: blur(0);
-  height: auto;
 }
 
 @keyframes rotate-view {
@@ -28,7 +36,7 @@
   }
 
   50% {
-    filter: blur(1px);
+    filter: blur(0.75px);
   }
 
   100% {
@@ -46,6 +54,6 @@
   }
 
   to {
-    max-height: 160px;
+    max-height: asian-poker.$asian-poker-gui-height;
   }
 }

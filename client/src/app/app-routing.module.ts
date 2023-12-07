@@ -2,23 +2,30 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LandingPageComponent } from '@core/modules/layout/pages/landing-page/landing-page.component';
 import { LayoutComponent } from '@core/modules/layout/layout.component';
+import { HomePageComponent } from '@core/modules/layout/components/home-page/home-page.component';
+import { authGuard } from '@core/modules/auth/auth.guard';
 
 const routes: Routes = [
+  { path: '', pathMatch: 'full', redirectTo: 'home' },
   {
-    path: '',
-    canActivate: [],
+    path: 'home',
+    // pathMatch: 'full',
     children: [
       {
         path: '',
         component: LayoutComponent,
-        canActivateChild: [],
-        children: [{ path: '', pathMatch: 'full', component: LandingPageComponent }],
+        children: [{ path: '', component: HomePageComponent }],
       },
     ],
   },
   {
+    path: 'account',
+    canActivate: [authGuard()],
+    loadChildren: () => import('@core/modules/account/account.module').then((m) => m.AccountModule),
+  },
+  {
     path: 'asian-poker',
-    canActivate: [],
+    canActivate: [authGuard()],
     loadChildren: () => import('@features/entertainment/asian-poker/asian-poker.module').then((m) => m.AsianPokerModule),
   },
   {

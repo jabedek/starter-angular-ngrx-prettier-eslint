@@ -1,11 +1,11 @@
 import { createReducer, on } from '@ngrx/store';
 import * as actions from './layout.actions';
-import { layoutInitialState, LayoutState } from './layout.state';
+import { initialState, LayoutState } from './layout.state';
 
-export const layoutFeatureKey = 'layout';
+export const featureKey = 'layout';
 
-export const layoutState = createReducer(
-  layoutInitialState,
+export const featureState = createReducer(
+  initialState,
   on(actions.setBurger, (state, { set }): LayoutState => {
     return { ...state, ui: { ...state.ui, burgerOpen: set === 'toggle' ? !state.ui.burgerOpen : set === 'open' } };
   }),

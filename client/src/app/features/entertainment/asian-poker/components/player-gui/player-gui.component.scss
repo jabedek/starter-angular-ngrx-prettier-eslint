@@ -1,3 +1,6 @@
+@use "/src/assets/styles/mixins";
+@use "/src/app/features/entertainment/asian-poker/asian-poker";
+
 :host {
   overflow: hidden;
   font-family: Manrope;
@@ -17,19 +20,79 @@
 
   background: #555;
   border-radius: 3px;
-  padding: 6px;
-  gap: 6px;
-  height: 160px;
+  height: asian-poker.$asian-poker-gui-height;
   width: 700px;
   overflow: hidden;
   overflow-y: hidden;
   color: #fff;
+  padding: 6px;
+}
+
+.top,
+.bottom,
+.center {
+  display: flex;
+  width: 100%;
+}
+
+.top {
+  height: fit-content;
+  justify-content: space-between;
+}
+
+.bottom {
+  max-height: 100%;
+  flex-grow: 1;
+}
+
+.center {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.current-user {
+  &__name {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 0, 0.1);
+    color: rgba(255, 255, 0, 1);
+    border-radius: 3px;
+    font-weight: 600;
+    text-align: center;
+    width: 110px;
+    height: 60px;
+    font-size: 0.85rem;
+    line-height: 1.1;
+  }
+  &__time {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(255, 124, 124, 0.1);
+    color: rgba(255, 124, 124, 1);
+    border-radius: 3px;
+    font-weight: 600;
+    width: 80px;
+    text-align: center;
+    height: 60px;
+    font-size: 0.85rem;
+    line-height: 1.1;
+
+    .monotype {
+      font-family: "Roboto Mono";
+    }
+  }
 }
 
 .gui {
   border-radius: 4px;
-  border: 1px solid #777;
-  padding: 4px;
+
   height: 100%;
   width: 100%;
   display: flex;
@@ -37,11 +100,15 @@
   &.general {
     width: 32%;
     height: 100%;
+
+    border: 1px solid #777;
+    padding: 1px;
   }
 
   &.current-player {
     width: 64%;
     height: 100%;
+    flex-direction: column;
   }
 
   &__wall {
@@ -53,8 +120,91 @@
   &__info {
     width: 100%;
     height: 20px;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     display: flex;
     justify-content: space-between;
+
+    p {
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    // gap: 14px;
+    // flex-wrap: wrap;
+    overflow-y: scroll;
+    justify-content: space-between;
+    div.actions-pair {
+      display: flex;
+      justify-content: flex-start;
+      align-content: flex-start;
+      align-items: flex-start;
+      // flex-direction: column;
+      gap: 14px;
+      flex-wrap: wrap;
+
+      span {
+        letter-spacing: 0.4px;
+        word-spacing: 4px;
+      }
+
+      .call {
+        // border-radius: 3px;
+
+        // &:hover {
+        //   transition: all 200ms;
+        //   background-color: rgba(30, 190, 30, 1);
+        // }
+      }
+
+      .check {
+        // border-radius: 3px;
+
+        // &:hover {
+        //   transition: all 200ms;
+        //   background-color: rgba(30, 30, 190, 1);
+        // }
+      }
+    }
+  }
+}
+
+.deck {
+  @include asian-poker.deck-display;
+  position: relative;
+}
+
+.card {
+  width: 32px;
+  height: 36px;
+  border-radius: 3px;
+  @include mixins.simple-flex-parent();
+  box-shadow: 0.5px 0px 2px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  margin: 4px;
+
+  text-align: center;
+  background-color: #fff;
+  user-select: none;
+  overflow: hidden;
+
+  .content {
+    border-radius: 3px;
+    text-align: center;
+
+    background-color: #fff;
+    @include mixins.simple-flex-parent();
+    flex-direction: column;
+
+    .suit {
+    }
+
+    .rank {
+      font-weight: 700;
+    }
   }
 }

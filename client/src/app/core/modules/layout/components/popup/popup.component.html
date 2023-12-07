@@ -1,0 +1,41 @@
+<div class="popup" *ngIf="currentContent$ | async as popupData">
+  <div class="popup__card">
+    <div class="popup__body">
+      <div
+        *ngIf="popupData.config?.showCloseButton"
+        class="close"
+        appAccess
+        (access)="userAction('close-no-decision', popupData)">
+        <div class="icon-close"></div>
+      </div>
+
+      <!-- Component -->
+      <ng-container *ngIf="popupData.contentType === 'component'">
+        {{ popupData.contentType }}
+        <div class="content">
+          <ng-container *ngComponentOutlet="$any(popupData.content).component; inputs: $any(popupData.content).inputs" />
+        </div>
+      </ng-container>
+
+      <!-- Simple -->
+      <ng-container *ngIf="popupData.contentType === 'simple'">
+        {{ popupData.contentType }}
+        <div class="header">
+          <p>{{ popupData.content.textHeader }}</p>
+        </div>
+        <div class="content">
+          <slot>
+            <p>{{ popupData.content.textContent }}</p>
+          </slot>
+        </div>
+
+        <div class="footer">
+          <div class="actions" *ngIf="popupData.contentType === 'simple'">
+            <button *ngIf="$any(popupData.content).showAcceptButton" (click)="userAction('accept', popupData)">Accept</button>
+            <button *ngIf="$any(popupData.content).showDeclineButton" (click)="userAction('decline', popupData)">Decline</button>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>

@@ -1,11 +1,11 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
-  selector: 'app-popup',
-  templateUrl: './popup.component.html',
-  styleUrls: ['./popup.component.scss'],
+  selector: 'app-popup-custom',
+  templateUrl: './popup-custom.component.html',
+  styleUrls: ['./popup-custom.component.scss'],
 })
-export class PopupComponent {
+export class PopupCustomComponent {
   @Input() showAccept = false;
   @Input() showDecline = false;
   @Input() showClose = true;
@@ -23,9 +23,7 @@ export class PopupComponent {
   @Output() mode = new EventEmitter<'shown' | 'hidden'>();
   @Output() declinedOnDecision = new EventEmitter<void>();
 
-  protected decide(decision: 'accept' | 'decline' | 'close-no-decision') {
-    console.log(decision);
-
+  protected userAction(decision: 'accept' | 'decline' | 'close-no-decision') {
     if (decision === 'close-no-decision') {
       this.popupShown = false;
     } else {
