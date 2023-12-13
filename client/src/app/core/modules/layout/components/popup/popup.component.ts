@@ -27,12 +27,12 @@ export class PopupComponent {
       }
     } else {
       if (data.contentType === 'simple') {
-        const { closeOnDecision, callbackAfterDecision } = data.content;
+        const { closeOnDecision, callbackAfterAccept } = data.content;
         if (closeOnDecision) {
           this.popup.hidePopup();
 
-          if (callbackAfterDecision) {
-            callbackAfterDecision(decision);
+          if (callbackAfterAccept) {
+            callbackAfterAccept();
           }
         }
       }

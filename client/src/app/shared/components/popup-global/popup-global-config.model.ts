@@ -10,7 +10,7 @@ export type SimplePopupContent = {
   showAcceptButton: boolean;
   showDeclineButton: boolean;
   closeOnDecision: boolean;
-  callbackAfterDecision?: (decision: 'accept' | 'decline') => unknown;
+  callbackAfterAccept?: (decision: 'accept' | 'decline') => unknown;
 };
 
 export type PopupConfig = {

@@ -8,6 +8,7 @@
   flex-direction: column;
   position: absolute;
   overflow-x: hidden;
+  scrollbar-gutter: stable;
 }
 
 .wrapper {
@@ -17,7 +18,6 @@
   display: flex;
   justify-content: center;
   position: relative;
-
   top: variables.$header-height;
   // position: absolute;
 }

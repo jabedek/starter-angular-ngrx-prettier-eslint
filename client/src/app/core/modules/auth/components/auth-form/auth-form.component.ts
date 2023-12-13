@@ -1,4 +1,4 @@
-import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, Input, ViewChild } from '@angular/core';
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from '../../auth.service';
@@ -9,6 +9,7 @@ import { AuthService } from '../../auth.service';
   styleUrls: ['./auth-form.component.scss'],
 })
 export class AuthFormComponent {
+  @Input() redirectToAfter = '';
   @ViewChild('usernameInput') usernameInput: ElementRef | undefined;
 
   formMode: 'register' | 'login' = 'register';

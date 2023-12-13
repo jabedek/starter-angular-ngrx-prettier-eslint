@@ -31,17 +31,10 @@ export class AppComponent extends BaseComponent implements AfterViewInit {
     private store: Store<AppState>,
   ) {
     super();
+    this.auth.refreshLogin(false);
   }
 
   ngAfterViewInit(): void {
     console.log(this.popup);
-  }
-
-  async logout() {
-    this.auth.logout();
-  }
-
-  async refreshLogin() {
-    this.auth.refreshLogin();
   }
 }

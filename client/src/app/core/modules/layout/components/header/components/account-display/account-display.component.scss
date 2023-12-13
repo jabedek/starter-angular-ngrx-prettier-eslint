@@ -1,0 +1,48 @@
+@use "/src/assets/styles/variables";
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+}
+
+.email {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.account {
+  font-family: Manrope;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 9px;
+  padding: 4px 7px;
+  font-size: 0.75rem;
+
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease;
+  border: 2px solid variables.$bg-roof;
+  color: variables.$bg-roof;
+
+  &:hover {
+    filter: brightness(1.15);
+  }
+
+  &:focus {
+    filter: brightness(1.3);
+  }
+
+  &:active {
+    filter: brightness(1.45);
+  }
+
+  &.login {
+  }
+
+  &.logout {
+    border: 2px solid rgb(150, 150, 150);
+
+    color: rgba(150, 150, 150);
+  }
+}

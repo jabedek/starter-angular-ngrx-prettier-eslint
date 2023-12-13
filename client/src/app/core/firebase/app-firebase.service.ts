@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 // Import the functions you need from the SDKs you need
 import { initializeApp } from 'firebase/app';
+import { getFirestore } from 'firebase/firestore';
 import { getAnalytics } from 'firebase/analytics';
 import { GoogleAuthProvider, User, UserCredential, getAuth, getRedirectResult, signInWithRedirect, signOut } from 'firebase/auth';
 import { StorageItem } from '@shared/models/storage-items.enum';
@@ -8,9 +9,11 @@ import { LocalStorage } from 'frotsi';
 import { Store } from '@ngrx/store';
 import { AppState } from '@store/app-state';
 import { setFirebaseCurrentUser } from '@store/auth/auth.actions';
-import { selectAuth } from '@store/auth/auth.selectors';
-import { map, takeUntil } from 'rxjs';
+import { selectAuth, selectUserLoggedIn } from '@store/auth/auth.selectors';
+import { map, takeUntil, tap } from 'rxjs';
 import { BaseComponent } from '@shared/components/base/base.component';
+import { Router } from '@angular/router';
+import { LayoutService } from '@core/modules/layout/services/layout.service';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -25,10 +28,11 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const Analytics = getAnalytics(app);
+// const Analytics = getAnalytics(app);
 const FirebaseAuth = getAuth(app);
-const GoogleProvider = new GoogleAuthProvider();
+const FirebaseDB = getFirestore(app);
 
+const GoogleProvider = new GoogleAuthProvider();
 GoogleProvider.addScope('https://www.googleapis.com/auth/contacts.readonly');
 GoogleProvider.addScope('https://www.googleapis.com/auth/userinfo.email');
 GoogleProvider.addScope('https://www.googleapis.com/auth/firebase.database');
@@ -43,28 +47,51 @@ export class AppFirebaseService extends BaseComponent {
   readonly firebaseAuth = FirebaseAuth;
   readonly googleProvider = GoogleProvider;
 
-  isLogged$ = this.store.select(selectAuth).pipe(map((auth) => !!auth.firebase.user));
+  readonly firebaseDB = FirebaseDB;
+
+  isLogged$ = this.store.select(selectUserLoggedIn).pipe(
+    tap((logged) => (this.isLogged = logged)),
+    tap((logged) => console.log(logged)),
+    takeUntil(this.__destroy),
+  );
   isLogged = false;
 
-  constructor(private store: Store<AppState>) {
+  constructor(
+    private store: Store<AppState>,
+    private router: Router,
+    private layout: LayoutService,
+  ) {
     super();
-    this.isLogged$.pipe(takeUntil(this.__destroy)).subscribe((val) => (this.isLogged = val));
+    this.isLogged$.subscribe();
   }
 
-  async refreshLogin() {
+  async refreshLogin(tryReAuth: boolean, redirectToAfter?: string) {
+    console.log(0);
+
+    this.layout.setLoader('auth', true);
     let currentUser: User | null | undefined = undefined;
     this.firebaseAuth.onAuthStateChanged((user: User | null) => {
+      console.log(1);
       currentUser = user;
       this.store.dispatch(setFirebaseCurrentUser({ user: JSON.parse(JSON.stringify(user)) }));
+
+      this.router.navigate([user ? 'account' : 'home']);
+      this.layout.setLoader('auth', false);
     });
 
     const redirectResult: UserCredential | undefined = (await getRedirectResult(this.firebaseAuth)) || undefined;
 
-    if (!redirectResult && !currentUser) {
-      signInWithRedirect(this.firebaseAuth, this.googleProvider);
+    console.log(2);
+    this.layout.setLoader('auth', false);
+    if (tryReAuth) {
+      if (!redirectResult && !currentUser) {
+        this.layout.setLoader('auth', true);
+        signInWithRedirect(this.firebaseAuth, this.googleProvider); //.then(() => this.router.navigate(['account']));
+      }
     }
 
     if (redirectResult) {
+      console.log(3);
       const user = { ...redirectResult.user };
       const credential = GoogleAuthProvider.credentialFromResult(redirectResult);
       const token = credential?.accessToken;
@@ -74,7 +101,7 @@ export class AppFirebaseService extends BaseComponent {
     console.log(this.firebaseAuth);
   }
 
-  async firebaseLogout() {
+  async firebaseLogout(redirectToAfter?: string) {
     await signOut(this.firebaseAuth)
       .catch((err) => console.error('LOGOUT ERROR', err))
       .then(() => {

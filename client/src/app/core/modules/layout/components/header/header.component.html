@@ -5,16 +5,30 @@
     <!-- Regular header stuff -->
     <ng-container *ngIf="currentUrl$ | async as url">
       <h4 class="url">
-        <span *ngFor="let part of url.parts" class="url-part">
+        <p *ngFor="let part of url.parts" class="url-part">
           {{ part }}
-        </span>
+        </p>
       </h4>
     </ng-container>
   </div>
 
   <!-- Absolute 'most top' elements -->
-  <app-burger-menu></app-burger-menu>
-  <div class="navbar-wrapper" [ngClass]="{ burgerOpen: (burgerOpen$ | async) === true }">
-    <app-navbar></app-navbar>
+  <div class="right-section">
+    <ng-container *ngIf="this.layout.getLoader() | async as authLoader">
+      <app-account-display *ngIf="!authLoader.auth"></app-account-display>
+      <app-spinner *ngIf="authLoader.auth"></app-spinner>
+      <ng-container *ngIf="userLoggedIn$ | async as userLoggedIn">
+        <div class="menu-wrapper" *ngIf="!authLoader.auth && userLoggedIn">
+          <app-burger-menu></app-burger-menu>
+          <div class="navbar-wrapper" [ngClass]="{ burgerOpen: (burgerOpen$ | async) === true }">
+            <app-navbar></app-navbar>
+          </div>
+        </div>
+      </ng-container>
+    </ng-container>
   </div>
 </header>
+<!--
+<ng-template #authLogin>
+  <app-auth-button></app-auth-button>
+</ng-template> -->

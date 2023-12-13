@@ -25,7 +25,7 @@ const routes: Routes = [
   },
   {
     path: 'asian-poker',
-    canActivate: [authGuard()],
+    canActivate: [authGuard('asian-poker')],
     loadChildren: () => import('@features/entertainment/asian-poker/asian-poker.module').then((m) => m.AsianPokerModule),
   },
   {

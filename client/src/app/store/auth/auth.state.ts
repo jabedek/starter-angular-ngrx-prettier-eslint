@@ -13,3 +13,9 @@ export const initialState: AuthState = {
     userCredential: undefined,
   },
 };
+
+export type AppFirebaseUser = {
+  uid?: string;
+  email?: string;
+  displayName?: string;
+};

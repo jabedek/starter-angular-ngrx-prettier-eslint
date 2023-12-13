@@ -1,0 +1,14 @@
+<ng-container *ngIf="userBasicData$ | async as user; else login">
+  <div class="wrapper" *ngIf="!!user">
+    <p class="email">
+      {{ user.email }}
+    </p>
+
+    <div class="account" [routerLink]="['/account']">account</div>
+    <div class="account logout" appAccess (access)="auth.logout('home')">logout</div>
+  </div>
+</ng-container>
+
+<ng-template #login>
+  <div class="account login" appAccess (access)="auth.refreshLogin(true, 'account')">login</div>
+</ng-template>

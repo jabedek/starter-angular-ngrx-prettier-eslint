@@ -1,3 +1,7 @@
+<div class="c">
+  <app-auth-button mode="auto"></app-auth-button>
+</div>
+
 <!-- <div class="main-wrapper" tabindex="1">
   <div class="logo-wrapper">
     <div class="logo">Co by było, gdyby?</div>
@@ -5,52 +9,3 @@
 
 
 </div> -->
-
-<div tabindex="1" class="wrapper {{ formMode }}">
-  <div class="mode">
-    <div>
-      <button class="mode__button" (click)="changeMode('register')" [ngClass]="{ 'mode-active': formMode === 'register' }">
-        Rejestracja
-      </button>
-      <button class="mode__button" (click)="changeMode('login')" [ngClass]="{ 'mode-active': formMode === 'login' }">
-        Logowanie
-      </button>
-    </div>
-    <!-- <div class="mode__shortcut">
-        Skrót do zmiany zakładki:
-        <span (click)="changeMode()">Ctrl + Shift</span>
-      </div> -->
-  </div>
-  <form class="form" [formGroup]="form" (submit)="handleSubmit()">
-    <h3 class="form__heading">
-      {{ formMode === "login" ? "Logowanie" : "Rejestracja" }}
-    </h3>
-    <fieldset class="form__fieldset">
-      <legend class="form__legend">Nazwa użytkownika</legend>
-      <input #usernameInput formControlName="username" class="form__input" type="text" minlength="4" maxlength="10" />
-      <p class="hint">4-10 dowolnych liter.</p>
-    </fieldset>
-    <fieldset class="form__fieldset">
-      <legend class="form__legend">Hasło</legend>
-      <input formControlName="password" class="form__input" type="password" minlength="4" maxlength="10" />
-      <p class="hint">
-        4-10 dowolnych znaków.
-        <br />
-        Ty odpowiadasz za swoje bezpieczeństwo.
-      </p>
-      <div class="emoji">🤸🏻</div>
-    </fieldset>
-    <button class="form__button" type="submit" [disabled]="form.invalid">
-      {{ formMode === "login" ? "Zaloguj" : "Prześlij" }}
-    </button>
-    <div class="form__result">
-      <ng-container *ngIf="resultMessage">
-        {{ resultMessage }}
-      </ng-container>
-      <!-- <ng-container
-          *ngIf="!resultMessage && (isLoading$ | async) as isLoading"     >
-          <app-spinner></app-spinner>
-        </ng-container> -->
-    </div>
-  </form>
-</div>

@@ -15,11 +15,11 @@ export class AuthService {
     private store: Store<AppState>,
   ) {}
 
-  async refreshLogin() {
-    this.firebase.refreshLogin();
+  async refreshLogin(tryReAuth: boolean, redirectToAfter?: string) {
+    this.firebase.refreshLogin(tryReAuth, redirectToAfter);
   }
 
-  async logout() {
-    this.firebase.firebaseLogout();
+  async logout(redirectToAfter?: string) {
+    this.firebase.firebaseLogout(redirectToAfter);
   }
 }

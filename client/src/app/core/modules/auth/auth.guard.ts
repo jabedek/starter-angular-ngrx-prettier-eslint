@@ -5,47 +5,50 @@ import { first, take, takeUntil, tap } from 'rxjs';
 import { PopupService } from '../layout/components/popup/popup.service';
 import { AuthFormComponent } from './components/auth-form/auth-form.component';
 
-export function authGuard(): CanActivateFn {
+export function authGuard(redirectToAfter?: string): CanActivateFn {
   return () => {
     const router: Router = inject(Router);
-    console.log(router);
-
-    const popup = inject(PopupService);
-    popup.showPopup({
-      contentType: 'simple',
-      content: {
-        textContent: 'okay?',
-        textHeader: 'header',
-        closeOnDecision: true,
-        showAcceptButton: true,
-        showDeclineButton: true,
-        callbackAfterDecision: (decision) => {
-          console.log('callbackAfterDecision', decision);
-        },
-      },
-      config: {
-        showCloseButton: true,
-        callbackAfterClosing: () => {
-          console.log('callbackAfterClosing');
-        },
-      },
-    });
-    // popup.showPopup({
-    //   contentType: 'component',
-    //   content: { component: AuthFormComponent, inputs: {} },
-    //   config: {
-    //     showCloseButton: true,
-    //     callbackAfterClosing: () => {
-    //       console.log('callbackAfterClosing');
-    //     },
-    //   },
-    // });
-
     const service: AppFirebaseService = inject(AppFirebaseService);
-    const isLogged = service.isLogged;
-    console.log(isLogged);
 
-    // return true;
-    return isLogged ? true : router.createUrlTree(['/']);
+    return new Promise((res, rej) => {
+      setTimeout(() => {
+        if (service.isLogged) {
+          res(true);
+        } else {
+          inject(PopupService).showPopup({
+            contentType: 'component',
+            content: { component: AuthFormComponent, inputs: { redirectToAfter } },
+            config: {
+              showCloseButton: true,
+              callbackAfterClosing: () => {
+                console.log('callbackAfterClosing');
+              },
+            },
+          });
+          // router.createUrlTree(['/']);
+          rej(false);
+        }
+      }, 300);
+    });
   };
 }
+
+// popup.showPopup({
+//   contentType: 'simple',
+//   content: {
+//     textContent: 'okay?',
+//     textHeader: 'header',
+//     closeOnDecision: true,
+//     showAcceptButton: true,
+//     showDeclineButton: true,
+//     callbackAfterAccept: (decision) => {
+//       console.log('callbackAfterAccept', decision);
+//     },
+//   },
+//   config: {
+//     showCloseButton: true,
+//     callbackAfterClosing: () => {
+//       console.log('callbackAfterClosing');
+//     },
+//   },
+// });

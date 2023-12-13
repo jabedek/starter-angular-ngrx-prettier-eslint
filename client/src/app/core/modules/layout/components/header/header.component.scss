@@ -12,8 +12,21 @@ header {
   @include mixins.simple-flex-parent();
   justify-content: space-between;
 
+  .left-section,
+  .right-section {
+    position: relative;
+    width: 50%;
+  }
+
   .left-section {
     @include mixins.simple-flex-parent();
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .right-section {
+    @include mixins.simple-flex-parent();
+    justify-content: flex-end;
     gap: 20px;
   }
 
@@ -40,9 +53,10 @@ header {
   }
 
   .navbar-wrapper {
-    position: absolute;
-    right: 60px;
-    top: 10px;
+    position: fixed;
+    right: variables.$thumbWidth;
+    top: variables.$header-height;
+
     overflow: hidden;
     width: auto;
     height: auto;

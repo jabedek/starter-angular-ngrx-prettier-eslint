@@ -6,7 +6,7 @@ type TrackFn = typeof trackBy;
 
 @Component({
   template: '',
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.Default,
 })
 export abstract class BaseComponent implements OnDestroy {
   readonly __destroy = new Subject<void>();

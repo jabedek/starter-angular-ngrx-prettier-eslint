@@ -12,6 +12,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { LogoComponent } from './components/header/components/logo/logo.component';
 import { PopupComponent } from './components/popup/popup.component';
+import { AccountDisplayComponent } from './components/header/components/account-display/account-display.component';
+import { AuthModule } from '../auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -24,8 +26,9 @@ import { PopupComponent } from './components/popup/popup.component';
     HomePageComponent,
     LogoComponent,
     PopupComponent,
+    AccountDisplayComponent,
   ],
-  imports: [CommonModule, RouterModule.forChild([]), SharedModule, FormsModule, ReactiveFormsModule],
+  imports: [CommonModule, RouterModule.forChild([]), SharedModule, AuthModule, FormsModule, ReactiveFormsModule],
   exports: [LayoutComponent, LandingPageComponent, HomePageComponent, PopupComponent],
 })
 export class LayoutModule {}
