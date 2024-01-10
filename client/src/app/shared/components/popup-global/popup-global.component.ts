@@ -16,8 +16,6 @@ export class PopupGlobalComponent {
   constructor(private popup: PopupService) {}
 
   protected userAction(decision: 'accept' | 'decline' | 'close-no-decision') {
-    console.log(decision);
-
     if (decision === 'close-no-decision') {
       // this.config.isShown = false;
     } else {

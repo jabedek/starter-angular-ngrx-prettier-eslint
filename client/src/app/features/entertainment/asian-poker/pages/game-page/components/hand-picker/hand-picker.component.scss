@@ -1,0 +1,351 @@
+@use "/src/assets/styles/mixins";
+@use "/src/assets/styles/variables";
+@use "/src/app/features/entertainment/asian-poker/asian-poker.scss";
+
+$centreWidth: 420px;
+$sideWidthA: 150px;
+$sideWidthB: 130px;
+
+.index {
+  position: absolute;
+  z-index: 10;
+  font-size: 12px;
+  font-family: "Roboto Mono" !important;
+  color: #fff !important;
+  background: rgba(0, 0, 0, 1) !important;
+  top: -4px;
+  right: -4px;
+  padding: 2px;
+  border-radius: 3px;
+  font-weight: 400;
+}
+
+.hand-picker {
+  position: relative;
+  height: asian-poker.$asian-poker-gui-height;
+  display: flex;
+  justify-content: center;
+  width: 700px;
+  flex-direction: column;
+}
+
+.top {
+  height: 30px;
+  width: 100%;
+  @include mixins.simple-flex-parent();
+  justify-content: flex-start;
+  padding: 5px;
+  padding-left: 10px;
+  gap: 20px;
+  background: rgba(0, 0, 0, 0.1);
+
+  .hand-name {
+    padding: 5px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .back {
+    display: flex;
+    border-radius: 50%;
+    background-color: rgba(50, 50, 50, 0.5);
+    height: 24px;
+    will-change: transform, filter;
+
+    .icon-back {
+      @include mixins.clickable-btn();
+      @include mixins.icon-mask("^assets/icons/arrow-left.svg", 24px, 24px, rgb(220, 165, 0));
+    }
+  }
+}
+
+.bottom {
+  height: 190px;
+  width: 100%;
+  display: flex;
+
+  .center {
+    @include mixins.simple-flex-parent();
+    flex-direction: column;
+
+    justify-content: space-between;
+    text-align: center;
+
+    height: 100%;
+    width: calc($centreWidth + $sideWidthA);
+    padding-left: 10px;
+
+    .hand-pick {
+      justify-content: center;
+      display: flex;
+      height: 100%;
+
+      .showcase {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        will-change: transform, filter;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: $centreWidth;
+        height: 100%;
+        padding: 6px 50px;
+        gap: 3px;
+        border-radius: 4px;
+
+        &--item {
+          $itemHeight: 48px;
+          $itemWidth: 92px;
+          letter-spacing: 1px;
+          border-radius: 3px;
+          display: flex;
+          align-items: flex-start;
+          width: $itemWidth;
+          height: $itemHeight;
+          margin: 3px;
+          background: rgba(184, 100, 5, 1);
+          box-shadow: variables.$shadow-3;
+          @include mixins.clickable-btn();
+
+          transition: all 200ms ease;
+
+          &:hover {
+            background: rgb(10, 133, 92);
+          }
+
+          .card-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+            background-color: #454545;
+            width: $itemWidth;
+            height: calc($itemHeight - 4px);
+            line-height: 1.3;
+            position: relative;
+            border-radius: 2px;
+            padding: 0 8px;
+
+            &::after {
+              position: absolute;
+              bottom: 1px;
+              right: 1px;
+            }
+
+            .slot-rank {
+              height: 12px;
+            }
+
+            .slot-suit {
+              height: 12px;
+            }
+          }
+        }
+      }
+
+      .step-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: $centreWidth;
+        height: 100%;
+
+        .groups {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 6px;
+          width: $centreWidth;
+          height: 100%;
+
+          .slots-group {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 10px;
+            border: 1px solid #108bc400;
+            border-radius: 4px;
+            padding: 8px;
+
+            &:nth-of-type(1) {
+              border-color: variables.$bg-main;
+            }
+
+            &:nth-of-type(2) {
+              border-color: rgb(10, 133, 92);
+            }
+
+            .slot {
+              height: 72px;
+              width: 64px;
+              background: rgba(0, 0, 0, 0.3);
+
+              border-radius: 3px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+
+              font-size: 1.4rem;
+              font-weight: 700;
+
+              &:nth-child(even) {
+                color: rgb(10, 133, 92);
+              }
+
+              &:nth-child(odd) {
+                color: variables.$bg-main;
+              }
+
+              &.filled {
+                background: #fff;
+              }
+            }
+          }
+        }
+      }
+
+      .propositions {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: $sideWidthA;
+        height: 100%;
+
+        .attribute {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+
+          .attribute-item {
+            position: relative;
+            height: calc(0.6 * 72px);
+            width: calc(0.6 * 64px);
+            @include mixins.simple-flex-parent();
+            font-size: 2rem;
+            background: white;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            border-radius: 3px;
+            margin: 3px;
+
+            &:nth-child(even) {
+              color: rgb(10, 133, 92);
+              // filter: hue-rotate(variables.$hue-change-hover);
+            }
+
+            &:nth-child(odd) {
+              color: variables.$bg-main;
+            }
+
+            &.disabled {
+              background: gray;
+            }
+
+            &.filler-item {
+              background: rgb(70, 70, 70);
+              border-color: rgb(70, 70, 70);
+            }
+          }
+
+          &--suit {
+            .attribute-item {
+              &.SPADES,
+              &.CLUBS {
+                color: BLACK !important;
+                filter: none;
+              }
+
+              &.HEARTS,
+              &.DIAMONDS {
+                color: RED !important;
+                filter: none;
+              }
+            }
+          }
+        }
+      }
+
+      .card-wrapper {
+        &.SPADES,
+        &.CLUBS {
+          color: BLACK !important;
+          filter: none;
+        }
+
+        &.HEARTS,
+        &.DIAMONDS {
+          color: RED !important;
+          filter: none;
+        }
+      }
+    }
+  }
+
+  .side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: $sideWidthB;
+    padding-right: 10px;
+
+    .actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      height: 100%;
+      width: $sideWidthB;
+
+      .accept {
+        display: flex;
+        border-radius: 50%;
+        height: 64px;
+        padding: 0 20px;
+        will-change: transform, filter;
+
+        .icon-accept {
+          transition: all 300ms ease;
+          @include mixins.clickable-btn();
+          @include mixins.icon-mask("^assets/icons/checkmark.svg", 64px, 64px, rgb(220, 165, 0));
+
+          &.disabled {
+            @include mixins.icon-mask("^assets/icons/checkmark.svg", 64px, 64px, rgba(0, 0, 0, 0.5));
+          }
+        }
+      }
+    }
+  }
+}
+
+.activeKey {
+  background: rgb(10, 133, 92) !important;
+  filter: brightness(1.15);
+}
+
+.accepted {
+  animation-name: accepted;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes accepted {
+  from {
+    transform: rotateY(0);
+    background-color: rgb(220, 165, 0);
+  }
+
+  to {
+    transform: rotateY(-360deg);
+    background-color: rgb(0, 195, 36);
+  }
+}

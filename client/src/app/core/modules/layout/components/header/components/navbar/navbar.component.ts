@@ -27,7 +27,6 @@ export class NavbarComponent {
   //           this.store.dispatch(setBurger({ set: 'close' }));
   //         }
   //       });
-  //     console.log('clicked outside');
   //   }
   // }
 

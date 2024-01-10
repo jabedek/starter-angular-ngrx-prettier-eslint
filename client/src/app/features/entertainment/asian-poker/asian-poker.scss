@@ -1,6 +1,7 @@
 @use "/src/assets/styles/mixins";
+@use "/src/assets/styles/variables";
 
-$asian-poker-gui-height: 180px;
+$asian-poker-gui-height: 220px;
 
 @mixin deck-display {
   height: 60px;
@@ -14,7 +15,7 @@ $asian-poker-gui-height: 180px;
   align-items: center;
   align-content: center;
 
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: variables.$shadow-4;
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 3px;
   background-color: rgb(10, 133, 92);

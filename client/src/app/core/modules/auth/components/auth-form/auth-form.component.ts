@@ -13,10 +13,10 @@ export class AuthFormComponent {
   @ViewChild('usernameInput') usernameInput: ElementRef | undefined;
 
   formMode: 'register' | 'login' = 'register';
-  form: FormGroup = this.fb.group({
-    username: ['', [Validators.required, Validators.pattern('[a-zA-Z]{4,10}')]],
-    password: ['', [Validators.required, Validators.minLength(4), Validators.maxLength(10)]],
-  });
+  // form: FormGroup = this.fb?.group({
+  //   username: ['', [Validators.required, Validators.pattern('[a-zA-Z]{4,10}')]],
+  //   password: ['', [Validators.required, Validators.minLength(4), Validators.maxLength(10)]],
+  // });
   registrationResult: '' | 'success' | 'failure' = '';
   resultMessage = '';
   // isLoading$ = this.auth.isLoading$;
@@ -28,7 +28,7 @@ export class AuthFormComponent {
   // }
 
   constructor(
-    public fb: FormBuilder,
+    private fb: FormBuilder,
     private auth: AuthService,
     private router: Router,
   ) {
@@ -52,7 +52,7 @@ export class AuthFormComponent {
       this.formMode = this.formMode === 'register' ? 'login' : 'register';
     }
 
-    this.form.reset();
+    // this.form.reset();
     this.registrationResult = '';
     this.resultMessage = '';
     // this.auth.isLoading$.next(false);

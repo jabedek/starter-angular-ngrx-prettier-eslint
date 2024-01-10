@@ -14,11 +14,11 @@
 
   <!-- Absolute 'most top' elements -->
   <div class="right-section">
-    <ng-container *ngIf="this.layout.getLoader() | async as authLoader">
-      <app-account-display *ngIf="!authLoader.auth"></app-account-display>
-      <app-spinner *ngIf="authLoader.auth"></app-spinner>
+    <ng-container *ngIf="authLoader$ | async as authLoader">
+      <app-account-display *ngIf="authLoader === 'inactive'"></app-account-display>
+      <app-spinner *ngIf="authLoader === 'active'"></app-spinner>
       <ng-container *ngIf="userLoggedIn$ | async as userLoggedIn">
-        <div class="menu-wrapper" *ngIf="!authLoader.auth && userLoggedIn">
+        <div class="menu-wrapper" *ngIf="authLoader === 'inactive' && userLoggedIn">
           <app-burger-menu></app-burger-menu>
           <div class="navbar-wrapper" [ngClass]="{ burgerOpen: (burgerOpen$ | async) === true }">
             <app-navbar></app-navbar>

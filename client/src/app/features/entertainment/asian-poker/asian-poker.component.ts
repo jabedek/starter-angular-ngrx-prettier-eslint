@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import 'frotsi';
 
-import { SessionCroupierService } from './session-croupier.service';
-import { AsianPokerPlayerInfo, CardSet } from './asian-poker.model';
+import { SessionCroupierService } from './services/session-croupier.service';
+import { AsianPokerPlayerInfo, AsianPokerGame } from './asian-poker-game.model';
+import { SessionHandsAnalyzerService } from './services/session-hands-analyzer.service';
 
 const somePlayers = [
   new AsianPokerPlayerInfo('456', 'Simon', 3),
@@ -20,12 +21,18 @@ const somePlayers = [
 })
 export class AsianPokerComponent {
   currentUser = new AsianPokerPlayerInfo('123', 'John', 5);
-  cardsAnalyzer: { highestAvailableSet: CardSet | undefined } = { highestAvailableSet: undefined };
   sessionId = '';
+  session: AsianPokerGame | undefined;
 
-  constructor(private croupier: SessionCroupierService) {
+  constructor(
+    private croupier: SessionCroupierService,
+    private handsAnalyzer: SessionHandsAnalyzerService,
+  ) {
     const startingPlayers = [this.currentUser, ...somePlayers];
-    const sessionId = this.croupier.createNewSession(startingPlayers);
-    this.sessionId = sessionId;
+    this.sessionId = this.croupier.createNewSession(startingPlayers);
+    this.session = this.croupier.getSession(this.sessionId);
+    if (this.session) {
+      this.handsAnalyzer.loadCycleCards(this.session);
+    }
   }
 }

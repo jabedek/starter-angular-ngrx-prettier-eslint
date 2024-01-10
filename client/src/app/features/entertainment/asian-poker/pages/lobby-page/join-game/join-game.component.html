@@ -1,0 +1,32 @@
+<div class="lobby">
+  <h3>Dołącz do sesji</h3>
+  <div class="list-wrapper">
+    <div class="list-headers">
+      <div class="title">Nazwa gry</div>
+      <div class="hostDisplayName">Gospodarz</div>
+      <div class="players">
+        <div class="playersJoined">Gracze</div>
+      </div>
+      <div class="accessibility">Dostęp</div>
+      <div class="sessionState">Status</div>
+    </div>
+    <div class="list">
+      <div *ngFor="let session of sessions" class="list-item">
+        <div class="title">{{ session.title }}</div>
+        <div class="hostDisplayName">{{ session.hostDisplayName }}</div>
+        <div class="players">
+          <div class="playersJoined">{{ session.playersJoined }}</div>
+          /
+          <div class="playersLimit">{{ session.playersLimit }}</div>
+        </div>
+        <div class="accessibility">{{ session.accessibility }}</div>
+        <div class="sessionState state-{{ session.sessionState }}">{{ session.sessionState }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="actions">
+    <app-button>Dołącz</app-button>
+    <app-button>Odśwież</app-button>
+  </div>
+</div>

@@ -6,9 +6,11 @@ import { AccountComponent } from './account.component';
 import { AuthModule } from '../auth/auth.module';
 import { AccountFormComponent } from './components/account-form/account-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AccountDetailsComponent } from './components/account-details/account-details.component';
+import { SharedModule } from '@shared/shared.module';
 
 @NgModule({
-  declarations: [AccountComponent, AccountFormComponent],
-  imports: [CommonModule, AuthModule, FormsModule, ReactiveFormsModule, AccountRoutingModule],
+  declarations: [AccountComponent, AccountFormComponent, AccountDetailsComponent],
+  imports: [CommonModule, AuthModule, FormsModule, ReactiveFormsModule, AccountRoutingModule, SharedModule],
 })
 export class AccountModule {}

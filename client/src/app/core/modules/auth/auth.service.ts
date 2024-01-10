@@ -1,19 +1,11 @@
 import { Injectable } from '@angular/core';
-import { AppFirebaseService } from '@core/firebase/app-firebase.service';
-import { Store } from '@ngrx/store';
-import { AppState } from '@store/app-state';
-import { selectAuth } from '@store/auth/auth.selectors';
+import { FirebaseAuthService } from '@core/firebase/firebase-auth.service';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AuthService {
-  auth$ = this.store.select(selectAuth);
-
-  constructor(
-    private firebase: AppFirebaseService,
-    private store: Store<AppState>,
-  ) {}
+  constructor(private firebase: FirebaseAuthService) {}
 
   async refreshLogin(tryReAuth: boolean, redirectToAfter?: string) {
     this.firebase.refreshLogin(tryReAuth, redirectToAfter);

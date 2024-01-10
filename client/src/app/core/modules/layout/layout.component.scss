@@ -18,6 +18,5 @@
   display: flex;
   justify-content: center;
   position: relative;
-  top: variables.$header-height;
-  // position: absolute;
+  top: calc(variables.$header-height * 2);
 }

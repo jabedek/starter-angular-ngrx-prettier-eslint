@@ -49,7 +49,6 @@ export class AuthButtonComponent extends BaseComponent {
             const label = logged ? 'Logout' : 'Login';
             return { logged, mode, label };
           }),
-          tap((c) => console.log(c)),
         )
         .subscribe((details) => (this.details = details));
     }
@@ -60,12 +59,10 @@ export class AuthButtonComponent extends BaseComponent {
     private store: Store<AppState>,
     private router: Router,
   ) {
-    super();
+    super('AuthButtonComponent');
   }
 
   authAction() {
-    console.log(this.mode, this.redirectToAfter);
-
     switch (this.details.mode) {
       case 'login':
         this.auth.refreshLogin(true, this.redirectToAfter);

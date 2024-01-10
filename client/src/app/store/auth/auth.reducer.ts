@@ -12,4 +12,7 @@ export const featureState = createReducer(
   on(actions.setFirebaseUserCredential, (state, { userCredential }): AuthState => {
     return { ...state, firebase: { ...state.firebase, userCredential } };
   }),
+  on(actions.setUserAppAccount, (state, { appAccount }): AuthState => {
+    return { ...state, appAccount };
+  }),
 );

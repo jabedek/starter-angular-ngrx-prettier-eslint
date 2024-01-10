@@ -13,7 +13,7 @@
       <ng-container *ngIf="popupData.contentType === 'component'">
         {{ popupData.contentType }}
         <div class="content">
-          <ng-container *ngComponentOutlet="$any(popupData.content).component; inputs: $any(popupData.content).inputs" />
+          <ng-container *ngComponentOutlet="$any(popupData.Component); injector: popupData.Injector" />
         </div>
       </ng-container>
 

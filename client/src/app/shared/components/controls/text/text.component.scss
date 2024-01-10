@@ -1,0 +1,9 @@
+@use "/src/assets/styles/controls";
+
+:host {
+  div {
+    display: flex;
+    width: fit-content;
+    @include controls.app_text_0;
+  }
+}

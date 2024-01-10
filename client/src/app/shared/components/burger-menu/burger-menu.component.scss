@@ -12,7 +12,7 @@
     position: absolute;
     border-radius: 2px;
     background-color: #fff;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    box-shadow: variables.$shadow-1;
     height: burger-menu-animations.$burger-line-height;
     width: 34px;
     transition: background-color 200ms ease;

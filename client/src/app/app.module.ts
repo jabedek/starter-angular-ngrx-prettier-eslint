@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -31,6 +34,7 @@ import { AsianPokerModule } from '@features/entertainment/asian-poker/asian-poke
 import { StreamingStudioModule } from '@features/entertainment/streaming-studio/streaming-studio.module';
 import { DecisionTreeModule } from '@features/misc/decision-tree/decision-tree.module';
 import { WeatherArchiveModule } from '@features/misc/weather-archive/weather-archive.module';
+import { Lang } from '@shared/models/enums';
 
 if (environment.environmentName === 'production') {
   console.log = () => ({});
@@ -43,6 +47,10 @@ if (environment.environmentName === 'production') {
         '. Otherwise external services like Auth0 may not work.',
     );
   }
+}
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
 }
 
 export const Features = [
@@ -68,7 +76,16 @@ export const Features = [
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     ReactiveFormsModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient],
+      },
+      defaultLanguage: Lang.pl,
+    }),
     //
     AppRoutingModule,
     //

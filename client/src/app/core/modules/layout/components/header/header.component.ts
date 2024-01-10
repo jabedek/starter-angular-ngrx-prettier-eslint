@@ -3,8 +3,8 @@ import { Store } from '@ngrx/store';
 import { AppState } from '@store/app-state';
 import { selectBurgerOpen } from '@store/layout/layout.selectors';
 import { selectUrlParts } from '@store/router/router.selectors';
-import { LayoutService } from '../../services/layout.service';
 import { selectUserLoggedIn } from '@store/auth/auth.selectors';
+import { BaseComponent } from '@shared/components/base/base.component';
 
 @Component({
   selector: 'app-header',
@@ -12,13 +12,13 @@ import { selectUserLoggedIn } from '@store/auth/auth.selectors';
   styleUrls: ['./header.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HeaderComponent {
+export class HeaderComponent extends BaseComponent {
   burgerOpen$ = this.store.select(selectBurgerOpen);
   currentUrl$ = this.store.select(selectUrlParts);
   userLoggedIn$ = this.store.select(selectUserLoggedIn);
+  authLoader$ = this.__layoutService.getLoader('auth');
 
-  constructor(
-    private store: Store<AppState>,
-    public layout: LayoutService,
-  ) {}
+  constructor(private store: Store<AppState>) {
+    super('HeaderComponent');
+  }
 }

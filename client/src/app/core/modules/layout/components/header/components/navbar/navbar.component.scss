@@ -16,7 +16,7 @@ nav {
   width: auto;
   color: black;
   overflow: hidden;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: variables.$shadow-5;
   border: none;
   border-top: variables.$border-top-width solid variables.$bg-roof;
   border-radius: 3px;

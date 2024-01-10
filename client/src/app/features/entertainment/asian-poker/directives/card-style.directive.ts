@@ -1,5 +1,5 @@
 import { Directive, ElementRef, Input } from '@angular/core';
-import { BaseCard, SuitsBlack } from '../asian-poker.model';
+import { BaseCard, SuitsBlack } from '../models/card.model';
 
 @Directive({
   selector: '[appCardStyle]',

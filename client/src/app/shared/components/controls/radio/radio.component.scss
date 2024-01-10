@@ -1,0 +1,10 @@
+@use "/src/assets/styles/controls";
+
+:host {
+  width: 100%;
+  .radio {
+    display: flex;
+    width: 100%;
+    @include controls.app_radio_0;
+  }
+}

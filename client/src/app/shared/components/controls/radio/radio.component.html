@@ -1,0 +1,13 @@
+<div class="radio">
+  <p class="desc">
+    {{ label }}
+  </p>
+  <div class="items">
+    <ng-container *ngFor="let item of options">
+      <div class="item" [ngClass]="{ disabled }" appAccess (access)="!disabled && writeValue(item.value)">
+        {{ item.label }}
+        <p class="icon-container" [ngClass]="{ selected: item.value === value }"></p>
+      </div>
+    </ng-container>
+  </div>
+</div>

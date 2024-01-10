@@ -51,7 +51,7 @@
 
     &--picked {
       border: 2px solid #aaa;
-      box-shadow: 0 0 5px #fff;
+      box-shadow: variables.$light-0;
       transform: scale(1.2);
     }
   }

@@ -8,6 +8,7 @@
   height: 54px;
   margin: 0 10px;
   border-radius: 3px;
+  min-width: 124px;
   width: max-content;
   padding: 10px 24px;
   border: none;
@@ -22,7 +23,7 @@
   color: #fff;
 
   text-transform: uppercase;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: variables.$shadow-0;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   user-select: none;
@@ -43,10 +44,12 @@
 
 @mixin app_button_0 {
   @extend %control-base-style;
+  text-align: center;
 }
 
 @mixin app_button_1 {
   @extend %control-base-style;
+  text-align: center;
   background-color: #ddd;
   color: #000;
   text-shadow: none;
@@ -55,6 +58,90 @@
   &:not(.disabled):hover {
     color: #000;
     background-color: #eee;
+  }
+}
+
+@mixin app_radio_0 {
+  display: flex;
+  font-size: 12px;
+
+  height: 26px;
+
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+
+  min-width: 124px;
+  width: 100%;
+
+  .desc {
+    display: flex;
+    align-items: center;
+
+    .values {
+      font-family: "Roboto Mono";
+    }
+  }
+
+  .items {
+    // @extend %control-base-style;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    min-width: unset;
+    width: unset;
+  }
+
+  .item {
+    display: flex;
+    height: 16px;
+    align-items: center;
+    margin: 2px;
+
+    .icon-container {
+      position: relative;
+      z-index: 1;
+      height: 16px !important;
+      width: 16px !important;
+      border: 1px solid gray;
+      border-radius: 50px;
+      margin: 0 6px;
+      box-shadow: variables.$shadow-0;
+
+      background: #999;
+
+      &.selected {
+        background-color: rgb(7, 191, 93);
+        background-image: url("/assets/icons/checkmark.svg");
+        background-size: 8px 8px;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+
+@mixin app_checkbox_mini_0 {
+  // @extend %control-base-style;
+  font-size: 12px;
+  .icon-container {
+    position: relative;
+    z-index: 1;
+    height: 16px;
+    width: 16px;
+    border: 1px solid gray;
+    border-radius: 2px;
+    margin: 0 6px;
+    background: #999;
+
+    &.selected {
+      background-color: rgb(7, 191, 93);
+      background-image: url("/assets/icons/checkmark.svg");
+      background-size: 12px 12px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   }
 }
 
@@ -126,9 +213,14 @@
 
   p.desc {
     padding: 4px;
+    margin-bottom: 2px;
     display: flex;
     justify-content: space-between;
     width: 100%;
+
+    .values {
+      font-family: "Roboto Mono";
+    }
   }
 
   p.ranges {
@@ -144,7 +236,7 @@
     max-width: 600px;
     height: 16px;
     background: #afafaf;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: variables.$shadow-0;
     outline: 0;
     opacity: 1;
     transition: opacity 0.2s;
@@ -173,4 +265,58 @@
       }
     }
   }
+}
+
+@mixin app_text_0 {
+  // @extend %control-base-style;
+  // flex-direction: column;
+  // justify-content: space-between;
+  // background: none;
+  // box-shadow: none;
+  // border: none;
+  // margin: 10px 0;
+
+  // box-shadow: variables.$shadow-0;
+  // border-radius: 3px;
+  // border: none;
+  // border: variables.$border-top-width solid variables.$bg-main;
+  // border-top: variables.$border-top-width solid variables.$bg-roof;
+
+  // p.desc {
+  //   padding: 4px;
+  //   margin-bottom: 2px;
+
+  //   padding-left: 0;
+  //   display: flex;
+  //   justify-content: space-between;
+  //   width: 100%;
+  //   .values {
+  //     font-family: "Roboto Mono";
+  //   }
+  // }
+
+  // .text-input {
+  //   appearance: none;
+  //   width: 20vw;
+  //   max-width: 600px;
+  //   height: 22px;
+
+  //   outline: 0;
+  //   transition: opacity 0.2s;
+  //   cursor: pointer;
+
+  //   background-color: #ddd;
+  //   color: #000;
+
+  //   text-shadow: none;
+
+  //   &:active {
+  //     outline: none;
+  //   }
+
+  //   &:not(.disabled):hover {
+  //     color: #000;
+  //     background-color: #eee;
+  //   }
+  // }
 }

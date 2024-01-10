@@ -16,6 +16,7 @@ import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
 export class RangeComponent implements ControlValueAccessor {
   @Input() label = '';
   @Input() showValues = false;
+  @Input() showRanges = false;
   @Input({ required: true }) min = 0;
   @Input({ required: true }) max = 0;
   @Input({ required: true }) step = 0;
@@ -23,16 +24,16 @@ export class RangeComponent implements ControlValueAccessor {
   onTouch: any = () => ({});
 
   // this is the updated value that the class accesses
-  set value(val) {
+  set value(val: number) {
     // this value is updated by programmatic changes if( val !== undefined && this.val !== val){
     this._value = val;
     this.onChange(val);
     this.onTouch(val);
   }
-  get value(): boolean {
+  get value(): number {
     return this._value;
   }
-  private _value = false;
+  private _value = 0;
 
   disabled = false;
 
@@ -42,7 +43,7 @@ export class RangeComponent implements ControlValueAccessor {
   ) {}
 
   // this method sets the value programmatically
-  writeValue(value: boolean): void {
+  writeValue(value: number): void {
     this.value = value;
     this._renderer.setProperty(this._elementRef.nativeElement, 'value', value);
   }

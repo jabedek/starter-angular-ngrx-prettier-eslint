@@ -1,0 +1,53 @@
+{
+  "ASIAN_POKER": {
+    "CARD": {
+      "SUIT": "Kolor",
+      "RANK": "Figura"
+    },
+    "HANDS": {
+      "high-card": "Wysoka karta",
+      "pair": "Para",
+      "double-pair": "Dwie pary",
+      "three": "Trójka",
+      "full-house": "Ful",
+      "color": "Kolor",
+      "four": "Kareta",
+      "straight-root": "Strit",
+      "straight": "Strit",
+      "regular-straight": "Strit prosty",
+      "low-straight": "Strit niski",
+      "high-straight": "Strit wysoki",
+      "poker": "Poker",
+      "poker-root": "Poker",
+      "regular-poker": "Poker prosty",
+      "royal-poker": "Poker królewski",
+      "queen-poker": "Poker królowej"
+    },
+    "SUITS": {
+      "SPADES": "Pik (wino)",
+      "♠": "Pik (wino)",
+      "HEARTS": "Kier (czerwo)",
+      "♥": "Kier (czerwo)",
+      "CLUBS": "Trefl (żołędź)",
+      "♣": "Trefl (żołędź)",
+      "DIAMONDS": "Karo (dzwonek)",
+      "♦": "Karo (dzwonek)"
+    },
+    "RANKS": {
+      "ACE": "As",
+      "A": "As",
+      "KING": "Król",
+      "K": "Król",
+      "QUEEN": "Królowa (dama)",
+      "Q": "Królowa (dama)",
+      "JACK": "Jopek (walet)",
+      "J": "Jopek (walet)",
+      "TEN": "Dziesiątka",
+      "10": "Dziesiątka",
+      "NINE": "Dziewiątka",
+      "9": "Dziewiątka",
+      "EIGHT": "Ósemka",
+      "8": "Ósemka"
+    }
+  }
+}

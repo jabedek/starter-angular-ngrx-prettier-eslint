@@ -12,6 +12,9 @@
         "plugin:prettier/recommended"
       ],
       "rules": {
+
+        "no-extra-boolean-cast": 0,
+        "@typescript-eslint/no-explicit-any": "warn",
         "@angular-eslint/directive-selector": [
           "error",
           {
@@ -36,7 +39,9 @@
         "plugin:@angular-eslint/template/recommended",
         "plugin:@angular-eslint/template/accessibility"
       ],
-      "rules": {}
+      "rules": {
+        "@angular-eslint/template/elements-content": "off"
+      }
     },
     {
       "files": ["*.html"],
@@ -75,13 +80,14 @@
         "@ngrx/select-style": "warn",
         "@ngrx/use-consistent-global-store-name": "warn",
         "@ngrx/no-dispatch-in-effects": "warn",
-        "@ngrx/no-effect-decorator-and-creator": "error",
-        "@ngrx/no-effect-decorator": "warn",
+        "@ngrx/no-effect-decorator-and-creator": "off",
+        "@ngrx/no-effect-decorator": "off",
         "@ngrx/no-effects-in-providers": "error",
         "@ngrx/prefer-action-creator-in-of-type": "off",
         "@ngrx/prefer-concat-latest-from": "warn",
         "@ngrx/prefer-effect-callback-in-block-statement": "warn",
-        "@ngrx/use-effects-lifecycle-interface": "warn"
+        "@ngrx/use-effects-lifecycle-interface": "warn",
+        ""
       }
     }
   ]

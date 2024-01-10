@@ -1,5 +1,5 @@
-import { Component, ElementRef, Input, Renderer2, forwardRef } from '@angular/core';
-import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
+import { ChangeDetectorRef, Component, ElementRef, EventEmitter, Input, Output, Renderer2, forwardRef } from '@angular/core';
+import { CheckboxControlValueAccessor, ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 @Component({
   selector: 'app-checkbox',
@@ -13,16 +13,17 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
     },
   ],
 })
-export class CheckboxComponent implements ControlValueAccessor {
+export class CheckboxComponent extends CheckboxControlValueAccessor {
+  elementRef: ElementRef;
+  renderer: Renderer2;
   @Input({ required: true }) label = '';
-  onChange: any = () => ({});
+  @Input() mini = false;
+  @Output() change = new EventEmitter<any>();
   onTouch: any = () => ({});
 
-  // this is the updated value that the class accesses
   set value(val) {
-    // this value is updated by programmatic changes if( val !== undefined && this.val !== val){
     this._value = val;
-    this.onChange(val);
+    this.emitChange(val);
     this.onTouch(val);
   }
   get value(): boolean {
@@ -32,29 +33,14 @@ export class CheckboxComponent implements ControlValueAccessor {
 
   disabled = false;
 
-  constructor(
-    private _renderer: Renderer2,
-    private _elementRef: ElementRef,
-  ) {}
-
-  // this method sets the value programmatically
-  writeValue(value: boolean): void {
-    this.value = value;
-    this._renderer.setProperty(this._elementRef.nativeElement, 'value', value);
+  constructor(_elementRef: ElementRef, _renderer: Renderer2) {
+    super(_renderer, _elementRef);
+    this.elementRef = _elementRef;
+    this.renderer = _renderer;
   }
 
-  // upon UI element value changes, this method gets triggered
-  registerOnChange(fn: (_: any) => void): void {
-    this.onChange = fn;
-  }
-
-  // upon touching the element, this method gets triggered
-  registerOnTouched(fn: (_: any) => void): void {
-    this.onTouch = fn;
-  }
-
-  setDisabledState(disabled: boolean): void {
-    this.disabled = disabled;
-    this._renderer.setProperty(this._elementRef.nativeElement, 'disabled', disabled);
+  emitChange(val: any) {
+    this.change.emit({ target: { ...this, checked: val } });
+    this.onChange(val);
   }
 }

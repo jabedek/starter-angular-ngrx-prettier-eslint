@@ -5,6 +5,7 @@ export interface AuthState {
     user: Partial<User> | null | undefined;
     userCredential: Partial<UserCredential> | undefined;
   };
+  appAccount: UserAppAccount | undefined;
 }
 
 export const initialState: AuthState = {
@@ -12,10 +13,20 @@ export const initialState: AuthState = {
     user: undefined,
     userCredential: undefined,
   },
+  appAccount: undefined,
 };
 
-export type AppFirebaseUser = {
-  uid?: string;
+export type UserAppAccount = {
+  id: string;
+  googleUid?: string;
   email?: string;
   displayName?: string;
+  logged: boolean;
+  appFeaturesData: UserAppFeaturesData;
+};
+
+export type UserAppFeaturesData = {
+  asianPoker: {
+    currentSessionId: string;
+  };
 };

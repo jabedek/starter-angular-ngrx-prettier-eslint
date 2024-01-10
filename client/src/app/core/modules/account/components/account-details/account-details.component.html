@@ -1,0 +1,43 @@
+<div class="main-wrapper" *ngIf="auth$ | async as auth">
+  <h2 class="main-title">Konto</h2>
+  <div class="articles-wrapper">
+    <article>
+      <ng-container *ngIf="appAccount$ | async as acc">
+        <div class="column">
+          <section class="mutable-wrapper" (appMutable)="changeName($event, acc)">
+            <div class="input-label mutable-label">Nazwa profilu</div>
+            <input class="input-value mutable-value" [value]="acc.displayName" [disabled]="true" />
+          </section>
+        </div>
+
+        <div class="column">
+          <section>
+            <div class="input-label">Identyfikator</div>
+            <p class="input-value small-text">{{ acc?.id }}</p>
+          </section>
+        </div>
+      </ng-container>
+    </article>
+
+    <article>
+      <div class="column">
+        <section>
+          <div class="input-label">Konto (Google)</div>
+          <p class="input-value">{{ auth.firebase.user?.displayName }}</p>
+        </section>
+
+        <section>
+          <div class="input-label">Email (Google)</div>
+          <p class="input-value">{{ auth.firebase.user?.email }}</p>
+        </section>
+      </div>
+
+      <div class="column">
+        <section>
+          <div class="input-label">Identyfikator (Google)</div>
+          <p class="input-value small-text">{{ auth.firebase.user?.uid }}</p>
+        </section>
+      </div>
+    </article>
+  </div>
+</div>

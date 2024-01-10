@@ -15,10 +15,53 @@
   }
 }
 
+@mixin clickable-btn($standard: true) {
+  cursor: pointer;
+  user-select: none;
+  transition: all 200ms ease;
+
+  &:hover {
+    @if $standard {
+      filter: brightness(1.15);
+    } @else {
+      backdrop-filter: brightness(1.15);
+    }
+  }
+
+  &:focus {
+    @if $standard {
+      filter: brightness(1.3);
+    } @else {
+      backdrop-filter: brightness(1.3);
+    }
+  }
+
+  &:active {
+    @if $standard {
+      filter: brightness(1.45);
+    } @else {
+      backdrop-filter: brightness(1.45);
+    }
+  }
+}
+
 @mixin simple-flex-parent($justifyContent: center, $alignItems: center, $flexDir: row) {
   display: flex;
   justify-content: $justifyContent;
   align-items: $alignItems;
   align-content: center;
   flex-direction: $flexDir;
+}
+
+@mixin common-card($width: 450px, $min-width: initial, $max-width: initial) {
+  padding: 25px 35px;
+  width: $width;
+  min-width: $min-width;
+  max-width: $max-width;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
 }

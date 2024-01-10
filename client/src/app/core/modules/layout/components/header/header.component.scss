@@ -35,16 +35,17 @@ header {
     font-weight: 500;
     font-size: 0.9rem;
     color: #fff;
+    display: flex;
   }
 
   .url-part {
     color: #aaa;
-    font-size: 0.9rem;
+    font-size: 1.05rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 
-    &:last-of-type {
+    &:first-of-type {
       color: #eee;
-      font-size: 1.05rem;
+      // font-size: 1.05rem;
     }
   }
 
@@ -62,7 +63,7 @@ header {
     height: auto;
     transition: all 200ms ease;
     max-width: 0;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: variables.$shadow-5;
 
     app-navbar {
       position: relative;

@@ -39,7 +39,7 @@ export class StreamingStudioComponent extends BaseComponent implements OnDestroy
   };
 
   constructor() {
-    super();
+    super('StreamingStudioComponent');
   }
 
   ngAfterViewInit() {

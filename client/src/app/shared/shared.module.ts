@@ -10,6 +10,12 @@ import { RangeComponent } from './components/controls/range/range.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PopupCustomComponent } from './components/popup-custom/popup-custom.component';
 import { PopupGlobalComponent } from './components/popup-global/popup-global.component';
+import { FreeDraggingDirective } from './directives/free-dragging.directive';
+import { MutableDirective } from './directives/mutable.directive';
+import { TranslateModule } from '@ngx-translate/core';
+import { TextComponent } from './components/controls/text/text.component';
+import { RadioComponent } from './components/controls/radio/radio.component';
+import { DurationPickerComponent } from './components/controls/duration-picker/duration-picker.component';
 
 @NgModule({
   declarations: [
@@ -20,8 +26,13 @@ import { PopupGlobalComponent } from './components/popup-global/popup-global.com
     CheckboxComponent,
     ButtonComponent,
     RangeComponent,
+    TextComponent,
     PopupCustomComponent,
     PopupGlobalComponent,
+    FreeDraggingDirective,
+    MutableDirective,
+    RadioComponent,
+    DurationPickerComponent,
   ],
   imports: [CommonModule, FormsModule, ReactiveFormsModule],
   exports: [
@@ -32,8 +43,13 @@ import { PopupGlobalComponent } from './components/popup-global/popup-global.com
     CheckboxComponent,
     ButtonComponent,
     RangeComponent,
+    TextComponent,
     PopupCustomComponent,
     PopupGlobalComponent,
+    FreeDraggingDirective,
+    MutableDirective,
+    RadioComponent,
+    DurationPickerComponent,
   ],
 })
 export class SharedModule {}

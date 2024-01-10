@@ -1,0 +1,79 @@
+@use "/src/assets/styles/variables";
+@use "/src/assets/styles/mixins";
+
+.duration-picker {
+  display: flex;
+  align-items: center;
+  position: relative;
+  box-shadow: variables.$shadow-0;
+
+  &.disabled {
+    filter: grayscale(1);
+
+    .input {
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
+
+.duration-picker button {
+  /* Add button styling */
+  // border-top: variables.$border-top-width solid variables.$bg-roof;
+  color: variables.$bg-roof;
+  background-color: variables.$bg-main;
+  // background-color: transparent;
+  border-radius: 3px;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+
+  &:not(.disabled):hover {
+    cursor: pointer;
+    color: #fff;
+    filter: hue-rotate(variables.$hue-change-hover);
+  }
+
+  &.decrease {
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 10;
+      @include mixins.icon-mask("^assets/icons/minus.svg", 24px, 24px, variables.$bg-roof);
+    }
+  }
+
+  &.increase {
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 10;
+      @include mixins.icon-mask("^assets/icons/plus.svg", 24px, 24px, variables.$bg-roof);
+    }
+  }
+}
+
+.duration-picker input {
+  /* Add input field styling */
+  text-align: center;
+  font-family: "Roboto Mono";
+
+  width: 100px !important;
+  border-radius: 3px;
+  height: 22px;
+  outline: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: all 200ms ease;
+  padding: 0 4px;
+  text-shadow: variables.$shadow-2;
+  font-size: 0.9rem !important;
+  font-weight: 400;
+  color: #fff;
+}

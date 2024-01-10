@@ -1,0 +1,179 @@
+<div class="hand-picker">
+  <div class="top">
+    <div *ngIf="step !== 'selection'" class="back" appAccess (access)="stepBack()">
+      <div class="icon-back"></div>
+      <span class="index">-</span>
+    </div>
+
+    <div class="hand-name" *ngIf="choices.selection.picked as selection">
+      <ng-container>
+        {{ selection ? " " + ("ASIAN_POKER.HANDS." + selection | translate) : "" }}
+        <ng-container *ngIf="choices.variant.picked as variant">
+          {{ variant ? "/ " + ("ASIAN_POKER.HANDS." + variant | translate) : "" }}
+        </ng-container>
+      </ng-container>
+
+      <ng-container *ngIf="choices.specification.picked as spec">
+        <ng-container *ngIf="choices.specification.pickedData as specData">
+          <ng-container *ngIf="spec === 'suit'">
+            {{ specData[0]?.suit ? "/ " + ("ASIAN_POKER.SUITS." + specData[0]?.suit | translate) + "" : "" }}
+          </ng-container>
+
+          <ng-container *ngIf="spec === 'rank'">
+            {{ specData[0]?.rank ? "/ " + ("ASIAN_POKER.RANKS." + specData[0]?.rank | translate) + "" : "" }}
+          </ng-container>
+
+          <ng-container *ngIf="spec === 'double-rank'">
+            {{ specData[0]?.rank ? "/ " + ("ASIAN_POKER.RANKS." + specData[0]?.rank | translate) : "" }}
+            {{ specData[1]?.rank ? "+ " + ("ASIAN_POKER.RANKS." + specData[1]?.rank | translate) + "" : "" }}
+          </ng-container>
+        </ng-container>
+      </ng-container>
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="center">
+      <div class="hand-pick">
+        <ng-container *ngIf="step === 'selection' || step === 'variant'">
+          <ng-container *ngTemplateOutlet="mainSteps; context: { $implicit: choices, step }"></ng-container>
+        </ng-container>
+
+        <ng-container *ngIf="step === 'specification' || step === 'finalization'">
+          <ng-container *ngIf="step === 'specification'">
+            <ng-container *ngTemplateOutlet="specificationStep; context: { $implicit: choices.specification }"></ng-container>
+          </ng-container>
+
+          <!-- <ng-container *ngIf="step === 'finalization'">
+            <ng-container *ngTemplateOutlet="finalizationStep; context: { $implicit: choices.finalization }"></ng-container>
+          </ng-container> -->
+        </ng-container>
+      </div>
+    </div>
+
+    <div class="side">
+      <div class="actions">
+        <div *ngIf="step === 'specification'" class="accept" appAccess (access)="accept()">
+          <div class="icon-accept" [ngClass]="{ disabled: !canAccept, accepted }"></div>
+          <span *ngIf="canAccept" class="index">Enter</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #mainSteps let-data let-step="step">
+  <div class="propositions"></div>
+
+  <div class="showcase">
+    <div
+      class="showcase--item"
+      [ngClass]="{ activeKey: activeKey === choice.key }"
+      *ngFor="let choice of data[step].propositions"
+      appAccess
+      (access)="handleMainSteps(choice, step)">
+      <div class="card-wrapper">
+        {{ choice.name ? ("ASIAN_POKER.HANDS." + choice.name | translate) : "?" }}
+        <span class="index">
+          {{ choice.key }}
+        </span>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #specificationStep let-data>
+  <div class="propositions">
+    <ng-container [ngSwitch]="data.picked">
+      <ng-container *ngSwitchCase="'suit'">
+        <div class="attribute attribute--suit">
+          <ng-container *ngFor="let suit of Suits">
+            <div
+              *ngIf="!suit.name.includes('filler')"
+              class="attribute-item"
+              [ngClass]="suit.name"
+              appAccess
+              (access)="handleSpecificationStep(suit.name, 'suit')">
+              {{ suit.symbol }}
+              <span class="index">
+                {{ suitsPropositionsRecord[suit.name].key }}
+              </span>
+            </div>
+
+            <div *ngIf="suit.name.includes('filler')" class="attribute-item filler-item"></div>
+          </ng-container>
+        </div>
+      </ng-container>
+
+      <ng-container *ngSwitchCase="'rank'">
+        <div class="attribute attribute--rank">
+          <ng-container *ngFor="let rank of Ranks">
+            <div
+              *ngIf="rank !== 'fillerA' && rank !== 'fillerB'"
+              class="attribute-item"
+              appAccess
+              (access)="handleSpecificationStep(rank, 'rank')">
+              {{ rank }}
+              <span class="index">
+                {{ ranksPropositionsRecord[rank].key }}
+              </span>
+            </div>
+
+            <div *ngIf="rank === 'fillerA' || rank === 'fillerB'" class="attribute-item filler-item"></div>
+          </ng-container>
+        </div>
+      </ng-container>
+
+      <ng-container *ngSwitchCase="'double-rank'">
+        <div class="attribute attribute--rank">
+          <ng-container *ngFor="let rank of Ranks">
+            <div
+              *ngIf="rank !== 'fillerA' && rank !== 'fillerB'"
+              class="attribute-item"
+              [ngClass]="{ disabled: partOfDoubleRank && rank === valueA }"
+              appAccess
+              (access)="!(partOfDoubleRank && rank === valueA) && handleSpecificationStep(rank, 'double-rank')">
+              {{ rank }}
+              <span class="index">
+                {{ ranksPropositionsRecord[rank].key }}
+              </span>
+            </div>
+
+            <div *ngIf="rank === 'fillerA' || rank === 'fillerB'" class="attribute-item filler-item"></div>
+          </ng-container>
+        </div>
+      </ng-container>
+    </ng-container>
+  </div>
+
+  <div class="step-wrapper">
+    <div class="groups">
+      <div class="slots-group" *ngFor="let group of slotsGroups">
+        <div class="slot" [ngClass]="{ filled: slot?.suit || slot?.rank }" *ngFor="let slot of group.slots">
+          <div class="card-wrapper" [ngClass]="slot?.suit">
+            <p class="slot-rank" *ngIf="data.picked !== 'suit' || choices.selection.picked === 'poker'">
+              {{ slot.rank ? slot.rank : "?" }}
+            </p>
+            <p class="slot-suit" *ngIf="data.picked === 'suit'">
+              {{ slot?.suit ? (slot?.suit | card: "symbol") : "?" }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #finalizationStep let-data>
+  <div class="step-wrapper">
+    <div class="groups">
+      <div class="slots-group">
+        <div class="slot" [ngClass]="{ rank: !!choice.rank, suit: !!choice.suit }" *ngFor="let choice of data.propositions">
+          <div class="card-wrapper" [ngClass]="choice?.suit">
+            <p class="slot-rank">{{ choice?.rank || "" }}</p>
+            <p class="slot-suit">{{ choice?.suit || "" | card: "symbol" }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>

@@ -1,0 +1,49 @@
+<div class="lobby">
+  <h3>Tworzenie sesji</h3>
+  <form class="session" [formGroup]="sessionForm">
+    <div class="control">
+      <label class="label" for="title">Nazwa gry</label>
+      <input class="input" id="title" [minLength]="3" [maxLength]="15" formControlName="title" />
+    </div>
+
+    <div class="control">
+      <app-range
+        [min]="3"
+        [max]="6"
+        [step]="1"
+        formControlName="playersLimit"
+        [label]="'Limit graczy'"
+        [showValues]="true"></app-range>
+    </div>
+
+    <div class="control">
+      <app-radio [options]="visibilityValues" [label]="'Widoczność'" formControlName="visibility"></app-radio>
+    </div>
+
+    <div class="control">
+      <app-radio [options]="accessibilityValues" [label]="'Dostępność'" formControlName="accessibility"></app-radio>
+    </div>
+
+    <div class="control">
+      <label class="label" for="actionDurationSeconds">Czas tury</label>
+      <div class="duration">
+        <app-duration-picker
+          id="actionDurationSeconds"
+          formControlName="actionDurationSeconds"
+          [step]="60"
+          [disabled]="sessionForm.controls.actionDurationSeconds.disabled"></app-duration-picker>
+        <app-checkbox (change)="unlimitedDuration($event)" [mini]="true" label="No limit"></app-checkbox>
+      </div>
+    </div>
+
+    <div class="control disabled">
+      <label class="label" for="hostDisplayName">Gospodarz</label>
+      <input class="input" id="hostDisplayName" [minLength]="3" [maxLength]="50" formControlName="hostDisplayName" />
+    </div>
+  </form>
+
+  <div class="actions">
+    <app-button (click)="create()" [disabled]="sessionForm.invalid">Start</app-button>
+    <app-button (click)="reset()">Reset</app-button>
+  </div>
+</div>

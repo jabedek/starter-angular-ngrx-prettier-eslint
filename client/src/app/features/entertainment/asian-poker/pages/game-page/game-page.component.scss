@@ -1,0 +1,61 @@
+@use "/src/app/features/entertainment/asian-poker/asian-poker.scss";
+@use "/src/assets/styles/variables";
+
+:host {
+  position: absolute;
+  top: 60px;
+}
+
+.table-wrapper {
+  position: relative;
+  animation: 1000ms rotate-view 500ms forwards;
+  will-change: transform, opacity, filter, box-shadow, top;
+  border-radius: 100%;
+}
+
+.gui-wrapper {
+  position: relative;
+  animation: expand-section 1500ms forwards;
+  will-change: max-height;
+
+  height: auto;
+  top: 70px;
+
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+  filter: blur(0);
+}
+
+@keyframes rotate-view {
+  0% {
+    top: 0px;
+    filter: blur(0);
+    transform: rotate3d(0);
+    box-shadow: none;
+  }
+
+  50% {
+    filter: blur(0.75px);
+  }
+
+  100% {
+    top: -30px;
+    filter: blur(0);
+
+    transform: rotate3d(10, -4, 5, 30deg);
+    box-shadow: variables.$shadow-4;
+  }
+}
+
+@keyframes expand-section {
+  from {
+    max-height: 0;
+  }
+
+  to {
+    max-height: asian-poker.$asian-poker-gui-height;
+  }
+}
