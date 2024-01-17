@@ -1,36 +1,36 @@
-import { BaseCard } from './card.model';
+import { Card } from './card.model';
 import { HandName } from './hand.model';
 
 export type CycleAnalyticsA = {
-  publicCards: BaseCard[];
+  publicCards: Card[];
   currentPlayerHand: {
     playerId: string;
-    cards: BaseCard[];
+    cards: Card[];
   }[];
   cardsInPlay: {
-    unsplitted: BaseCard[];
+    unsplitted: Card[];
     suit: {
-      SPADES: BaseCard[];
-      HEARTS: BaseCard[];
-      DIAMONDS: BaseCard[];
-      CLUBS: BaseCard[];
+      SPADES: Card[];
+      HEARTS: Card[];
+      DIAMONDS: Card[];
+      CLUBS: Card[];
     };
     rank: {
-      '8': BaseCard[];
-      '9': BaseCard[];
-      '10': BaseCard[];
-      J: BaseCard[];
-      Q: BaseCard[];
-      K: BaseCard[];
-      A: BaseCard[];
+      '8': Card[];
+      '9': Card[];
+      '10': Card[];
+      J: Card[];
+      Q: Card[];
+      K: Card[];
+      A: Card[];
     };
   };
 };
 
 export type CycleAnalyticsB = {
-  pairs: BaseCard[][];
-  threes: BaseCard[][];
-  fours: BaseCard[][];
+  pairs: Card[][];
+  threes: Card[][];
+  fours: Card[][];
   highestHand: HandInstance | undefined;
   hands: HandInstance[];
 };
@@ -38,5 +38,5 @@ export type CycleAnalyticsB = {
 export type HandInstance = {
   name: HandName;
   specification: string;
-  cards: BaseCard[];
+  cards: Card[];
 };

@@ -1,4 +1,4 @@
-import { BaseCard } from './models/card.model';
+import { Card } from './models/card.model';
 import { DeckVariant } from './models/deck.model';
 
 export type GameState = 'ready' | 'running' | 'paused' | 'finished';
@@ -13,7 +13,7 @@ export type AsianPokerGame = {
   turnPlayers: AsianPokerPlayerInfo[];
   currentPlayerIndex: number;
   currentDealerIndex: number;
-  publicCards: BaseCard[];
+  publicCards: Card[];
   playersCalls: PlayAction[];
 };
 
@@ -21,14 +21,14 @@ interface AsianPokerPlayer {
   id: string;
   nickname: string;
   handSize: number;
-  hand: BaseCard[];
+  hand: Card[];
 }
 
 export class AsianPokerPlayerInfo implements AsianPokerPlayer {
   id: string;
   nickname: string;
   handSize = 1;
-  hand: BaseCard[] = [];
+  hand: Card[] = [];
 
   constructor(id: string, nickname: string, handSize = 1) {
     this.id = id;

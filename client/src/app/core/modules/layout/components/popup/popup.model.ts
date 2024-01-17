@@ -1,8 +1,8 @@
 import { Type } from '@angular/core';
 
-export type ComponentPopupContent = {
-  component: Type<any>;
-  inputs: Record<string, unknown>;
+export type ComponentPopupContent<C> = {
+  component: Type<C>;
+  inputs?: Record<string, unknown>;
 };
 export type SimplePopupContent = {
   textContent: string;
@@ -19,16 +19,16 @@ export type PopupConfig = {
   callbackAfterClosing?: (...args: unknown[]) => unknown;
 };
 
-type P1 = {
+type P1<C> = {
   contentType: 'component';
-  content: ComponentPopupContent;
+  content: ComponentPopupContent<C>;
   config: PopupConfig;
 };
 
-type P2 = {
+type P2<C> = {
   contentType: 'simple';
   content: SimplePopupContent;
   config: PopupConfig;
 };
 
-export type PopupData = P1 | P2;
+export type PopupData<C = void> = P1<C> | P2<C>;

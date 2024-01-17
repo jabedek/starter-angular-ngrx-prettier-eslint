@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { FirebaseAuthService } from './firebase-auth.service';
-import { collection, doc, getDocs, query, setDoc, updateDoc, where } from 'firebase/firestore';
+import { Unsubscribe, collection, doc, getDocs, onSnapshot, query, setDoc, updateDoc, where } from 'firebase/firestore';
 import { consoleError, tryCatch } from '@shared/helpers/common.utils';
 
 export enum DbRes {
@@ -12,6 +12,8 @@ export enum DbRes {
 export type DbDTO = {
   [key: string]: any;
 } & { id: string };
+
+export type ListenerCallback<T> = (data: T | undefined, unsubFn: Unsubscribe | undefined) => void;
 
 @Injectable({
   providedIn: 'root',
@@ -52,6 +54,24 @@ export class FirebaseDbService {
     if (error) {
       consoleError(error, 'updateFullOverwrite ' + resource);
     }
+  }
+
+  async listenToChangesSnapshots<DbDTO>(
+    resource: DbRes,
+    key: string,
+    value: (string | number | boolean)[],
+    callback: ListenerCallback<DbDTO[]>,
+  ) {
+    const queryRef = query(this.collectionRef(resource), where(key, 'in', value));
+
+    const unsub: Unsubscribe = onSnapshot(queryRef, (querySnapshot) => {
+      const docs: DbDTO[] = [];
+      querySnapshot.forEach((doc) => {
+        const item = doc.data() as DbDTO;
+        docs.push(item);
+      });
+      callback(docs, unsub);
+    });
   }
 
   documentRef(resource: DbRes, ...pathSegments: string[]) {

@@ -1,11 +1,11 @@
 import { Component, Input } from '@angular/core';
-import { AuthService } from '../../auth.service';
 import { selectUserLoggedIn } from '@store/auth/auth.selectors';
 import { AppState } from '@store/app-state';
 import { Store } from '@ngrx/store';
-import { BaseComponent } from '@shared/components/base/base.component';
+import { BaseComponent } from '@shared/abstracts/base/base.component';
 import { Subscription, map, takeUntil, tap } from 'rxjs';
 import { Router } from '@angular/router';
+import { FirebaseAuthService } from '@core/firebase/firebase-auth.service';
 
 @Component({
   selector: 'app-auth-button',
@@ -55,7 +55,7 @@ export class AuthButtonComponent extends BaseComponent {
   }
 
   constructor(
-    private auth: AuthService,
+    private auth: FirebaseAuthService,
     private store: Store<AppState>,
     private router: Router,
   ) {
@@ -68,7 +68,7 @@ export class AuthButtonComponent extends BaseComponent {
         this.auth.refreshLogin(true, this.redirectToAfter);
         break;
       case 'logout':
-        this.auth.logout(this.redirectToAfter);
+        this.auth.firebaseLogout(this.redirectToAfter);
         break;
       default:
         break;

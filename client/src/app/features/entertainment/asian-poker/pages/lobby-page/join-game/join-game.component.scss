@@ -43,6 +43,8 @@
     .list {
       background: rgba(95, 95, 95, 11);
       border-radius: 3px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -84,12 +86,10 @@
 
     .list-item {
       height: 40px;
-
       font-size: 0.8rem;
       font-weight: 600;
       background: rgba(115, 115, 115, 1);
       border-bottom: 1px solid rgba(145, 145, 145, 0.4);
-
       @include mixins.clickable-btn();
 
       div.sessionState {
@@ -147,5 +147,21 @@
         justify-content: center;
       }
     }
+  }
+}
+
+.selected {
+  filter: brightness(1.45);
+}
+
+.password {
+  position: relative;
+  &::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    @include mixins.icon-mask("^assets/icons/lock.svg", 16px, 16px, #fff);
+    transform: translate(2px, -4px);
   }
 }

@@ -24,8 +24,9 @@
     "@ngrx/store": "^16.3.0",
     "@ngx-translate/core": "^15.0.0",
     "@ngx-translate/http-loader": "^8.0.0",
+    "date-fns": "^3.2.0",
     "firebase": "^10.7.0",
-    "frotsi": "^1.4.39",
+    "frotsi": "^1.4.40",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"

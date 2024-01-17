@@ -10,11 +10,11 @@ import { Store } from '@ngrx/store';
 import { AppState } from '@store/app-state';
 import { setFirebaseCurrentUser, setUserAppAccount } from '@store/auth/auth.actions';
 import { selectAuth, selectUserAppAccount, selectUserLoggedIn } from '@store/auth/auth.selectors';
-import { first, map, takeUntil, tap } from 'rxjs';
-import { BaseComponent } from '@shared/components/base/base.component';
+import { Observable, first, map, takeUntil, tap } from 'rxjs';
+import { BaseComponent } from '@shared/abstracts/base/base.component';
 import { Router } from '@angular/router';
 import { LayoutService } from '@core/modules/layout/services/layout.service';
-import { UserAppAccount } from '@store/auth/auth.state';
+import { AuthState, UserAppAccount } from '@store/auth/auth.state';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -48,6 +48,14 @@ export class FirebaseAuthService extends BaseComponent {
   readonly firebaseAuth = FirebaseAuth;
   readonly googleProvider = GoogleProvider;
   readonly firebaseDB = FirebaseDB;
+
+  auth$: Observable<AuthState> = this.store.select(selectAuth).pipe(takeUntil(this.__destroy));
+
+  appAccount$: Observable<UserAppAccount | undefined> = this.store.select(selectUserAppAccount).pipe(
+    tap((acc) => (this.appAccount = acc)),
+    takeUntil(this.__destroy),
+  );
+  appAccount: UserAppAccount | undefined;
 
   isLogged$ = this.store.select(selectUserLoggedIn).pipe(
     tap((logged) => (this.isLogged = logged)),
@@ -123,7 +131,7 @@ export class FirebaseAuthService extends BaseComponent {
 
   async setUserLoginStatus(user: UserAppAccount, logged: boolean) {
     try {
-      return updateDoc(doc(this.firebaseDB, 'users', user.id), { ...user, logged });
+      return updateDoc(doc(this.firebaseDB, 'users', user.id), { ...user, logged, active: logged });
     } catch (e) {
       console.error('Error', e);
     }
@@ -146,6 +154,8 @@ export class FirebaseAuthService extends BaseComponent {
 
       const appAccount = await this.checkIfAppAccountExists(user?.email);
       if (appAccount) {
+        this.appAccount = JSON.parse(JSON.stringify(appAccount));
+        console.log(this.appAccount);
         this.store.dispatch(setUserAppAccount({ appAccount }));
         await this.setUserLoginStatus(appAccount, true);
       }
@@ -173,6 +183,7 @@ export class FirebaseAuthService extends BaseComponent {
         googleUid: authUser.uid,
         email: authUser.email,
         displayName: authUser.displayName || '',
+        active: true,
         logged: false,
         appFeaturesData: {
           asianPoker: {
@@ -205,5 +216,13 @@ export class FirebaseAuthService extends BaseComponent {
     } else {
       console.error('Brak adresu email.');
     }
+  }
+
+  async noteUserBrowserActivity(mode: 'open' | 'close') {
+    if (!this.appAccount?.id) {
+      return undefined;
+    }
+
+    return updateDoc(doc(this.firebaseDB, 'users', this.appAccount.id), { active: mode === 'open' });
   }
 }

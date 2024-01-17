@@ -1,7 +1,7 @@
 import { Component, ElementRef, HostListener, Input, ViewChild } from '@angular/core';
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
-import { AuthService } from '../../auth.service';
+import { FirebaseAuthService } from '@core/firebase/firebase-auth.service';
 
 @Component({
   selector: 'app-auth-form',
@@ -29,7 +29,7 @@ export class AuthFormComponent {
 
   constructor(
     private fb: FormBuilder,
-    private auth: AuthService,
+    private auth: FirebaseAuthService,
     private router: Router,
   ) {
     setTimeout(() => {

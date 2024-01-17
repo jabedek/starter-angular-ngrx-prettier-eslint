@@ -1,4 +1,4 @@
-import { Component, Injector } from '@angular/core';
+import { Component, Injector, Type, ViewChild, ViewContainerRef } from '@angular/core';
 import { Subject, Observable, take, map } from 'rxjs';
 import { PopupService } from './popup.service';
 import { PopupData } from './popup.model';
@@ -10,24 +10,27 @@ import { PopupData } from './popup.model';
 })
 export class PopupComponent {
   private userActionNext = new Subject<'accept' | 'decline' | 'close-no-decision'>();
+  @ViewChild('container', { read: ViewContainerRef }) container: ViewContainerRef | undefined;
+
   userAction$ = this.userActionNext.asObservable();
+
+  constructor(
+    private popup: PopupService,
+    private inj: Injector,
+  ) {}
 
   currentContent$ = this.popup.currentContent$.pipe(
     map((curr) => {
       if (curr?.contentType === 'component') {
-        const Component = curr.content.component; // note: we're passing type here
-        const injector = Injector.create([{ provide: Component, useValue: new Component({ ...curr.content.inputs }) }], this.inj);
+        const Component: Type<unknown> = curr.content.component; // note: we're passing type here
+        const Comp = new Component();
+        const injector = Injector.create([{ provide: Component, useValue: Comp }], this.inj);
         return { ...curr, Component, Injector: injector };
       } else {
         return curr;
       }
     }),
   );
-
-  constructor(
-    private popup: PopupService,
-    private inj: Injector,
-  ) {}
 
   protected userAction(decision: 'accept' | 'decline' | 'close-no-decision', data: PopupData) {
     const { callbackAfterClosing } = data.config;

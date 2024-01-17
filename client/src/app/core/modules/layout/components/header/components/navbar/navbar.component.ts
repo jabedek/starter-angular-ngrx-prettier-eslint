@@ -1,7 +1,7 @@
 import { Component, ElementRef, HostBinding, HostListener } from '@angular/core';
 import { APP_ROUTES } from './routes.const';
 import { Observable, first, fromEvent, skipUntil, takeUntil, takeWhile, tap } from 'rxjs';
-import { BaseComponent } from '@shared/components/base/base.component';
+import { BaseComponent } from '@shared/abstracts/base/base.component';
 import { Store } from '@ngrx/store';
 import { AppState } from '@store/app-state';
 import { setBurger } from '@store/layout/layout.actions';

@@ -2,9 +2,11 @@ import { AsianPokerGame } from './asian-poker-game.model';
 
 export type AsianPokerSession = {
   id: string;
+  gameId: string | null;
   title: string;
   hostId: string;
   hostDisplayName: string;
+  password: string | null;
   playersLimit: number;
   playersJoined: number; // players joined when game started
   playersJoinedIds: string[];
@@ -19,7 +21,15 @@ export type AsianPokerSession = {
 
 export type AsianPokerSessionForm = Pick<
   AsianPokerSession,
-  'id' | 'title' | 'hostId' | 'hostDisplayName' | 'playersLimit' | 'accessibility' | 'visibility' | 'actionDurationSeconds'
+  | 'id'
+  | 'title'
+  | 'password'
+  | 'hostId'
+  | 'hostDisplayName'
+  | 'playersLimit'
+  | 'accessibility'
+  | 'visibility'
+  | 'actionDurationSeconds'
 >;
 
 export type SessionGameData = {

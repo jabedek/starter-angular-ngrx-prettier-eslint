@@ -22,6 +22,7 @@ export type UserAppAccount = {
   email?: string;
   displayName?: string;
   logged: boolean;
+  active: boolean;
   appFeaturesData: UserAppFeaturesData;
 };
 

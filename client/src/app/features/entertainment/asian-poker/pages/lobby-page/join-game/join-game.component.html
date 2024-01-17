@@ -11,7 +11,12 @@
       <div class="sessionState">Status</div>
     </div>
     <div class="list">
-      <div *ngFor="let session of sessions" class="list-item">
+      <div
+        *ngFor="let session of sessions; trackBy: trackBySessions"
+        class="list-item"
+        [ngClass]="{ selected: selected === session.id }"
+        appAccess
+        (access)="selected = session.id">
         <div class="title">{{ session.title }}</div>
         <div class="hostDisplayName">{{ session.hostDisplayName }}</div>
         <div class="players">
@@ -19,14 +24,14 @@
           /
           <div class="playersLimit">{{ session.playersLimit }}</div>
         </div>
-        <div class="accessibility">{{ session.accessibility }}</div>
+        <div class="accessibility" [ngClass]="{ password: session.password }">{{ session.accessibility }}</div>
         <div class="sessionState state-{{ session.sessionState }}">{{ session.sessionState }}</div>
       </div>
     </div>
   </div>
 
   <div class="actions">
-    <app-button>Dołącz</app-button>
-    <app-button>Odśwież</app-button>
+    <app-button [disabled]="!selected" (click)="join(selected)">Dołącz</app-button>
+    <app-button (click)="join()">Dołącz do prywatnej</app-button>
   </div>
 </div>

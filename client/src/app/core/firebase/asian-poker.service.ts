@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
-import { DbRes, FirebaseDbService } from './firebase-db.service';
+import { Injectable, OnDestroy } from '@angular/core';
+import { DbRes, FirebaseDbService, ListenerCallback } from './firebase-db.service';
 import { generateDocumentId } from 'frotsi';
 import {
   AsianPokerSession,
@@ -8,9 +8,10 @@ import {
 } from '@features/entertainment/asian-poker/asian-poker-lobby.model';
 import { consoleError, tryCatch } from '@shared/helpers/common.utils';
 import { UserAppAccount } from '@store/auth/auth.state';
-import { arrayUnion, increment, updateDoc } from 'firebase/firestore';
+import { Unsubscribe, arrayUnion, increment, updateDoc } from 'firebase/firestore';
 import { from, of } from 'rxjs';
 import { AsianPokerGame } from '@features/entertainment/asian-poker/asian-poker-game.model';
+import { BaseComponent } from '@shared/abstracts/base/base.component';
 
 @Injectable({
   providedIn: 'root',
@@ -21,6 +22,7 @@ export class AsianPokerService {
   startNewSession(sessionData: AsianPokerSessionForm) {
     const session: AsianPokerSession = {
       ...sessionData,
+      gameId: null,
       playersJoined: 0,
       playersJoinedIds: [],
       sessionState: 'lobby',
@@ -41,12 +43,20 @@ export class AsianPokerService {
     });
   }
 
-  async getSessions(sessionId: string) {
-    return this.fdb.getBy<AsianPokerSession>(DbRes.asianpoker_sessions, 'id', [sessionId]);
+  async getSessions(sessionIds: string[] = []) {
+    return this.fdb.getBy<AsianPokerSession>(DbRes.asianpoker_sessions, 'id', [...sessionIds]);
+  }
+
+  async getJoinableSessions() {
+    return this.fdb.getBy<AsianPokerSession>(DbRes.asianpoker_sessions, 'sessionState', ['lobby']);
+  }
+
+  async getWatchableSessions() {
+    return this.fdb.getBy<AsianPokerSession>(DbRes.asianpoker_sessions, 'sessionState', ['playing']);
   }
 
   async getSessionGame(sessionId: string): Promise<SessionGameData | undefined> {
-    const sessions = await this.getSessions(sessionId);
+    const sessions = await this.getSessions([sessionId]);
     const games = await this.fdb.getBy<AsianPokerGame>(DbRes.asianpoker_games, 'sessionId', [sessionId]);
 
     if (sessions && games) {
@@ -54,5 +64,9 @@ export class AsianPokerService {
     } else {
       return undefined;
     }
+  }
+
+  async listenToSessionChanges(sessionId: string, cb: ListenerCallback<AsianPokerSession[]>) {
+    this.fdb.listenToChangesSnapshots<AsianPokerSession>(DbRes.asianpoker_sessions, 'id', [sessionId], cb);
   }
 }

@@ -1,0 +1,22 @@
+<div class="lobby">
+  <h3>Dołączanie do sesji</h3>
+  <form class="session" [formGroup]="joinForm">
+    <div class="control mini" [ngClass]="{ disabled }">
+      <label class="label" for="id">Identyfikator gry</label>
+      <input class="input" id="id" [minLength]="3" [maxLength]="15" formControlName="id" />
+    </div>
+
+    <div class="control">
+      <label class="label" for="password">Hasło (opcjonalnie)</label>
+      <input class="input" id="password" type="text" [maxLength]="20" formControlName="password" />
+    </div>
+  </form>
+
+  <div class="error">
+    {{ error }}
+  </div>
+
+  <div class="actions">
+    <app-button [disabled]="joinForm.invalid" appAccess (access)="join()">Dołącz</app-button>
+  </div>
+</div>

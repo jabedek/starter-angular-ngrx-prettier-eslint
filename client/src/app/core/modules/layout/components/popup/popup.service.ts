@@ -6,10 +6,10 @@ import { PopupData } from './popup.model';
   providedIn: 'root',
 })
 export class PopupService {
-  private currentContentEmitter = new BehaviorSubject<PopupData | undefined>(undefined);
+  private currentContentEmitter = new BehaviorSubject<PopupData<unknown> | undefined>(undefined);
   currentContent$ = this.currentContentEmitter.asObservable();
 
-  showPopup(data: PopupData) {
+  showPopup<C>(data: PopupData<C>) {
     this.currentContentEmitter.next(data);
   }
 

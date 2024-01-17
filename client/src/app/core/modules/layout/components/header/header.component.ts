@@ -4,7 +4,7 @@ import { AppState } from '@store/app-state';
 import { selectBurgerOpen } from '@store/layout/layout.selectors';
 import { selectUrlParts } from '@store/router/router.selectors';
 import { selectUserLoggedIn } from '@store/auth/auth.selectors';
-import { BaseComponent } from '@shared/components/base/base.component';
+import { BaseComponent } from '@shared/abstracts/base/base.component';
 
 @Component({
   selector: 'app-header',

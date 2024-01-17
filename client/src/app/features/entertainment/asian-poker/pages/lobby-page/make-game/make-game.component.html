@@ -7,6 +7,11 @@
     </div>
 
     <div class="control">
+      <label class="label" for="password">Hasło (opcjonalnie)</label>
+      <input class="input" id="password" type="text" [maxLength]="20" formControlName="password" />
+    </div>
+
+    <div class="control">
       <app-range
         [min]="3"
         [max]="6"
@@ -32,7 +37,11 @@
           formControlName="actionDurationSeconds"
           [step]="60"
           [disabled]="sessionForm.controls.actionDurationSeconds.disabled"></app-duration-picker>
-        <app-checkbox (change)="unlimitedDuration($event)" [mini]="true" label="No limit"></app-checkbox>
+        <app-checkbox
+          (change)="unlimitedDuration($event)"
+          [value]="sessionForm.controls.actionDurationSeconds.getRawValue() === 99999"
+          [mini]="true"
+          label="No limit"></app-checkbox>
       </div>
     </div>
 

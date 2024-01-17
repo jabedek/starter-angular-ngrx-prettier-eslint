@@ -1,16 +1,14 @@
-import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, OnInit, ViewChild, createComponent } from '@angular/core';
+import { AfterViewInit, ChangeDetectionStrategy, Component, OnDestroy } from '@angular/core';
+import { Router } from '@angular/router';
+import { FirebaseAuthService } from '@core/firebase/firebase-auth.service';
 import { FirebaseUsersService } from '@core/firebase/firebase-users.service';
-import { AuthService } from '@core/modules/auth/auth.service';
 import { Store } from '@ngrx/store';
 import { TranslateService } from '@ngx-translate/core';
-import { BaseComponent } from '@shared/components/base/base.component';
-import { PopupGlobalComponent } from '@shared/components/popup-global/popup-global.component';
+import { UserActivityMonitorService } from '@shared/components/user-activity-monitor/user-activity-monitor.service';
 import { Lang } from '@shared/models/enums';
 import { AppState } from '@store/app-state';
 import { selectAuth } from '@store/auth/auth.selectors';
-import { UserAppAccount } from '@store/auth/auth.state';
-import { Unsubscribe } from 'firebase/firestore';
-import { map } from 'rxjs';
+import { Subject, debounce, debounceTime, map, takeUntil } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -18,17 +16,28 @@ import { map } from 'rxjs';
   styleUrls: ['./app.component.scss'],
   changeDetection: ChangeDetectionStrategy.Default,
 })
-export class AppComponent extends BaseComponent {
+export class AppComponent implements OnDestroy {
   title = 'all-nice-stuff';
-  firebase$ = this.store.select(selectAuth).pipe(map((auth) => auth.firebase));
+  destroy$ = new Subject<void>();
+  firebase$ = this.store.select(selectAuth).pipe(
+    map((auth) => auth.firebase),
+    takeUntil(this.destroy$),
+  );
 
   constructor(
-    private auth: AuthService,
+    private auth: FirebaseAuthService,
     private store: Store<AppState>,
     translate: TranslateService,
-    private fbUsers: FirebaseUsersService,
+    private router: Router,
+    private activityMonitor: UserActivityMonitorService,
   ) {
-    super('AppComponent');
+    this.activityMonitor.initCheckers();
+    // this.activityMonitor.scheduleCheckerForUserWentAFK();
+    // this.router.events.pipe(takeUntil(this.destroy$)).subscribe(() => {
+    //   this.auth.noteUserBrowserActivity('open');
+    //   window.addEventListener('beforeunload', async () => await this.auth.noteUserBrowserActivity('close'), { once: true });
+    // });
+
     this.auth.refreshLogin(false);
 
     // this language will be used as a fallback when a translation isn't found in the current language
@@ -36,7 +45,10 @@ export class AppComponent extends BaseComponent {
 
     // the lang to use, if the lang isn't available, it will use the current loader to get them
     translate.use(Lang.pl);
+  }
 
-    this.fbUsers.loggedUsers$.subscribe((users: UserAppAccount[]) => {});
+  ngOnDestroy() {
+    this.destroy$.next();
+    this.destroy$.complete();
   }
 }

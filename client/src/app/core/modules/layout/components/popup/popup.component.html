@@ -8,34 +8,36 @@
         (access)="userAction('close-no-decision', popupData)">
         <div class="icon-close"></div>
       </div>
-
-      <!-- Component -->
-      <ng-container *ngIf="popupData.contentType === 'component'">
-        {{ popupData.contentType }}
-        <div class="content">
-          <ng-container *ngComponentOutlet="$any(popupData.Component); injector: popupData.Injector" />
-        </div>
-      </ng-container>
-
-      <!-- Simple -->
-      <ng-container *ngIf="popupData.contentType === 'simple'">
-        {{ popupData.contentType }}
-        <div class="header">
-          <p>{{ popupData.content.textHeader }}</p>
-        </div>
-        <div class="content">
-          <slot>
-            <p>{{ popupData.content.textContent }}</p>
-          </slot>
-        </div>
-
-        <div class="footer">
-          <div class="actions" *ngIf="popupData.contentType === 'simple'">
-            <button *ngIf="$any(popupData.content).showAcceptButton" (click)="userAction('accept', popupData)">Accept</button>
-            <button *ngIf="$any(popupData.content).showDeclineButton" (click)="userAction('decline', popupData)">Decline</button>
+      <div class="content-wrapper">
+        <!-- Component -->
+        <ng-container *ngIf="popupData.contentType === 'component'">
+          <div class="content">
+            <ng-container
+              *ngComponentOutlet="$any(popupData.Component); injector: popupData.Injector; inputs: popupData.content.inputs" />
           </div>
-        </div>
-      </ng-container>
+        </ng-container>
+
+        <!-- Simple -->
+        <ng-container *ngIf="popupData.contentType === 'simple'">
+          <div class="header">
+            <p>{{ popupData.content.textHeader }}</p>
+          </div>
+          <div class="content">
+            <slot>
+              <p>{{ popupData.content.textContent }}</p>
+            </slot>
+          </div>
+
+          <div class="footer">
+            <div class="actions" *ngIf="popupData.contentType === 'simple'">
+              <button *ngIf="$any(popupData.content).showAcceptButton" (click)="userAction('accept', popupData)">Accept</button>
+              <button *ngIf="$any(popupData.content).showDeclineButton" (click)="userAction('decline', popupData)">
+                Decline
+              </button>
+            </div>
+          </div>
+        </ng-container>
+      </div>
     </div>
   </div>
 </div>

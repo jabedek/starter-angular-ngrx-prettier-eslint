@@ -5,7 +5,7 @@
     </p>
 
     <div class="account" [routerLink]="['/account']">account</div>
-    <div class="account logout" appAccess (access)="auth.logout('home')">logout</div>
+    <div class="account logout" appAccess (access)="auth.firebaseLogout('home')">logout</div>
   </div>
 </ng-container>
 

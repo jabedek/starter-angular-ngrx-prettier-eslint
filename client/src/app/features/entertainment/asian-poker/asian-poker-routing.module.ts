@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AsianPokerComponent } from './asian-poker.component';
 import { authGuard } from '@core/modules/auth/auth.guard';
 import { LayoutComponent } from '@core/modules/layout/layout.component';
 import { LobbyPageComponent } from './pages/lobby-page/lobby-page.component';
 import { GamePageComponent } from './pages/game-page/game-page.component';
 import { sessionsResolver, sessionGameResolver } from './pages/game-page/game-session.resolver';
-import { SetupPageComponent } from './pages/setup-page/setup-page.component';
+import { WaitingRoomPageComponent } from './pages/waiting-room-page/waiting-room-page.component';
 
 const routes: Routes = [
   {
@@ -20,7 +19,7 @@ const routes: Routes = [
         children: [
           { path: '', pathMatch: 'full', redirectTo: 'lobby' },
           { path: 'lobby', component: LobbyPageComponent },
-          { path: 'setup/:id', component: SetupPageComponent, resolve: { sessions: sessionsResolver } },
+          { path: 'waiting-room/:id', component: WaitingRoomPageComponent, resolve: { data: sessionsResolver } },
           { path: 'game/:id', component: GamePageComponent, resolve: { data: sessionGameResolver } },
         ],
       },

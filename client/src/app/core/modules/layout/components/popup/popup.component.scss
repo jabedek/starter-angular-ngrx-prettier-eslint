@@ -9,42 +9,48 @@
   .popup {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(2px);
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(3px);
     z-index: 100;
-    padding: 10px;
 
     &__card {
       position: relative;
       top: 50%;
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
-      width: 600px;
-      // height: 400px;
-      background: white;
+      width: fit-content;
       border-radius: 3px;
+      background-color: rgba(180, 180, 180, 0.3);
       box-shadow: variables.$shadow-0;
       padding: 10px;
+      display: flex;
+      align-items: center;
     }
 
     &__body {
-      width: 100%;
-      // height: 380px;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
       align-content: center;
       border-radius: 4px;
-      padding-inline: 10px;
+      overflow: hidden;
       box-shadow: variables.$shadow-1 inset;
 
-      .content {
-        max-height: 600px;
-        overflow-y: scroll;
-        padding: 20px 10px;
+      .content-wrapper {
+        box-shadow: 0 0 15px rgba(50, 50, 50, 0.1) inset;
+        height: fit-content;
         width: 100%;
-        border: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: 3px;
+        padding: 1px;
+        backdrop-filter: blur(3px);
+      }
+
+      .content {
+        height: fit-content;
+        width: 100%;
+        overflow-y: scroll;
+        border-radius: 3px;
         border-left-color: transparent;
         border-right-color: transparent;
         scrollbar-gutter: stable;
@@ -96,16 +102,16 @@
     font-size: 0.75rem;
     font-family: Manrope;
     background: white;
-    border: 1px solid rgb(30, 150, 140);
+    border: 1px solid variables.$bg-main;
     cursor: pointer;
 
     &:hover {
-      background: rgb(30, 150, 140);
+      background: variables.$bg-main;
       color: white;
     }
 
     .icon-close {
-      @include mixins.icon-mask("^assets/icons/close.svg", 18px, 18px, rgb(30, 150, 140));
+      @include mixins.icon-mask("^assets/icons/close.svg", 18px, 18px, variables.$bg-main);
 
       &:hover {
         background: white;

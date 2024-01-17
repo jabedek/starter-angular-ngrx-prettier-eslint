@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AsianPokerGame } from '../asian-poker-game.model';
-import { BaseCard } from '../models/card.model';
+import { Card } from '../models/card.model';
 import { DeckVariant } from '../models/deck.model';
 import { HighHandsNames, LowHandsNames } from '../models/hand.model';
 import { CycleAnalyticsA, CycleAnalyticsB, HandInstance } from '../models/hand-analysis.model';
@@ -131,9 +131,9 @@ export class SessionHandsAnalyzerService {
     });
 
     // pair, three, four
-    const pairs: BaseCard[][] = [];
-    const threes: BaseCard[][] = [];
-    const fours: BaseCard[][] = [];
+    const pairs: Card[][] = [];
+    const threes: Card[][] = [];
+    const fours: Card[][] = [];
     ranks.forEach((entry) => {
       const [key, value] = entry;
       let hand: HandInstance | undefined;
@@ -226,7 +226,7 @@ export class SessionHandsAnalyzerService {
     return hands;
   }
 
-  private sortCards(cards: BaseCard[]) {
+  private sortCards(cards: Card[]) {
     const Suits = ['SPADES', 'HEARTS', 'CLUBS', 'DIAMONDS'] as const;
     const Ranks = ['A', 'K', 'Q', 'J', '10', '9', '8'] as const;
 

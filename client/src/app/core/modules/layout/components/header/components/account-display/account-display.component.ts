@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { AuthService } from '@core/modules/auth/auth.service';
+import { FirebaseAuthService } from '@core/firebase/firebase-auth.service';
 import { Store } from '@ngrx/store';
-import { BaseComponent } from '@shared/components/base/base.component';
+import { BaseComponent } from '@shared/abstracts/base/base.component';
 import { AppState } from '@store/app-state';
 import { selectUserAppAccount, selectUserLoggedIn } from '@store/auth/auth.selectors';
 import { EMPTY, filter, switchMap, takeUntil } from 'rxjs';
@@ -16,7 +16,7 @@ export class AccountDisplayComponent extends BaseComponent {
   userBasicData$ = this.store.select(selectUserAppAccount).pipe(takeUntil(this.__destroy));
 
   constructor(
-    public auth: AuthService,
+    public auth: FirebaseAuthService,
     private store: Store<AppState>,
   ) {
     super('AccountDisplayComponent');

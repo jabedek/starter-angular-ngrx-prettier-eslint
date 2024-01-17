@@ -16,7 +16,8 @@ import { LobbyPageComponent } from './pages/lobby-page/lobby-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MakeGameComponent } from './pages/lobby-page/make-game/make-game.component';
 import { JoinGameComponent } from './pages/lobby-page/join-game/join-game.component';
-import { SetupPageComponent } from './pages/setup-page/setup-page.component';
+import { WaitingRoomPageComponent } from './pages/waiting-room-page/waiting-room-page.component';
+import { JoinGamePopupComponent } from './pages/lobby-page/join-game/components/join-game-popup/join-game-popup.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { SetupPageComponent } from './pages/setup-page/setup-page.component';
     LobbyPageComponent,
     MakeGameComponent,
     JoinGameComponent,
-    SetupPageComponent,
+    WaitingRoomPageComponent,
+    JoinGamePopupComponent,
   ],
   imports: [
     CommonModule,

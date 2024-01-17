@@ -25,7 +25,7 @@ import { HandInstance } from '../../../../models/hand-analysis.model';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { getEmptyBettingSlotsGroups, getEmptySlots } from './hand-picker.utils';
 import { debounce, debounceTime, fromEvent, takeUntil, tap, timer } from 'rxjs';
-import { BaseComponent } from '@shared/components/base/base.component';
+import { BaseComponent } from '@shared/abstracts/base/base.component';
 
 @Component({
   selector: 'app-hand-picker',

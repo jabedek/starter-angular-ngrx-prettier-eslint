@@ -52,7 +52,7 @@ export const RanksWithHierarchyFinale = [
 export type SimpleSuit = (typeof Suits)[number];
 export type SimpleRank = (typeof Ranks)[number];
 
-export type BaseCard = {
+export type Card = {
   suit: (typeof SuitsWithHierarchy)[number];
   rank: RanksWithHierarchy[number];
 };

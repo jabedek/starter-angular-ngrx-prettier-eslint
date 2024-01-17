@@ -21,7 +21,7 @@ export class CheckboxComponent extends CheckboxControlValueAccessor {
   @Output() change = new EventEmitter<any>();
   onTouch: any = () => ({});
 
-  set value(val) {
+  @Input() set value(val) {
     this._value = val;
     this.emitChange(val);
     this.onTouch(val);

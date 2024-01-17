@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, ElementRef, OnDestroy, ViewChild } from '@angular/core';
-import { BaseComponent } from '@shared/components/base/base.component';
+import { BaseComponent } from '@shared/abstracts/base/base.component';
 import { Subject, debounceTime, takeUntil } from 'rxjs';
 
 @Component({

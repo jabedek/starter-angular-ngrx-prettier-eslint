@@ -33,6 +33,10 @@
     filter: hue-rotate(variables.$hue-change-hover);
   }
 
+  &:not(.disabled):active {
+    filter: hue-rotate(variables.$hue-change-hover) brightness(1.15);
+  }
+
   &.disabled {
     filter: grayscale(1);
   }

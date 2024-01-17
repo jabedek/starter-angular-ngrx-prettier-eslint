@@ -49,10 +49,10 @@
     justify-content: space-between;
 
     width: 100%;
-    height: 60px;
+    height: 58px;
     border-radius: 3px;
     padding: 0 17px;
-    margin: 10px 0;
+    margin: 0px 0;
 
     text-transform: uppercase;
     font-size: 0.8rem !important;
@@ -88,6 +88,7 @@
 
   .label {
     display: flex;
+    font-size: 12px;
     justify-content: space-between;
     .values {
       font-family: "Roboto Mono";
@@ -95,7 +96,7 @@
   }
 
   .input {
-    width: 200px !important;
+    width: 270px !important;
     border-radius: 3px;
     height: 22px;
     outline: 0;
@@ -106,7 +107,7 @@
     font-size: 0.8rem !important;
     font-family: Manrope;
     font-weight: 600;
-    color: #fff;
+    color: #ddd;
 
     &:hover,
     &:focus,
@@ -134,6 +135,7 @@
 
       .desc {
         padding: 0 !important;
+        font-size: 12px;
       }
 
       .range {

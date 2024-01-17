@@ -1,0 +1,19 @@
+@use "/src/assets/styles/variables";
+
+.progress-bar {
+  width: 140px;
+  height: 26px;
+  border-radius: 3px;
+  overflow: hidden;
+  transition: all 1000ms linear;
+
+  background-color: rgba(170, 170, 170, 1);
+  box-shadow: variables.$shadow-4;
+}
+
+.progress-bar__fill {
+  height: 100%;
+  background-color: black;
+  filter: blur(3px);
+  transition: all 1000ms linear;
+}

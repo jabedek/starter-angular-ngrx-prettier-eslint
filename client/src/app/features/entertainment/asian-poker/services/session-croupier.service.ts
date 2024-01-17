@@ -3,7 +3,7 @@ import { generateDocumentId, loop } from 'frotsi';
 import { shuffleCollection } from '@shared/helpers/collections.utils';
 import { AsianPokerGame, PlayAction, AsianPokerPlayerInfo } from '../asian-poker-game.model';
 import {
-  BaseCard,
+  Card,
   RanksWithHierarchyFinale,
   RanksWithHierarchyExtended,
   RanksWithHierarchyStandard,
@@ -60,7 +60,7 @@ export class SessionCroupierService {
     };
 
     const { cards, deckVariant } = this.createNewDeck(newSession.turnPlayers);
-    const shuffledCards = shuffleCollection<BaseCard>(cards);
+    const shuffledCards = shuffleCollection<Card>(cards);
     const { playersCards, publicCards, undealt } = this.drawCards(shuffledCards, newSession.turnPlayers);
 
     newSession.deckVariant = deckVariant;
@@ -82,7 +82,7 @@ export class SessionCroupierService {
         ? RanksWithHierarchyExtended
         : RanksWithHierarchyStandard;
 
-    const cards: BaseCard[] = [];
+    const cards: Card[] = [];
 
     deckToDealFrom.forEach((rank) => {
       SuitsWithHierarchy.forEach((suit) => cards.push({ suit, rank }));
@@ -94,7 +94,7 @@ export class SessionCroupierService {
     return { cards, deckVariant };
   }
 
-  private drawCards(cards: BaseCard[], players: AsianPokerPlayerInfo[]) {
+  private drawCards(cards: Card[], players: AsianPokerPlayerInfo[]) {
     const cardsCopied = [...cards];
     const hands = players.map(({ id, handSize }) => ({
       id,
@@ -113,7 +113,7 @@ export class SessionCroupierService {
       });
     }
 
-    const playersCards: Record<string, BaseCard[]> = {};
+    const playersCards: Record<string, Card[]> = {};
     dealingStack.forEach((playerId) => {
       if (!playersCards[playerId]) {
         playersCards[playerId] = [];
@@ -126,7 +126,7 @@ export class SessionCroupierService {
     });
 
     const cardsAmount = players.every((player) => player.handSize > 1) ? 1 : 2;
-    const publicCards: BaseCard[] = [];
+    const publicCards: Card[] = [];
 
     loop(cardsAmount).forEach(() => {
       const card = cardsCopied.popRandom();

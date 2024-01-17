@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 import { AsianPokerGame } from '../../asian-poker-game.model';
 
 export const sessionsResolver: ResolveFn<AsianPokerSession[]> = (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
-  return inject(AsianPokerService).getSessions(route.paramMap.get('id')!);
+  return inject(AsianPokerService).getSessions([route.paramMap.get('id')!]);
 };
 
 export const sessionGameResolver: ResolveFn<SessionGameData | undefined> = (
