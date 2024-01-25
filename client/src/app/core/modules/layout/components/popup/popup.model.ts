@@ -16,6 +16,7 @@ export type SimplePopupContent = {
 
 export type PopupConfig = {
   showCloseButton: boolean;
+  closeOnOutclick: boolean;
   callbackAfterClosing?: (...args: unknown[]) => unknown;
 };
 

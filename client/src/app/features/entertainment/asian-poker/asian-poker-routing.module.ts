@@ -10,7 +10,7 @@ import { WaitingRoomPageComponent } from './pages/waiting-room-page/waiting-room
 const routes: Routes = [
   {
     path: '',
-    canActivate: [authGuard],
+    // canActivate: [authGuard],
     title: 'Azjatycki Poker',
     children: [
       {

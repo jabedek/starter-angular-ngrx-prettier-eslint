@@ -1,7 +1,7 @@
 import { Card } from './models/card.model';
 import { DeckVariant } from './models/deck.model';
 
-export type GameState = 'ready' | 'running' | 'paused' | 'finished';
+export type GameState = 'started' | 'ready' | 'running' | 'paused' | 'finished';
 
 export type AsianPokerGame = {
   id: string;

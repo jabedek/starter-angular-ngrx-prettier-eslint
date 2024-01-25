@@ -38,24 +38,22 @@ export class JoinGameComponent extends BaseComponent {
   }
 
   join(sessionId = '') {
-    console.log(sessionId);
     this.auth.appAccount$.pipe(take(1)).subscribe((userPlayer) => {
       if (userPlayer) {
-        const inputs = {
-          sessionId,
-          disabled: !!sessionId,
-          userPlayer,
-        };
-
         this.popup.showPopup({
           contentType: 'component',
-          content: { component: JoinGamePopupComponent, inputs: { ...inputs } },
+          content: {
+            component: JoinGamePopupComponent,
+            inputs: {
+              sessionId,
+              disabled: !!sessionId,
+              userPlayer,
+            },
+          },
           config: {
             showCloseButton: true,
-            callbackAfterClosing: () => {
-              console.log('callbackAfterClosing');
-              this.popup.hidePopup();
-            },
+            closeOnOutclick: true,
+            callbackAfterClosing: () => this.popup.hidePopup(),
           },
         });
       }

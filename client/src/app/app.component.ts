@@ -16,7 +16,7 @@ import { Subject, debounce, debounceTime, map, takeUntil } from 'rxjs';
   styleUrls: ['./app.component.scss'],
   changeDetection: ChangeDetectionStrategy.Default,
 })
-export class AppComponent implements OnDestroy {
+export class AppComponent implements AfterViewInit, OnDestroy {
   title = 'all-nice-stuff';
   destroy$ = new Subject<void>();
   firebase$ = this.store.select(selectAuth).pipe(
@@ -31,7 +31,6 @@ export class AppComponent implements OnDestroy {
     private router: Router,
     private activityMonitor: UserActivityMonitorService,
   ) {
-    this.activityMonitor.initCheckers();
     // this.activityMonitor.scheduleCheckerForUserWentAFK();
     // this.router.events.pipe(takeUntil(this.destroy$)).subscribe(() => {
     //   this.auth.noteUserBrowserActivity('open');
@@ -45,6 +44,10 @@ export class AppComponent implements OnDestroy {
 
     // the lang to use, if the lang isn't available, it will use the current loader to get them
     translate.use(Lang.pl);
+  }
+
+  ngAfterViewInit() {
+    this.activityMonitor.initCheckers();
   }
 
   ngOnDestroy() {

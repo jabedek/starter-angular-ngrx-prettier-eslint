@@ -1,0 +1,125 @@
+@use "/src/assets/styles/variables";
+
+:host {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 3px;
+
+  div {
+    padding: 4px;
+    text-align: center;
+    background: rgba(50, 180, 50, 1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 500ms;
+
+    font-family: "Azeret Mono";
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .done {
+    background: rgba(255, 0, 0, 1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: countdown 4s 5s linear;
+  }
+}
+
+@keyframes countdown {
+  0% {
+    background: rgba(255, 255, 255, 1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  5% {
+    background: rgba(255, 0, 0, 1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  10% {
+    background: rgba(255, 255, 255, 1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  15% {
+    background: rgba(255, 0, 0, 1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  20% {
+    background: rgba(255, 255, 255, 1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  25% {
+    background: rgba(255, 0, 0, 1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  30% {
+    background: rgba(255, 255, 255, 1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  35% {
+    background: rgba(255, 0, 0, 1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  65% {
+    background: rgba(255, 255, 255, 1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  70% {
+    background: rgba(255, 0, 0, 1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  75% {
+    background: rgba(255, 255, 255, 1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  80% {
+    background: rgba(255, 0, 0, 1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  85% {
+    background: rgba(255, 255, 255, 1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  90% {
+    background: rgba(255, 0, 0, 1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  95% {
+    background: rgba(255, 255, 255, 1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  100% {
+    background: rgba(255, 0, 0, 1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

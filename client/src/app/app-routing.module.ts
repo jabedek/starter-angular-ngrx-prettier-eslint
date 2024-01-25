@@ -76,6 +76,12 @@ const routes: Routes = [
     loadChildren: () => import('@features/misc/decision-tree/decision-tree.module').then((m) => m.DecisionTreeModule),
   },
   {
+    path: 'food-and-groceries',
+    canActivate: [],
+    loadChildren: () =>
+      import('@features/misc/food-and-groceries/food-and-groceries.module').then((m) => m.FoodAndGroceriesModule),
+  },
+  {
     path: 'weather-archive',
     canActivate: [],
     loadChildren: () => import('@features/misc/weather-archive/weather-archive.module').then((m) => m.WeatherArchiveModule),

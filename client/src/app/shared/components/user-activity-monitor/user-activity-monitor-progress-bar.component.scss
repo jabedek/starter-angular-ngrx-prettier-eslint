@@ -1,6 +1,17 @@
 :host {
   display: flex;
   flex-direction: column;
+  height: fit-content;
+  width: fit-content;
+  padding: 10px;
+  position: fixed;
+  top: 100px;
+  left: 10px;
+  z-index: 300000000;
+
+  border-radius: 4px;
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .user-action {
@@ -9,13 +20,21 @@
 }
 
 .ticks-wrapper {
+  position: relative;
   display: flex;
   width: fit-content;
   flex-direction: column;
   gap: 30px;
   align-items: center;
 
-  padding: 30px;
-  background: #fff;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.85);
   height: fit-content;
+  border-radius: 4px;
+
+  p {
+    font-family: "Azeret Mono";
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
 }

@@ -1,157 +1,10 @@
 @use "/src/assets/styles/mixins";
 @use "/src/assets/styles/variables";
 @use "/src/assets/styles/controls";
-
-.lobby {
-  background: rgba(105, 105, 105, 11);
-  padding: 24px 24px;
-  border-radius: 3px;
-  box-shadow: variables.$shadow-3;
-
-  width: 600px;
-  height: 670px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  .actions {
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  h3 {
-    text-align: center;
-    text-shadow: 0.13em 0.13em 2px rgba(0, 0, 0, 0.75);
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    font-family: Manrope;
-    font-weight: 600;
-    color: #fff;
-    margin-bottom: 14px;
-    height: 20px;
-  }
-
-  .list-wrapper {
-    width: 552px;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 3px;
-    overflow: hidden;
-
-    .list {
-      background: rgba(95, 95, 95, 11);
-      border-radius: 3px;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      height: 470px;
-      background: (0, 0, 0, 0, 0.1);
-      width: 100%;
-      overflow-y: scroll;
-      overflow-x: hidden;
-    }
-
-    .list-item,
-    .list-headers {
-      width: 552px;
-      padding: 8px 16px;
-      align-items: center;
-      display: flex;
-      justify-content: space-between;
-      text-align: center;
-
-      .players {
-        display: flex;
-        justify-content: center;
-      }
-    }
-
-    .list-headers {
-      height: 30px;
-
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      color: #fff;
-      background: rgba(80, 80, 80, 1);
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.85);
-      display: flex;
-      border-top-left-radius: 3px;
-      border-top-right-radius: 3px;
-    }
-
-    .list-item {
-      height: 40px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      background: rgba(115, 115, 115, 1);
-      border-bottom: 1px solid rgba(145, 145, 145, 0.4);
-      @include mixins.clickable-btn();
-
-      div.sessionState {
-        width: 75px;
-        text-transform: uppercase;
-        font-weight: 700;
-        border: 2px solid rgba(255, 255, 255, 0.3);
-        border-radius: 5px;
-        padding: 5px 9px;
-
-        &.state-lobby {
-          color: rgb(0, 197, 0);
-          text-shadow: variables.$shadow-4;
-        }
-        &.state-playing {
-          color: #ffe9ac;
-          text-shadow: variables.$shadow-4;
-        }
-        &.state-finished {
-          color: #000;
-        }
-      }
-    }
-
-    div.title {
-      width: 110px;
-      overflow-wrap: break-word;
-    }
-
-    div.hostDisplayName {
-      width: 120px;
-      overflow-wrap: break-word;
-    }
-
-    div.players {
-      width: 50px;
-    }
-
-    div.accessibility {
-      width: 100px;
-      text-transform: uppercase;
-    }
-
-    div.sessionState {
-      width: 75px;
-      text-transform: uppercase;
-    }
-  }
-
-  app-button {
-    justify-content: center;
-    margin-top: 24px;
-    ::ng-deep {
-      button {
-        justify-content: center;
-      }
-    }
-  }
-}
+@use "/src/assets/styles/scrollbar";
 
 .selected {
-  filter: brightness(1.45);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.75) inset;
 }
 
 .password {
@@ -164,4 +17,53 @@
     @include mixins.icon-mask("^assets/icons/lock.svg", 16px, 16px, #fff);
     transform: translate(2px, -4px);
   }
+}
+
+:host::ng-deep.list-item {
+  @include mixins.clickable-btn();
+}
+
+.title {
+  width: 110px;
+  overflow-wrap: break-word;
+}
+
+.hostDisplayName {
+  width: 110px;
+  overflow-wrap: break-word;
+}
+
+.players {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.accessibility {
+  width: 100px;
+  text-transform: uppercase;
+}
+
+.sessionState {
+  width: 75px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 5px 9px;
+
+  &.state-setup {
+    color: rgb(0, 197, 0);
+    text-shadow: variables.$shadow-4;
+  }
+  &.state-in-game {
+    color: #ffe9ac;
+    text-shadow: variables.$shadow-4;
+  }
+  &.state-finished {
+    color: #000;
+  }
+}
+
+.list-item .sessionState {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
 }

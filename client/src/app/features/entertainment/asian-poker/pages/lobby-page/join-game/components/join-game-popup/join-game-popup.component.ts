@@ -30,7 +30,11 @@ export class JoinGamePopupComponent {
 
   @Input() set disabled(disabled: boolean) {
     this._disabled = disabled;
-    this.joinForm.controls.id.disable();
+    if (disabled) {
+      this.joinForm.controls.id.disable();
+    } else {
+      this.joinForm.controls.id.enable();
+    }
   }
   get disabled(): boolean {
     return this._disabled;
@@ -42,6 +46,10 @@ export class JoinGamePopupComponent {
 
     this._sessionId = sessionId;
     this.joinForm.controls.id.setValue(sessionId);
+
+    if (!sessionId) {
+      this.joinForm.controls.id.enable();
+    }
   }
   get sessionId(): string {
     return this._sessionId;
@@ -62,7 +70,6 @@ export class JoinGamePopupComponent {
   join() {
     const { id, password } = this.joinForm.getRawValue();
     const playerId = this.userPlayer?.id;
-    console.log(id, password);
 
     this.error = '';
 
@@ -103,6 +110,9 @@ export class JoinGamePopupComponent {
             this.popup.hidePopup();
             this.router.navigate(['/asian-poker/waiting-room/' + id]);
           }
+        } else {
+          consoleError(`Session with id ${id} not found.`);
+          this.error += `Session with id ${id} not found.`;
         }
       });
     }
@@ -121,8 +131,8 @@ export class JoinGamePopupComponent {
 // - Exit: leaving by closing tab/window
 // - Quit: leaving by clicking 'leave' button
 //
-// II. Leaving can occur in two states: setup and playing.
-// Setup waits for player for 30 seconds (unless he's a host); playing waits for player for 15 seconds. If player was a host, he gets replaced.
+// II. Leaving can occur in two states: 'setup' and in-'game'.
+// Setup waits for player for 30 seconds (unless he's a host); 'in-game' waits for player for 15 seconds. If player was a host, he gets replaced.
 // After that time, player is kicked off the session. That means:  update session.playersJoinedIds and session.playersJoined.
 //
 // III. If host leaves during 'setup' state:

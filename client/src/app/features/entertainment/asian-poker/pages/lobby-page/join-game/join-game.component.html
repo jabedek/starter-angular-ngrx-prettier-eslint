@@ -1,37 +1,41 @@
-<div class="lobby">
-  <h3>Dołącz do sesji</h3>
-  <div class="list-wrapper">
-    <div class="list-headers">
-      <div class="title">Nazwa gry</div>
-      <div class="hostDisplayName">Gospodarz</div>
-      <div class="players">
-        <div class="playersJoined">Gracze</div>
-      </div>
-      <div class="accessibility">Dostęp</div>
-      <div class="sessionState">Status</div>
-    </div>
-    <div class="list">
-      <div
-        *ngFor="let session of sessions; trackBy: trackBySessions"
-        class="list-item"
-        [ngClass]="{ selected: selected === session.id }"
-        appAccess
-        (access)="selected = session.id">
-        <div class="title">{{ session.title }}</div>
-        <div class="hostDisplayName">{{ session.hostDisplayName }}</div>
-        <div class="players">
-          <div class="playersJoined">{{ session.playersJoined }}</div>
-          /
-          <div class="playersLimit">{{ session.playersLimit }}</div>
-        </div>
-        <div class="accessibility" [ngClass]="{ password: session.password }">{{ session.accessibility }}</div>
-        <div class="sessionState state-{{ session.sessionState }}">{{ session.sessionState }}</div>
-      </div>
-    </div>
-  </div>
+<app-basic-card>
+  <ng-container title>Dołącz do sesji</ng-container>
 
-  <div class="actions">
+  <ng-container content>
+    <div class="list-wrapper">
+      <div class="list-headers">
+        <div class="title">Nazwa gry</div>
+        <div class="hostDisplayName">Gospodarz</div>
+        <div class="players">
+          <div class="playersJoined">Gracze</div>
+        </div>
+        <div class="accessibility">Dostęp</div>
+        <div class="sessionState">Status</div>
+      </div>
+      <div class="list">
+        <div
+          (dblclick)="join(selected)"
+          *ngFor="let session of sessions; trackBy: trackBySessions"
+          class="list-item"
+          [ngClass]="{ selected: selected === session.id }"
+          appAccess
+          (access)="selected = session.id">
+          <div class="title">{{ session.title }}</div>
+          <div class="hostDisplayName">{{ session.hostDisplayName }}</div>
+          <div class="players">
+            <div class="playersJoined">{{ session.playersJoined }}</div>
+            /
+            <div class="playersLimit">{{ session.playersLimit }}</div>
+          </div>
+          <div class="accessibility" [ngClass]="{ password: session.password }">{{ session.accessibility }}</div>
+          <div class="sessionState state-{{ session.sessionState }}">{{ session.sessionState }}</div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+
+  <ng-container actions>
     <app-button [disabled]="!selected" (click)="join(selected)">Dołącz</app-button>
-    <app-button (click)="join()">Dołącz do prywatnej</app-button>
-  </div>
-</div>
+    <app-button (click)="join()">Dołącz po id</app-button>
+  </ng-container>
+</app-basic-card>

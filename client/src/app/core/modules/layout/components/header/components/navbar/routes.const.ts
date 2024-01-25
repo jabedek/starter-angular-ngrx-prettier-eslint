@@ -73,5 +73,11 @@ export const APP_ROUTES: AppRoute[] = [
     label: 'Decision tree',
     desc: 'Create a decision tree - a form, a poll, an instruction *',
   },
+  {
+    type: 'single',
+    path: '/food-and-groceries',
+    label: 'Food & Groceries',
+    desc: 'Ordering food & groceries *',
+  },
   { type: 'single', path: '/weather-archive', label: 'Weather archive', desc: 'Weather Archive (only past!) *' },
 ];

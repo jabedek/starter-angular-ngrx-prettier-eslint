@@ -1,6 +1,6 @@
 import { Component, ElementRef, Input, Renderer2, forwardRef } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { InputOption } from '@shared/common-modules';
+import { InputOption } from '@shared/models/common.models';
 
 @Component({
   selector: 'app-radio',

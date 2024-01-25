@@ -26,4 +26,8 @@ export class FirebaseUsersService extends BaseComponent {
     });
     this.__addFirebaseListener('listenToLoggedUsers', unsub);
   }
+
+  getUsersByIds(ids: string[]): Promise<UserAppAccount[]> {
+    return this.fdb.getBy<UserAppAccount>(DbRes.users, 'id', ids);
+  }
 }

@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { AsianPokerService } from '@core/firebase/asian-poker.service';
 import { AsianPokerSessionForm } from '@features/entertainment/asian-poker/asian-poker-lobby.model';
 import { Store } from '@ngrx/store';
-import { InputOption } from '@shared/common-modules';
+import { InputOption } from '@shared/models/common.models';
 import { BaseComponent } from '@shared/abstracts/base/base.component';
 import { consoleError } from '@shared/helpers/common.utils';
 import { AppState } from '@store/app-state';

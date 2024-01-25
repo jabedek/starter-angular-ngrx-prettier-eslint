@@ -44,4 +44,6 @@ export class GamePageComponent {
       this.handsAnalyzer.loadCycleCards(this.session);
     }
   }
+
+  listenToPlayersLeaveGame() {}
 }

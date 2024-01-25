@@ -15,4 +15,8 @@
       @include controls.app_button_1;
     }
   }
+
+  .disabled {
+    filter: grayscale(100%);
+  }
 }

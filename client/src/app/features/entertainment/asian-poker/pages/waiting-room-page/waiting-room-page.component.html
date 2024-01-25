@@ -1,2 +1,51 @@
 <app-see-data [data]="session"></app-see-data>
-```
+
+<app-basic-card *ngIf="session">
+  <ng-container title>Oczekiwanie na graczy</ng-container>
+
+  <ng-container content>
+    <div class="list-wrapper">
+      <div class="list-headers">
+        <div class="playerName">Nazwa gracza</div>
+        <div class="status">Status</div>
+      </div>
+      <div class="list">
+        <ng-container *ngFor="let slot of slots; trackBy: trackBySlots">
+          <ng-container *ngIf="slot.user">
+            <ng-container *ngTemplateOutlet="player; context: { $implicit: slot.user, session }"></ng-container>
+          </ng-container>
+          <ng-container *ngIf="!slot.user">
+            <ng-container *ngTemplateOutlet="empty"></ng-container>
+          </ng-container>
+        </ng-container>
+      </div>
+    </div>
+
+    <div class="info">{{ session.playersJoined }} / {{ session.playersLimit }}</div>
+    <div class="info">Gra rozpoczyna się automatycznie gdy dołączy max graczy</div>
+  </ng-container>
+
+  <ng-container actions>
+    <div class="action-item">
+      <app-button>Zaproś gracza</app-button>
+    </div>
+
+    <div class="action-item">
+      <app-button [disabled]="session.playersJoined < 3">Zacznij grę natychmiast</app-button>
+      <div class="info">Min 3 graczy</div>
+    </div>
+
+    <button style="background-color: red" (click)="startGame()">Zacznij grę DEV</button>
+  </ng-container>
+</app-basic-card>
+
+<ng-template #player let-user let-session="session">
+  <div class="list-item wrapper-status-{{ user?.status }}" [ngClass]="{ host: user.id === session.hostId }">
+    <div class="playerName">{{ user.displayName || "[ oczekiwanie na dołączenie ]" }}</div>
+    <div class="status status-{{ user?.status }}">{{ user?.status || "" }}</div>
+  </div>
+</ng-template>
+
+<ng-template #empty>
+  <div class="list-item empty">PUSTE</div>
+</ng-template>

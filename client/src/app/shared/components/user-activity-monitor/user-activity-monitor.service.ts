@@ -1,4 +1,4 @@
-import { Injectable, OnDestroy } from '@angular/core';
+import { Injectable, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FirebaseAuthService } from '@core/firebase/firebase-auth.service';
 import { BaseComponent } from '@shared/abstracts/base/base.component';
@@ -66,6 +66,8 @@ export class UserActivityMonitorService extends BaseComponent implements OnDestr
   }
 
   initCheckers() {
+    console.log('initCheckers', this);
+
     if (!this.alreadyInited) {
       this.alreadyInited = true;
 
@@ -82,9 +84,11 @@ export class UserActivityMonitorService extends BaseComponent implements OnDestr
   }
 
   private scheduleIntervalListeningToUserActive() {
-    this.listenUserActivity();
-    this.intervalId = setInterval(() => this.listenUserActivity(), MonitorWaiting.milisecondsInt);
-    console.log(this.intervalId);
+    this.removeUserActivityListeners();
+    setTimeout(() => {
+      this.listenUserActivity();
+      this.intervalId = setInterval(() => this.listenUserActivity(), MonitorWaiting.milisecondsInt);
+    }, 500);
   }
 
   private listenUserActivity() {
@@ -98,9 +102,27 @@ export class UserActivityMonitorService extends BaseComponent implements OnDestr
     const start = new Date().getTime();
     const end = addMinutes(start, MonitorWaiting.minutesInt).getTime();
     this.waitingDuration$.next({ start, end });
-
     const timeout = setTimeout(() => this.removeUserActivityListeners(), MonitorTracking.milisecondsInt);
     this.addUserActivityListeners(timeout);
+  }
+
+  private addUserActivityListeners(timeout: NodeJS.Timeout) {
+    console.log('addUserActivityListeners');
+
+    const start = new Date().getTime();
+    const end = addMinutes(start, MonitorTracking.minutesInt).getTime();
+    this.trackingDuration$.next({ start, end });
+
+    UserActionEvents.forEach((eventName: UserActionEventName) =>
+      window.addEventListener(eventName, (event) => this.handleUserActivityEvents(eventName, event, timeout), { once: true }),
+    );
+  }
+
+  private removeUserActivityListeners() {
+    const timeout: NodeJS.Timeout | undefined = undefined;
+    UserActionEvents.forEach((eventName: UserActionEventName) =>
+      window.removeEventListener(eventName, (event) => this.handleUserActivityEvents(eventName, event, timeout)),
+    );
   }
 
   private handleUserActivityEvents(eventName: UserActionEventName, event: Event, timeout: NodeJS.Timeout | undefined) {
@@ -116,23 +138,5 @@ export class UserActivityMonitorService extends BaseComponent implements OnDestr
       clearTimeout(timeout);
       this.removeUserActivityListeners();
     }
-  }
-
-  private addUserActivityListeners(timeout: NodeJS.Timeout) {
-    const start = new Date().getTime();
-    const end = addMinutes(start, MonitorTracking.minutesInt).getTime();
-    this.trackingDuration$.next({ start, end });
-
-    UserActionEvents.forEach((eventName: UserActionEventName) =>
-      window.addEventListener(eventName, (event) => this.handleUserActivityEvents(eventName, event, timeout), { once: true }),
-    );
-  }
-
-  private removeUserActivityListeners() {
-    const timeout: NodeJS.Timeout | undefined = undefined;
-
-    UserActionEvents.forEach((eventName: UserActionEventName) =>
-      window.removeEventListener(eventName, (event) => this.handleUserActivityEvents(eventName, event, timeout)),
-    );
   }
 }

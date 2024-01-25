@@ -7,11 +7,8 @@ import {
   SessionGameData,
 } from '@features/entertainment/asian-poker/asian-poker-lobby.model';
 import { consoleError, tryCatch } from '@shared/helpers/common.utils';
-import { UserAppAccount } from '@store/auth/auth.state';
-import { Unsubscribe, arrayUnion, increment, updateDoc } from 'firebase/firestore';
-import { from, of } from 'rxjs';
+import { updateDoc } from 'firebase/firestore';
 import { AsianPokerGame } from '@features/entertainment/asian-poker/asian-poker-game.model';
-import { BaseComponent } from '@shared/abstracts/base/base.component';
 
 @Injectable({
   providedIn: 'root',
@@ -25,18 +22,88 @@ export class AsianPokerService {
       gameId: null,
       playersJoined: 0,
       playersJoinedIds: [],
-      sessionState: 'lobby',
+      sessionState: 'setup',
       finishResult: null,
     };
 
     return this.fdb.insertNew(DbRes.asianpoker_sessions, session);
   }
 
+  async startNewGame(sessionId: string, playersIDs: string[]) {
+    const gameId = generateDocumentId('asianpoker_game');
+    // Update session player data
+    const [session]: AsianPokerSession[] = await this.fdb.getBy(DbRes.asianpoker_sessions, 'id', [sessionId]);
+
+    const sessionUpdate: AsianPokerSession = {
+      ...session,
+      playersJoinedIds: playersIDs,
+      playersJoined: playersIDs.length,
+      sessionState: 'in-game',
+      gameId,
+    };
+
+    // // Update each player data
+    //         Promise.all([...playersIDs.map((task) => TasksAPI.deleteTask(task, schedule.projectId))])
+    //           .then(() => {
+    //             if (deleteScheduleAlso) {
+    //               deleteDoc(doc(FirebaseDB, 'schedules', scheduleId)).catch((e) => console.error('deleteDoc schedules', e));
+    //             }
+    //           })
+    //           .catch((e) => console.error('deleteTask(s)', e));
+
+    // playersIDs.forEach((playerId) => {
+    //   const playerRef = this.fdb.documentRef(DbRes.users, playerId);
+
+    //   this.fdb.update(playerRef, {
+    //     'appFeaturesData.asianPoker.currentSessionId': sessionId,
+    //   });
+    // });
+
+    // Create game
+    const game: AsianPokerGame = {
+      id: gameId,
+      sessionId,
+      gameState: 'started',
+      deckVariant: 'standard',
+      turnsCounter: 0,
+      turnCycleCounter: 0,
+      turnPlayers: [],
+      currentPlayerIndex: 0,
+      currentDealerIndex: 0,
+      publicCards: [],
+      playersCalls: [],
+    };
+
+    console.log('startNewGame', sessionId, playersIDs, gameId);
+
+    const [result, error] = await tryCatch(
+      Promise.all([
+        this.fdb.insertNew(DbRes.asianpoker_games, game),
+        this.fdb.updateFullOverwrite(DbRes.asianpoker_sessions, sessionUpdate),
+      ]),
+    );
+
+    if (result) {
+      return result;
+    }
+    if (error) {
+      consoleError(error, 'startNewGame ' + sessionId);
+    }
+    return;
+  }
+
   async addPlayerToSession(playerId: string, sessionId: string) {
-    await updateDoc(this.fdb.documentRef(DbRes.asianpoker_sessions, sessionId), {
-      playersJoinedIds: arrayUnion(playerId),
-      playersJoined: increment(1),
-    });
+    const [session] = await this.getSessions([sessionId]);
+    if (!session) {
+      consoleError(`Session ${sessionId} not found`);
+      return;
+    }
+
+    const players = new Set([...session.playersJoinedIds, playerId]);
+    session.playersJoinedIds = [...players];
+    session.playersJoined = players.size;
+
+    await updateDoc(this.fdb.documentRef(DbRes.asianpoker_sessions, sessionId), session);
 
     await updateDoc(this.fdb.documentRef(DbRes.users, playerId), {
       'appFeaturesData.asianPoker.currentSessionId': sessionId,
@@ -48,11 +115,11 @@ export class AsianPokerService {
   }
 
   async getJoinableSessions() {
-    return this.fdb.getBy<AsianPokerSession>(DbRes.asianpoker_sessions, 'sessionState', ['lobby']);
+    return this.fdb.getBy<AsianPokerSession>(DbRes.asianpoker_sessions, 'sessionState', ['setup']);
   }
 
   async getWatchableSessions() {
-    return this.fdb.getBy<AsianPokerSession>(DbRes.asianpoker_sessions, 'sessionState', ['playing']);
+    return this.fdb.getBy<AsianPokerSession>(DbRes.asianpoker_sessions, 'sessionState', ['in-game']);
   }
 
   async getSessionGame(sessionId: string): Promise<SessionGameData | undefined> {

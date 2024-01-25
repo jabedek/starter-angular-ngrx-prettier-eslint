@@ -71,7 +71,7 @@ export class FirebaseAuthService extends BaseComponent {
     this.isLogged$.subscribe();
   }
 
-  async refreshLogin(tryReAuth: boolean, redirectToAfter?: string) {
+  async refreshLogin(tryReAuth: boolean) {
     this.__layoutService.setLoader('auth', 'active');
     let currentUser: User | null | undefined = undefined;
     this.firebaseAuth.onAuthStateChanged(async (user: User | null) => {
@@ -81,6 +81,13 @@ export class FirebaseAuthService extends BaseComponent {
       if (user) {
         this.supplyAppAccount(user);
         this.listenToUserAppAccountData(user);
+        const redirectToAfter = LocalStorage.getItem(StorageItem.REDIRECT_TO_AFTER);
+        console.log('redirectToAfter', redirectToAfter);
+
+        if (redirectToAfter) {
+          this.router.navigate([redirectToAfter]);
+          LocalStorage.removeItem(StorageItem.REDIRECT_TO_AFTER);
+        }
       }
 
       this.__layoutService.setLoader('auth', 'inactive');
@@ -108,7 +115,7 @@ export class FirebaseAuthService extends BaseComponent {
     }
   }
 
-  async firebaseLogout(redirectToAfter?: string) {
+  async firebaseLogout() {
     await signOut(this.firebaseAuth)
       .catch((err) => console.error('LOGOUT ERROR', err))
       .then(async () => {
@@ -121,6 +128,7 @@ export class FirebaseAuthService extends BaseComponent {
                 this.store.dispatch(setFirebaseCurrentUser({ user: null }));
                 this.store.dispatch(setUserAppAccount({ appAccount: undefined }));
                 await this.setUserLoginStatus(user, false);
+                this.router.navigate(['home']);
               }
             });
         } catch (e) {

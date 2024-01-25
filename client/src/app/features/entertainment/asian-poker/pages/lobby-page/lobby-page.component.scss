@@ -1,3 +1,5 @@
+@use "/src/assets/styles/variables";
+
 :host {
   display: flex;
   flex-wrap: wrap;
@@ -5,4 +7,12 @@
   align-items: center;
   min-height: 900px;
   height: 100%;
+
+  ::ng-deep {
+    app-countdown-timer {
+      font-size: 18px;
+
+      color: #fff;
+    }
+  }
 }

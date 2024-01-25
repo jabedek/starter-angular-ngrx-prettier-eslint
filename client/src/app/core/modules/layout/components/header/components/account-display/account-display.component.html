@@ -5,10 +5,10 @@
     </p>
 
     <div class="account" [routerLink]="['/account']">account</div>
-    <div class="account logout" appAccess (access)="auth.firebaseLogout('home')">logout</div>
+    <div class="account logout" appAccess (access)="auth.firebaseLogout()">logout</div>
   </div>
 </ng-container>
 
 <ng-template #login>
-  <div class="account login" appAccess (access)="auth.refreshLogin(true, 'account')">login</div>
+  <div class="account login" appAccess (access)="auth.refreshLogin(true)">login</div>
 </ng-template>

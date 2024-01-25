@@ -65,10 +65,10 @@ export class AuthButtonComponent extends BaseComponent {
   authAction() {
     switch (this.details.mode) {
       case 'login':
-        this.auth.refreshLogin(true, this.redirectToAfter);
+        this.auth.refreshLogin(true);
         break;
       case 'logout':
-        this.auth.firebaseLogout(this.redirectToAfter);
+        this.auth.firebaseLogout();
         break;
       default:
         break;

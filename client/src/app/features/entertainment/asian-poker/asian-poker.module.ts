@@ -18,6 +18,7 @@ import { MakeGameComponent } from './pages/lobby-page/make-game/make-game.compon
 import { JoinGameComponent } from './pages/lobby-page/join-game/join-game.component';
 import { WaitingRoomPageComponent } from './pages/waiting-room-page/waiting-room-page.component';
 import { JoinGamePopupComponent } from './pages/lobby-page/join-game/components/join-game-popup/join-game-popup.component';
+import { BasicCardComponent } from './components/basic-card/basic-card.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { JoinGamePopupComponent } from './pages/lobby-page/join-game/components/
     JoinGameComponent,
     WaitingRoomPageComponent,
     JoinGamePopupComponent,
+    BasicCardComponent,
   ],
   imports: [
     CommonModule,

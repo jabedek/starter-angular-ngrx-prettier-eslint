@@ -1,5 +1,7 @@
 @use "/src/assets/styles/variables";
 
+$scrollbar-width: 8px;
+
 html {
   --scrollbarBG: red;
   --thumbBGhover: #888;
@@ -11,7 +13,7 @@ html {
 }
 
 *::-webkit-scrollbar {
-  width: 8px;
+  width: $scrollbar-width;
   height: 12px;
 }
 

@@ -13,6 +13,7 @@ export class PopupComponent {
   @ViewChild('container', { read: ViewContainerRef }) container: ViewContainerRef | undefined;
 
   userAction$ = this.userActionNext.asObservable();
+  closeOnOutclick = false;
 
   constructor(
     private popup: PopupService,
@@ -21,6 +22,7 @@ export class PopupComponent {
 
   currentContent$ = this.popup.currentContent$.pipe(
     map((curr) => {
+      this.closeOnOutclick = !!curr?.config.closeOnOutclick;
       if (curr?.contentType === 'component') {
         const Component: Type<unknown> = curr.content.component; // note: we're passing type here
         const Comp = new Component();
@@ -50,6 +52,17 @@ export class PopupComponent {
             callbackAfterAccept();
           }
         }
+      }
+    }
+  }
+
+  handleOutclick(event: Event) {
+    if (this.closeOnOutclick) {
+      const target = event.target as HTMLElement;
+      if (target.classList.contains('_popup_')) {
+        console.log('handleOutclick');
+
+        this.popup.hidePopup();
       }
     }
   }

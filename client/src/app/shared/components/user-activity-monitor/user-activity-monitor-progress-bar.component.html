@@ -1,10 +1,11 @@
-<p>home-page works!</p>
-
 <div class="ticks-wrapper">
   <div *ngIf="checkingIntervalTicks | async as ticks">
+    <p>checks interval</p>
     <app-progress-bar [currentValue]="ticks.start" [maxValue]="ticks.end" color="rgb(255, 87, 0)"></app-progress-bar>
   </div>
+
   <div *ngIf="checkingLengthTicks | async as minorTicks">
+    <p>checking</p>
     <app-progress-bar
       #progressLength
       [currentValue]="minorTicks.start"

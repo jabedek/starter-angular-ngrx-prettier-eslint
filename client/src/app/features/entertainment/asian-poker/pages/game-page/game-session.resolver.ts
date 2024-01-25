@@ -13,5 +13,7 @@ export const sessionGameResolver: ResolveFn<SessionGameData | undefined> = (
   route: ActivatedRouteSnapshot,
   state: RouterStateSnapshot,
 ) => {
+  console.log('sessionGameResolver');
+
   return inject(AsianPokerService).getSessionGame(route.paramMap.get('id')!);
 };

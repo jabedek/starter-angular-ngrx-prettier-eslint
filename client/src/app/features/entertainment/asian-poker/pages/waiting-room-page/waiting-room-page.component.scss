@@ -1,0 +1,103 @@
+@use "/src/assets/styles/mixins";
+@use "/src/assets/styles/variables";
+
+.playerName {
+  width: 220px;
+  overflow-wrap: break-word;
+}
+
+.status {
+  width: 110px;
+  overflow-wrap: break-word;
+
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 5px 9px;
+
+  &.status-ready {
+    color: rgb(0, 197, 0);
+    text-shadow: variables.$shadow-4;
+  }
+
+  &.status-disconnected {
+    color: rgb(197, 0, 0);
+    text-shadow: variables.$shadow-4;
+  }
+
+  &.status-invited {
+    color: #000;
+  }
+}
+
+.activity {
+  width: 110px;
+  overflow-wrap: break-word;
+}
+
+.list-item.host {
+  .playerName {
+    position: relative;
+
+    &::after {
+      font-family: Manrope;
+      content: "HOST";
+      $size: 14px;
+      color: variables.$bg-roof;
+      font-size: 10px;
+      font-weight: 700;
+
+      width: fit-content;
+      height: $size;
+      position: absolute;
+      text-shadow: variables.$shadow-4;
+      transform: translate(-1px, -8px);
+    }
+  }
+}
+
+.list-item.empty {
+  background: rgba(100, 100, 100, 1) !important;
+  color: rgba(155, 155, 155, 1) !important;
+  font-weight: 700 !important;
+  font-style: italic;
+  width: 100% !important;
+  justify-content: center !important;
+}
+
+:host::ng-deep {
+  app-basic-card .basic-card__content .list-wrapper {
+    height: calc(270px);
+
+    .list {
+      height: 240px;
+    }
+
+    .wrapper-status-invited .playerName {
+      color: rgb(250, 150, 120);
+      font-weight: 600;
+      text-transform: uppercase;
+      text-shadow: variables.$shadow-4;
+    }
+  }
+}
+
+.info {
+  font-size: 14px;
+  padding: 5px 9px;
+  background: rgba(150, 150, 150, 0.15);
+  width: fit-content;
+  border-radius: 4px;
+  border: 1px solid rgba(97, 97, 97, 1);
+  margin: 8px 0;
+  font-family: "Azeret Mono";
+}
+
+.action-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  .info {
+    margin-right: 10px;
+  }
+}

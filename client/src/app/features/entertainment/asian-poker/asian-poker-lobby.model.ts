@@ -2,18 +2,18 @@ import { AsianPokerGame } from './asian-poker-game.model';
 
 export type AsianPokerSession = {
   id: string;
-  gameId: string | null;
   title: string;
+  password: string | null;
   hostId: string;
   hostDisplayName: string;
-  password: string | null;
   playersLimit: number;
-  playersJoined: number; // players joined when game started
-  playersJoinedIds: string[];
   accessibility: 'invite' | 'all';
   visibility: 'private' | 'public';
-  sessionState: 'lobby' | 'playing' | 'finished';
   actionDurationSeconds: number;
+  playersJoined: number; // players joined when game started
+  playersJoinedIds: string[];
+  sessionState: 'setup' | 'in-game' | 'finished';
+  gameId: string | null;
   finishResult: {
     cause: 'game-finished' | 'players-cancelled';
   } | null; // 'undefined' means some kind of error;

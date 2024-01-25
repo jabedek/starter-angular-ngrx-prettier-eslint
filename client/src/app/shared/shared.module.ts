@@ -17,6 +17,7 @@ import { RadioComponent } from './components/controls/radio/radio.component';
 import { DurationPickerComponent } from './components/controls/duration-picker/duration-picker.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { UserActivityMonitorProgressBarComponent } from './components/user-activity-monitor/user-activity-monitor-progress-bar.component';
+import { CountdownTimerComponent } from './components/countdown-timer/countdown-timer.component';
 
 @NgModule({
   declarations: [
@@ -36,9 +37,12 @@ import { UserActivityMonitorProgressBarComponent } from './components/user-activ
     DurationPickerComponent,
     ProgressBarComponent,
     UserActivityMonitorProgressBarComponent,
+    CountdownTimerComponent,
   ],
   imports: [CommonModule, FormsModule, ReactiveFormsModule],
   exports: [
+    FormsModule,
+    ReactiveFormsModule,
     SeeDataComponent,
     BurgerMenuComponent,
     SpinnerComponent,
@@ -55,6 +59,7 @@ import { UserActivityMonitorProgressBarComponent } from './components/user-activ
     DurationPickerComponent,
     ProgressBarComponent,
     UserActivityMonitorProgressBarComponent,
+    CountdownTimerComponent,
   ],
 })
 export class SharedModule {}

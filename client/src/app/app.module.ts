@@ -35,6 +35,7 @@ import { StreamingStudioModule } from '@features/entertainment/streaming-studio/
 import { DecisionTreeModule } from '@features/misc/decision-tree/decision-tree.module';
 import { WeatherArchiveModule } from '@features/misc/weather-archive/weather-archive.module';
 import { Lang } from '@shared/models/enums';
+import { FoodAndGroceriesModule } from '@features/misc/food-and-groceries/food-and-groceries.module';
 
 if (environment.environmentName === 'production') {
   console.log = () => ({});
@@ -68,6 +69,7 @@ export const Features = [
   SocialitiesModule,
   // Misc
   DecisionTreeModule,
+  FoodAndGroceriesModule,
   WeatherArchiveModule,
 ];
 

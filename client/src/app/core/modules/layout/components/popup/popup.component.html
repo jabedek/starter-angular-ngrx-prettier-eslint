@@ -1,4 +1,4 @@
-<div class="popup" *ngIf="currentContent$ | async as popupData">
+<div class="popup _popup_" (click)="handleOutclick($event)" *ngIf="currentContent$ | async as popupData">
   <div class="popup__card">
     <div class="popup__body">
       <div

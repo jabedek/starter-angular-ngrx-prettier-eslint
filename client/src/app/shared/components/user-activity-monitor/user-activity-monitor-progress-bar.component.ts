@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, ViewChild } from '@angular/core';
 
 import { ProgressBarComponent } from '@shared/components/progress-bar/progress-bar.component';
 import { interval, map, of, switchMap, take, takeUntil, tap, timer } from 'rxjs';
@@ -11,7 +11,6 @@ import { MonitorWaiting, MonitorTracking, UserActivityMonitorService } from './u
 })
 export class UserActivityMonitorProgressBarComponent {
   @ViewChild('progressLength', { read: ProgressBarComponent }) set progressLength(progressLength: ProgressBarComponent) {
-    console.log(progressLength);
     this._progressLength = progressLength;
   }
 
@@ -21,7 +20,12 @@ export class UserActivityMonitorProgressBarComponent {
   private _progressLength: ProgressBarComponent | undefined;
 
   checkingIntervalTicks = this.activityMonitor.waitingDuration$.pipe(
-    switchMap(() => interval(1000).pipe(take(MonitorWaiting.secondsInt))),
+    switchMap(() =>
+      interval(1000).pipe(
+        take(MonitorWaiting.secondsInt),
+        tap(() => this.cdr.detectChanges()),
+      ),
+    ),
     map((i) => ({ start: i + 1, end: MonitorWaiting.secondsInt })),
   );
 
@@ -29,6 +33,7 @@ export class UserActivityMonitorProgressBarComponent {
     switchMap(() =>
       interval(1000).pipe(
         take(MonitorTracking.secondsInt),
+        tap(() => this.cdr.detectChanges()),
         takeUntil(
           this.activityMonitor.activePresenceInCurrentInterval$.pipe(
             tap(() => this.progressLength?.setValue(MonitorTracking.secondsInt)),
@@ -39,5 +44,8 @@ export class UserActivityMonitorProgressBarComponent {
     map((i) => ({ start: i + 1, end: MonitorTracking.secondsInt })),
   );
 
-  constructor(public activityMonitor: UserActivityMonitorService) {}
+  constructor(
+    public activityMonitor: UserActivityMonitorService,
+    private cdr: ChangeDetectorRef,
+  ) {}
 }
