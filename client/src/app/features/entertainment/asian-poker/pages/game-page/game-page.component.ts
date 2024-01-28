@@ -1,49 +1,62 @@
-import { Component } from '@angular/core';
 import 'frotsi';
-import { AsianPokerPlayerInfo, AsianPokerGame } from '../../asian-poker-game.model';
-import { SessionCroupierService } from '../../services/session-croupier.service';
-import { SessionHandsAnalyzerService } from '../../services/session-hands-analyzer.service';
+import { Component, HostListener } from '@angular/core';
+import { PlayerWithHand } from '../../models/game.model';
 import { ActivatedRoute } from '@angular/router';
-import { AsianPokerService } from '@core/firebase/asian-poker.service';
-import { AsianPokerSession } from '../../asian-poker-lobby.model';
+import { AsianPokerService } from '@features/entertainment/asian-poker/firebase/asian-poker.service';
+import { GameAnalyzerService } from '../../services/game-analyzer.service';
+import { GameManagerService } from '../../services/game-manager.service';
+import { AsianPokerGameDTO } from '../../models/dto';
 
 const somePlayers = [
-  new AsianPokerPlayerInfo('456', 'Simon', 3),
-  new AsianPokerPlayerInfo('45116', 'Kat', 4),
-  new AsianPokerPlayerInfo('789', 'Mark', 2),
-  new AsianPokerPlayerInfo('17891', 'Helga', 1),
-  new AsianPokerPlayerInfo('091', 'Pamela', 1),
+  new PlayerWithHand('456', 'Simon', 3),
+  new PlayerWithHand('45116', 'Kat', 4),
+  new PlayerWithHand('789', 'Mark', 2),
+  new PlayerWithHand('17891', 'Helga', 1),
+  new PlayerWithHand('091', 'Pamela', 1),
 ];
 
 @Component({
   selector: 'app-game-page',
   templateUrl: './game-page.component.html',
   styleUrls: ['./game-page.component.scss'],
-  providers: [SessionCroupierService],
 })
 export class GamePageComponent {
-  currentUser = new AsianPokerPlayerInfo('123', 'John', 5);
+  currentUser = new PlayerWithHand('123', 'John', 5);
   sessionId = '';
 
-  session: AsianPokerGame | undefined;
+  session: AsianPokerGameDTO | undefined;
 
-  constructor(
-    private croupier: SessionCroupierService,
-    private handsAnalyzer: SessionHandsAnalyzerService,
-    private as: AsianPokerService,
-    private route: ActivatedRoute,
-  ) {
-    this.route.data.subscribe((data) => {
-      console.log(data);
-    });
-
-    const startingPlayers = [this.currentUser, ...somePlayers];
-    this.sessionId = this.croupier.createNewSession(startingPlayers);
-    this.session = this.croupier.getSession(this.sessionId);
-    if (this.session) {
-      this.handsAnalyzer.loadCycleCards(this.session);
+  @HostListener('mousedown', ['$event'])
+  test(event: MouseEvent) {
+    console.log(event);
+    // filter for only buttons 3 and 4
+    if (event.button === 3 || event.button === 4) {
+      console.log('event.button', event.button);
+      // prevent default behaviour
+      event.stopPropagation();
+      event.stopImmediatePropagation();
+      event.preventDefault();
     }
   }
 
-  listenToPlayersLeaveGame() {}
+  constructor(
+    private analyzer: GameAnalyzerService,
+    private manager: GameManagerService,
+    private as: AsianPokerService,
+    private route: ActivatedRoute,
+  ) {
+    this.route.data.subscribe(({ data }) => {
+      const { session, game } = data;
+      console.log(session, game);
+    });
+
+    const startingPlayers = [this.currentUser, ...somePlayers];
+    // this.sessionId = this.croupier.initSessionAndGame(startingPlayers);
+    // this.session = this.croupier.getSession(this.sessionId);
+    if (this.session) {
+      this.analyzer.cycleAnalysis(this.session);
+    }
+  }
+
+  // listenToPlayersLeaveGame() {}
 }

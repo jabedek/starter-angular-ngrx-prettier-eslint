@@ -14,28 +14,32 @@ import { TranslateModule } from '@ngx-translate/core';
 import { GamePageComponent } from './pages/game-page/game-page.component';
 import { LobbyPageComponent } from './pages/lobby-page/lobby-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MakeGameComponent } from './pages/lobby-page/make-game/make-game.component';
-import { JoinGameComponent } from './pages/lobby-page/join-game/join-game.component';
 import { WaitingRoomPageComponent } from './pages/waiting-room-page/waiting-room-page.component';
-import { JoinGamePopupComponent } from './pages/lobby-page/join-game/components/join-game-popup/join-game-popup.component';
 import { BasicCardComponent } from './components/basic-card/basic-card.component';
-
+import { BasicShelfComponent } from './components/basic-shelf/basic-shelf.component';
+import { GamesListComponent } from './pages/lobby-page/games-list/games-list.component';
+import { JoinGamePopupComponent } from './pages/lobby-page/games-list/components/join-game-popup/join-game-popup.component';
+import { CreateSessionComponent } from './pages/lobby-page/create-session/create-session.component';
 @NgModule({
   declarations: [
-    AsianPokerComponent,
-    CardStyleDirective,
-    PlayerGuiComponent,
-    PlayingTableComponent,
-    AsianPokerButtonComponent,
-    HandPickerComponent,
-    CardPipe,
     GamePageComponent,
     LobbyPageComponent,
-    MakeGameComponent,
-    JoinGameComponent,
     WaitingRoomPageComponent,
+
+    AsianPokerComponent,
+    PlayerGuiComponent,
+    PlayingTableComponent,
+    HandPickerComponent,
+    CreateSessionComponent,
+    GamesListComponent,
     JoinGamePopupComponent,
+
+    AsianPokerButtonComponent,
     BasicCardComponent,
+    BasicShelfComponent,
+
+    CardStyleDirective,
+    CardPipe,
   ],
   imports: [
     CommonModule,

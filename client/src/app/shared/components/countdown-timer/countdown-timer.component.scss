@@ -22,7 +22,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    animation: countdown 4s 5s linear;
+    $seconds-delay: 5s;
+    $duration: 3s;
+
+    animation: countdown $duration $seconds-delay linear;
   }
 }
 

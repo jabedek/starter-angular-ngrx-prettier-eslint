@@ -20,15 +20,19 @@
           [ngClass]="{ selected: selected === session.id }"
           appAccess
           (access)="selected = session.id">
-          <div class="title">{{ session.title }}</div>
-          <div class="hostDisplayName">{{ session.hostDisplayName }}</div>
+          <div class="title">{{ session.sessionSettings }}</div>
+          <div class="hostDisplayName">{{ session.sessionSettings.hostDisplayName }}</div>
           <div class="players">
-            <div class="playersJoined">{{ session.playersJoined }}</div>
+            <div class="playersJoined">{{ session.sessionActivity.playersJoined }}</div>
             /
-            <div class="playersLimit">{{ session.playersLimit }}</div>
+            <div class="playersLimit">{{ session.sessionSettings.playersLimit }}</div>
           </div>
-          <div class="accessibility" [ngClass]="{ password: session.password }">{{ session.accessibility }}</div>
-          <div class="sessionState state-{{ session.sessionState }}">{{ session.sessionState }}</div>
+          <div class="accessibility" [ngClass]="{ password: session.sessionSettings.password }">
+            {{ session.sessionSettings.accessibility }}
+          </div>
+          <div class="sessionState state-{{ session.sessionActivity.sessionState }}">
+            {{ session.sessionActivity.sessionState }}
+          </div>
         </div>
       </div>
     </div>

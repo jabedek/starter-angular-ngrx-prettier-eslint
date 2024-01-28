@@ -37,7 +37,7 @@ $table-radius: 700px;
     transform: rotate(240deg) translateY(calc($table-radius / 2 * -1));
 
     .name-label {
-      transform: rotate(-240deg) translate(3px, -12px);
+      transform: rotate(-240deg) translate(2.5px, -12.5px);
     }
   }
   &:nth-child(6) {

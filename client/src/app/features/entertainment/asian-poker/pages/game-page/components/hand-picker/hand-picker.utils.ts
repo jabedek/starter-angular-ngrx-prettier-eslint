@@ -1,4 +1,6 @@
-import { BettingHand } from '../../../../models/betting-process';
+import { CHOICE_SUB_SET } from '@features/entertainment/asian-poker/constants/hand.constant';
+import { RanksPropositions, SelectionPropositions, SuitsPropositions, VariantPropositionsPoker } from './hand-picker.constant';
+import { BettingHand } from './hand-picker.model';
 
 export function getEmptyBettingSlotsGroups(slotsData: { slots: number; distinctGroups: number }) {
   const { slots, distinctGroups } = slotsData;
@@ -28,4 +30,30 @@ export function getEmptySlots(amount: number) {
   ];
 
   return [...slots].splice(0, amount);
+}
+
+export function getChoiceSubSet(forHand: string) {
+  if (['queen-poker', 'low-straight'].includes(forHand)) {
+    return CHOICE_SUB_SET.small;
+  }
+  if (['regular-poker', 'regular-straight'].includes(forHand)) {
+    return CHOICE_SUB_SET.regular;
+  }
+
+  return CHOICE_SUB_SET.big;
+}
+
+export function getPropositionsKeys(step: 'selection' | 'variant' | 'rank' | 'suit'): number[] {
+  switch (step) {
+    case 'selection':
+      return SelectionPropositions.map(({ key }) => key);
+    case 'variant':
+      return VariantPropositionsPoker.map(({ key }) => key);
+    case 'rank':
+      return RanksPropositions.filter(({ key }) => key !== -1).map(({ key }) => key);
+    case 'suit':
+      return SuitsPropositions.filter(({ key }) => key !== -1).map(({ key }) => key);
+    default:
+      return [];
+  }
 }

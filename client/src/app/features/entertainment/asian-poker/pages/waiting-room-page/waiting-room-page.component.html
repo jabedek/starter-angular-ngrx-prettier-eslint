@@ -21,7 +21,7 @@
       </div>
     </div>
 
-    <div class="info">{{ session.playersJoined }} / {{ session.playersLimit }}</div>
+    <div class="info">{{ session.sessionActivity.playersJoined }} / {{ session.sessionSettings.playersLimit }}</div>
     <div class="info">Gra rozpoczyna się automatycznie gdy dołączy max graczy</div>
   </ng-container>
 
@@ -31,7 +31,7 @@
     </div>
 
     <div class="action-item">
-      <app-button [disabled]="session.playersJoined < 3">Zacznij grę natychmiast</app-button>
+      <app-button [disabled]="session.sessionActivity.playersJoined < 3">Zacznij grę natychmiast</app-button>
       <div class="info">Min 3 graczy</div>
     </div>
 

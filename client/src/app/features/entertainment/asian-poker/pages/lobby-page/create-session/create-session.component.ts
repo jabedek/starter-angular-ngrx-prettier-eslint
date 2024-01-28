@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validators, ControlValueAccessor } from '@angular/forms';
 import { Router } from '@angular/router';
-import { AsianPokerService } from '@core/firebase/asian-poker.service';
-import { AsianPokerSessionForm } from '@features/entertainment/asian-poker/asian-poker-lobby.model';
+import { AsianPokerService } from '@features/entertainment/asian-poker/firebase/asian-poker.service';
+import { AsianPokerSessionSettings } from '@features/entertainment/asian-poker/models/lobby.model';
 import { Store } from '@ngrx/store';
 import { InputOption } from '@shared/models/common.models';
 import { BaseComponent } from '@shared/abstracts/base/base.component';
@@ -14,11 +14,11 @@ import { generateDocumentId } from 'frotsi';
 import { Observable, tap, takeUntil } from 'rxjs';
 
 @Component({
-  selector: 'app-make-game',
-  templateUrl: './make-game.component.html',
-  styleUrls: ['./make-game.component.scss'],
+  selector: 'app-create-session',
+  templateUrl: './create-session.component.html',
+  styleUrls: ['./create-session.component.scss'],
 })
-export class MakeGameComponent extends BaseComponent {
+export class CreateSessionComponent extends BaseComponent {
   sessionForm = new FormGroup({
     hostId: new FormControl({ value: '', disabled: true }, [Validators.required]),
     hostDisplayName: new FormControl({ value: '', disabled: true }, [Validators.required]),
@@ -55,7 +55,7 @@ export class MakeGameComponent extends BaseComponent {
     private ap: AsianPokerService,
     private router: Router,
   ) {
-    super('MakeGameComponent');
+    super('CreateSessionComponent');
 
     this.appAccount$.subscribe();
   }
@@ -63,9 +63,9 @@ export class MakeGameComponent extends BaseComponent {
   create() {
     if (this.sessionForm.valid) {
       const id = generateDocumentId('ap_session');
-      const data = { ...this.sessionForm.getRawValue(), id } as AsianPokerSessionForm;
+      const data = { ...this.sessionForm.getRawValue(), id } as AsianPokerSessionSettings;
 
-      this.ap.startNewSession(data).then(() => {
+      this.ap.startNewSession(id, data).then(() => {
         this.ap
           .addPlayerToSession(data.hostId, id)
           .then(() => {

@@ -1,5 +1,6 @@
 import { Directive, ElementRef, Input } from '@angular/core';
-import { Card, SuitsBlack } from '../models/card.model';
+import { Card } from '../models/card.model';
+import { SuitsBlack } from '../constants/card.constant';
 
 @Directive({
   selector: '[appCardStyle]',

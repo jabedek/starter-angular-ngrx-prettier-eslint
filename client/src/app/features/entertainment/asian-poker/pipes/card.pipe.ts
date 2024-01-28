@@ -5,7 +5,7 @@ import { SuitDisplayItem, convertSuit } from '../utils/card-display-converter';
   name: 'card',
 })
 export class CardPipe implements PipeTransform {
-  transform(value: SuitDisplayItem | undefined, convertTo: 'name' | 'symbol' = 'symbol'): unknown {
+  transform(value: SuitDisplayItem | string | undefined, convertTo: 'name' | 'symbol' = 'symbol'): unknown {
     if (!value) {
       return '';
     }

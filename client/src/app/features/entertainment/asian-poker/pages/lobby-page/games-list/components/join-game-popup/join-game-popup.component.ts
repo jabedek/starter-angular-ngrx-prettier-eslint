@@ -1,11 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
-import { AsianPokerService } from '@core/firebase/asian-poker.service';
+import { AsianPokerService } from '@features/entertainment/asian-poker/firebase/asian-poker.service';
 import { PopupService } from '@core/modules/layout/components/popup/popup.service';
-import { AsianPokerSession } from '@features/entertainment/asian-poker/asian-poker-lobby.model';
 import { consoleError, tryCatch } from '@shared/helpers/common.utils';
 import { UserAppAccount } from '@store/auth/auth.state';
+import { AsianPokerSessionDTO } from '@features/entertainment/asian-poker/models/dto';
 /**
  * Variant I: join public game -> pass selected session id. SessionId is set into the input field.
  * Variant II: join private game -> pass nothing. User must enter session id manually.
@@ -17,13 +17,13 @@ import { UserAppAccount } from '@store/auth/auth.state';
   selector: 'app-join-game-popup',
   templateUrl: './join-game-popup.component.html',
   styleUrls: [
-    '../../join-game.component.scss',
-    '../../../make-game/make-game.component.scss',
+    '../../games-list.component.scss',
+    '../../../create-session/create-session.component.scss',
     './join-game-popup.component.scss',
   ],
 })
 export class JoinGamePopupComponent {
-  private session: AsianPokerSession | undefined;
+  private session: AsianPokerSessionDTO | undefined;
   error = '';
 
   @Input() userPlayer: UserAppAccount | undefined;
@@ -74,41 +74,44 @@ export class JoinGamePopupComponent {
     this.error = '';
 
     if (id && playerId) {
-      this.ap.getSessions([id]).then(async (sessions) => {
+      this.ap.getSessionsByIds([id]).then(async (sessions) => {
         if (sessions.length > 0) {
           this.session = sessions[0];
-          const sessionPwd = this.session.password;
 
-          if (sessionPwd) {
-            if (password !== sessionPwd) {
-              consoleError('Wrong password.');
-              this.error += 'Wrong password.';
+          if (this.session) {
+            const sessionPwd = this.session.sessionSettings.password;
+
+            if (sessionPwd) {
+              if (password !== sessionPwd) {
+                consoleError('Wrong password.');
+                this.error += 'Wrong password.';
+                return;
+              } else {
+                console.log('Correct password.');
+              }
+            }
+
+            if (this.session.sessionActivity.playersJoined < this.session.sessionSettings.playersLimit) {
+              console.log('Can join.');
+            } else {
+              consoleError(`Too many players (reached limit: ${this.session.sessionSettings.playersLimit}).`);
+              this.error += `Too many players (reached limit: ${this.session.sessionSettings.playersLimit}).`;
+              return;
+            }
+
+            const [res, err] = await tryCatch(this.ap.addPlayerToSession(playerId, id));
+            if (err) {
+              consoleError(err);
+
+              this.error += `\n\n${err}.`;
+
               return;
             } else {
-              console.log('Correct password.');
+              console.log('Success');
+              console.log('res', res);
+              this.popup.hidePopup();
+              this.router.navigate(['/asian-poker/waiting-room/' + id]);
             }
-          }
-
-          if (this.session.playersJoined < this.session.playersLimit) {
-            console.log('Can join.');
-          } else {
-            consoleError(`Too many players (reached limit: ${this.session.playersLimit}).`);
-            this.error += `Too many players (reached limit: ${this.session.playersLimit}).`;
-            return;
-          }
-
-          const [res, err] = await tryCatch(this.ap.addPlayerToSession(playerId, id));
-          if (err) {
-            consoleError(err);
-
-            this.error += `\n\n${err}.`;
-
-            return;
-          } else {
-            console.log('Success');
-            console.log('res', res);
-            this.popup.hidePopup();
-            this.router.navigate(['/asian-poker/waiting-room/' + id]);
           }
         } else {
           consoleError(`Session with id ${id} not found.`);

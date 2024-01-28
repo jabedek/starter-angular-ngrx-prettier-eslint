@@ -1,12 +1,18 @@
 import { ActivatedRouteSnapshot, ResolveFn, RouterStateSnapshot } from '@angular/router';
-import { AsianPokerSession, SessionGameData } from '../../asian-poker-lobby.model';
 import { inject } from '@angular/core';
-import { AsianPokerService } from '@core/firebase/asian-poker.service';
-import { Observable } from 'rxjs';
-import { AsianPokerGame } from '../../asian-poker-game.model';
+import { AsianPokerService } from '@features/entertainment/asian-poker/firebase/asian-poker.service';
+import { AsianPokerSessionDTO, AsianPokerGameDTO } from '../../models/dto';
 
-export const sessionsResolver: ResolveFn<AsianPokerSession[]> = (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
-  return inject(AsianPokerService).getSessions([route.paramMap.get('id')!]);
+export type SessionGameData = {
+  session: AsianPokerSessionDTO;
+  game: AsianPokerGameDTO;
+};
+
+export const sessionsResolver: ResolveFn<AsianPokerSessionDTO[]> = (
+  route: ActivatedRouteSnapshot,
+  state: RouterStateSnapshot,
+) => {
+  return inject(AsianPokerService).getSessionsByIds([route.paramMap.get('id')!]);
 };
 
 export const sessionGameResolver: ResolveFn<SessionGameData | undefined> = (

@@ -1,9 +1,10 @@
-import { CardTuples, Suit, SuitSymbol, Suits, SuitsSymbols, SuitsWithHierarchy } from '../models/card.model';
+import { CardTuples } from '../constants/card.constant';
+import { Suit, SuitSymbol } from '../models/card.model';
 
 type SuitWrapper = Suit | SuitSymbol;
 export type SuitDisplayItem = SuitWrapper | Record<string, SuitWrapper>;
 
-export function convertSuit(item: SuitDisplayItem, convertTo: 'name' | 'symbol' = 'symbol') {
+export function convertSuit(item: SuitDisplayItem | string, convertTo: 'name' | 'symbol' = 'symbol') {
   if (!item) {
     return '';
   }
@@ -20,7 +21,7 @@ export function convertSuit(item: SuitDisplayItem, convertTo: 'name' | 'symbol' 
     );
   } else if (typeof item === 'string') {
     CardTuples.forEach((tuple) => {
-      if (tuple.includes(item)) {
+      if (tuple.includes(item as any)) {
         foundMatch = { name: tuple[0], symbol: tuple[1] };
       }
     });

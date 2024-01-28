@@ -9,7 +9,6 @@ import { StorageItem } from '@shared/models/storage-items.enum';
 export function authGuard(redirectToAfter?: string): CanActivateFn {
   return (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
     console.log('authGuard', route);
-    debugger;
     const service: FirebaseAuthService = inject(FirebaseAuthService);
     const router = inject(Router);
     const popup = inject(PopupService);

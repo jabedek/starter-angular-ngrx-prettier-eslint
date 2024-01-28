@@ -1,19 +1,15 @@
 import { Injectable } from '@angular/core';
-import { AsianPokerGame } from '../asian-poker-game.model';
 import { Card } from '../models/card.model';
-import { DeckVariant } from '../models/deck.model';
-import { HighHandsNames, LowHandsNames } from '../models/hand.model';
-import { CycleAnalyticsA, CycleAnalyticsB, HandInstance } from '../models/hand-analysis.model';
-
-/**
- * No analytics for Straights and Double Pairs because there are too many of these hands.
- */
+import { DeckVariant } from '../constants/deck.constant';
+import { CycleAnalyticsA, CycleAnalyticsB, HandInstance } from '../models/analysis.model';
+import { HighHandsNames, LowHandsNames } from '../constants/hand.constant';
+import { AsianPokerGameDTO } from '../models/dto';
 
 @Injectable({
   providedIn: 'root',
 })
-export class SessionHandsAnalyzerService {
-  private session: AsianPokerGame | undefined;
+export class GameAnalyzerService {
+  private game: AsianPokerGameDTO | undefined;
 
   private analyticsA: CycleAnalyticsA = {
     currentPlayerHand: [],
@@ -46,20 +42,39 @@ export class SessionHandsAnalyzerService {
     hands: [],
   };
 
-  loadCycleCards(session: AsianPokerGame) {
-    this.session = session;
+  getHighHandsFromDeck(deckVariant: DeckVariant | undefined) {
+    if (!deckVariant) {
+      return [];
+    }
+    const hands = [...HighHandsNames];
+    if (deckVariant === 'finale') {
+      hands.splice(1, 2);
+      hands.splice(6, 2);
+    }
+
+    if (deckVariant === 'standard') {
+      hands.splice(1, 1);
+      hands.splice(6, 1);
+    }
+
+    // deckVariant === 'extended'
+    return hands;
+  }
+
+  cycleAnalysis(game: AsianPokerGameDTO) {
+    this.game = game;
 
     this.getAnalyticsA();
     this.getAnalyticsB();
 
-    console.log(this.analyticsA);
-    console.log(this.analyticsB);
+    // console.log(this.analyticsA);
+    // console.log(this.analyticsB);
   }
 
   private getAnalyticsA() {
-    if (this.session) {
-      this.analyticsA.publicCards = [...this.session.publicCards];
-      this.analyticsA.currentPlayerHand = this.session.turnPlayers.map((player) => ({
+    if (this.game) {
+      this.analyticsA.publicCards = [...this.game.publicCards];
+      this.analyticsA.currentPlayerHand = this.game.playersWithHands.map((player) => ({
         playerId: player.id,
         cards: [...player.hand],
       }));
@@ -190,8 +205,8 @@ export class SessionHandsAnalyzerService {
 
     // sort hands by hierarchy
     const sortedHighHands = onlyHighHands.sort((a, b) => {
-      const aSuitAt = (this.getHighHandsFromDeck(this.session?.deckVariant) || []).indexOf(a.name as any);
-      const bSuitAt = (this.getHighHandsFromDeck(this.session?.deckVariant) || []).indexOf(b.name as any);
+      const aSuitAt = (this.getHighHandsFromDeck(this.game?.deckVariant) || []).indexOf(a.name as any);
+      const bSuitAt = (this.getHighHandsFromDeck(this.game?.deckVariant) || []).indexOf(b.name as any);
 
       if (aSuitAt < bSuitAt) {
         return -1;
@@ -205,25 +220,6 @@ export class SessionHandsAnalyzerService {
     });
 
     this.analyticsB = { pairs, threes, fours, highestHand: sortedHighHands[0], hands };
-  }
-
-  private getHighHandsFromDeck(deckVariant: DeckVariant | undefined) {
-    if (!deckVariant) {
-      return [];
-    }
-    const hands = [...HighHandsNames];
-    if (deckVariant === 'finale') {
-      hands.splice(1, 2);
-      hands.splice(6, 2);
-    }
-
-    if (deckVariant === 'standard') {
-      hands.splice(1, 1);
-      hands.splice(6, 1);
-    }
-
-    // deckVariant === 'extended'
-    return hands;
   }
 
   private sortCards(cards: Card[]) {

@@ -1,0 +1,30 @@
+@use "/src/assets/styles/mixins";
+@use "/src/assets/styles/variables";
+@use "/src/app/features/entertainment/asian-poker/asian-poker.scss";
+
+.basic-shelf {
+  position: relative;
+  height: asian-poker.$asian-poker-gui-height;
+  display: flex;
+  justify-content: center;
+  width: 700px;
+  flex-direction: column;
+}
+
+.top {
+  height: 30px;
+  width: 100%;
+  @include mixins.simple-flex-parent();
+  justify-content: flex-start;
+  padding: 5px;
+  padding-left: 10px;
+  gap: 20px;
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+}
+
+.bottom {
+  height: 190px;
+  width: 100%;
+  display: flex;
+}

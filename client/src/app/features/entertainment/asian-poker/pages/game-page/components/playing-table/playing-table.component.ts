@@ -1,7 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { AsianPokerPlayerInfo, AsianPokerGame } from '../../../../asian-poker-game.model';
-import { SessionCroupierService } from '../../../../services/session-croupier.service';
-import { Observable } from 'rxjs';
+import { PlayerWithHand } from '../../../../models/game.model';
+import { AsianPokerGameDTO } from '@features/entertainment/asian-poker/models/dto';
 
 @Component({
   selector: 'app-playing-table',
@@ -9,19 +8,19 @@ import { Observable } from 'rxjs';
   styleUrls: ['./playing-table.component.scss'],
 })
 export class PlayingTableComponent {
-  @Input({ required: true }) currentUser: Partial<AsianPokerPlayerInfo> | undefined;
-  @Input({ required: true }) session: AsianPokerGame | undefined;
+  @Input({ required: true }) currentUser: Partial<PlayerWithHand> | undefined;
+  @Input({ required: true }) game: AsianPokerGameDTO | undefined;
 
   get currentPlayer() {
-    if (this.session) {
-      return this.session.turnPlayers[this.session.currentPlayerIndex];
+    if (this.game) {
+      return this.game.playersWithHands[this.game.currentPlayerIndex];
     }
     return undefined;
   }
 
   get currentDealer() {
-    if (this.session) {
-      return this.session.turnPlayers[this.session.currentDealerIndex];
+    if (this.game) {
+      return this.game.playersWithHands[this.game.currentDealerIndex];
     }
     return undefined;
   }
@@ -31,6 +30,4 @@ export class PlayingTableComponent {
   }
 
   cardsHidden = false;
-
-  constructor(private croupier: SessionCroupierService) {}
 }

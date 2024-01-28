@@ -1,5 +1,5 @@
-<div class="hand-picker">
-  <div class="top">
+<app-basic-shelf>
+  <ng-container top>
     <div *ngIf="step !== 'selection'" class="back" appAccess (access)="stepBack()">
       <div class="icon-back"></div>
       <span class="index">-</span>
@@ -30,8 +30,9 @@
         </ng-container>
       </ng-container>
     </div>
-  </div>
-  <div class="bottom">
+  </ng-container>
+
+  <ng-container bottom>
     <div class="center">
       <div class="hand-pick">
         <ng-container *ngIf="step === 'selection' || step === 'variant'">
@@ -58,8 +59,8 @@
         </div>
       </div>
     </div>
-  </div>
-</div>
+  </ng-container>
+</app-basic-shelf>
 
 <ng-template #mainSteps let-data let-step="step">
   <div class="propositions"></div>
@@ -86,59 +87,59 @@
     <ng-container [ngSwitch]="data.picked">
       <ng-container *ngSwitchCase="'suit'">
         <div class="attribute attribute--suit">
-          <ng-container *ngFor="let suit of Suits">
+          <ng-container *ngFor="let suit of suits">
             <div
-              *ngIf="!suit.name.includes('filler')"
+              *ngIf="!suit.name.includes('_filler')"
               class="attribute-item"
               [ngClass]="suit.name"
               appAccess
               (access)="handleSpecificationStep(suit.name, 'suit')">
-              {{ suit.symbol }}
+              {{ suit.name | card: "symbol" }}
               <span class="index">
-                {{ suitsPropositionsRecord[suit.name].key }}
+                {{ suit.key }}
               </span>
             </div>
 
-            <div *ngIf="suit.name.includes('filler')" class="attribute-item filler-item"></div>
+            <div *ngIf="suit.name.includes('_filler')" class="attribute-item filler-item"></div>
           </ng-container>
         </div>
       </ng-container>
 
       <ng-container *ngSwitchCase="'rank'">
         <div class="attribute attribute--rank">
-          <ng-container *ngFor="let rank of Ranks">
+          <ng-container *ngFor="let rank of ranks">
             <div
-              *ngIf="rank !== 'fillerA' && rank !== 'fillerB'"
+              *ngIf="!rank.name.includes('_filler')"
               class="attribute-item"
               appAccess
               (access)="handleSpecificationStep(rank, 'rank')">
-              {{ rank }}
+              {{ rank.name }}
               <span class="index">
-                {{ ranksPropositionsRecord[rank].key }}
+                {{ rank.key }}
               </span>
             </div>
 
-            <div *ngIf="rank === 'fillerA' || rank === 'fillerB'" class="attribute-item filler-item"></div>
+            <div *ngIf="rank.name.includes('_filler')" class="attribute-item filler-item"></div>
           </ng-container>
         </div>
       </ng-container>
 
       <ng-container *ngSwitchCase="'double-rank'">
         <div class="attribute attribute--rank">
-          <ng-container *ngFor="let rank of Ranks">
+          <ng-container *ngFor="let rank of ranks">
             <div
-              *ngIf="rank !== 'fillerA' && rank !== 'fillerB'"
+              *ngIf="!rank.name.includes('_filler')"
               class="attribute-item"
-              [ngClass]="{ disabled: partOfDoubleRank && rank === valueA }"
+              [ngClass]="{ disabled: partOfDoubleRank && rank.name === valueA }"
               appAccess
-              (access)="!(partOfDoubleRank && rank === valueA) && handleSpecificationStep(rank, 'double-rank')">
-              {{ rank }}
+              (access)="!(partOfDoubleRank && rank.name === valueA) && handleSpecificationStep(rank, 'double-rank')">
+              {{ rank.name }}
               <span class="index">
-                {{ ranksPropositionsRecord[rank].key }}
+                {{ rank.key }}
               </span>
             </div>
 
-            <div *ngIf="rank === 'fillerA' || rank === 'fillerB'" class="attribute-item filler-item"></div>
+            <div *ngIf="rank.name.includes('_filler')" class="attribute-item filler-item"></div>
           </ng-container>
         </div>
       </ng-container>

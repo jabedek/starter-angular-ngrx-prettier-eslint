@@ -1,7 +1,7 @@
 import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, ViewChild } from '@angular/core';
 
 import { ProgressBarComponent } from '@shared/components/progress-bar/progress-bar.component';
-import { interval, map, of, switchMap, take, takeUntil, tap, timer } from 'rxjs';
+import { debounceTime, interval, map, of, skip, switchMap, take, takeUntil, tap, timer } from 'rxjs';
 import { MonitorWaiting, MonitorTracking, UserActivityMonitorService } from './user-activity-monitor.service';
 
 @Component({
@@ -36,6 +36,7 @@ export class UserActivityMonitorProgressBarComponent {
         tap(() => this.cdr.detectChanges()),
         takeUntil(
           this.activityMonitor.activePresenceInCurrentInterval$.pipe(
+            debounceTime(1000),
             tap(() => this.progressLength?.setValue(MonitorTracking.secondsInt)),
           ),
         ),

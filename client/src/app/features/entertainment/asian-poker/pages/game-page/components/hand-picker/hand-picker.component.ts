@@ -1,31 +1,30 @@
 import { Component, ElementRef, Input } from '@angular/core';
-import { Ranks, SimpleRank, SimpleSuit, Suit, SuitsWithHierarchy } from '../../../../models/card.model';
+import { SimpleRank, SimpleSuit } from '../../../../models/card.model';
 import {
   BettingHand,
-  BettingSpecificationData,
   Proposition,
   HandCategory,
-  HandsCategories,
-  PokerSubChoice,
-  SuitBasedScheme,
-  RankBasedScheme,
-  DoubleRankBasedScheme,
-  StraightSubChoice,
-  SelectionPropositions,
   BettingChoices,
-  SuitsPropositionsRecord,
-  RanksPropositionsRecord,
-  SelectionChoice,
-  SelectionVariantChoice,
-  AttributeSpecification,
-} from '../../../../models/betting-process';
-import { HandName, HandsDetails, getChoiceSubSet } from '../../../../models/hand.model';
-import { DeckVariant } from '../../../../models/deck.model';
-import { HandInstance } from '../../../../models/hand-analysis.model';
+  Selection,
+  SelectionVariant,
+  SpecificationAttribute,
+} from './hand-picker.model';
+import { HandName } from '../../../../models/hand.model';
+import { DeckVariant } from '../../../../constants/deck.constant';
+import { HandInstance } from '../../../../models/analysis.model';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { getEmptyBettingSlotsGroups, getEmptySlots } from './hand-picker.utils';
-import { debounce, debounceTime, fromEvent, takeUntil, tap, timer } from 'rxjs';
+import { getChoiceSubSet, getEmptyBettingSlotsGroups, getEmptySlots, getPropositionsKeys } from './hand-picker.utils';
+import { debounce, fromEvent, takeUntil, tap, timer } from 'rxjs';
 import { BaseComponent } from '@shared/abstracts/base/base.component';
+import {
+  SelectionPropositions,
+  VariantPropositionsPoker,
+  VariantPropositionsStraight,
+  HandsCategories,
+  RanksPropositions,
+  SuitsPropositions,
+} from './hand-picker.constant';
+import { HandsDetails } from '@features/entertainment/asian-poker/constants/hand.constant';
 
 @Component({
   selector: 'app-hand-picker',
@@ -55,6 +54,9 @@ export class HandPickerComponent extends BaseComponent {
     // finalization: { propositions: [], picked: undefined, pickedData: [], accepted: false },
   };
 
+  ranks = RanksPropositions;
+  suits = SuitsPropositions;
+
   slotsGroups: { slots: BettingHand[]; value: BettingHand | undefined }[] = [];
   attributeForm = new FormGroup({
     valueA: new FormControl<BettingHand | undefined>(undefined),
@@ -73,34 +75,6 @@ export class HandPickerComponent extends BaseComponent {
   accepted = false;
   acceptedHand: HandInstance | undefined;
 
-  Suits = [
-    { name: 'fillerE', symbol: '3' },
-    SuitsWithHierarchy[0], // ♠
-    { name: 'fillerD', symbol: '1' },
-    SuitsWithHierarchy[1], // ♥
-    { name: 'fillerC', symbol: '5' },
-    SuitsWithHierarchy[3], // ♦
-    { name: 'fillerB', symbol: '8' },
-    SuitsWithHierarchy[2], // ♣
-    { name: 'fillerA', symbol: '7' },
-  ].reverse();
-  Ranks = ['fillerB', ...Ranks, 'fillerA'].reverse() as string[];
-
-  suitsPropositionsRecord = {
-    ...SuitsPropositionsRecord,
-    fillerE: { key: -1, name: 'filler' },
-    fillerD: { key: -1, name: 'filler' },
-    fillerC: { key: -1, name: 'filler' },
-    fillerB: { key: -1, name: 'filler' },
-    fillerA: { key: -1, name: 'filler' },
-  } as unknown as Record<string, Proposition<string>>;
-
-  ranksPropositionsRecord = {
-    fillerB: { key: -1, name: 'filler' },
-    ...RanksPropositionsRecord,
-    fillerA: { key: -1, name: 'filler' },
-  } as unknown as Record<string, Proposition<string>>;
-
   constructor(private el: ElementRef) {
     super('HandPickerComponent');
     this.listenToKeydown();
@@ -109,83 +83,27 @@ export class HandPickerComponent extends BaseComponent {
 
   handleMainSteps(choice: Proposition<unknown>, step: 'selection' | 'variant') {
     if (step === 'selection') {
-      this.handleSelectionStep(choice as Proposition<SelectionChoice>);
+      this.handleSelectionStep(choice as Proposition<Selection>);
     }
     if (step === 'variant') {
-      this.handleVariantStep(choice as Proposition<SelectionVariantChoice>);
+      this.handleVariantStep(choice as Proposition<SelectionVariant>);
     }
   }
 
-  handleSpecificationStep(data: unknown, step: AttributeSpecification) {
-    if (step === 'suit') {
-      this.specifySuit(data as SimpleSuit);
-    }
-
-    if (step === 'rank') {
-      this.specifyRank(data as SimpleRank);
-    }
-    if (step === 'double-rank') {
-      this.specifyDoubleRank(data as SimpleRank);
-    }
-  }
-
-  handleFinalizationStep(pickedData: BettingHand[]) {
-    // if (this.choices.finalization.propositions) {
-    //   this.choices.finalization.pickedData = pickedData;
-    // }
-  }
-
-  stepBack() {
-    if (this.step === 'variant') {
-      this.clearStep('variant');
-      this.step = 'selection';
-      this.choices.selection.picked = undefined;
-    }
-
-    if (this.step === 'specification') {
-      this.clearStep('specification');
-
-      if (this.choices.selection.picked === 'straight' || this.choices.selection.picked === 'poker') {
-        this.step = 'variant';
-        this.choices.variant.picked = undefined;
-      } else {
-        this.step = 'selection';
-        this.choices.selection.picked = undefined;
-      }
-    }
-
-    // if (this.step === 'finalization') {
-    //   this.clearStep('finalization');
-    //   if (this.choices.selection.picked === 'straight') {
-    //     this.clearStep('specification');
-    //     this.step = 'variant';
-    //     this.choices.variant.picked = undefined;
-    //   } else {
-    //     this.step = 'specification';
-    //     this.choices.specification.picked = undefined;
-    //   }
-    // }
-  }
-
-  accept() {
-    this.accepted = true;
-  }
-
-  private handleSelectionStep(choice: Proposition<SelectionChoice>) {
+  private handleSelectionStep(choice: Proposition<Selection>) {
     this.choices.selection.picked = choice.name;
 
     switch (choice.name) {
       case 'poker':
         this.step = 'variant';
-        this.choices.variant.propositions = PokerSubChoice;
+        this.choices.variant.propositions = VariantPropositionsPoker;
         break;
       case 'straight':
         this.step = 'variant';
-        this.choices.variant.propositions = StraightSubChoice;
+        this.choices.variant.propositions = VariantPropositionsStraight;
         break;
       case 'color':
         this.step = 'specification';
-        this.choices.specification.propositions = SuitBasedScheme;
         this.choices.specification.picked = 'suit';
         this.slotsGroups = this.getEmptyBettingSlotsGroupsAndUpdateForm(HandsDetails[choice.name].visualElements);
         break;
@@ -194,21 +112,19 @@ export class HandPickerComponent extends BaseComponent {
       case 'three':
       case 'four':
         this.step = 'specification';
-        this.choices.specification.propositions = RankBasedScheme;
         this.choices.specification.picked = 'rank';
         this.slotsGroups = this.getEmptyBettingSlotsGroupsAndUpdateForm(HandsDetails[choice.name].visualElements);
         break;
       case 'double-pair':
       case 'full-house':
         this.step = 'specification';
-        this.choices.specification.propositions = DoubleRankBasedScheme;
         this.choices.specification.picked = 'double-rank';
         this.slotsGroups = this.getEmptyBettingSlotsGroupsAndUpdateForm(HandsDetails[choice.name].visualElements);
         break;
     }
   }
 
-  private handleVariantStep(choice: Proposition<SelectionVariantChoice>) {
+  private handleVariantStep(choice: Proposition<SelectionVariant>) {
     if (this.choices.selection.picked) {
       const name = choice.name as HandName;
 
@@ -222,7 +138,6 @@ export class HandPickerComponent extends BaseComponent {
         this.slotsGroups = groups;
         this.choices.variant.picked = name as any;
         this.step = 'specification';
-        this.choices.specification.propositions = SuitBasedScheme;
         this.choices.specification.picked = 'suit';
       }
 
@@ -240,6 +155,19 @@ export class HandPickerComponent extends BaseComponent {
         //   propositions: cards,
         // };
       }
+    }
+  }
+
+  handleSpecificationStep(data: unknown, step: SpecificationAttribute) {
+    if (step === 'suit') {
+      this.specifySuit(data as SimpleSuit);
+    }
+
+    if (step === 'rank') {
+      this.specifyRank(data as SimpleRank);
+    }
+    if (step === 'double-rank') {
+      this.specifyDoubleRank(data as SimpleRank);
     }
   }
 
@@ -320,6 +248,50 @@ export class HandPickerComponent extends BaseComponent {
         this.choices.specification.pickedData = [...this.choices.specification.pickedData, rankEl];
         this.canAccept = true;
       }
+    }
+  }
+
+  handleFinalizationStep(pickedData: BettingHand[]) {
+    // if (this.choices.finalization.propositions) {
+    //   this.choices.finalization.pickedData = pickedData;
+    // }
+  }
+
+  stepBack() {
+    if (this.step === 'variant') {
+      this.clearStep('variant');
+      this.step = 'selection';
+      this.choices.selection.picked = undefined;
+    }
+
+    if (this.step === 'specification') {
+      this.clearStep('specification');
+
+      if (this.choices.selection.picked === 'straight' || this.choices.selection.picked === 'poker') {
+        this.step = 'variant';
+        this.choices.variant.picked = undefined;
+      } else {
+        this.step = 'selection';
+        this.choices.selection.picked = undefined;
+      }
+    }
+
+    // if (this.step === 'finalization') {
+    //   this.clearStep('finalization');
+    //   if (this.choices.selection.picked === 'straight') {
+    //     this.clearStep('specification');
+    //     this.step = 'variant';
+    //     this.choices.variant.picked = undefined;
+    //   } else {
+    //     this.step = 'specification';
+    //     this.choices.specification.picked = undefined;
+    //   }
+    // }
+  }
+
+  accept() {
+    if (this.canAccept) {
+      this.accepted = true;
     }
   }
 
@@ -404,7 +376,7 @@ export class HandPickerComponent extends BaseComponent {
     fromEvent<KeyboardEvent>(window, 'keydown')
       .pipe(
         tap((event) => (this.activeKey = +event.key)),
-        debounce((event) => timer(['selection', 'variant'].includes(this.step) && event.key !== '-' ? 350 : 0)),
+        debounce((event) => timer(['selection', 'variant'].includes(this.step) && event.key !== '-' ? 300 : 0)),
         takeUntil(this.__destroy),
       )
       .subscribe((event) => {
@@ -419,7 +391,7 @@ export class HandPickerComponent extends BaseComponent {
           this.accept();
         }
 
-        if ([0, 1, 2, 3, 4, 5, 6, 7, 8, 9].includes(+eventKey)) {
+        if ([0, ...getPropositionsKeys('selection')].includes(+eventKey)) {
           if (this.step === 'selection') {
             const foundProposition = this.choices.selection.propositions.find((prop) => `${prop.key}` === eventKey);
             if (foundProposition) {
@@ -428,7 +400,7 @@ export class HandPickerComponent extends BaseComponent {
             }
           }
 
-          if (this.step === 'variant' && [4, 5, 6].includes(+eventKey)) {
+          if (this.step === 'variant' && [...getPropositionsKeys('variant')].includes(+eventKey)) {
             const foundProposition = this.choices.variant.propositions.find((prop) => prop.key === +eventKey);
             if (foundProposition) {
               this.handleVariantStep(foundProposition);
@@ -438,15 +410,15 @@ export class HandPickerComponent extends BaseComponent {
 
           if (this.step === 'specification') {
             const option = this.choices.specification.picked;
-            const foundSuit = Object.values(SuitsPropositionsRecord).find((val) => `${val.key}` === eventKey)?.name as SimpleSuit;
-            const foundRank = Object.values(RanksPropositionsRecord).find((val) => `${val.key}` === eventKey)?.name as SimpleRank;
-            if (option === 'suit' && foundSuit && [2, 4, 6, 8].includes(+eventKey)) {
+            const foundSuit = Object.values(this.suits).find((val) => `${val.key}` === eventKey)?.name as SimpleSuit;
+            const foundRank = Object.values(this.ranks).find((val) => `${val.key}` === eventKey)?.name as SimpleRank;
+            if (option === 'suit' && foundSuit && [...getPropositionsKeys('suit')].includes(+eventKey)) {
               this.specifySuit(foundSuit);
             }
-            if (option === 'rank' && foundRank && [1, 2, 4, 5, 6, 8, 9].includes(+eventKey)) {
+            if (option === 'rank' && foundRank && [...getPropositionsKeys('rank')].includes(+eventKey)) {
               this.specifyRank(foundRank);
             }
-            if (option === 'double-rank' && [1, 2, 4, 5, 6, 8, 9].includes(+eventKey)) {
+            if (option === 'double-rank' && [...getPropositionsKeys('rank')].includes(+eventKey)) {
               const disabled = this.partOfDoubleRank && foundRank === this.valueA;
               if (!disabled) {
                 this.specifyDoubleRank(foundRank);

@@ -1,12 +1,11 @@
 import { Component, OnDestroy } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { AsianPokerSession, SessionGameData } from '../../asian-poker-lobby.model';
-import { AsianPokerGame } from '../../asian-poker-game.model';
-import { AsianPokerService } from '@core/firebase/asian-poker.service';
+import { AsianPokerService } from '@features/entertainment/asian-poker/firebase/asian-poker.service';
 import { Unsubscribe } from 'firebase/firestore';
 import { BaseComponent } from '@shared/abstracts/base/base.component';
 import { FirebaseUsersService } from '@core/firebase/firebase-users.service';
 import { UserAppAccount } from '@store/auth/auth.state';
+import { AsianPokerSessionDTO, AsianPokerGameDTO } from '../../models/dto';
 
 type UserPlayer = { status: 'ready' | 'invited' | 'disconnected' } & Partial<UserAppAccount>;
 
@@ -28,28 +27,27 @@ export class WaitingRoomPageComponent extends BaseComponent implements OnDestroy
 
   usersDetails: UserAppAccount[] = [];
 
-  set session(session: AsianPokerSession | undefined) {
+  set session(session: AsianPokerSessionDTO | undefined) {
     this._session = session;
     this.sessionOnSet();
   }
 
-  get session(): AsianPokerSession | undefined {
+  get session(): AsianPokerSessionDTO | undefined {
     return this._session;
   }
 
-  private _session: AsianPokerSession | undefined;
+  private _session: AsianPokerSessionDTO | undefined;
 
   private sessionOnSet() {
     if (this.session) {
-      this.firebaseUsers.getUsersByIds(this.session.playersJoinedIds).then((users) => {
+      this.firebaseUsers.getUsersByIds(this.session.sessionActivity.playersJoinedIds).then((users) => {
         this.usersDetails = users;
         users.forEach((user, index) => (this.slots[index].user = { ...user, status: 'ready' }));
       });
     }
   }
 
-  // session: AsianPokerSession | undefined;
-  game: AsianPokerGame | undefined;
+  game: AsianPokerGameDTO | undefined;
   constructor(
     private route: ActivatedRoute,
     private ap: AsianPokerService,
@@ -58,10 +56,7 @@ export class WaitingRoomPageComponent extends BaseComponent implements OnDestroy
   ) {
     super('WaitingRoomPageComponent');
 
-    this.route.data.subscribe((routeData) => {
-      const data = routeData.data[0];
-      this.session = data;
-    });
+    this.route.data.subscribe((routeData) => (this.session = routeData.data[0]));
   }
 
   override ngOnDestroy(): void {
@@ -81,28 +76,30 @@ export class WaitingRoomPageComponent extends BaseComponent implements OnDestroy
 
   listenToSessionChanges() {
     if (this.session) {
-      this.ap.listenToSessionChanges(this.session.id, (data: AsianPokerSession[] | undefined, unsub: Unsubscribe | undefined) => {
-        if (data && unsub) {
-          console.log('new changes', data);
+      this.ap.listenToSessionChanges(
+        this.session.id,
+        (data: AsianPokerSessionDTO[] | undefined, unsub: Unsubscribe | undefined) => {
+          if (data && unsub) {
+            console.log('new changes', data);
 
-          this.firebaseUnsubs.set('listenToSessionChanges', unsub);
-          if (data) {
-            this.session = data[0];
+            this.firebaseUnsubs.set('listenToSessionChanges', unsub);
+            if (data) {
+              this.session = data[0];
+            }
           }
-        }
-      });
+        },
+      );
     }
   }
 
   startGame() {
     const session = this.session;
     if (session) {
-      this.ap.startNewGame(session.id, session.playersJoinedIds).then(() => {
-        // this.router.navigate(['/asian-poker/waiting-room/' + id]);
-        this.router.navigate(['/asian-poker/game/' + session.id]);
-      });
+      this.ap
+        .startNewGame(session.id, session.sessionActivity.playersJoinedIds)
+        .then(() => this.router.navigate(['/asian-poker/game/' + session.id]));
     }
   }
 
-  listenToPlayersLeaveSession() {}
+  // listenToPlayersLeaveSession() {}
 }
