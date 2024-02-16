@@ -16,7 +16,7 @@ CONCEPTS & TODOS
 # Session - Waiting Room
 - User who created the session is a host
 - Host can invite/kick specified players (in both cases subjected user receives a toaster popup)
-- Inviting is done by clicking empty player slot and providing invitee details
+- Inviting is done by clicking empty player slot and providing invitee email
 - Waiting room has a chat section
 - Game can be started when there are min. 3 players
 - Game starts automatically when exptected number of players join

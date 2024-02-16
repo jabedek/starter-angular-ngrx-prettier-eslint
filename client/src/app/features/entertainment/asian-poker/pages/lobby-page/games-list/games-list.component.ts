@@ -34,10 +34,13 @@ export class GamesListComponent extends BaseComponent {
   }
 
   async fetchJoinableSessions() {
-    this.ap.getSessionsByStates(['setup', 'in-game']).then((sessions) => (this.sessions = sessions));
+    this.ap.getSessionsByStates(['setup', 'in-game']).then((sessions) => {
+      console.log(sessions);
+      this.sessions = sessions;
+    });
   }
 
-  join(sessionId = '') {
+  joinPopup(sessionId = '') {
     this.auth.appAccount$.pipe(take(1)).subscribe((userPlayer) => {
       if (userPlayer) {
         this.popup.showPopup({

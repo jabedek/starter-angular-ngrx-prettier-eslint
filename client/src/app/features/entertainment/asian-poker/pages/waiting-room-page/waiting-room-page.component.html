@@ -8,30 +8,31 @@
       <div class="list-headers">
         <div class="playerName">Nazwa gracza</div>
         <div class="status">Status</div>
+        <div class="lock">Przypisane</div>
       </div>
       <div class="list">
-        <ng-container *ngFor="let slot of slots; trackBy: trackBySlots">
-          <ng-container *ngIf="slot.user">
-            <ng-container *ngTemplateOutlet="player; context: { $implicit: slot.user, session }"></ng-container>
+        <ng-container *ngFor="let slot of slots | slice: 0 : session.sessionSettings.playersLimit + 1; trackBy: trackBySlots">
+          <ng-container *ngTemplateOutlet="player; context: { $implicit: slot, session }"></ng-container>
+          <!-- <ng-container *ngIf="slot.user">
           </ng-container>
           <ng-container *ngIf="!slot.user">
-            <ng-container *ngTemplateOutlet="empty"></ng-container>
-          </ng-container>
+            <ng-container *ngTemplateOutlet="empty; context: { $implicit: slot }"></ng-container>
+          </ng-container> -->
         </ng-container>
       </div>
     </div>
 
-    <div class="info">{{ session.sessionActivity.playersJoined }} / {{ session.sessionSettings.playersLimit }}</div>
+    <div class="info">{{ session.sessionActivity.playersJoinedAmount }} / {{ session.sessionSettings.playersLimit }}</div>
     <div class="info">Gra rozpoczyna się automatycznie gdy dołączy max graczy</div>
   </ng-container>
 
   <ng-container actions>
-    <div class="action-item">
-      <app-button>Zaproś gracza</app-button>
-    </div>
+    <!-- <div class="action-item">
+      <app-button (click)="invitePopup()">Zaproś gracza</app-button>
+    </div> -->
 
     <div class="action-item">
-      <app-button [disabled]="session.sessionActivity.playersJoined < 3">Zacznij grę natychmiast</app-button>
+      <app-button [disabled]="session.sessionActivity.playersJoinedAmount < 3">Zacznij grę natychmiast</app-button>
       <div class="info">Min 3 graczy</div>
     </div>
 
@@ -39,13 +40,23 @@
   </ng-container>
 </app-basic-card>
 
-<ng-template #player let-user let-session="session">
-  <div class="list-item wrapper-status-{{ user?.status }}" [ngClass]="{ host: user.id === session.hostId }">
-    <div class="playerName">{{ user.displayName || "[ oczekiwanie na dołączenie ]" }}</div>
-    <div class="status status-{{ user?.status }}">{{ user?.status || "" }}</div>
-  </div>
-</ng-template>
+<ng-template #player let-slot let-session="session">
+  <ng-container [ngSwitch]="slot.status">
+    <ng-container *ngSwitchDefault>
+      <div
+        class="list-item wrapper-status-{{ slot.status }}"
+        [ngClass]="{ host: slot.user?.id === session.sessionSettings.hostId }">
+        <div class="playerName">{{ slot.user?.displayName || "[ oczekiwanie na dołączenie ]" }}</div>
+        <div class="status status-{{ slot.status }}">{{ slot.status || "" }}</div>
+        <div class="lock lock-{{ slot.locked }}">{{ slot.locked ? "TAK" : "NIE" }}</div>
+      </div>
+    </ng-container>
 
-<ng-template #empty>
-  <div class="list-item empty">PUSTE</div>
+    <ng-container *ngSwitchCase="'empty'">
+      <div class="list-item empty" (click)="invitePopup(slot.order)">
+        <ng-container *ngIf="slot.status === 'empty'">PUSTE</ng-container>
+        <!-- <div class="status status-{{ slot.status }}">{{ slot.status || "" }}</div> -->
+      </div>
+    </ng-container>
+  </ng-container>
 </ng-template>

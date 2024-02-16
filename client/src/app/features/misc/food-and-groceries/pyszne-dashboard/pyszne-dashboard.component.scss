@@ -1,0 +1,149 @@
+@use "/src/assets/styles/mixins";
+$color-primary: rgb(243, 104, 5);
+
+.selecting-active {
+  .data-row {
+    cursor: pointer;
+    color: rgb(104, 29, 0);
+    @include mixins.clickable-btn(true, rgb(243, 104, 5));
+  }
+
+  .data-row.selected-for-comparison {
+    background: green !important;
+    color: white !important;
+  }
+}
+
+.data-brand {
+  a {
+    font-weight: 800;
+    position: relative;
+    color: rgb(0, 0, 204);
+    @include mixins.clickable-btn();
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 5px;
+}
+
+.table-section {
+  display: flex;
+  flex-direction: column;
+  background: #ddd;
+  font-weight: bold;
+  min-height: 10px;
+  padding: 0 2px;
+  position: relative;
+
+  &.headers {
+    height: 50px;
+    color: #fff;
+    text-shadow: 0.5px 0.5px 3px rgba(0, 0, 0, 0.65);
+    letter-spacing: 0.7px;
+    background: $color-primary;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    box-shadow: 0.5px 0.5px 3px rgba(0, 0, 0, 0.65);
+  }
+
+  &.divider {
+    height: 0;
+    padding: 0;
+    min-height: 0;
+  }
+}
+
+.table-row {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 4px;
+  gap: 20px;
+
+  &.data-row {
+    &:first-of-type {
+      border-top: 1px solid #aaa;
+    }
+
+    border-bottom: 1px solid #aaa;
+
+    &:nth-child(odd) {
+      background: #fff3eb;
+    }
+    &:nth-child(even) {
+      background: #ffe7d6;
+    }
+  }
+}
+
+.table-cell {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 13px;
+  height: 35px;
+  padding: 2px;
+
+  &.header-cell {
+    // justify-content: center;
+    // text-align: center;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.3;
+
+    // border-right: 1px solid #999;
+
+    // &:first-of-type {
+    //   border-left: 1px solid #999;
+    // }
+    // &:last-of-type {
+    //   border-right: 1px solid #999;
+    // }
+  }
+
+  &.data-cell {
+    font-weight: 500;
+    white-space: pre-line;
+  }
+
+  &.width-small {
+    width: 92px;
+  }
+
+  &.width-large {
+    width: 220px;
+  }
+
+  &.text-small {
+    font-size: 11px;
+  }
+
+  &.text-center {
+    text-align: center;
+  }
+
+  &.mono {
+    font-family: "Azeret Mono", monospace;
+    font-weight: 400;
+  }
+
+  &.mono-small {
+    font-family: "Azeret Mono", monospace;
+    font-weight: 400;
+    font-size: 11px;
+  }
+
+  &.center {
+    justify-content: center !important;
+  }
+}

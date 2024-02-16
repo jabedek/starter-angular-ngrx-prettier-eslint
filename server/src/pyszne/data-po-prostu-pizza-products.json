@@ -1,0 +1,3790 @@
+{
+    "requested": 1708107978372,
+    "products": {
+        "R0RRQONN3N": {
+            "name": "Pizza Hawana",
+            "description": [
+                "sos pomidorowy, mozzarella, szynka, ananas, kukurydza, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R0RRQONN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2300,
+                        "pickup": 2300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R3RRQONN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3300,
+                        "pickup": 3300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RPRRQONN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5700,
+                        "pickup": 5700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RRRRQONN3N": {
+            "name": "Pizza Monthana",
+            "description": [
+                "sos pomidorowy, mozzarella, szynka, pieczarki, papryka, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RRRRQONN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2300,
+                        "pickup": 2300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R37005NN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3300,
+                        "pickup": 3300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RP7005NN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5700,
+                        "pickup": 5700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RN00RONN3N": {
+            "name": "Pizza Govani",
+            "description": [
+                "sos pomidorowy, mozzarella, boczek, pieczarki, cebula, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RN00RONN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2300,
+                        "pickup": 2300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RR7005NN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3300,
+                        "pickup": 3300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RNQ005NN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5700,
+                        "pickup": 5700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R500RONN3N": {
+            "name": "Pizza Spice chicken",
+            "description": [
+                "sos BBQ, mozzarella, kurczak grill, szynka, cebula, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R500RONN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2300,
+                        "pickup": 2300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R5Q005NN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3300,
+                        "pickup": 3300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RQQ005NN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5700,
+                        "pickup": 5700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RQ00RONN3N": {
+            "name": "Pizza Kebab",
+            "description": [
+                "sos pomidorowy, mozzarella, kurczak kebab, cebula, ogórek konserwowy cebula prażona, sos gyros, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RQ00RONN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2300,
+                        "pickup": 2300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R1R005NN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3300,
+                        "pickup": 3300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "ROR005NN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5700,
+                        "pickup": 5700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R110RONN3N": {
+            "name": "Pizza Carmen",
+            "description": [
+                "sos pomidorowy, mozzarella, chorizo, papryka, oliwki, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R110RONN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2300,
+                        "pickup": 2300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R7R005NN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3300,
+                        "pickup": 3300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R00105NN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5700,
+                        "pickup": 5700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RO10RONN3N": {
+            "name": "Pizza Carbonara",
+            "description": [
+                "sos carbonara, mozzarella, boczek, pieczarki, cebula, parmezan, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RO10RONN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2300,
+                        "pickup": 2300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R30105NN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3300,
+                        "pickup": 3300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RP0105NN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5700,
+                        "pickup": 5700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R0PRQONN3N": {
+            "name": "Pizza Victoria",
+            "description": [
+                "sos pomidorowy, mozzarella, salami, pieczarki, kukurydza, papryka, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R0PRQONN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2300,
+                        "pickup": 2300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RR0105NN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3300,
+                        "pickup": 3300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RN1105NN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5700,
+                        "pickup": 5700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R3PRQONN3N": {
+            "name": "Pizza Karczofo",
+            "description": [
+                "sos pomidorowy, mozzarella, salami, karczochy, oliwki, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R3PRQONN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2300,
+                        "pickup": 2300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RQ1105NN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3300,
+                        "pickup": 3300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R1N105NN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5700,
+                        "pickup": 5700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RPPRQONN3N": {
+            "name": "Pizza Kentucky chicken",
+            "description": [
+                "sos BBQ, mozzarella, kurczak grill, kukurydza, jalapeno, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RPPRQONN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2300,
+                        "pickup": 2300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R7N105NN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3300,
+                        "pickup": 3300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R03105NN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5700,
+                        "pickup": 5700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RQ7RQONN3N": {
+            "name": "Pizza Cienka włoszka",
+            "description": [
+                "cienkie ciasto, sos pomidorowy, mozzarella, serano, boczek, kapary, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RQ7RQONN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2300,
+                        "pickup": 2300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RQO105NN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3300,
+                        "pickup": 3300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R15105NN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5700,
+                        "pickup": 5700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RONRQONN3N": {
+            "name": "Pizza Romano italiano",
+            "description": [
+                "sos pomidorowy, mozzarella, pomidory suszone, oliwki, salami, parmezan, bazylia, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RONRQONN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2300,
+                        "pickup": 2300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RO5105NN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3300,
+                        "pickup": 3300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R75105NN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5700,
+                        "pickup": 5700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RR0RQONN3N": {
+            "name": "Pizza Grecka",
+            "description": [
+                "sos pomidorowy, mozzarella, oliwki, pomidory suszone, feta, cebula, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RR0RQONN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2300,
+                        "pickup": 2300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R0P105NN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3300,
+                        "pickup": 3300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R3P105NN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5700,
+                        "pickup": 5700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RNORQONN3N": {
+            "name": "Pizza Full cheese",
+            "description": [
+                "sos serowy, mozzarella, lazur, favita, parmezan, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RNORQONN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2300,
+                        "pickup": 2300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RPP105NN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3300,
+                        "pickup": 3300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RRP105NN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5700,
+                        "pickup": 5700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RO5RQONN3N": {
+            "name": "Pizza Jagiellońska",
+            "description": [
+                "sos pomidorowy, mozzarella, salami, kurczak grill cebula, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RO5RQONN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2300,
+                        "pickup": 2300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RN7105NN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3300,
+                        "pickup": 3300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R57105NN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5900,
+                        "pickup": 5900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R33RQONN3N": {
+            "name": "Pizza Jarska",
+            "description": [
+                "sos pomidorowy, karczochy, oliwki, kukurydza, pomidory suszone, rukola"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R33RQONN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2300,
+                        "pickup": 2300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RQ7105NN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3300,
+                        "pickup": 3300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R1Q105NN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5700,
+                        "pickup": 5700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RP3RQONN3N": {
+            "name": "Pizza Cztery pory roku",
+            "description": [
+                "sos pomidorowy, mozzarella, sos serowy, kabanos, oliwki, pieczarki, kukurydza, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RP3RQONN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2300,
+                        "pickup": 2300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "ROQ105NN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3300,
+                        "pickup": 3300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R7Q105NN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5700,
+                        "pickup": 5700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RR3RQONN3N": {
+            "name": "Pizza Tuna",
+            "description": [
+                "sos pomidorowy, mozzarella, tuńczyk, jajko, kukurydza, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RR3RQONN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2300,
+                        "pickup": 2300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R0R105NN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3300,
+                        "pickup": 3300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R3R105NN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5700,
+                        "pickup": 5700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RRPRQONN3N": {
+            "name": "Pizza Kozacka",
+            "description": [
+                "sos pomidorowy, mozzarella, boczek, kurczak kebab, kabanos, cebula, ogórek konserwowy, papryka chili, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RRPRQONN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2500,
+                        "pickup": 2500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RN7RQONN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3500,
+                        "pickup": 3500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R57RQONN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5900,
+                        "pickup": 5900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R1QRQONN3N": {
+            "name": "Pizza Serrano",
+            "description": [
+                "sos pomidorowy, mozzarella, rukola, serano, słonecznik, pomidorki koktajlowe, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R1QRQONN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2500,
+                        "pickup": 2500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RPN505NN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3500,
+                        "pickup": 3500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RRN505NN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5900,
+                        "pickup": 5900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "ROQRQONN3N": {
+            "name": "Pizza Pepperoni",
+            "description": [
+                "sos pomidorowy, mozzarella, salami pepperoni, jalapeno, cebula, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "ROQRQONN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2500,
+                        "pickup": 2500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RN3505NN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3500,
+                        "pickup": 3500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R53505NN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5900,
+                        "pickup": 5900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R7QRQONN3N": {
+            "name": "Pizza Italiana",
+            "description": [
+                "sos serowy, mozzarella, kurczak grill, jajko, brokuły, pomidor"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R7QRQONN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2500,
+                        "pickup": 2500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RQ3505NN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3500,
+                        "pickup": 3500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R1O505NN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5900,
+                        "pickup": 5900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RQ1RQONN3N": {
+            "name": "Pizza Valentina",
+            "description": [
+                "sos pomidorowy, mozzarella, kukurydza, papryka, szynka, kurczak grill, rukola, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RQ1RQONN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2500,
+                        "pickup": 2500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "ROO505NN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3500,
+                        "pickup": 3500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R7O505NN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5900,
+                        "pickup": 5900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R1NRQONN3N": {
+            "name": "Pizza Dojlidzka",
+            "description": [
+                "sos serowy chill, mozzarella, salami, boczek, kebab, pieczarki, kukurydza, cebula"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R1NRQONN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2500,
+                        "pickup": 2500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R05505NN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3500,
+                        "pickup": 3500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R35505NN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5900,
+                        "pickup": 5900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R7NRQONN3N": {
+            "name": "Pizza Texas",
+            "description": [
+                "sos BBQ, mozzarella, cebula, oliwki, wołowina, papryka, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R7NRQONN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2500,
+                        "pickup": 2500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RP5505NN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3500,
+                        "pickup": 3500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RR5505NN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5900,
+                        "pickup": 5900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RP0RQONN3N": {
+            "name": "Pizza Coco chanel",
+            "description": [
+                "sos pomidorowy, mozzarella x2, imbir, kurczak grill, oliwki, pomidorki koktajlowe, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RP0RQONN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2500,
+                        "pickup": 2500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RNP505NN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3500,
+                        "pickup": 3500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R5P505NN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5900,
+                        "pickup": 5900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RN1RQONN3N": {
+            "name": "Pizza Piracka",
+            "description": [
+                "sos pomidorowy, mozzarella, łosoś, tuńczyk, anchovies, oliwki, kukurydza, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RN1RQONN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2500,
+                        "pickup": 2500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RQP505NN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3500,
+                        "pickup": 3500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R17505NN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5900,
+                        "pickup": 5900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R51RQONN3N": {
+            "name": "Pizza Mexicana",
+            "description": [
+                "sos bolognese, mozzarella, kukurydza, cebula, jalapeno, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R51RQONN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2500,
+                        "pickup": 2500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RO7505NN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3500,
+                        "pickup": 3500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R77505NN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5900,
+                        "pickup": 5900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R5ORQONN3N": {
+            "name": "Pizza Romaria",
+            "description": [
+                "sos pomidorowy, mozzarella, salami, boczek, krewetki, oliwki, sos czosnkowy, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R5ORQONN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2500,
+                        "pickup": 2500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RQORQONN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3500,
+                        "pickup": 3500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R15RQONN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5900,
+                        "pickup": 5900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R75RQONN3N": {
+            "name": "Pizza Orient",
+            "description": [
+                "sos serowy, mozzarella, imbir, łosoś, krewetki"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R75RQONN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2500,
+                        "pickup": 2500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RO1O15NN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3500,
+                        "pickup": 3500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R71O15NN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5900,
+                        "pickup": 5900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R03RQONN3N": {
+            "name": "Pizza Frutti di mare",
+            "description": [
+                "sos pomidorowy, mozzarella, małże, kalmary, ośmiorniczki, krewetki, sos czosnkowy, parmezan, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R03RQONN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2500,
+                        "pickup": 2500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R3NO15NN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3500,
+                        "pickup": 3500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RPNO15NN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5900,
+                        "pickup": 5900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RRQO15NN3N": {
+            "name": "Pizza Margherita",
+            "description": [
+                "sos pomidorowy, mozzarella, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RRQO15NN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "837e20491bd2a63d189ffc9e70d056e8",
+                        "bed28996cd9877d9a82ddb1176bf9698"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1800,
+                        "pickup": 1800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RQ5515NN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "5d35bf5ea14aac1afa44885f9741a428",
+                        "1b0463df195c1e3d02671a8b02f1d741"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2500,
+                        "pickup": 2500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R1P515NN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "d138c7084c9f52ece2b63dd554e532b6",
+                        "9d6666980af6c2ce25b680e01dac172d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3900,
+                        "pickup": 3900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RNRO15NN3N": {
+            "name": "Pizza Party",
+            "description": [
+                "sos do wyboru, 2 wybrane dodatki"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RNRO15NN3N",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "d7773640de092d5488f07da4e3041f06",
+                        "84f03b6467308494a3baa67fd63d3c30",
+                        "4a28df9677370f3dfe278d0ce9c53e46",
+                        "af5ef7161f767ccc0401d91564c20096"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2000,
+                        "pickup": 2000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R00P15NN3N",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "111263cd04cc8f3fa81ee91309bd64f0",
+                        "c614ae8effd22d1374cc08a4c9aa4003",
+                        "8e59023304320e4ad34e149beb8212d8",
+                        "4a3effaf0d761efd805f5ec07e0a65fc"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2900,
+                        "pickup": 2900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R30P15NN3N",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "42bd90dc5d4856bb3b983a3902624ab1",
+                        "1bc070d26663fffc898971660827041a",
+                        "76005174d546854f489017e054d03374",
+                        "2ee2ed289e04f7db22f52717b5624bf1"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5000,
+                        "pickup": 5000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "ROO0RONN3N": {
+            "name": "Sałatka Cesar",
+            "description": [
+                "sałata lodowa, kurczak grill, sos śmietanowo-czosnkowy, parmezan, koreczki tostowe, pomidor"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "ROO0RONN3N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2500,
+                        "pickup": 2500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R7O0RONN3N": {
+            "name": "Sałatka Grecka",
+            "description": [
+                "sałata lodowa, sos vinegret, pomidor, ogórek, oliwki, cebula, favita"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R7O0RONN3N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2500,
+                        "pickup": 2500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R530RONN3N": {
+            "name": "Sałatka Rzymska z kurczakiem",
+            "description": [
+                "sałata lodowa, sos gyros, kurczak grill, pomidor, koreczki tostowe, ser, talarki ziemniaczane"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R530RONN3N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2500,
+                        "pickup": 2500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RQ30RONN3N": {
+            "name": "Sałatka Rzymska z bekonem",
+            "description": [
+                "sałata lodowa, sos śmietanowo-czosnkowy, bekon, pomidor, koreczki tostowe, prażona cebula, ser, talarki ziemniaczane"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RQ30RONN3N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2500,
+                        "pickup": 2500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R1O0RONN3N": {
+            "name": "Sałatka Rzymska z tuńczykiem",
+            "description": [
+                "sałata lodowa, dressing, tuńczyk, jajko, pomidor, koreczki tostowe, ser, talarki ziemniaczane"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R1O0RONN3N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2500,
+                        "pickup": 2500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R3N0RONN3N": {
+            "name": "Sałatka Rzymska z łososiem",
+            "description": [
+                "sałata lodowa, sos śmietanowo-czosnkowy, łosoś, szparagi, pomidor koreczki tostowe, ser, talarki ziemniaczane"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R3N0RONN3N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2500,
+                        "pickup": 2500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R710RONN3N": {
+            "name": "Sałatka Rzymska z krewetkami",
+            "description": [
+                "sałata lodowa, sos śmietanowo-czosnkowy, krewetki, pomidor, koreczki tostowe, ser, talarki ziemniaczane"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R710RONN3N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2500,
+                        "pickup": 2500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R0N0RONN3N": {
+            "name": "Sałatka Szwedzka",
+            "description": [
+                "sałata lodowa, sos śmietanowo-czosnkowy, łosoś, szparagi, krewetki, pomidor, pieczywo"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R0N0RONN3N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2500,
+                        "pickup": 2500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RN30RONN3N": {
+            "name": "Sałatka Gyros",
+            "description": [
+                "sałata lodowa, sos gyros, kebab z kurczaka, cebula, ogórek, ser, jalapeno, talarki ziemniaczane"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RN30RONN3N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2500,
+                        "pickup": 2500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RPN0RONN3N": {
+            "name": "Sałatka Polska",
+            "description": [
+                "sałata lodowa, ogórek, lazur, słonecznik, pomidor, kukurydza, dressing, pieczywo"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RPN0RONN3N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2500,
+                        "pickup": 2500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RRN0RONN3N": {
+            "name": "Sałatka Wenecka",
+            "description": [
+                "placek focaccia, sałata lodowa, rukola, pomidorki, słonecznik prażony, szynka włoska, sos winegret, sos balsamiczny, parmezan"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RRN0RONN3N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2500,
+                        "pickup": 2500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R1NR713N3N": {
+            "name": "Spaghetti Bolognese",
+            "description": [
+                "makaron, sos bolognese, ser, oregano, parmezan, pieczywo"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R1NR713N3N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2500,
+                        "pickup": 2500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RONR713N3N": {
+            "name": "Spaghetti Carbonara",
+            "description": [
+                "makaron, sos carbonara, bekon, pieczarki, cebula, parmezan, pieczywo"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RONR713N3N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2500,
+                        "pickup": 2500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R7NR713N3N": {
+            "name": "Skrzydełka z kurczaka 5 szt.",
+            "description": [
+                "frytki, surówka colesław, sos do wyboru"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R7NR713N3N",
+                    "name": null,
+                    "optionGroupIds": [
+                        "789cb944e3451c6a7a770512ac8df1d7"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2550,
+                        "pickup": 2550,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R03R713N3N": {
+            "name": "Stripsy 4szt.",
+            "description": [
+                "frytki, surówka colesław, sos do wyboru"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R03R713N3N",
+                    "name": null,
+                    "optionGroupIds": [
+                        "789cb944e3451c6a7a770512ac8df1d7"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2550,
+                        "pickup": 2550,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R33R713N3N": {
+            "name": "Popsy z kurczaka",
+            "description": [
+                "surówka colesław, frytki"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R33R713N3N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2550,
+                        "pickup": 2550,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RP3R713N3N": {
+            "name": "Hamburger",
+            "description": [
+                "kotlet wołowy 120g, sałata, pomidor, ogórek"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RP3R713N3N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2550,
+                        "pickup": 2550,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RR3R713N3N": {
+            "name": "Parówki w cieście 4 szt.",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RR3R713N3N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2550,
+                        "pickup": 2550,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RNOR713N3N": {
+            "name": "Frytki",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RNOR713N3N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1100,
+                        "pickup": 1100,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R5OR713N3N": {
+            "name": "Krążki cebulowe 6 szt.",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R5OR713N3N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1100,
+                        "pickup": 1100,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RQOR713N3N": {
+            "name": "Pieczywo firmowe",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RQOR713N3N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 600,
+                        "pickup": 600,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        }
+    }
+}

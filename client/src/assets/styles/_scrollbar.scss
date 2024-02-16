@@ -3,39 +3,39 @@
 $scrollbar-width: 8px;
 
 html {
-  --scrollbarBG: red;
+  --scrollbarBG: #999;
   --thumbBGhover: #888;
   --thumbBG: #777;
   --thumbBGborder: #777;
   --trackBG: #555;
-  --thumbWidth: 8px;
+  --thumbWidth: 8px !important;
   scroll-behavior: smooth;
 }
 
-*::-webkit-scrollbar {
-  width: $scrollbar-width;
-  height: 12px;
-}
+// *::-webkit-scrollbar {
+//   width: 8px !important;
+//   height: 12px;
+// }
 
 * {
-  scrollbar-width: var(--thumbWidth);
+  scrollbar-width: thin; // 8px !important;
   scrollbar-color: var(--thumbBG) var(--scrollbarBG);
 }
 
-*::-webkit-scrollbar-track {
-  background: var(--trackBG);
-}
+// *::-webkit-scrollbar-track {
+//   background: var(--trackBG);
+// }
 
-*::-webkit-scrollbar-thumb {
-  background-color: var(--thumbBG);
-  border-radius: 1px;
-  border: 1px solid var(--thumbBGborder);
-  &:hover {
-    background: var(--thumbBGhover);
-  }
+// *::-webkit-scrollbar-thumb {
+//   background-color: var(--thumbBG);
+//   border-radius: 1px;
+//   border: 1px solid var(--thumbBGborder);
+//   &:hover {
+//     background: var(--thumbBGhover);
+//   }
 
-  &:active,
-  &:focus {
-    background: red;
-  }
-}
+//   &:active,
+//   &:focus {
+//     background: red;
+//   }
+// }

@@ -1,6 +1,7 @@
 @use "/src/assets/styles/variables";
+@use "../../../../../asian-poker.scss";
 
-.lobby {
+.popup-wrapper {
   background: rgba(105, 105, 105, 11);
   padding: 24px 24px;
   border-radius: 3px;
@@ -14,48 +15,6 @@
   box-shadow: none !important;
   align-items: center;
   justify-content: center;
-
-  h3 {
-    text-align: center;
-    text-shadow: 0.13em 0.13em 2px rgba(0, 0, 0, 0.75);
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    font-family: Manrope;
-    font-weight: 600;
-    color: #fff;
-    margin-bottom: 14px;
-    height: 20px;
-  }
 }
 
-.session {
-  height: 100%;
-  width: 100%;
-  justify-content: space-around !important;
-}
-
-.mini {
-  .input {
-    font-family: "Azeret Mono";
-    font-size: 0.77rem !important;
-    text-align: center;
-  }
-}
-
-.error {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 40px;
-  max-height: 40px;
-  font-weight: 600;
-  text-align: center;
-  color: rgb(255, 97, 97);
-  text-shadow: variables.$shadow-6;
-}
-
-.actions {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
+@include asian-poker.asian-poker-form-controls();

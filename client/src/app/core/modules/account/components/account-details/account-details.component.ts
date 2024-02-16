@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FirebaseAuthService } from '@core/firebase/firebase-auth.service';
 import { FirebaseDbService, DbRes } from '@core/firebase/firebase-db.service';
+import { FirebaseUsersService } from '@core/firebase/firebase-users.service';
 import { Store } from '@ngrx/store';
 import { BaseComponent } from '@shared/abstracts/base/base.component';
 import { AppState } from '@store/app-state';
@@ -22,6 +23,7 @@ export class AccountDetailsComponent extends BaseComponent {
     private store: Store<AppState>,
     private fb: FirebaseDbService,
     private auth: FirebaseAuthService,
+    private usersService: FirebaseUsersService,
   ) {
     super('AccountDetailsComponent');
   }
@@ -29,6 +31,7 @@ export class AccountDetailsComponent extends BaseComponent {
   changeName(displayName: string, account: UserAppAccount) {
     const user: UserAppAccount = { ...account, displayName };
 
-    this.fb.updateFullOverwrite(DbRes.users, user).then(() => this.store.dispatch(setUserAppAccount({ appAccount: user })));
+    this.usersService.updateData(account.id, user).then(() => this.store.dispatch(setUserAppAccount({ appAccount: user })));
+    // this.fb.updateFullOverwrite(DbRes.users, user).then(() => this.store.dispatch(setUserAppAccount({ appAccount: user })));
   }
 }

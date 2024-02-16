@@ -1,0 +1,2550 @@
+{
+    "requested": 1708090954778,
+    "products": {
+        "RO0503N35N": {
+            "name": "Pizza Margherita",
+            "description": [
+                "z podwójną mozzarellą, sosem pomidorowym i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/RNQN0NQN/products/margherita.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "RO0503N35N",
+                    "name": "duża ok. 30 cm",
+                    "optionGroupIds": [
+                        "9dcc8511c0c2daa3b8b722564240e301",
+                        "971e33dc0fb336abacc7d1895290b9bc",
+                        "a9a9a10a8e93170d8513b54709b830e3",
+                        "efb37a4269b4bb567fb512ef254824e4"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4400,
+                        "pickup": 4400,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RN5503N35N",
+                    "name": "mega ok 45 cm",
+                    "optionGroupIds": [
+                        "c732afb60fa70ef456e51b92cae53b1b",
+                        "8021ffef527e0080c47d10e6dc583a46",
+                        "0ca474bfd61fdb9213a45dc4bb399f20",
+                        "b6cac23a3d015c125b81c6bb31e67b21"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5800,
+                        "pickup": 5800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R37503N35N",
+                    "name": "gigant ok. 60 cm",
+                    "optionGroupIds": [
+                        "bdfea8895adebb6b9790d9dcdd6377ca",
+                        "a8b58c01cf582607c288444d45209278",
+                        "b1ddc59c425233ed6ad134ed48a01901",
+                        "6018a5957ebf333bef95417d69a7469e",
+                        "c901e2f6f9043643ad4218b46e2798ed"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 8250,
+                        "pickup": 8250,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R01503N35N": {
+            "name": "Pizza Pepperoni",
+            "description": [
+                "z pepperoni, mozzarellą, sosem pomidorowym i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/RNQN0NQN/products/pepperoni.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "R01503N35N",
+                    "name": "duża ok. 30 cm",
+                    "optionGroupIds": [
+                        "9dcc8511c0c2daa3b8b722564240e301",
+                        "971e33dc0fb336abacc7d1895290b9bc",
+                        "a9a9a10a8e93170d8513b54709b830e3",
+                        "efb37a4269b4bb567fb512ef254824e4"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4400,
+                        "pickup": 4400,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R55503N35N",
+                    "name": "mega ok 45 cm",
+                    "optionGroupIds": [
+                        "c732afb60fa70ef456e51b92cae53b1b",
+                        "8021ffef527e0080c47d10e6dc583a46",
+                        "0ca474bfd61fdb9213a45dc4bb399f20",
+                        "b6cac23a3d015c125b81c6bb31e67b21"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5800,
+                        "pickup": 5800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RP7503N35N",
+                    "name": "gigant ok. 60 cm",
+                    "optionGroupIds": [
+                        "bdfea8895adebb6b9790d9dcdd6377ca",
+                        "a8b58c01cf582607c288444d45209278",
+                        "b1ddc59c425233ed6ad134ed48a01901",
+                        "6018a5957ebf333bef95417d69a7469e",
+                        "c901e2f6f9043643ad4218b46e2798ed"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 8250,
+                        "pickup": 8250,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RR1503N35N": {
+            "name": "Pizza Wiejska",
+            "description": [
+                "z boczkiem, cebulą, mozzarellą, sosem pomidorowym i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/RNQN0NQN/products/wiejska.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "RR1503N35N",
+                    "name": "duża ok. 30 cm",
+                    "optionGroupIds": [
+                        "9dcc8511c0c2daa3b8b722564240e301",
+                        "971e33dc0fb336abacc7d1895290b9bc",
+                        "a9a9a10a8e93170d8513b54709b830e3",
+                        "efb37a4269b4bb567fb512ef254824e4"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4400,
+                        "pickup": 4400,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RQ5503N35N",
+                    "name": "mega ok 45 cm",
+                    "optionGroupIds": [
+                        "c732afb60fa70ef456e51b92cae53b1b",
+                        "8021ffef527e0080c47d10e6dc583a46",
+                        "0ca474bfd61fdb9213a45dc4bb399f20",
+                        "b6cac23a3d015c125b81c6bb31e67b21"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5800,
+                        "pickup": 5800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RR7503N35N",
+                    "name": "gigant ok. 60 cm",
+                    "optionGroupIds": [
+                        "bdfea8895adebb6b9790d9dcdd6377ca",
+                        "a8b58c01cf582607c288444d45209278",
+                        "b1ddc59c425233ed6ad134ed48a01901",
+                        "6018a5957ebf333bef95417d69a7469e",
+                        "c901e2f6f9043643ad4218b46e2798ed"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 8250,
+                        "pickup": 8250,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RO3503N35N": {
+            "name": "Pizza Wegetariańska",
+            "description": [
+                "z papryką, pieczarkami, cebulą, mozzarellą, sosem pomidoroowym i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/RNQN0NQN/products/wegetariaska.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "RO3503N35N",
+                    "name": "duża ok. 30 cm",
+                    "optionGroupIds": [
+                        "9dcc8511c0c2daa3b8b722564240e301",
+                        "971e33dc0fb336abacc7d1895290b9bc",
+                        "a9a9a10a8e93170d8513b54709b830e3",
+                        "efb37a4269b4bb567fb512ef254824e4"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4400,
+                        "pickup": 4400,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R1P503N35N",
+                    "name": "mega ok 45 cm",
+                    "optionGroupIds": [
+                        "c732afb60fa70ef456e51b92cae53b1b",
+                        "8021ffef527e0080c47d10e6dc583a46",
+                        "0ca474bfd61fdb9213a45dc4bb399f20",
+                        "b6cac23a3d015c125b81c6bb31e67b21"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5800,
+                        "pickup": 5800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RNQ503N35N",
+                    "name": "gigant ok. 60 cm",
+                    "optionGroupIds": [
+                        "bdfea8895adebb6b9790d9dcdd6377ca",
+                        "a8b58c01cf582607c288444d45209278",
+                        "b1ddc59c425233ed6ad134ed48a01901",
+                        "6018a5957ebf333bef95417d69a7469e",
+                        "c901e2f6f9043643ad4218b46e2798ed"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 8250,
+                        "pickup": 8250,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R3O503N35N": {
+            "name": "Pizza Capriciosa",
+            "description": [
+                "z szynką, pieczarkami, mozzarellą, sosem pomidorowym i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/RNQN0NQN/products/capriciosa.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "R3O503N35N",
+                    "name": "duża ok. 30 cm",
+                    "optionGroupIds": [
+                        "9dcc8511c0c2daa3b8b722564240e301",
+                        "971e33dc0fb336abacc7d1895290b9bc",
+                        "a9a9a10a8e93170d8513b54709b830e3",
+                        "efb37a4269b4bb567fb512ef254824e4"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4400,
+                        "pickup": 4400,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "ROP503N35N",
+                    "name": "mega ok 45 cm",
+                    "optionGroupIds": [
+                        "c732afb60fa70ef456e51b92cae53b1b",
+                        "8021ffef527e0080c47d10e6dc583a46",
+                        "0ca474bfd61fdb9213a45dc4bb399f20",
+                        "b6cac23a3d015c125b81c6bb31e67b21"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5800,
+                        "pickup": 5800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R5Q503N35N",
+                    "name": "gigant ok. 60 cm",
+                    "optionGroupIds": [
+                        "bdfea8895adebb6b9790d9dcdd6377ca",
+                        "a8b58c01cf582607c288444d45209278",
+                        "b1ddc59c425233ed6ad134ed48a01901",
+                        "6018a5957ebf333bef95417d69a7469e",
+                        "c901e2f6f9043643ad4218b46e2798ed"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 8250,
+                        "pickup": 8250,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RPO503N35N": {
+            "name": "Pizza Hawajska",
+            "description": [
+                "na pomidorowym spodzie z mozzarellą, szynką, ananasem, kukurydzą i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/RNQN0NQN/products/hawajska.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "RPO503N35N",
+                    "name": "duża ok. 30 cm",
+                    "optionGroupIds": [
+                        "9dcc8511c0c2daa3b8b722564240e301",
+                        "971e33dc0fb336abacc7d1895290b9bc",
+                        "a9a9a10a8e93170d8513b54709b830e3",
+                        "efb37a4269b4bb567fb512ef254824e4"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4400,
+                        "pickup": 4400,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R7P503N35N",
+                    "name": "mega ok 45 cm",
+                    "optionGroupIds": [
+                        "c732afb60fa70ef456e51b92cae53b1b",
+                        "8021ffef527e0080c47d10e6dc583a46",
+                        "0ca474bfd61fdb9213a45dc4bb399f20",
+                        "b6cac23a3d015c125b81c6bb31e67b21"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5800,
+                        "pickup": 5800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RQQ503N35N",
+                    "name": "gigant ok. 60 cm",
+                    "optionGroupIds": [
+                        "bdfea8895adebb6b9790d9dcdd6377ca",
+                        "a8b58c01cf582607c288444d45209278",
+                        "b1ddc59c425233ed6ad134ed48a01901",
+                        "6018a5957ebf333bef95417d69a7469e",
+                        "c901e2f6f9043643ad4218b46e2798ed"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 8250,
+                        "pickup": 8250,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RRO503N35N": {
+            "name": "Pizza Skur...czakiem",
+            "description": [
+                "z mozarellą, spodem pomidorowym, kurczakiem marynowanym w czosnku i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/RNQN0NQN/products/skur.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "RRO503N35N",
+                    "name": "duża ok. 30 cm",
+                    "optionGroupIds": [
+                        "9dcc8511c0c2daa3b8b722564240e301",
+                        "971e33dc0fb336abacc7d1895290b9bc",
+                        "a9a9a10a8e93170d8513b54709b830e3",
+                        "efb37a4269b4bb567fb512ef254824e4"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4400,
+                        "pickup": 4400,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R07503N35N",
+                    "name": "mega ok 45 cm",
+                    "optionGroupIds": [
+                        "c732afb60fa70ef456e51b92cae53b1b",
+                        "8021ffef527e0080c47d10e6dc583a46",
+                        "0ca474bfd61fdb9213a45dc4bb399f20",
+                        "b6cac23a3d015c125b81c6bb31e67b21"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5800,
+                        "pickup": 5800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R00P03N35N",
+                    "name": "gigant ok. 60 cm",
+                    "optionGroupIds": [
+                        "bdfea8895adebb6b9790d9dcdd6377ca",
+                        "a8b58c01cf582607c288444d45209278",
+                        "b1ddc59c425233ed6ad134ed48a01901",
+                        "6018a5957ebf333bef95417d69a7469e",
+                        "c901e2f6f9043643ad4218b46e2798ed"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 8250,
+                        "pickup": 8250,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RQ1P03N35N": {
+            "name": "Pizza Serowo-brokułowa",
+            "description": [
+                "na serowym spodzie z mozzarellą, oregano, kurczakiem i brokułami"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/RNQN0NQN/products/serowo-brokuowa.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "RQ1P03N35N",
+                    "name": "duża ok. 30 cm",
+                    "optionGroupIds": [
+                        "f4e93ccb2e812c69256db5d76f759c19",
+                        "3db952a5873422ebd31bfefa15fc1a1c",
+                        "065539d627c2750f699b8f987269a4eb",
+                        "05344b11bd4468a42a0ed0556539340c"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4700,
+                        "pickup": 4700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RRPP03N35N",
+                    "name": "mega ok 45 cm",
+                    "optionGroupIds": [
+                        "e03be9d736d6755f1b633b98e89b64fb",
+                        "a5223801178b67e95a2d4a304ed61844",
+                        "a53971e474db25b1737b0ccedc3fde83",
+                        "5be8c5aa91dc1c1d9dc6f91faae41f24"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 6300,
+                        "pickup": 6300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RN3703N35N",
+                    "name": "gigant ok. 60 cm",
+                    "optionGroupIds": [
+                        "c2a72e857b408205585178a342f55bf8",
+                        "3baf8298ddb14cf4c6a45fb678c46bce",
+                        "5298198b19147aa2f1e904cf12618eaa",
+                        "2a77b1d7319195431023afc9a923e8f1",
+                        "27a34bff0123e4653d5b27398e3565b8"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 9250,
+                        "pickup": 9250,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R1NP03N35N": {
+            "name": "Pizza Texas",
+            "description": [
+                "na spodzie BBQ z mozzarellą, oregano, kurczakiem, papryką czerwoną i żółtą oraz prażoną cebulą"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/RNQN0NQN/products/texas_z_praon.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "R1NP03N35N",
+                    "name": "duża ok. 30 cm",
+                    "optionGroupIds": [
+                        "f4e93ccb2e812c69256db5d76f759c19",
+                        "3db952a5873422ebd31bfefa15fc1a1c",
+                        "065539d627c2750f699b8f987269a4eb",
+                        "05344b11bd4468a42a0ed0556539340c"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4700,
+                        "pickup": 4700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RONP03N35N": {
+            "name": "Pizza Okuratna",
+            "description": [
+                "z mozarellą, spodem serowym, kurczakiem, boczkiem, suszonym pomidorem i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/RNQN0NQN/products/okuratna.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "RONP03N35N",
+                    "name": "duża ok. 30 cm",
+                    "optionGroupIds": [
+                        "f4e93ccb2e812c69256db5d76f759c19",
+                        "3db952a5873422ebd31bfefa15fc1a1c",
+                        "065539d627c2750f699b8f987269a4eb",
+                        "05344b11bd4468a42a0ed0556539340c"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4700,
+                        "pickup": 4700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RQ7P03N35N",
+                    "name": "mega ok 45 cm",
+                    "optionGroupIds": [
+                        "e03be9d736d6755f1b633b98e89b64fb",
+                        "a5223801178b67e95a2d4a304ed61844",
+                        "a53971e474db25b1737b0ccedc3fde83",
+                        "5be8c5aa91dc1c1d9dc6f91faae41f24"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 6300,
+                        "pickup": 6300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "ROO703N35N",
+                    "name": "gigant ok. 60 cm",
+                    "optionGroupIds": [
+                        "c2a72e857b408205585178a342f55bf8",
+                        "3baf8298ddb14cf4c6a45fb678c46bce",
+                        "5298198b19147aa2f1e904cf12618eaa",
+                        "2a77b1d7319195431023afc9a923e8f1",
+                        "27a34bff0123e4653d5b27398e3565b8"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 9250,
+                        "pickup": 9250,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R7NP03N35N": {
+            "name": "Pizza Pikantna",
+            "description": [
+                "na pomidorowym spodzie z mozzarellą, oregano, kabanosem, papryczkami jalapeno oraz papryką czerwoną i żółtą"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/RNQN0NQN/products/pikantna.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "R7NP03N35N",
+                    "name": "duża ok. 30 cm",
+                    "optionGroupIds": [
+                        "f4e93ccb2e812c69256db5d76f759c19",
+                        "3db952a5873422ebd31bfefa15fc1a1c",
+                        "065539d627c2750f699b8f987269a4eb",
+                        "05344b11bd4468a42a0ed0556539340c"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4700,
+                        "pickup": 4700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "ROQP03N35N",
+                    "name": "mega ok 45 cm",
+                    "optionGroupIds": [
+                        "e03be9d736d6755f1b633b98e89b64fb",
+                        "a5223801178b67e95a2d4a304ed61844",
+                        "a53971e474db25b1737b0ccedc3fde83",
+                        "5be8c5aa91dc1c1d9dc6f91faae41f24"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 6300,
+                        "pickup": 6300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R05703N35N",
+                    "name": "gigant ok. 60 cm",
+                    "optionGroupIds": [
+                        "c2a72e857b408205585178a342f55bf8",
+                        "3baf8298ddb14cf4c6a45fb678c46bce",
+                        "5298198b19147aa2f1e904cf12618eaa",
+                        "2a77b1d7319195431023afc9a923e8f1",
+                        "27a34bff0123e4653d5b27398e3565b8"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 9250,
+                        "pickup": 9250,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R03P03N35N": {
+            "name": "Pizza Kebab",
+            "description": [
+                "na spodzie BBQ z mozzarellą, oregano, cebulą i kurczakiem"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/RNQN0NQN/products/kebab.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "R03P03N35N",
+                    "name": "duża ok. 30 cm",
+                    "optionGroupIds": [
+                        "f4e93ccb2e812c69256db5d76f759c19",
+                        "3db952a5873422ebd31bfefa15fc1a1c",
+                        "065539d627c2750f699b8f987269a4eb",
+                        "05344b11bd4468a42a0ed0556539340c"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4700,
+                        "pickup": 4700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R0RP03N35N",
+                    "name": "mega ok 45 cm",
+                    "optionGroupIds": [
+                        "e03be9d736d6755f1b633b98e89b64fb",
+                        "a5223801178b67e95a2d4a304ed61844",
+                        "a53971e474db25b1737b0ccedc3fde83",
+                        "5be8c5aa91dc1c1d9dc6f91faae41f24"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 6300,
+                        "pickup": 6300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R35703N35N",
+                    "name": "gigant ok. 60 cm",
+                    "optionGroupIds": [
+                        "c2a72e857b408205585178a342f55bf8",
+                        "3baf8298ddb14cf4c6a45fb678c46bce",
+                        "5298198b19147aa2f1e904cf12618eaa",
+                        "2a77b1d7319195431023afc9a923e8f1",
+                        "27a34bff0123e4653d5b27398e3565b8"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 9250,
+                        "pickup": 9250,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RP3P03N35N": {
+            "name": "Pizza Chłopska",
+            "description": [
+                "z mozzarellą, spodem czosnkowym, kiełbasą, ogórkiem konserwowym i koperkiem"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/RNQN0NQN/products/chopska.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "RP3P03N35N",
+                    "name": "duża ok. 30 cm",
+                    "optionGroupIds": [
+                        "f4e93ccb2e812c69256db5d76f759c19",
+                        "3db952a5873422ebd31bfefa15fc1a1c",
+                        "065539d627c2750f699b8f987269a4eb",
+                        "05344b11bd4468a42a0ed0556539340c"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4700,
+                        "pickup": 4700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RPRP03N35N",
+                    "name": "mega ok 45 cm",
+                    "optionGroupIds": [
+                        "e03be9d736d6755f1b633b98e89b64fb",
+                        "a5223801178b67e95a2d4a304ed61844",
+                        "a53971e474db25b1737b0ccedc3fde83",
+                        "5be8c5aa91dc1c1d9dc6f91faae41f24"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 6300,
+                        "pickup": 6300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RP5703N35N",
+                    "name": "gigant ok. 60 cm",
+                    "optionGroupIds": [
+                        "c2a72e857b408205585178a342f55bf8",
+                        "3baf8298ddb14cf4c6a45fb678c46bce",
+                        "5298198b19147aa2f1e904cf12618eaa",
+                        "2a77b1d7319195431023afc9a923e8f1",
+                        "27a34bff0123e4653d5b27398e3565b8"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 9250,
+                        "pickup": 9250,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RR3P03N35N": {
+            "name": "Pizza Mexicana",
+            "description": [
+                "z mozzarellą, spodem pomidorowym ostrym, kukurydzą, kurczakiem, jalapeno, nachosami i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/RNQN0NQN/products/mexicana.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "RR3P03N35N",
+                    "name": "duża ok. 30 cm",
+                    "optionGroupIds": [
+                        "f4e93ccb2e812c69256db5d76f759c19",
+                        "3db952a5873422ebd31bfefa15fc1a1c",
+                        "065539d627c2750f699b8f987269a4eb",
+                        "05344b11bd4468a42a0ed0556539340c"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4700,
+                        "pickup": 4700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RN0703N35N",
+                    "name": "mega ok 45 cm",
+                    "optionGroupIds": [
+                        "e03be9d736d6755f1b633b98e89b64fb",
+                        "a5223801178b67e95a2d4a304ed61844",
+                        "a53971e474db25b1737b0ccedc3fde83",
+                        "5be8c5aa91dc1c1d9dc6f91faae41f24"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 6300,
+                        "pickup": 6300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RNP703N35N",
+                    "name": "gigant ok. 60 cm",
+                    "optionGroupIds": [
+                        "c2a72e857b408205585178a342f55bf8",
+                        "3baf8298ddb14cf4c6a45fb678c46bce",
+                        "5298198b19147aa2f1e904cf12618eaa",
+                        "2a77b1d7319195431023afc9a923e8f1",
+                        "27a34bff0123e4653d5b27398e3565b8"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 9250,
+                        "pickup": 9250,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R5OP03N35N": {
+            "name": "Pizza Wege Plus",
+            "description": [
+                "z mozzarellą, spodem serowym, brokułami, suszonym pomidorem, kukurydzą i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/RNQN0NQN/products/wege_plus.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "R5OP03N35N",
+                    "name": "duża ok. 30 cm",
+                    "optionGroupIds": [
+                        "f4e93ccb2e812c69256db5d76f759c19",
+                        "3db952a5873422ebd31bfefa15fc1a1c",
+                        "065539d627c2750f699b8f987269a4eb",
+                        "05344b11bd4468a42a0ed0556539340c"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4700,
+                        "pickup": 4700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RQ0703N35N",
+                    "name": "mega ok 45 cm",
+                    "optionGroupIds": [
+                        "e03be9d736d6755f1b633b98e89b64fb",
+                        "a5223801178b67e95a2d4a304ed61844",
+                        "a53971e474db25b1737b0ccedc3fde83",
+                        "5be8c5aa91dc1c1d9dc6f91faae41f24"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 6300,
+                        "pickup": 6300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RQP703N35N",
+                    "name": "gigant ok. 60 cm",
+                    "optionGroupIds": [
+                        "c2a72e857b408205585178a342f55bf8",
+                        "3baf8298ddb14cf4c6a45fb678c46bce",
+                        "5298198b19147aa2f1e904cf12618eaa",
+                        "2a77b1d7319195431023afc9a923e8f1",
+                        "27a34bff0123e4653d5b27398e3565b8"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 9250,
+                        "pickup": 9250,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R15P03N35N": {
+            "name": "Pizza Kolba",
+            "description": [
+                "z mozzarellą, spodem serowym, pepperoni, kukurydzą i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/RNQN0NQN/products/kolba.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "R15P03N35N",
+                    "name": "duża ok. 30 cm",
+                    "optionGroupIds": [
+                        "f4e93ccb2e812c69256db5d76f759c19",
+                        "3db952a5873422ebd31bfefa15fc1a1c",
+                        "065539d627c2750f699b8f987269a4eb",
+                        "05344b11bd4468a42a0ed0556539340c"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4700,
+                        "pickup": 4700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RO1703N35N",
+                    "name": "mega ok 45 cm",
+                    "optionGroupIds": [
+                        "e03be9d736d6755f1b633b98e89b64fb",
+                        "a5223801178b67e95a2d4a304ed61844",
+                        "a53971e474db25b1737b0ccedc3fde83",
+                        "5be8c5aa91dc1c1d9dc6f91faae41f24"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 6300,
+                        "pickup": 6300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RO7703N35N",
+                    "name": "gigant ok. 60 cm",
+                    "optionGroupIds": [
+                        "c2a72e857b408205585178a342f55bf8",
+                        "3baf8298ddb14cf4c6a45fb678c46bce",
+                        "5298198b19147aa2f1e904cf12618eaa",
+                        "2a77b1d7319195431023afc9a923e8f1",
+                        "27a34bff0123e4653d5b27398e3565b8"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 9250,
+                        "pickup": 9250,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R75P03N35N": {
+            "name": "Pizza Pszna",
+            "description": [
+                "z mozzarellą, spodem pomidorowym, boczkiem, kabanosem, cebulą i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/RNQN0NQN/products/pszna.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "R75P03N35N",
+                    "name": "duża ok. 30 cm",
+                    "optionGroupIds": [
+                        "f4e93ccb2e812c69256db5d76f759c19",
+                        "3db952a5873422ebd31bfefa15fc1a1c",
+                        "065539d627c2750f699b8f987269a4eb",
+                        "05344b11bd4468a42a0ed0556539340c"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4700,
+                        "pickup": 4700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R71703N35N",
+                    "name": "mega ok 45 cm",
+                    "optionGroupIds": [
+                        "e03be9d736d6755f1b633b98e89b64fb",
+                        "a5223801178b67e95a2d4a304ed61844",
+                        "a53971e474db25b1737b0ccedc3fde83",
+                        "5be8c5aa91dc1c1d9dc6f91faae41f24"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 6300,
+                        "pickup": 6300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R0Q703N35N",
+                    "name": "gigant ok. 60 cm",
+                    "optionGroupIds": [
+                        "c2a72e857b408205585178a342f55bf8",
+                        "3baf8298ddb14cf4c6a45fb678c46bce",
+                        "5298198b19147aa2f1e904cf12618eaa",
+                        "2a77b1d7319195431023afc9a923e8f1",
+                        "27a34bff0123e4653d5b27398e3565b8"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 9250,
+                        "pickup": 9250,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RP1Q03N35N": {
+            "name": "Pizza Margherita",
+            "description": [
+                "z podwójną mozzarellą, sosem pomidorowym i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/N71PN1Q/products/kawaek_margherita_gorcy_trjkt.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "RP1Q03N35N",
+                    "name": null,
+                    "optionGroupIds": [
+                        "f8aaba6b9cd78194a9b90760f88d0f1d",
+                        "f5bbb0b94c504d63cb2f0042e523aa89",
+                        "6d7443c8be9ecb7bc049ab2b0feb5670"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1190,
+                        "pickup": 1190,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RNNQ03N35N": {
+            "name": "Pizza Pepperoni",
+            "description": [
+                "z pepperoni, mozzarellą, sosem pomidorowym i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/N71PN1Q/products/kawaek_pepperoni_gorcy_trjkt.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "RNNQ03N35N",
+                    "name": null,
+                    "optionGroupIds": [
+                        "f8aaba6b9cd78194a9b90760f88d0f1d",
+                        "f5bbb0b94c504d63cb2f0042e523aa89",
+                        "6d7443c8be9ecb7bc049ab2b0feb5670"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1190,
+                        "pickup": 1190,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RQNQ03N35N": {
+            "name": "Pizza Wiejska",
+            "description": [
+                "z boczkiem, cebulą, mozzarellą, sosem pomidorowym i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/N71PN1Q/products/kawaek_wiejska_gorcy_trjkt.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "RQNQ03N35N",
+                    "name": null,
+                    "optionGroupIds": [
+                        "f8aaba6b9cd78194a9b90760f88d0f1d",
+                        "f5bbb0b94c504d63cb2f0042e523aa89",
+                        "6d7443c8be9ecb7bc049ab2b0feb5670"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1190,
+                        "pickup": 1190,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RO3Q03N35N": {
+            "name": "Pizza Wegetariańska",
+            "description": [
+                "z papryką, pieczarkami, cebulą, mozzarellą, sosem pomidorowym i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/N71PN1Q/products/kawaek_wegetariaska_gorcy_trjkt.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "RO3Q03N35N",
+                    "name": null,
+                    "optionGroupIds": [
+                        "f8aaba6b9cd78194a9b90760f88d0f1d",
+                        "f5bbb0b94c504d63cb2f0042e523aa89",
+                        "6d7443c8be9ecb7bc049ab2b0feb5670"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1190,
+                        "pickup": 1190,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R0OQ03N35N": {
+            "name": "Pizza Capriciosa",
+            "description": [
+                "z szynką, pieczarkami, mozzarellą, sosem pomidorowym i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/N71PN1Q/products/kawaek_capriciosa_gorcy_trjkt.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "R0OQ03N35N",
+                    "name": null,
+                    "optionGroupIds": [
+                        "f8aaba6b9cd78194a9b90760f88d0f1d",
+                        "f5bbb0b94c504d63cb2f0042e523aa89",
+                        "6d7443c8be9ecb7bc049ab2b0feb5670"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1190,
+                        "pickup": 1190,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RPOQ03N35N": {
+            "name": "Pizza Hawajska",
+            "description": [
+                "z mozarellą, spodem pomidorowym, szynką, ananasem, kukurydzą i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/N71PN1Q/products/kawaek_hawajska.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "RPOQ03N35N",
+                    "name": null,
+                    "optionGroupIds": [
+                        "f8aaba6b9cd78194a9b90760f88d0f1d",
+                        "f5bbb0b94c504d63cb2f0042e523aa89",
+                        "6d7443c8be9ecb7bc049ab2b0feb5670"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1190,
+                        "pickup": 1190,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RROQ03N35N": {
+            "name": "Pizza skur...czakiem",
+            "description": [
+                "z mozarellą, spodem pomidorowym, kurczakiem marynowanym w czosnku, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/N71PN1Q/products/kawaek_skurczakiem_gorcy_trjkt.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "RROQ03N35N",
+                    "name": null,
+                    "optionGroupIds": [
+                        "f8aaba6b9cd78194a9b90760f88d0f1d",
+                        "f5bbb0b94c504d63cb2f0042e523aa89",
+                        "6d7443c8be9ecb7bc049ab2b0feb5670"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1190,
+                        "pickup": 1190,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R5OR03N35N": {
+            "name": "Coca-Cola 0,33l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/RNQN0NQN/products/coca-cola-033l.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "R5OR03N35N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 450,
+                        "pickup": 450,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RQOR03N35N": {
+            "name": "Coca-Cola 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/RNQN0NQN/products/coca-cola-05l.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "RQOR03N35N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 700,
+                        "pickup": 700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RN7R03N35N": {
+            "name": "Coca-Cola Zero 0,33l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/RNQN0NQN/products/coca-cola-zero-033l1.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "RN7R03N35N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 450,
+                        "pickup": 450,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R7QR03N35N": {
+            "name": "Coca-Cola Zero 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/RNQN0NQN/products/coca-cola-zero-05l.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "R7QR03N35N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 700,
+                        "pickup": 700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R50013N35N": {
+            "name": "Coca-Cola Cherry 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/RNQN0NQN/products/coca-cola-cherry-05l.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "R50013N35N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 700,
+                        "pickup": 700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RQ0013N35N": {
+            "name": "Sprite 0,33l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/N71PN1Q/products/sprite-033l.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "RQ0013N35N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 450,
+                        "pickup": 450,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R11013N35N": {
+            "name": "Sprite 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/N71PN1Q/products/sprite-05l.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "R11013N35N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 700,
+                        "pickup": 700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RO1013N35N": {
+            "name": "Sprite Zero 0,33l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/RNQN0NQN/products/spritezero033.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "RO1013N35N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 450,
+                        "pickup": 450,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RN3013N35N": {
+            "name": "Sprite Zero 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/RNQN0NQN/products/sprite-zero-05l.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "RN3013N35N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 700,
+                        "pickup": 700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R7O013N35N": {
+            "name": "Fanta Pomarańczowa 0,33l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/N71PN1Q/products/fanta-pomaranczowa-033l.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "R7O013N35N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 450,
+                        "pickup": 450,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R35013N35N": {
+            "name": "Fanta Pomarańczowa 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/N71PN1Q/products/fanta-pomaranczowa-05l.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "R35013N35N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 700,
+                        "pickup": 700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RR5013N35N": {
+            "name": "Fanta Zero Pomarańczowa 0,33l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/RNQN0NQN/products/fanta-zero-pomaranczowa-033l.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "RR5013N35N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 450,
+                        "pickup": 450,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R17013N35N": {
+            "name": "Fanta Zero Pomarańczowa 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/RNQN0NQN/products/fanta-zero-pomaranczowa-05l.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "R17013N35N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 700,
+                        "pickup": 700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R10113N35N": {
+            "name": "FuzeTea brzoskwiniowa z hibiskusem 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/RNQN0NQN/products/fuzetea-brzoskwiniowa-z-czarna-herbata-i-hibiskusem-05l.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "R10113N35N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 700,
+                        "pickup": 700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RPO113N35N": {
+            "name": "FuzeTea cytrynowa z czarną herbatą i trawą cytrynową 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/N71PN1Q/products/fuzetea-cytrynowa-z-czarna-herbata-i-trawa-cytynowa-05l.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "RPO113N35N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 700,
+                        "pickup": 700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": "10,00",
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RRO113N35N": {
+            "name": "FuzeTea Zero marakuja 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/RNQN0NQN/products/fuzetea-no-sugar-marakuja-z-zielona-herbata-05l.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "RRO113N35N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 700,
+                        "pickup": 700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RR7113N35N": {
+            "name": "Cappy Sok jabłkowy 0,33l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/RNQN0NQN/products/cappy-sok-jablkowy-033l.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "RR7113N35N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 700,
+                        "pickup": 700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RN1N13N35N": {
+            "name": "Cappy Sok pomarańczowy 0,33l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/N75P7PR/products/cappy-sok-pomaranczowy-033l.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "RN1N13N35N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 700,
+                        "pickup": 700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R1NN13N35N": {
+            "name": "Woda gazowana Kropla Beskidu 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/RNQN0NQN/products/kropla-beskidu-woda-gazowana-05l.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "R1NN13N35N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 450,
+                        "pickup": 450,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RQ7N13N35N": {
+            "name": "Woda niegazowana Kropla Beskidu 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/RNQN0NQN/products/kropla-beskidu-woda-niegazowana-05l.png?timestamp=1707570764",
+            "variants": [
+                {
+                    "id": "RQ7N13N35N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 450,
+                        "pickup": 450,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        }
+    }
+}

@@ -11,6 +11,10 @@ import { AsianPokerGameDTO } from '../models/dto';
 export class GameAnalyzerService {
   private game: AsianPokerGameDTO | undefined;
 
+  get gameLastTick() {
+    return this.game?.ticks.at(-1);
+  }
+
   private analyticsA: CycleAnalyticsA = {
     currentPlayerHand: [],
     publicCards: [],
@@ -42,7 +46,7 @@ export class GameAnalyzerService {
     hands: [],
   };
 
-  getHighHandsFromDeck(deckVariant: DeckVariant | undefined) {
+  getHighHandsFromDeck(deckVariant: DeckVariant | undefined | null) {
     if (!deckVariant) {
       return [];
     }
@@ -72,9 +76,9 @@ export class GameAnalyzerService {
   }
 
   private getAnalyticsA() {
-    if (this.game) {
-      this.analyticsA.publicCards = [...this.game.publicCards];
-      this.analyticsA.currentPlayerHand = this.game.playersWithHands.map((player) => ({
+    if (this.gameLastTick) {
+      this.analyticsA.publicCards = [...this.gameLastTick.publicCards];
+      this.analyticsA.currentPlayerHand = this.gameLastTick.playersWithHands.map((player) => ({
         playerId: player.id,
         cards: [...player.hand],
       }));
@@ -205,8 +209,8 @@ export class GameAnalyzerService {
 
     // sort hands by hierarchy
     const sortedHighHands = onlyHighHands.sort((a, b) => {
-      const aSuitAt = (this.getHighHandsFromDeck(this.game?.deckVariant) || []).indexOf(a.name as any);
-      const bSuitAt = (this.getHighHandsFromDeck(this.game?.deckVariant) || []).indexOf(b.name as any);
+      const aSuitAt = (this.getHighHandsFromDeck(this.gameLastTick?.deckVariant) || []).indexOf(a.name as any);
+      const bSuitAt = (this.getHighHandsFromDeck(this.gameLastTick?.deckVariant) || []).indexOf(b.name as any);
 
       if (aSuitAt < bSuitAt) {
         return -1;

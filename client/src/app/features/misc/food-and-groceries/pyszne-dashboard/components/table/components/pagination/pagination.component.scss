@@ -1,0 +1,95 @@
+@use "/src/assets/styles/mixins";
+@use "/src/assets/styles/variables";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  font-family: "Azeret Mono", monospace;
+  font-weight: 300;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  color: #ccc;
+
+  width: fit-content;
+  background: rgba(200, 200, 200, 0.2);
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-shadow: variables.$shadow-1;
+}
+
+.pages {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  .cell {
+    width: 36px;
+  }
+
+  .divider {
+    margin: 0 4px;
+    width: 12px;
+  }
+}
+
+.items {
+  line-height: 1.2;
+  font-size: 11px;
+  color: #bbb;
+
+  height: 16px;
+  display: flex;
+  align-items: center;
+
+  margin-top: 4px;
+
+  .cell {
+    width: 30px;
+  }
+
+  .divider {
+    margin: 0 1px;
+    width: 10px;
+  }
+}
+
+.actions {
+  height: 20px;
+
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  gap: 1px;
+
+  button {
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    @include mixins.clickable-btn(true);
+    font-weight: 600;
+
+    width: 24px;
+    height: 24px;
+
+    &.first {
+      @include mixins.icon-mask("^assets/icons/pagination/page-first.svg", 24px, 24px, #ccc);
+    }
+
+    &.prev {
+      @include mixins.icon-mask("^assets/icons/pagination/page-prev.svg", 24px, 24px, #ccc);
+    }
+
+    &.next {
+      @include mixins.icon-mask("^assets/icons/pagination/page-next.svg", 24px, 24px, #ccc);
+    }
+
+    &.last {
+      @include mixins.icon-mask("^assets/icons/pagination/page-last.svg", 24px, 24px, #ccc);
+    }
+  }
+}

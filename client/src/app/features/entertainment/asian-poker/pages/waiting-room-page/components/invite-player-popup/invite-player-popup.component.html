@@ -1,0 +1,22 @@
+<div class="popup-wrapper">
+  <h3 class="main-form-title">Zaproś gracza</h3>
+  <form class="main-form" [formGroup]="inviteForm">
+    <div class="control">
+      <label class="label" for="playerEmail">Email gracza</label>
+      <input class="input" id="playerEmail" type="email" [maxLength]="70" formControlName="playerEmail" />
+    </div>
+
+    <div class="control">
+      <label class="label" for="additionalText">Wiadomość dla gracza (np. przekazanie hasła)</label>
+      <input class="input" id="additionalText" type="text" [maxLength]="200" formControlName="additionalText" />
+    </div>
+  </form>
+
+  <div class="error">
+    {{ error }}
+  </div>
+
+  <div class="actions">
+    <app-button [disabled]="inviteForm.invalid" appAccess (access)="invite()">Zaproś</app-button>
+  </div>
+</div>

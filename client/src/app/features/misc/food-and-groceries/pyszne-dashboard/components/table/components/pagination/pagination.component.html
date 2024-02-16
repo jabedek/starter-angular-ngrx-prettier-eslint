@@ -1,0 +1,21 @@
+<div class="wrapper">
+  <div class="actions">
+    <button class="first" (click)="handlePageChange('first')"></button>
+    <button class="prev" (click)="handlePageChange('prev')"></button>
+    <div class="pages">
+      <div class="cell">{{ page }}</div>
+      <div class="divider">/</div>
+      <div class="cell">{{ lastPage }}</div>
+    </div>
+    <button class="next" (click)="handlePageChange('next')"></button>
+    <button class="last" (click)="handlePageChange('last')"></button>
+  </div>
+  <div class="items">
+    <div class="cell">{{ parts.start + 1 }}</div>
+    <div class="divider">-</div>
+    <div class="cell">{{ parts.end }}</div>
+    <div class="divider">/</div>
+    <div class="cell">{{ totalItems }}</div>
+    <!-- <p>{{ parts.start + 1 }} - {{ parts.end }} / {{ totalItems }}</p> -->
+  </div>
+</div>

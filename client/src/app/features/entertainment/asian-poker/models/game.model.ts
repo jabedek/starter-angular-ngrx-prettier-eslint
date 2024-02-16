@@ -1,7 +1,24 @@
 import { Card } from './card.model';
 import { DeckVariant } from '../constants/deck.constant';
 
-export type GameState = 'just-started' | 'running' | 'paused' | 'finished';
+export type GameActivityTickLogDTO = {
+  roundCounter: number;
+  cycleCounter: number;
+
+  currentPlayerIndex: number;
+  currentDealerIndex: number;
+
+  deckVariant: DeckVariant | null;
+  publicCards: Card[];
+  playersWithHands: PlayerWithHand[];
+  playersActions: PlayerAction[];
+
+  sentAtMS: number;
+  gameState: GameState;
+  pausesInfo: GamePauseInfo[];
+};
+
+export type GameState = 'just-created' | 'just-started' | 'running' | 'paused' | 'finished';
 
 export type GamePauseInfo = {
   proposerId: string;
@@ -12,13 +29,13 @@ export type GamePauseInfo = {
 
 export class PlayerWithHand {
   id: string;
-  nickname: string;
+  displayName: string;
   fixedHandSize = 1;
   hand: Card[] = [];
 
-  constructor(id: string, nickname: string, fixedHandSize = 1) {
+  constructor(id: string, displayName: string, fixedHandSize = 1) {
     this.id = id;
-    this.nickname = nickname;
+    this.displayName = displayName;
     this.fixedHandSize = fixedHandSize;
   }
 }
@@ -33,6 +50,7 @@ export enum PlayerActions {
 export type PlayerAction =
   | {
       type: PlayerActions.PLAY_CALL;
+      atMS: number;
       data: {
         roundId: number;
         cycleId: number;
@@ -43,6 +61,7 @@ export type PlayerAction =
     }
   | {
       type: PlayerActions.PLAY_CHECK;
+      atMS: number;
       data: {
         roundId: number;
         cycleId: number;
@@ -52,6 +71,7 @@ export type PlayerAction =
     }
   | {
       type: PlayerActions.PAUSE_PROPOSE;
+      atMS: number;
       data: {
         proposerId: string;
         roundId: number;
@@ -61,6 +81,7 @@ export type PlayerAction =
     }
   | {
       type: PlayerActions.PAUSE_VOTE;
+      atMS: number;
       data: {
         proposerId: string;
         roundId: number;

@@ -2,7 +2,7 @@
   <ng-container title>Tworzenie sesji</ng-container>
 
   <ng-container content>
-    <form class="session" [formGroup]="sessionForm">
+    <form class="main-form" [formGroup]="sessionForm">
       <div class="control">
         <label class="label" for="title">Nazwa gry</label>
         <input class="input" id="title" [minLength]="3" [maxLength]="15" formControlName="title" />

@@ -45,6 +45,7 @@ GoogleProvider.setCustomParameters({
   providedIn: 'root',
 })
 export class FirebaseAuthService extends BaseComponent {
+  readonly firebaseApp = app;
   readonly firebaseAuth = FirebaseAuth;
   readonly googleProvider = GoogleProvider;
   readonly firebaseDB = FirebaseDB;
@@ -196,6 +197,7 @@ export class FirebaseAuthService extends BaseComponent {
         appFeaturesData: {
           asianPoker: {
             currentSessionId: '',
+            invitationsIds: [],
           },
         },
       };

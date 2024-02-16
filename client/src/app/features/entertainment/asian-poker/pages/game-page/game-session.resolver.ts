@@ -21,5 +21,5 @@ export const sessionGameResolver: ResolveFn<SessionGameData | undefined> = (
 ) => {
   console.log('sessionGameResolver');
 
-  return inject(AsianPokerService).getSessionGame(route.paramMap.get('id')!);
+  return inject(AsianPokerService).getSessionAndGame(route.paramMap.get('id')!);
 };

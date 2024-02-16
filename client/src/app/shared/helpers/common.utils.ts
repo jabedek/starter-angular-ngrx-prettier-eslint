@@ -1,11 +1,14 @@
 export async function tryCatch<T = unknown>(
   promise: Promise<T>,
-  label = 'promise',
+  shouldConsoleError = false,
 ): Promise<[T, undefined] | [undefined, unknown]> {
   try {
     const data = await promise;
     return [data, undefined];
   } catch (error) {
+    if (shouldConsoleError) {
+      consoleError(error);
+    }
     return [undefined, error];
   }
 }

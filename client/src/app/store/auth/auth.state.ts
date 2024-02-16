@@ -29,5 +29,6 @@ export type UserAppAccount = {
 export type UserAppFeaturesData = {
   asianPoker: {
     currentSessionId: string;
+    invitationsIds: string[];
   };
 };

@@ -1,0 +1,1345 @@
+{
+    "requested": 1708107404586,
+    "products": {
+        "RQ10R5OPQ1": {
+            "name": "Pizza Margherita",
+            "description": [
+                "z sosem pomidorowym i serem"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0NQO3P5N/products/margheritta.png?timestamp=1706186794",
+            "variants": [
+                {
+                    "id": "RQ10R5OPQ1",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "4f02470ee5c548c740b0d7132cb7add9",
+                        "e45a2b8b2416c33019554bf40d72a472"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3099,
+                        "pickup": 3099,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RNN5R5OPQ1",
+                    "name": "XXL 40 cm",
+                    "optionGroupIds": [
+                        "4f02470ee5c548c740b0d7132cb7add9",
+                        "e45a2b8b2416c33019554bf40d72a472"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3949,
+                        "pickup": 3949,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R1N0R5OPQ1": {
+            "name": "Pizza Pepperoni",
+            "description": [
+                "z sosem pomidorowym, serem i salami"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0NQO3P5N/products/pepperoni.png?timestamp=1706186794",
+            "variants": [
+                {
+                    "id": "R1N0R5OPQ1",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "4f02470ee5c548c740b0d7132cb7add9",
+                        "e45a2b8b2416c33019554bf40d72a472"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3599,
+                        "pickup": 3599,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RO35R5OPQ1",
+                    "name": "XXL 40 cm",
+                    "optionGroupIds": [
+                        "4f02470ee5c548c740b0d7132cb7add9",
+                        "e45a2b8b2416c33019554bf40d72a472"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4149,
+                        "pickup": 4149,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RON0R5OPQ1": {
+            "name": "Pizza Capricciosa",
+            "description": [
+                "z sosem pomidorowym, serem, szynką i pieczarkami"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0NQO3P5N/products/capricciosa.png?timestamp=1706186794",
+            "variants": [
+                {
+                    "id": "RON0R5OPQ1",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "4f02470ee5c548c740b0d7132cb7add9",
+                        "e45a2b8b2416c33019554bf40d72a472"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3599,
+                        "pickup": 3599,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RPO5R5OPQ1",
+                    "name": "XXL 40 cm",
+                    "optionGroupIds": [
+                        "4f02470ee5c548c740b0d7132cb7add9",
+                        "e45a2b8b2416c33019554bf40d72a472"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4149,
+                        "pickup": 4149,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R7N0R5OPQ1": {
+            "name": "Pizza Havaii",
+            "description": [
+                "z sosem pomidorowym, serem, szynką i ananasem"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0NQO3P5N/products/havaii.png?timestamp=1706186794",
+            "variants": [
+                {
+                    "id": "R7N0R5OPQ1",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "4f02470ee5c548c740b0d7132cb7add9",
+                        "e45a2b8b2416c33019554bf40d72a472"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3599,
+                        "pickup": 3599,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RP3PR5OPQ1",
+                    "name": "XXL 40 cm",
+                    "optionGroupIds": [
+                        "4f02470ee5c548c740b0d7132cb7add9",
+                        "e45a2b8b2416c33019554bf40d72a472"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4149,
+                        "pickup": 4149,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R030R5OPQ1": {
+            "name": "Pizza Rokpol",
+            "description": [
+                "z pastą rokpol, serem i oliwkami"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0NQO3P5N/products/rokpol.png?timestamp=1706186794",
+            "variants": [
+                {
+                    "id": "R030R5OPQ1",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "4f02470ee5c548c740b0d7132cb7add9",
+                        "e45a2b8b2416c33019554bf40d72a472"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4099,
+                        "pickup": 4099,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RNOPR5OPQ1",
+                    "name": "XXL 40 cm",
+                    "optionGroupIds": [
+                        "4f02470ee5c548c740b0d7132cb7add9",
+                        "e45a2b8b2416c33019554bf40d72a472"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4649,
+                        "pickup": 4649,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R330R5OPQ1": {
+            "name": "Pizza Vegetariana",
+            "description": [
+                "z sosem pomidorowym, serem, pomidorem, pieczarkami i cebulą"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0NQO3P5N/products/vegetariana.png?timestamp=1706186794",
+            "variants": [
+                {
+                    "id": "R330R5OPQ1",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "4f02470ee5c548c740b0d7132cb7add9",
+                        "e45a2b8b2416c33019554bf40d72a472"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4099,
+                        "pickup": 4099,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R5OPR5OPQ1",
+                    "name": "XXL 40 cm",
+                    "optionGroupIds": [
+                        "4f02470ee5c548c740b0d7132cb7add9",
+                        "e45a2b8b2416c33019554bf40d72a472"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4649,
+                        "pickup": 4649,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RP30R5OPQ1": {
+            "name": "Pizza Primavera",
+            "description": [
+                "z sosem pomidorowym, serem, kurczakiem, papryką i pieczarkami"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0NQO3P5N/products/primavera.png?timestamp=1706186794",
+            "variants": [
+                {
+                    "id": "RP30R5OPQ1",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "4f02470ee5c548c740b0d7132cb7add9",
+                        "e45a2b8b2416c33019554bf40d72a472"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4099,
+                        "pickup": 4099,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RO5PR5OPQ1",
+                    "name": "XXL 40 cm",
+                    "optionGroupIds": [
+                        "4f02470ee5c548c740b0d7132cb7add9",
+                        "e45a2b8b2416c33019554bf40d72a472"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4649,
+                        "pickup": 4649,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RR30R5OPQ1": {
+            "name": "Pizza Pancetta",
+            "description": [
+                "z sosem majonezowym, serem, boczkiem i cebulą"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0NQO3P5N/products/pancetta.png?timestamp=1706186794",
+            "variants": [
+                {
+                    "id": "RR30R5OPQ1",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "4f02470ee5c548c740b0d7132cb7add9",
+                        "e45a2b8b2416c33019554bf40d72a472"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4099,
+                        "pickup": 4099,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R1QPR5OPQ1",
+                    "name": "XXL 40 cm",
+                    "optionGroupIds": [
+                        "4f02470ee5c548c740b0d7132cb7add9",
+                        "e45a2b8b2416c33019554bf40d72a472"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4649,
+                        "pickup": 4649,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RNO0R5OPQ1": {
+            "name": "Pizza Campagnola",
+            "description": [
+                "z sosem pomidorowym, serem, boczkiem, kiełbasą i cebulą"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0NQO3P5N/products/campagnola.png?timestamp=1706186794",
+            "variants": [
+                {
+                    "id": "RNO0R5OPQ1",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "4f02470ee5c548c740b0d7132cb7add9",
+                        "e45a2b8b2416c33019554bf40d72a472"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4099,
+                        "pickup": 4099,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R0RPR5OPQ1",
+                    "name": "XXL 40 cm",
+                    "optionGroupIds": [
+                        "4f02470ee5c548c740b0d7132cb7add9",
+                        "e45a2b8b2416c33019554bf40d72a472"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4649,
+                        "pickup": 4649,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R5O0R5OPQ1": {
+            "name": "Pizza Piccante",
+            "description": [
+                "z sosem pomidorowym, serem, salami, cebulą i jalapeno"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0NQO3P5N/products/piccante.png?timestamp=1706186794",
+            "variants": [
+                {
+                    "id": "R5O0R5OPQ1",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "4f02470ee5c548c740b0d7132cb7add9",
+                        "e45a2b8b2416c33019554bf40d72a472"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4099,
+                        "pickup": 4099,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RRN7R5OPQ1",
+                    "name": "XXL 40 cm",
+                    "optionGroupIds": [
+                        "4f02470ee5c548c740b0d7132cb7add9",
+                        "e45a2b8b2416c33019554bf40d72a472"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4649,
+                        "pickup": 4649,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RRQ0P00OQ1": {
+            "name": "Tradycyjny schaboszczak",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0NQO3P5N/products/schaboszczak_pod_jajem.png?timestamp=1706186794",
+            "variants": [
+                {
+                    "id": "RRQ0P00OQ1",
+                    "name": null,
+                    "optionGroupIds": [
+                        "a2286c9fc1922ca875c1ca193feea3f2",
+                        "4b259fca11f94ac67c860d2521a126ac"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3771,
+                        "pickup": 3771,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R5R0P00OQ1": {
+            "name": "Tradycyjny de volaille",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0NQO3P5N/products/tradycyjny_de_volaille.png?timestamp=1706186794",
+            "variants": [
+                {
+                    "id": "R5R0P00OQ1",
+                    "name": null,
+                    "optionGroupIds": [
+                        "a2286c9fc1922ca875c1ca193feea3f2",
+                        "4b259fca11f94ac67c860d2521a126ac"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3771,
+                        "pickup": 3771,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R0Q0P00OQ1": {
+            "name": "Pierogi z mięsem 8 szt.",
+            "description": [
+                "okraszone boczkiem"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0NQO3P5N/products/pierogi_z_misem_i_okras.png?timestamp=1706186794",
+            "variants": [
+                {
+                    "id": "R0Q0P00OQ1",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3771,
+                        "pickup": 3771,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RQR0P00OQ1": {
+            "name": "Złocista rybka",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0NQO3P5N/products/zocista_rybka.png?timestamp=1706186794",
+            "variants": [
+                {
+                    "id": "RQR0P00OQ1",
+                    "name": null,
+                    "optionGroupIds": [
+                        "a2286c9fc1922ca875c1ca193feea3f2",
+                        "4b259fca11f94ac67c860d2521a126ac"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3771,
+                        "pickup": 3771,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R101P00OQ1": {
+            "name": "Gołąbki od babuni 2 szt.",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0NQO3P5N/products/gobki_od_babuni.png?timestamp=1706186794",
+            "variants": [
+                {
+                    "id": "R101P00OQ1",
+                    "name": null,
+                    "optionGroupIds": [
+                        "a2286c9fc1922ca875c1ca193feea3f2",
+                        "4b259fca11f94ac67c860d2521a126ac"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3771,
+                        "pickup": 3771,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R3Q0P00OQ1": {
+            "name": "Pierogi ruskie 8 szt.",
+            "description": [
+                "okraszone cebulką"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0NQO3P5N/products/pierogi_ruskie_z_zasmaan_cebulk.png?timestamp=1706186794",
+            "variants": [
+                {
+                    "id": "R3Q0P00OQ1",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3771,
+                        "pickup": 3771,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RPQ0P00OQ1": {
+            "name": "Pierogi z kapustą i grzybami 8 szt.",
+            "description": [
+                "okraszone cebulką"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RPQ0P00OQ1",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3771,
+                        "pickup": 3771,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R3PP3O7OQ1": {
+            "name": "Sernik",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R3PP3O7OQ1",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1330,
+                        "pickup": 1330,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RPPP3O7OQ1": {
+            "name": "Szarlotka",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RPPP3O7OQ1",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1330,
+                        "pickup": 1330,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RO01P00OQ1": {
+            "name": "Pepsi 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/037O3P5N/products/pepsi_05l.png?timestamp=1706186794",
+            "variants": [
+                {
+                    "id": "RO01P00OQ1",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 799,
+                        "pickup": 799,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "QN7N103PR1": {
+            "name": "Pepsi Max 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0NQO3P5N/products/pepsi_max_05l.png?timestamp=1706186794",
+            "variants": [
+                {
+                    "id": "QN7N103PR1",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 799,
+                        "pickup": 799,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R701P00OQ1": {
+            "name": "Mirinda Orange 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/037O3P5N/products/mirinda_orange_05l.png?timestamp=1706186794",
+            "variants": [
+                {
+                    "id": "R701P00OQ1",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 799,
+                        "pickup": 799,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RNN1P00OQ1": {
+            "name": "Lipton Ice Tea cytrynowa 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/037O3P5N/products/lipton_cytryna_05l.png?timestamp=1706186794",
+            "variants": [
+                {
+                    "id": "RNN1P00OQ1",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 799,
+                        "pickup": 799,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R311P00OQ1": {
+            "name": "Lipton Ice Tea brzoskwinia 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/037O3P5N/products/lipton_brzoskwinia_05l.png?timestamp=1706186794",
+            "variants": [
+                {
+                    "id": "R311P00OQ1",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 799,
+                        "pickup": 799,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RR11P00OQ1": {
+            "name": "Lipton Ice Tea zielona 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/037O3P5N/products/lipton_zielona_05l.png?timestamp=1706186794",
+            "variants": [
+                {
+                    "id": "RR11P00OQ1",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 799,
+                        "pickup": 799,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R5N1P00OQ1": {
+            "name": "Toma Sok pomarańczowy 0,33l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/037O3P5N/products/toma_pomaracza_033l.png?timestamp=1706186794",
+            "variants": [
+                {
+                    "id": "R5N1P00OQ1",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 699,
+                        "pickup": 699,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RQN1P00OQ1": {
+            "name": "Toma Sok jabłkowy 0,33l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/037O3P5N/products/toma_jabko_033l.png?timestamp=1706186794",
+            "variants": [
+                {
+                    "id": "RQN1P00OQ1",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 699,
+                        "pickup": 699,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R131P00OQ1": {
+            "name": "Toma Nektar z czarnej porzeczki 0,33l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/037O3P5N/products/toma_czarna_porzeczka_033l.png?timestamp=1706186794",
+            "variants": [
+                {
+                    "id": "R131P00OQ1",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 699,
+                        "pickup": 699,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "Q0Q051R1R1": {
+            "name": "Toma Sok multiwitamina 0,33l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0NQO3P5N/products/toma_multiwitamina_033l.png?timestamp=1706186794",
+            "variants": [
+                {
+                    "id": "Q0Q051R1R1",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 699,
+                        "pickup": 699,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RO31P00OQ1": {
+            "name": "Woda niegazowana 0,5l",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RO31P00OQ1",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 590,
+                        "pickup": 590,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R731P00OQ1": {
+            "name": "Woda gazowana 0,5l",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R731P00OQ1",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 590,
+                        "pickup": 590,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        }
+    }
+}

@@ -16,11 +16,7 @@ import { AsianPokerSessionDTO } from '@features/entertainment/asian-poker/models
 @Component({
   selector: 'app-join-game-popup',
   templateUrl: './join-game-popup.component.html',
-  styleUrls: [
-    '../../games-list.component.scss',
-    '../../../create-session/create-session.component.scss',
-    './join-game-popup.component.scss',
-  ],
+  styleUrls: ['./join-game-popup.component.scss'],
 })
 export class JoinGamePopupComponent {
   private session: AsianPokerSessionDTO | undefined;
@@ -91,7 +87,7 @@ export class JoinGamePopupComponent {
               }
             }
 
-            if (this.session.sessionActivity.playersJoined < this.session.sessionSettings.playersLimit) {
+            if (this.session.sessionActivity.playersJoinedAmount < this.session.sessionSettings.playersLimit) {
               console.log('Can join.');
             } else {
               consoleError(`Too many players (reached limit: ${this.session.sessionSettings.playersLimit}).`);
@@ -136,7 +132,7 @@ export class JoinGamePopupComponent {
 //
 // II. Leaving can occur in two states: 'setup' and in-'game'.
 // Setup waits for player for 30 seconds (unless he's a host); 'in-game' waits for player for 15 seconds. If player was a host, he gets replaced.
-// After that time, player is kicked off the session. That means:  update session.playersJoinedIds and session.playersJoined.
+// After that time, player is kicked off the session. That means:  update session.playersJoinedIds and session.playersJoinedAmount.
 //
 // III. If host leaves during 'setup' state:
 // - and there is no other players waiting --> session is deleted after 1 minute

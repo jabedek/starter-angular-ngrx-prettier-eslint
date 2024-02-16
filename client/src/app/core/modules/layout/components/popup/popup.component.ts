@@ -1,4 +1,4 @@
-import { Component, Injector, Type, ViewChild, ViewContainerRef } from '@angular/core';
+import { Component, Injector, OnDestroy, Type, ViewChild, ViewContainerRef } from '@angular/core';
 import { Subject, Observable, take, map } from 'rxjs';
 import { PopupService } from './popup.service';
 import { PopupData } from './popup.model';
@@ -15,11 +15,6 @@ export class PopupComponent {
   userAction$ = this.userActionNext.asObservable();
   closeOnOutclick = false;
 
-  constructor(
-    private popup: PopupService,
-    private inj: Injector,
-  ) {}
-
   currentContent$ = this.popup.currentContent$.pipe(
     map((curr) => {
       this.closeOnOutclick = !!curr?.config.closeOnOutclick;
@@ -34,8 +29,13 @@ export class PopupComponent {
     }),
   );
 
+  constructor(
+    private popup: PopupService,
+    private inj: Injector,
+  ) {}
+
   protected userAction(decision: 'accept' | 'decline' | 'close-no-decision', data: PopupData) {
-    const { callbackAfterClosing } = data.config;
+    const { callbackAfterClosing, callbackOnDestroy } = data.config;
 
     if (decision === 'close-no-decision') {
       this.popup.hidePopup();

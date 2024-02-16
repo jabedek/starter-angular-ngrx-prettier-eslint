@@ -1,0 +1,3388 @@
+{
+    "requested": 1708107512428,
+    "products": {
+        "3O7NQ35R31": {
+            "name": "Pizza Margherita",
+            "description": [
+                "podkład pomidorowy, ser mozzarella, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3O7NQ35R31",
+                    "name": "25 cm",
+                    "optionGroupIds": [
+                        "40a907200ebdcd96c3a74f2da7eaab3a",
+                        "60fc81f1ddfa6d4ab8525a88863993bd",
+                        "431b921ad6648334e8c6c9f4c26cd961"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3590,
+                        "pickup": 3590,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3N7OQ35R31",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "b066f4ecc6800046b4ea76a48216f5f7",
+                        "18bb56685bb76efc2efb20692fa165ae",
+                        "70dcb1e162388db969c6b5c637f9f4e7"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4090,
+                        "pickup": 4090,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "357OQ35R31",
+                    "name": "45 cm",
+                    "optionGroupIds": [
+                        "9c609e00a5ecd979235bed802d51e083",
+                        "a9069089dc79caa3e0497b1fd5246f48",
+                        "22f70555212ac0f3f2d4e13932ebd3af"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5090,
+                        "pickup": 5090,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "377NQ35R31": {
+            "name": "Pizza Funghi",
+            "description": [
+                "podkład pomidorowy, ser mozzarella, pieczarki"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "377NQ35R31",
+                    "name": "25 cm",
+                    "optionGroupIds": [
+                        "40a907200ebdcd96c3a74f2da7eaab3a",
+                        "60fc81f1ddfa6d4ab8525a88863993bd",
+                        "431b921ad6648334e8c6c9f4c26cd961"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3790,
+                        "pickup": 3790,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3Q7OQ35R31",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "b066f4ecc6800046b4ea76a48216f5f7",
+                        "18bb56685bb76efc2efb20692fa165ae",
+                        "70dcb1e162388db969c6b5c637f9f4e7"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4290,
+                        "pickup": 4290,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "31QOQ35R31",
+                    "name": "45 cm",
+                    "optionGroupIds": [
+                        "9c609e00a5ecd979235bed802d51e083",
+                        "a9069089dc79caa3e0497b1fd5246f48",
+                        "22f70555212ac0f3f2d4e13932ebd3af"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5290,
+                        "pickup": 5290,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "30QNQ35R31": {
+            "name": "Pizza Vege",
+            "description": [
+                "podkład pomidorowy, ser mozzarella, pieczarki, kukurydza, cebula czerwona, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "30QNQ35R31",
+                    "name": "25 cm",
+                    "optionGroupIds": [
+                        "40a907200ebdcd96c3a74f2da7eaab3a",
+                        "60fc81f1ddfa6d4ab8525a88863993bd",
+                        "431b921ad6648334e8c6c9f4c26cd961"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3790,
+                        "pickup": 3790,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3OQOQ35R31",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "b066f4ecc6800046b4ea76a48216f5f7",
+                        "18bb56685bb76efc2efb20692fa165ae",
+                        "70dcb1e162388db969c6b5c637f9f4e7"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4290,
+                        "pickup": 4290,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "37QOQ35R31",
+                    "name": "45 cm",
+                    "optionGroupIds": [
+                        "9c609e00a5ecd979235bed802d51e083",
+                        "a9069089dc79caa3e0497b1fd5246f48",
+                        "22f70555212ac0f3f2d4e13932ebd3af"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5290,
+                        "pickup": 5290,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "33QNQ35R31": {
+            "name": "Pizza Capri",
+            "description": [
+                "podkład pomidorowy, ser mozzarella, szynka, pieczarki"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "33QNQ35R31",
+                    "name": "25 cm",
+                    "optionGroupIds": [
+                        "40a907200ebdcd96c3a74f2da7eaab3a",
+                        "60fc81f1ddfa6d4ab8525a88863993bd",
+                        "431b921ad6648334e8c6c9f4c26cd961"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4190,
+                        "pickup": 4190,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "33ROQ35R31",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "b066f4ecc6800046b4ea76a48216f5f7",
+                        "18bb56685bb76efc2efb20692fa165ae",
+                        "70dcb1e162388db969c6b5c637f9f4e7"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4690,
+                        "pickup": 4690,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3PROQ35R31",
+                    "name": "45 cm",
+                    "optionGroupIds": [
+                        "9c609e00a5ecd979235bed802d51e083",
+                        "a9069089dc79caa3e0497b1fd5246f48",
+                        "22f70555212ac0f3f2d4e13932ebd3af"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5690,
+                        "pickup": 5690,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3PQNQ35R31": {
+            "name": "Pizza O Sole Mio",
+            "description": [
+                "podkład pomidorowy, ser mozzarella, pieczarki, salami pepperoni, pomidor, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3PQNQ35R31",
+                    "name": "25 cm",
+                    "optionGroupIds": [
+                        "40a907200ebdcd96c3a74f2da7eaab3a",
+                        "60fc81f1ddfa6d4ab8525a88863993bd",
+                        "431b921ad6648334e8c6c9f4c26cd961"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4190,
+                        "pickup": 4190,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3RROQ35R31",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "b066f4ecc6800046b4ea76a48216f5f7",
+                        "18bb56685bb76efc2efb20692fa165ae",
+                        "70dcb1e162388db969c6b5c637f9f4e7"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4690,
+                        "pickup": 4690,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3N05Q35R31",
+                    "name": "45 cm",
+                    "optionGroupIds": [
+                        "9c609e00a5ecd979235bed802d51e083",
+                        "a9069089dc79caa3e0497b1fd5246f48",
+                        "22f70555212ac0f3f2d4e13932ebd3af"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5690,
+                        "pickup": 5690,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3RQNQ35R31": {
+            "name": "Pizza Kukuryku",
+            "description": [
+                "podkład pomidorowy, ser mozzarella, kebab drobiowy, curry, kukurydza"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3RQNQ35R31",
+                    "name": "25 cm",
+                    "optionGroupIds": [
+                        "40a907200ebdcd96c3a74f2da7eaab3a",
+                        "60fc81f1ddfa6d4ab8525a88863993bd",
+                        "431b921ad6648334e8c6c9f4c26cd961"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4190,
+                        "pickup": 4190,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3505Q35R31",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "b066f4ecc6800046b4ea76a48216f5f7",
+                        "18bb56685bb76efc2efb20692fa165ae",
+                        "70dcb1e162388db969c6b5c637f9f4e7"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4690,
+                        "pickup": 4690,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3Q05Q35R31",
+                    "name": "45 cm",
+                    "optionGroupIds": [
+                        "9c609e00a5ecd979235bed802d51e083",
+                        "a9069089dc79caa3e0497b1fd5246f48",
+                        "22f70555212ac0f3f2d4e13932ebd3af"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5690,
+                        "pickup": 5690,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3NRNQ35R31": {
+            "name": "Pizza Wiejska",
+            "description": [
+                "podkład pomidorowy, ser mozzarella, szynka, kukurydza, cebula czerwona, pikle"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3NRNQ35R31",
+                    "name": "25 cm",
+                    "optionGroupIds": [
+                        "40a907200ebdcd96c3a74f2da7eaab3a",
+                        "60fc81f1ddfa6d4ab8525a88863993bd",
+                        "431b921ad6648334e8c6c9f4c26cd961"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4390,
+                        "pickup": 4390,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3O15Q35R31",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "b066f4ecc6800046b4ea76a48216f5f7",
+                        "18bb56685bb76efc2efb20692fa165ae",
+                        "70dcb1e162388db969c6b5c637f9f4e7"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4890,
+                        "pickup": 4890,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3715Q35R31",
+                    "name": "45 cm",
+                    "optionGroupIds": [
+                        "9c609e00a5ecd979235bed802d51e083",
+                        "a9069089dc79caa3e0497b1fd5246f48",
+                        "22f70555212ac0f3f2d4e13932ebd3af"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5890,
+                        "pickup": 5890,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "35RNQ35R31": {
+            "name": "Pizza Podlasianka",
+            "description": [
+                "podkład pomidorowy, ser mozzarella, boczek, szynka, pieczarki"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "35RNQ35R31",
+                    "name": "25 cm",
+                    "optionGroupIds": [
+                        "40a907200ebdcd96c3a74f2da7eaab3a",
+                        "60fc81f1ddfa6d4ab8525a88863993bd",
+                        "431b921ad6648334e8c6c9f4c26cd961"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4390,
+                        "pickup": 4390,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "30N5Q35R31",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "b066f4ecc6800046b4ea76a48216f5f7",
+                        "18bb56685bb76efc2efb20692fa165ae",
+                        "70dcb1e162388db969c6b5c637f9f4e7"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4890,
+                        "pickup": 4890,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "33N5Q35R31",
+                    "name": "45 cm",
+                    "optionGroupIds": [
+                        "9c609e00a5ecd979235bed802d51e083",
+                        "a9069089dc79caa3e0497b1fd5246f48",
+                        "22f70555212ac0f3f2d4e13932ebd3af"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5890,
+                        "pickup": 5890,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3QRNQ35R31": {
+            "name": "Pizza Chłopska",
+            "description": [
+                "podkład pomidorowy, ser mozzarella, boczek, szynka, cebula czerwona"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3QRNQ35R31",
+                    "name": "25 cm",
+                    "optionGroupIds": [
+                        "40a907200ebdcd96c3a74f2da7eaab3a",
+                        "60fc81f1ddfa6d4ab8525a88863993bd",
+                        "431b921ad6648334e8c6c9f4c26cd961"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4390,
+                        "pickup": 4390,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3N35Q35R31",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "b066f4ecc6800046b4ea76a48216f5f7",
+                        "18bb56685bb76efc2efb20692fa165ae",
+                        "70dcb1e162388db969c6b5c637f9f4e7"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4890,
+                        "pickup": 4890,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3535Q35R31",
+                    "name": "45 cm",
+                    "optionGroupIds": [
+                        "9c609e00a5ecd979235bed802d51e083",
+                        "a9069089dc79caa3e0497b1fd5246f48",
+                        "22f70555212ac0f3f2d4e13932ebd3af"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5890,
+                        "pickup": 5890,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3103Q35R31": {
+            "name": "Pizza Wiosenna",
+            "description": [
+                "podkład pomidorowy, ser mozzarella, ser pleśniowy, kebab drobiowy, rucola"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3103Q35R31",
+                    "name": "25 cm",
+                    "optionGroupIds": [
+                        "40a907200ebdcd96c3a74f2da7eaab3a",
+                        "60fc81f1ddfa6d4ab8525a88863993bd",
+                        "431b921ad6648334e8c6c9f4c26cd961"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4590,
+                        "pickup": 4590,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3Q35Q35R31",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "b066f4ecc6800046b4ea76a48216f5f7",
+                        "18bb56685bb76efc2efb20692fa165ae",
+                        "70dcb1e162388db969c6b5c637f9f4e7"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5090,
+                        "pickup": 5090,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "31O5Q35R31",
+                    "name": "45 cm",
+                    "optionGroupIds": [
+                        "9c609e00a5ecd979235bed802d51e083",
+                        "a9069089dc79caa3e0497b1fd5246f48",
+                        "22f70555212ac0f3f2d4e13932ebd3af"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 6090,
+                        "pickup": 6090,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3O03Q35R31": {
+            "name": "Pizza Korycińska",
+            "description": [
+                "podkład pomidorowy, ser mozzarella, ser koryciński, pieczarki, pomidor, rucola"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3O03Q35R31",
+                    "name": "25 cm",
+                    "optionGroupIds": [
+                        "40a907200ebdcd96c3a74f2da7eaab3a",
+                        "60fc81f1ddfa6d4ab8525a88863993bd",
+                        "431b921ad6648334e8c6c9f4c26cd961"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4590,
+                        "pickup": 4590,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3OO5Q35R31",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "b066f4ecc6800046b4ea76a48216f5f7",
+                        "18bb56685bb76efc2efb20692fa165ae",
+                        "70dcb1e162388db969c6b5c637f9f4e7"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5090,
+                        "pickup": 5090,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "37O5Q35R31",
+                    "name": "45 cm",
+                    "optionGroupIds": [
+                        "9c609e00a5ecd979235bed802d51e083",
+                        "a9069089dc79caa3e0497b1fd5246f48",
+                        "22f70555212ac0f3f2d4e13932ebd3af"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 6090,
+                        "pickup": 6090,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3703Q35R31": {
+            "name": "Pizza Serowa",
+            "description": [
+                "podkład pomidorowy, ser pleśniowy, ser mozzarella, ser gouda, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3703Q35R31",
+                    "name": "25 cm",
+                    "optionGroupIds": [
+                        "40a907200ebdcd96c3a74f2da7eaab3a",
+                        "60fc81f1ddfa6d4ab8525a88863993bd",
+                        "431b921ad6648334e8c6c9f4c26cd961"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4690,
+                        "pickup": 4690,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3055Q35R31",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "b066f4ecc6800046b4ea76a48216f5f7",
+                        "18bb56685bb76efc2efb20692fa165ae",
+                        "70dcb1e162388db969c6b5c637f9f4e7"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5190,
+                        "pickup": 5190,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3355Q35R31",
+                    "name": "45 cm",
+                    "optionGroupIds": [
+                        "9c609e00a5ecd979235bed802d51e083",
+                        "a9069089dc79caa3e0497b1fd5246f48",
+                        "22f70555212ac0f3f2d4e13932ebd3af"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 6190,
+                        "pickup": 6190,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3013Q35R31": {
+            "name": "Pizza Americano",
+            "description": [
+                "podkład pomidorowy, ser mozzarella, salami pepperoni, boczek, cebula czerwona"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3013Q35R31",
+                    "name": "25 cm",
+                    "optionGroupIds": [
+                        "40a907200ebdcd96c3a74f2da7eaab3a",
+                        "60fc81f1ddfa6d4ab8525a88863993bd",
+                        "431b921ad6648334e8c6c9f4c26cd961"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4690,
+                        "pickup": 4690,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3NP5Q35R31",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "b066f4ecc6800046b4ea76a48216f5f7",
+                        "18bb56685bb76efc2efb20692fa165ae",
+                        "70dcb1e162388db969c6b5c637f9f4e7"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5190,
+                        "pickup": 5190,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "35P5Q35R31",
+                    "name": "45 cm",
+                    "optionGroupIds": [
+                        "9c609e00a5ecd979235bed802d51e083",
+                        "a9069089dc79caa3e0497b1fd5246f48",
+                        "22f70555212ac0f3f2d4e13932ebd3af"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 6190,
+                        "pickup": 6190,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3313Q35R31": {
+            "name": "Pizza Kebab",
+            "description": [
+                "podkład pomidorowy, ser mozzarella, kebab drobiowy, kukurydza, cebulka prażona"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3313Q35R31",
+                    "name": "25 cm",
+                    "optionGroupIds": [
+                        "40a907200ebdcd96c3a74f2da7eaab3a",
+                        "60fc81f1ddfa6d4ab8525a88863993bd",
+                        "431b921ad6648334e8c6c9f4c26cd961"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4790,
+                        "pickup": 4790,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3O75Q35R31",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "b066f4ecc6800046b4ea76a48216f5f7",
+                        "18bb56685bb76efc2efb20692fa165ae",
+                        "70dcb1e162388db969c6b5c637f9f4e7"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5290,
+                        "pickup": 5290,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3775Q35R31",
+                    "name": "45 cm",
+                    "optionGroupIds": [
+                        "9c609e00a5ecd979235bed802d51e083",
+                        "a9069089dc79caa3e0497b1fd5246f48",
+                        "22f70555212ac0f3f2d4e13932ebd3af"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 6290,
+                        "pickup": 6290,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3P13Q35R31": {
+            "name": "Pizza Grecki Kurczak",
+            "description": [
+                "podkład pomidorowy, ser mozzarella, kebab drobiowy, pomidor, oliwki zielone"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3P13Q35R31",
+                    "name": "25 cm",
+                    "optionGroupIds": [
+                        "40a907200ebdcd96c3a74f2da7eaab3a",
+                        "60fc81f1ddfa6d4ab8525a88863993bd",
+                        "431b921ad6648334e8c6c9f4c26cd961"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4790,
+                        "pickup": 4790,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3PQ5Q35R31",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "b066f4ecc6800046b4ea76a48216f5f7",
+                        "18bb56685bb76efc2efb20692fa165ae",
+                        "70dcb1e162388db969c6b5c637f9f4e7"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5290,
+                        "pickup": 5290,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3RQ5Q35R31",
+                    "name": "45 cm",
+                    "optionGroupIds": [
+                        "9c609e00a5ecd979235bed802d51e083",
+                        "a9069089dc79caa3e0497b1fd5246f48",
+                        "22f70555212ac0f3f2d4e13932ebd3af"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 6290,
+                        "pickup": 6290,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "303QR7Q751": {
+            "name": "Pizza Królewski Wół",
+            "description": [
+                "sos, ser mozzarella, ser gouda, mięso kebab wołowe, czerwona cebula, papryczki jalapeno"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "303QR7Q751",
+                    "name": "25 cm",
+                    "optionGroupIds": [
+                        "40a907200ebdcd96c3a74f2da7eaab3a",
+                        "60fc81f1ddfa6d4ab8525a88863993bd",
+                        "431b921ad6648334e8c6c9f4c26cd961"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4890,
+                        "pickup": 4890,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3RQRR7Q751",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "b066f4ecc6800046b4ea76a48216f5f7",
+                        "18bb56685bb76efc2efb20692fa165ae",
+                        "70dcb1e162388db969c6b5c637f9f4e7"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5390,
+                        "pickup": 5390,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3NRRR7Q751",
+                    "name": "45 cm",
+                    "optionGroupIds": [
+                        "9c609e00a5ecd979235bed802d51e083",
+                        "a9069089dc79caa3e0497b1fd5246f48",
+                        "22f70555212ac0f3f2d4e13932ebd3af"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 6390,
+                        "pickup": 6390,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3NN3Q35R31": {
+            "name": "Pizza Pakerska",
+            "description": [
+                "podkład pomidorowy, ser mozzarella, kebab drobiowy, papryka jalapeno, cebula czerwona, mięso kebab"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3NN3Q35R31",
+                    "name": "25 cm",
+                    "optionGroupIds": [
+                        "40a907200ebdcd96c3a74f2da7eaab3a",
+                        "60fc81f1ddfa6d4ab8525a88863993bd",
+                        "431b921ad6648334e8c6c9f4c26cd961"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4890,
+                        "pickup": 4890,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3NNPQ35R31",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "b066f4ecc6800046b4ea76a48216f5f7",
+                        "18bb56685bb76efc2efb20692fa165ae",
+                        "70dcb1e162388db969c6b5c637f9f4e7"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5390,
+                        "pickup": 5390,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "35NPQ35R31",
+                    "name": "45 cm",
+                    "optionGroupIds": [
+                        "9c609e00a5ecd979235bed802d51e083",
+                        "a9069089dc79caa3e0497b1fd5246f48",
+                        "22f70555212ac0f3f2d4e13932ebd3af"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 6390,
+                        "pickup": 6390,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "35N3Q35R31": {
+            "name": "Pizza Wymarzona Na Piątkę",
+            "description": [
+                "podkład pomidorowy, ser mozzarella i 5 składników do wyboru"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "35N3Q35R31",
+                    "name": "25 cm",
+                    "optionGroupIds": [
+                        "d70e485de35fdcd4bccd0f7a4c850c01",
+                        "7a170582deccb8913cfa6358c2b3f9f8",
+                        "dd39e1533539a2510193a27f73ce1800",
+                        "fb0c7c067c8465f229b2d7cfee7ff076",
+                        "934d14a86dc89d0c071f4b5ef9a493ae",
+                        "31112e579e47b296c17a8ac64a13e699",
+                        "204e2787f2fb9733f468552ef84d939f",
+                        "5fb417293fd7ae013a778c22f1c63fa6"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4990,
+                        "pickup": 4990,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3OPPQ35R31",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "65e1a98c4c0963bcbc1ddbb585d3bf22",
+                        "393ef81ab6f4bd2892ef2450e32c4ffc",
+                        "158e0ad4024a8b5929290279ee0aa34e",
+                        "279ed69ef602828aa0e8bf093ba9b187",
+                        "0e1242f9b170bd5dcc3b18724bc61194",
+                        "fb5a929034cc343453bf24c8a766d31d",
+                        "7b23d1183ab35022d43d07df001bf430",
+                        "764f185cca7c3c7e153631ef0de61993"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5490,
+                        "pickup": 5490,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "37PPQ35R31",
+                    "name": "45 cm",
+                    "optionGroupIds": [
+                        "08c2a8259fef9a6f46d23d7d389b5c05",
+                        "85ee209f15d15f17074b941dd7ba4d51",
+                        "74b74673355240c05d1b3e698b7999ed",
+                        "4cf87405c1044b90f6816e03d3cc790e",
+                        "4369cbf2cf5e71cd0d51baed6931810f",
+                        "3eedba732db3e6b55e94651351a3ef63",
+                        "657c73646b2ed2a99b34fb931e311b4a",
+                        "7585f0f1985d7cf9db23ebac8e8182bb"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 6490,
+                        "pickup": 6490,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3N333O5R31": {
+            "name": "Kebab standardowy",
+            "description": [
+                "mięso, sos, kapusta pekińska, pomidor, świeży ogórek, czerwona cebula"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3N333O5R31",
+                    "name": "średni (100g mięsa",
+                    "optionGroupIds": [
+                        "15d82289d82454a9ebbc9c29485afa4d",
+                        "a70f828d0e49bda4b03a90df03f3d1fb",
+                        "8b1e37eeb38c5d0ae0a70782d18b6a1d",
+                        "8d0678480e8397b2dd05d45f32f0091b",
+                        "cccc95ab9565347e90966c92cb801f24",
+                        "bb209c1b25810ef5c0743a11ccc817f9"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2990,
+                        "pickup": 2990,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3RQ33O5R31",
+                    "name": "duży (160g mięsa)",
+                    "optionGroupIds": [
+                        "15d82289d82454a9ebbc9c29485afa4d",
+                        "a70f828d0e49bda4b03a90df03f3d1fb",
+                        "8b1e37eeb38c5d0ae0a70782d18b6a1d",
+                        "8d0678480e8397b2dd05d45f32f0091b",
+                        "cccc95ab9565347e90966c92cb801f24",
+                        "bb209c1b25810ef5c0743a11ccc817f9"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3785,
+                        "pickup": 3785,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "35333O5R31": {
+            "name": "Kebab mega potężny",
+            "description": [
+                "220g mięsa, sos, kapusta pekińska, pomidor, świeży ogórek, czerwona cebula"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "35333O5R31",
+                    "name": null,
+                    "optionGroupIds": [
+                        "15d82289d82454a9ebbc9c29485afa4d",
+                        "a70f828d0e49bda4b03a90df03f3d1fb",
+                        "8b1e37eeb38c5d0ae0a70782d18b6a1d",
+                        "8d0678480e8397b2dd05d45f32f0091b",
+                        "cccc95ab9565347e90966c92cb801f24",
+                        "bb209c1b25810ef5c0743a11ccc817f9"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4690,
+                        "pickup": 4690,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3Q333O5R31": {
+            "name": "Kebab kompozycja własna",
+            "description": [
+                "10 składników do wyboru"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3Q333O5R31",
+                    "name": "średni (100g mięsa",
+                    "optionGroupIds": [
+                        "281dab4622a3861d0ba1cd6419424c50",
+                        "7711cf62cb5da58f5e14805e9de62919",
+                        "607e6565dbbdfd7df356ac04498f0573",
+                        "0a8400481cc506c3142e2ff700ff01dc",
+                        "a6242c871aff9d04d7676ccad42dfaa3",
+                        "fef618b9da3ef8d4eef53e23c24cfa23",
+                        "fa334bc77dccb769938c953f973c4502",
+                        "9dca227af86abeecdb0060c55df0ed39",
+                        "a8a36e9a3c4be71acd53adf3e9602d4b",
+                        "fb763b6158f1caa2478a5d9cc5a364ac",
+                        "855515083e3f14a24a4e679e6e8e9e1f",
+                        "15ad66ba264c33968006775d3697b2dd",
+                        "614bc7cea48271ef9c2e594758335119",
+                        "157c69cf17105280a37404463672e79d",
+                        "dea6d20e7765105012eb9a6afc652abc"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3990,
+                        "pickup": 3990,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "33R53O5R31",
+                    "name": "duży (160g mięsa)",
+                    "optionGroupIds": [
+                        "281dab4622a3861d0ba1cd6419424c50",
+                        "7711cf62cb5da58f5e14805e9de62919",
+                        "607e6565dbbdfd7df356ac04498f0573",
+                        "0a8400481cc506c3142e2ff700ff01dc",
+                        "a6242c871aff9d04d7676ccad42dfaa3",
+                        "fef618b9da3ef8d4eef53e23c24cfa23",
+                        "fa334bc77dccb769938c953f973c4502",
+                        "9dca227af86abeecdb0060c55df0ed39",
+                        "a8a36e9a3c4be71acd53adf3e9602d4b",
+                        "fb763b6158f1caa2478a5d9cc5a364ac",
+                        "855515083e3f14a24a4e679e6e8e9e1f",
+                        "15ad66ba264c33968006775d3697b2dd",
+                        "614bc7cea48271ef9c2e594758335119",
+                        "157c69cf17105280a37404463672e79d",
+                        "dea6d20e7765105012eb9a6afc652abc"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4585,
+                        "pickup": 4585,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3P5O155R31": {
+            "name": "Kubełek kebab",
+            "description": [
+                "mięso, sos, kapusta pekińska, pomidor, świeży ogórek, czerwona cebula, frytki"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3P5O155R31",
+                    "name": "duży (160g mięsa)",
+                    "optionGroupIds": [
+                        "a6921874e6552483a746364f2a8a2266",
+                        "aa6fd4a0e560aed6ca9a72962b6e57ea",
+                        "e4aa1d93f119bb10158caa6aecd051f5",
+                        "176e8ffc32216906b873b1c681f56037",
+                        "b3f4da2a979a71fe85d15ecea6f3ddca"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3790,
+                        "pickup": 3790,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3QN7N55R31",
+                    "name": "potężny (220g mię",
+                    "optionGroupIds": [
+                        "a6921874e6552483a746364f2a8a2266",
+                        "aa6fd4a0e560aed6ca9a72962b6e57ea",
+                        "e4aa1d93f119bb10158caa6aecd051f5",
+                        "176e8ffc32216906b873b1c681f56037",
+                        "b3f4da2a979a71fe85d15ecea6f3ddca"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4685,
+                        "pickup": 4685,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3R5O155R31": {
+            "name": "Talerz kebab",
+            "description": [
+                "mięso, sos, kapusta pekińska, pomidor, świeży ogórek, czerwona cebula, frytki"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3R5O155R31",
+                    "name": "duży (160g mięsa)",
+                    "optionGroupIds": [
+                        "a6921874e6552483a746364f2a8a2266",
+                        "aa6fd4a0e560aed6ca9a72962b6e57ea",
+                        "e4aa1d93f119bb10158caa6aecd051f5",
+                        "176e8ffc32216906b873b1c681f56037",
+                        "b3f4da2a979a71fe85d15ecea6f3ddca"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3790,
+                        "pickup": 3790,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "37P7N55R31",
+                    "name": "potężny (220g mięsa)",
+                    "optionGroupIds": [
+                        "a6921874e6552483a746364f2a8a2266",
+                        "aa6fd4a0e560aed6ca9a72962b6e57ea",
+                        "e4aa1d93f119bb10158caa6aecd051f5",
+                        "176e8ffc32216906b873b1c681f56037",
+                        "b3f4da2a979a71fe85d15ecea6f3ddca"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4685,
+                        "pickup": 4685,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3NPO155R31": {
+            "name": "Kapsalon",
+            "description": [
+                "160g mięsa, sos, kapusta pekińska, pomidor, świeży ogórek, czerwona cebula, frytki, zapiekane z serem mozzarella"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3NPO155R31",
+                    "name": null,
+                    "optionGroupIds": [
+                        "a6921874e6552483a746364f2a8a2266",
+                        "aa6fd4a0e560aed6ca9a72962b6e57ea",
+                        "e4aa1d93f119bb10158caa6aecd051f5",
+                        "176e8ffc32216906b873b1c681f56037",
+                        "b3f4da2a979a71fe85d15ecea6f3ddca"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4190,
+                        "pickup": 4190,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3QQ3355R31": {
+            "name": "Zapiekanka z pieczarkami",
+            "description": [
+                "ser, sos, pieczarki"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3QQ3355R31",
+                    "name": null,
+                    "optionGroupIds": [
+                        "2d741013fb601c501143a0b1771013f7"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1990,
+                        "pickup": 1990,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "31R3355R31": {
+            "name": "Zapiekanka Vege",
+            "description": [
+                "pieczarki, ser, kapusta pekińska, ogórek, pomidory, cebula czerwona, sos"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "31R3355R31",
+                    "name": null,
+                    "optionGroupIds": [
+                        "2d741013fb601c501143a0b1771013f7"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2390,
+                        "pickup": 2390,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3OR3355R31": {
+            "name": "Zapiekanka z szynką",
+            "description": [
+                "szynka, pieczarki, ser, sos"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3OR3355R31",
+                    "name": null,
+                    "optionGroupIds": [
+                        "2d741013fb601c501143a0b1771013f7"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2490,
+                        "pickup": 2490,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "37R3355R31": {
+            "name": "Zapiekanka z salami",
+            "description": [
+                "salami, pieczarki, ser, sos"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "37R3355R31",
+                    "name": null,
+                    "optionGroupIds": [
+                        "2d741013fb601c501143a0b1771013f7"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2490,
+                        "pickup": 2490,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "300O355R31": {
+            "name": "Zapiekanka z mięsem kebab",
+            "description": [
+                "mięso kebab, pieczarki, ser, kapusta pekińska, ogórek, pomidory, cebula czerwona, sos"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "300O355R31",
+                    "name": null,
+                    "optionGroupIds": [
+                        "184a3ed2f72c3d05987d9ef978d86961",
+                        "994e1df97a3650ad924f572baa785043"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2990,
+                        "pickup": 2990,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3P0O355R31": {
+            "name": "Wymarzona zapiekanka",
+            "description": [
+                "sos, ser, pieczarki i 7 składników do wyboru"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3P0O355R31",
+                    "name": null,
+                    "optionGroupIds": [
+                        "e6444335ed2eca536ee511634cb320db",
+                        "be635ff3dffdc8b39dd8b89776b981ed",
+                        "bce95415c6c790c316a69dfb8f5adeb0",
+                        "8da60d0132efafe6cf5d89fcaa32be00",
+                        "863d512361ecec76bb586dfc169e5b74",
+                        "3300384a6ca2d15f3405b3b2ca876748",
+                        "aa683bb0be030884c25339e56300cd93",
+                        "9056d751b9578b95fbc39b05bb87c506",
+                        "ac64ef9e8e2df0210c9e8cf3d0093e52",
+                        "d50efd464b9c75935da282b28a0b7245",
+                        "8b44af290338e9f59dbf237f77f8da8c"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3490,
+                        "pickup": 3490,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "33P30P5R31": {
+            "name": "Frytki małe (100g)",
+            "description": [
+                "z sosem"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "33P30P5R31",
+                    "name": null,
+                    "optionGroupIds": [
+                        "ca1f70493a31218849f92118490c5358"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 995,
+                        "pickup": 995,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3PP30P5R31": {
+            "name": "Frytki duże (200g)",
+            "description": [
+                "z sosem"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3PP30P5R31",
+                    "name": null,
+                    "optionGroupIds": [
+                        "ca1f70493a31218849f92118490c5358"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1395,
+                        "pickup": 1395,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3RP30P5R31": {
+            "name": "Krążki cebulowe 8 szt.",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3RP30P5R31",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1395,
+                        "pickup": 1395,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3PNO3P5R31": {
+            "name": "Wymarzona sałatka",
+            "description": [
+                "sos i 10 składników do wyboru"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3PNO3P5R31",
+                    "name": null,
+                    "optionGroupIds": [
+                        "e6444335ed2eca536ee511634cb320db",
+                        "be635ff3dffdc8b39dd8b89776b981ed",
+                        "bce95415c6c790c316a69dfb8f5adeb0",
+                        "8da60d0132efafe6cf5d89fcaa32be00",
+                        "863d512361ecec76bb586dfc169e5b74",
+                        "3300384a6ca2d15f3405b3b2ca876748",
+                        "aa683bb0be030884c25339e56300cd93",
+                        "9056d751b9578b95fbc39b05bb87c506",
+                        "ac64ef9e8e2df0210c9e8cf3d0093e52",
+                        "d50efd464b9c75935da282b28a0b7245",
+                        "8b44af290338e9f59dbf237f77f8da8c"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3490,
+                        "pickup": 3490,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3RNO3P5R31": {
+            "name": "Sałatka z kurczakiem",
+            "description": [
+                "sałata lodowa, kurczak grillowany, pomidor, ogórek, rukola, kukurydza, sos"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3RNO3P5R31",
+                    "name": null,
+                    "optionGroupIds": [
+                        "f0be4386f132a4660dad48dc49fbbece"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2990,
+                        "pickup": 2990,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3N3O3P5R31": {
+            "name": "Sałatka z wołowiną",
+            "description": [
+                "sałata lodowa, mięso wołowe, papryczka jalapeno, pomidor, pikle, sos"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3N3O3P5R31",
+                    "name": null,
+                    "optionGroupIds": [
+                        "f0be4386f132a4660dad48dc49fbbece"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2990,
+                        "pickup": 2990,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "353O3P5R31": {
+            "name": "Sałatka grecka",
+            "description": [
+                "sałata lodowa, pomidor, ogórek, cebulka czerwona, oliwki zielone, ser feta, sos"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "353O3P5R31",
+                    "name": null,
+                    "optionGroupIds": [
+                        "f0be4386f132a4660dad48dc49fbbece"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2390,
+                        "pickup": 2390,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3N5Q0P5R31": {
+            "name": "Zestaw 3 sosów",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3N5Q0P5R31",
+                    "name": null,
+                    "optionGroupIds": [
+                        "4bdc7667e2b49e5e9e6b4f69bbb5eafb",
+                        "73bf129b5abf31cacbf9be6f2fb1fa49",
+                        "345adfe69ec4fc54053abeeef9bb1691"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY"
+                    ],
+                    "prices": {
+                        "delivery": 495,
+                        "pickup": 495,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "355Q0P5R31": {
+            "name": "sos czosnkowo-ziołowy (własnej produkcji)",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "355Q0P5R31",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY"
+                    ],
+                    "prices": {
+                        "delivery": 195,
+                        "pickup": 195,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3Q5Q0P5R31": {
+            "name": "sos łagodny 1000 wysp (własnej produkcji)",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3Q5Q0P5R31",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY"
+                    ],
+                    "prices": {
+                        "delivery": 195,
+                        "pickup": 195,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3OPQ0P5R31": {
+            "name": "sos ostry Piri Piri 2/2 ostrości",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3OPQ0P5R31",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 295,
+                        "pickup": 295,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "37PQ0P5R31": {
+            "name": "sos Louisiana BBQ",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "37PQ0P5R31",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 295,
+                        "pickup": 295,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "307Q0P5R31": {
+            "name": "sos remualda duński",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "307Q0P5R31",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 295,
+                        "pickup": 295,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "337Q0P5R31": {
+            "name": "sos serowy",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "337Q0P5R31",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 395,
+                        "pickup": 395,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3P7Q0P5R31": {
+            "name": "sos koperkowy",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3P7Q0P5R31",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 295,
+                        "pickup": 295,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3R7Q0P5R31": {
+            "name": "ketchup",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3R7Q0P5R31",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY"
+                    ],
+                    "prices": {
+                        "delivery": 195,
+                        "pickup": 195,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3QN71P5R31": {
+            "name": "Coca-Cola 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/3O1N117N/products/coca-cola-05l.png?timestamp=1706541278",
+            "variants": [
+                {
+                    "id": "3QN71P5R31",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 895,
+                        "pickup": 895,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "31371P5R31": {
+            "name": "Coca-Cola 0,85l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/3O1N117N/products/coca-cola-085l.png?timestamp=1706541278",
+            "variants": [
+                {
+                    "id": "31371P5R31",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1395,
+                        "pickup": 1395,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3O371P5R31": {
+            "name": "Coca-Cola Zero 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/3O1N117N/products/coca-cola-zero-05l.png?timestamp=1706541278",
+            "variants": [
+                {
+                    "id": "3O371P5R31",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 895,
+                        "pickup": 895,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "30O71P5R31": {
+            "name": "Coca-Cola Cherry 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/3O1N117N/products/coca-cola-cherry-05l.png?timestamp=1706541278",
+            "variants": [
+                {
+                    "id": "30O71P5R31",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 895,
+                        "pickup": 895,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "33O71P5R31": {
+            "name": "Fanta orange 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/3O1N117N/products/fanta-pomaranczowa-05l.png?timestamp=1706541278",
+            "variants": [
+                {
+                    "id": "33O71P5R31",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 895,
+                        "pickup": 895,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3PO71P5R31": {
+            "name": "Fanta orange 0,85l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/3O1N117N/products/fanta-pomaranczowa-085l.png?timestamp=1706541278",
+            "variants": [
+                {
+                    "id": "3PO71P5R31",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1395,
+                        "pickup": 1395,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3N571P5R31": {
+            "name": "Sprite 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/3O1N117N/products/sprite-05l.png?timestamp=1706541278",
+            "variants": [
+                {
+                    "id": "3N571P5R31",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 895,
+                        "pickup": 895,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "35571P5R31": {
+            "name": "Sprite 0,85l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/3O1N117N/products/sprite-085l.png?timestamp=1706541278",
+            "variants": [
+                {
+                    "id": "35571P5R31",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1395,
+                        "pickup": 1395,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3Q571P5R31": {
+            "name": "Fuze Tea cytrynowa z trawą cytrynową 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/3O1N117N/products/fuzetea-cytrynowa-z-czarna-herbata-i-trawa-cytynowa-05l.png?timestamp=1706541278",
+            "variants": [
+                {
+                    "id": "3Q571P5R31",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 895,
+                        "pickup": 895,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "31P71P5R31": {
+            "name": "Fuze Tea brzoskwiniowa z hibiskusem 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/3O1N117N/products/fuzetea-brzoskwiniowa-z-czarna-herbata-i-hibiskusem-05l.png?timestamp=1706541278",
+            "variants": [
+                {
+                    "id": "31P71P5R31",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 895,
+                        "pickup": 895,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "37P71P5R31": {
+            "name": "Fuze Tea zielona herbata cytrusy 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/3O1N117N/products/fuzetea-cytrynowa-z-zielona-herbata-05l.png?timestamp=1706541278",
+            "variants": [
+                {
+                    "id": "37P71P5R31",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 895,
+                        "pickup": 895,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "30771P5R31": {
+            "name": "Sok Cappy jabłko 0,33l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/3O1N117N/products/cappy-sok-jablkowy-033l.png?timestamp=1706541278",
+            "variants": [
+                {
+                    "id": "30771P5R31",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 695,
+                        "pickup": 695,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "33771P5R31": {
+            "name": "Sok Cappy pomarańcz 0,33l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/3O1N117N/products/cappy-sok-pomaranczowy-033l.png?timestamp=1706541278",
+            "variants": [
+                {
+                    "id": "33771P5R31",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 695,
+                        "pickup": 695,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3R771P5R31": {
+            "name": "Kropla Beskidu woda niegazowana 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/3O1N117N/products/kropla-beskidu-woda-niegazowana-05l.png?timestamp=1706541278",
+            "variants": [
+                {
+                    "id": "3R771P5R31",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 595,
+                        "pickup": 595,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3NQ71P5R31": {
+            "name": "Kropla Beskidu woda gazowana 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/3O1N117N/products/kropla-beskidu-woda-gazowana-05l.png?timestamp=1706541278",
+            "variants": [
+                {
+                    "id": "3NQ71P5R31",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 595,
+                        "pickup": 595,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        }
+    }
+}

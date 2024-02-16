@@ -6,6 +6,7 @@ import { AsianPokerService } from '@features/entertainment/asian-poker/firebase/
 import { GameAnalyzerService } from '../../services/game-analyzer.service';
 import { GameManagerService } from '../../services/game-manager.service';
 import { AsianPokerGameDTO } from '../../models/dto';
+import { SessionGameDataPair } from '../../models/common.model';
 
 const somePlayers = [
   new PlayerWithHand('456', 'Simon', 3),
@@ -23,6 +24,8 @@ const somePlayers = [
 export class GamePageComponent {
   currentUser = new PlayerWithHand('123', 'John', 5);
   sessionId = '';
+
+  dataPair: SessionGameDataPair | undefined;
 
   session: AsianPokerGameDTO | undefined;
 
@@ -46,8 +49,7 @@ export class GamePageComponent {
     private route: ActivatedRoute,
   ) {
     this.route.data.subscribe(({ data }) => {
-      const { session, game } = data;
-      console.log(session, game);
+      this.dataPair = data;
     });
 
     const startingPlayers = [this.currentUser, ...somePlayers];

@@ -7,23 +7,23 @@
         <div class="title">Nazwa gry</div>
         <div class="hostDisplayName">Gospodarz</div>
         <div class="players">
-          <div class="playersJoined">Gracze</div>
+          <div class="playersJoinedAmount">Gracze</div>
         </div>
         <div class="accessibility">Dostęp</div>
         <div class="sessionState">Status</div>
       </div>
       <div class="list">
         <div
-          (dblclick)="join(selected)"
+          (dblclick)="joinPopup(selected)"
           *ngFor="let session of sessions; trackBy: trackBySessions"
           class="list-item"
           [ngClass]="{ selected: selected === session.id }"
           appAccess
           (access)="selected = session.id">
-          <div class="title">{{ session.sessionSettings }}</div>
-          <div class="hostDisplayName">{{ session.sessionSettings.hostDisplayName }}</div>
+          <div class="title">{{ session.sessionSettings.title }}</div>
+          <div class="hostDisplayName">{{ session.sessionActivity.hostDisplayName }}</div>
           <div class="players">
-            <div class="playersJoined">{{ session.sessionActivity.playersJoined }}</div>
+            <div class="playersJoinedAmount">{{ session.sessionActivity.playersJoinedAmount }}</div>
             /
             <div class="playersLimit">{{ session.sessionSettings.playersLimit }}</div>
           </div>
@@ -39,7 +39,7 @@
   </ng-container>
 
   <ng-container actions>
-    <app-button [disabled]="!selected" (click)="join(selected)">Dołącz</app-button>
-    <app-button (click)="join()">Dołącz po id</app-button>
+    <app-button [disabled]="!selected" (click)="joinPopup(selected)">Dołącz</app-button>
+    <app-button (click)="joinPopup()">Dołącz po id</app-button>
   </ng-container>
 </app-basic-card>

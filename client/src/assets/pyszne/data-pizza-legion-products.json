@@ -1,0 +1,3447 @@
+{
+    "requested": 1708107741412,
+    "products": {
+        "ORO3PNP0O1": {
+            "name": "Pizza Margherita",
+            "description": [
+                "sos, mozzarella, ser fior di latte, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/margherita_1.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "ORO3PNP0O1",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3199,
+                        "pickup": 3199,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "ORROPNP0O1",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4399,
+                        "pickup": 4399,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "Q10NPO7R0N": {
+            "name": "Pizza al Formaggio",
+            "description": [
+                "sos, mozzarella, mozzarella fior di latte, ser grano podano, ser gorgonzola, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/2-al_formagio.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "Q10NPO7R0N",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3599,
+                        "pickup": 3599,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "QPONPO7R0N",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4799,
+                        "pickup": 4799,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "QO0NPO7R0N": {
+            "name": "Pizza Italiana",
+            "description": [
+                "sos, mozzarella, mozzarella fior di latte, rukola, pomidorki cherry, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/italiana.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "QO0NPO7R0N",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3799,
+                        "pickup": 3799,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "QRONPO7R0N",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4999,
+                        "pickup": 4999,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3Q13Q1R051": {
+            "name": "Pizza Cheddaro",
+            "description": [
+                "sos, mozzarella, mozzarella fior di latte, 2 rodzaje sera cheddar, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/4-cheddaro.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "3Q13Q1R051",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3699,
+                        "pickup": 3699,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3NO3Q1R051",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4899,
+                        "pickup": 4899,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O70NQ10RO1": {
+            "name": "Pizza Pepperoni",
+            "description": [
+                "sos,mozzarella, salami pepperoni, cebula czerwona, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/pepperoni.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "O70NQ10RO1",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3599,
+                        "pickup": 3599,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3OO1Q1R051",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4799,
+                        "pickup": 4799,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "0OQP0NRN11": {
+            "name": "Pizza Victory",
+            "description": [
+                "sos, mozzarella, salami, suszone pomidory, oliwki, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/6-victory.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "0OQP0NRN11",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3799,
+                        "pickup": 3799,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "03PP3NRN11",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4999,
+                        "pickup": 4999,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "335OQ1R051": {
+            "name": "Pizza Sycyliana",
+            "description": [
+                "sos, mozzarella, salami, oliwki, papryka, cebula czerwona, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/sycyliana.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "335OQ1R051",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3799,
+                        "pickup": 3799,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3O35Q1R051",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4999,
+                        "pickup": 4999,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "305OQ1R051": {
+            "name": "Pizza Spianata (lekko ostra)",
+            "description": [
+                "sos, mozzarella,salami spianata(ostra), pomidor, pieczarki, papryka, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/spianata.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "305OQ1R051",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3899,
+                        "pickup": 3899,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3R15Q1R051",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5099,
+                        "pickup": 5099,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3P5OQ1R051": {
+            "name": "Pizza Legioner",
+            "description": [
+                "sos, mozzarella, salami spianata(ostra), boczek, pieczarki, cebula czerwona, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/legioner.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "3P5OQ1R051",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3999,
+                        "pickup": 3999,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3735Q1R051",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5199,
+                        "pickup": 5199,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "0PRP0NRN11": {
+            "name": "Pizza Diabolico (ostra)",
+            "description": [
+                "sos, mozzarella, salami spianata (ostra), pomidor, jalapeno, cebula czerwona, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/pizza_diabolico.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "0PRP0NRN11",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3899,
+                        "pickup": 3899,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "0131ONRN11",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5099,
+                        "pickup": 5099,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3R5OQ1R051": {
+            "name": "Pizza Karo",
+            "description": [
+                "sos, mozzarella, salami pepperoni, jalapeno, ser Feta,oliwki, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/karo.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "3R5OQ1R051",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3799,
+                        "pickup": 3799,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "35Q5Q1R051",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4999,
+                        "pickup": 4999,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "QO5OO5Q11N": {
+            "name": "Pizza Nachos",
+            "description": [
+                "sos, mozzarella, salami, papryka, kukurydza, cebula czerwona, ser Cheddar, nachos, całość polana sosem serowym polane sosem serowym, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/nachos.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "QO5OO5Q11N",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3900,
+                        "pickup": 3900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "Q0POO5Q11N",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5100,
+                        "pickup": 5100,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "0QR31NRN11": {
+            "name": "Pizza Pastore",
+            "description": [
+                "sos, mozzarella, boczek, kurczak, oscypek, żurawina, rozmaryn, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/bacowska.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "0QR31NRN11",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3899,
+                        "pickup": 3899,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "05Q1ONRN11",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5099,
+                        "pickup": 5099,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O1537NP0O1": {
+            "name": "Pizza Villagio",
+            "description": [
+                "sos, mozzarella, boczek, kiełbasa, ogórek konserwowy, cebula czerwona, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/wiejska.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "O1537NP0O1",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3899,
+                        "pickup": 3899,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "OP5O7NP0O1",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5099,
+                        "pickup": 5099,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3POOR1R051": {
+            "name": "Pizza Carbonara",
+            "description": [
+                "sos śmietanowy, mozzarella, boczek, pieczarki, cebula czerwona, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/carbonara.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "3POOR1R051",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3799,
+                        "pickup": 3799,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3N5OR1R051",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4999,
+                        "pickup": 4999,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "OQO37NP0O1": {
+            "name": "Pizza Più carne",
+            "description": [
+                "sos, mozzarella, boczek, kebab wolowo-drobiowy, pomidor, prażona cebula czerwona, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/pizza_boko.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "OQO37NP0O1",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3899,
+                        "pickup": 3899,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "O05O7NP0O1",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5099,
+                        "pickup": 5099,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R7OR015P5N": {
+            "name": "Pizza Romano",
+            "description": [
+                "sos, mozzarella, boczek, wołowina, ogórek konserwowy, kukurydza, ser cheddar, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R7OR015P5N",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3799,
+                        "pickup": 3799,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R35R015P5N",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4999,
+                        "pickup": 4999,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "05R31NRN11": {
+            "name": "Pizza Roquefort",
+            "description": [
+                "sos, mozzarella, pancetta, szynka serano, pomidor, oliwki, ser Roquefort, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/rockfold.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "05R31NRN11",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3999,
+                        "pickup": 3999,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "QR057O7R0N",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5199,
+                        "pickup": 5199,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3R3QR1R051": {
+            "name": "Pizza Hawaiano",
+            "description": [
+                "sos, mozzarella, szynka, kurczak, ananas, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/hawajska.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "3R3QR1R051",
+                    "name": "33 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3799,
+                        "pickup": 3799,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3Q710NR051",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4999,
+                        "pickup": 4999,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "QRN170Q11N": {
+            "name": "Pizza Capriciosa",
+            "description": [
+                "sos, mozzarella, szynka, pieczarki, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/capriciosa.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "QRN170Q11N",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3599,
+                        "pickup": 3599,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "QN3170Q11N",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4800,
+                        "pickup": 4800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "0N0NNNRN11": {
+            "name": "Pizza Apollo",
+            "description": [
+                "sos, mozzarella, szynka, kiełbasa, papryka, kukurydza, cebula czerwona, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/apollo.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "0N0NNNRN11",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3799,
+                        "pickup": 3799,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "0R315NRN11",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4999,
+                        "pickup": 4999,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "0Q0NNNRN11": {
+            "name": "Pizza Tores",
+            "description": [
+                "sos, mozzarella, szynka serrano, cukinia, oliwki, gorgonzola, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/tores.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "0Q0NNNRN11",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3799,
+                        "pickup": 3799,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "05715NRN11",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4999,
+                        "pickup": 4999,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O7Q3OQ0O31": {
+            "name": "Pizza Crudo",
+            "description": [
+                "sos, mozzarella, pestki dyni i słonecznika, pomidorki cherry, rukola, szynka serrano, parmezan, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/22-crudo.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "O7Q3OQ0O31",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3899,
+                        "pickup": 3899,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "O1QQ5Q0O31",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5099,
+                        "pickup": 5099,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "0115NNRN11": {
+            "name": "Pizza Porcini",
+            "description": [
+                "sos, mozzarella, kurczak, pomidor, papryka, borowiki, cebula czerwona, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/porcini.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "0115NNRN11",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3899,
+                        "pickup": 3899,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "00135NRN11",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5099,
+                        "pickup": 5099,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "0Q05NNRN11": {
+            "name": "Pizza Pollo aglio",
+            "description": [
+                "sos, mozzarella, kurczak, pieczarki marynowane, cebula czerwona, oliwa z oliwek czosnkowa, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/pollo.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "0Q05NNRN11",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3799,
+                        "pickup": 3799,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "0QRN5NRN11",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4999,
+                        "pickup": 4999,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3R130NR051": {
+            "name": "Pizza Delicia",
+            "description": [
+                "sos, mozzarella, kurczak, boczek, szpinak, pomidory cherry, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/delicia.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "3R130NR051",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3799,
+                        "pickup": 3799,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3QN30NR051",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4999,
+                        "pickup": 4999,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3NN30NR051": {
+            "name": "Pizza Metropoli",
+            "description": [
+                "sos, mozzarella, kurczak, frytki, cebula czerwona, śmietanka, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/grodno.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "3NN30NR051",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3899,
+                        "pickup": 3899,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3N530NR051",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5099,
+                        "pickup": 5099,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "0505NNRN11": {
+            "name": "Pizza Cipollo",
+            "description": [
+                "sos gyros, mozzarella, kurczak,cebula czerwona, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "0505NNRN11",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3599,
+                        "pickup": 3599,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "00QN5NRN11",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4799,
+                        "pickup": 4799,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R010115P5N": {
+            "name": "Pizza Aleoleo",
+            "description": [
+                "sos czosnkowy, mozzarella, kurczak, szynka, pomidor, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R010115P5N",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3799,
+                        "pickup": 3799,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "R310115P5N",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4999,
+                        "pickup": 4999,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "01OQNNRN11": {
+            "name": "Pizza Tonno",
+            "description": [
+                "sos, mozzarella, tuńczyk, oliwki, ogórek konserwowy, jajko, ser Feta, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/tonno.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "01OQNNRN11",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3999,
+                        "pickup": 3999,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "0P7R5NRN11",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5199,
+                        "pickup": 5199,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "07OQNNRN11": {
+            "name": "Pizza Gamberi",
+            "description": [
+                "sos, mozzarella, krewetki, pieczarki, śmietanka, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/gamberi.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "07OQNNRN11",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4199,
+                        "pickup": 4199,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "0R00PNRN11",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5399,
+                        "pickup": 5399,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "035QNNRN11": {
+            "name": "Pizza Anchois",
+            "description": [
+                "dos, mozzarella, sardelle anchois, suszone pomidory, kapary, czosnek marynowany, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/anchois.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "035QNNRN11",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4199,
+                        "pickup": 4199,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "03P0PNRN11",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5399,
+                        "pickup": 5399,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "0OOQNNRN11": {
+            "name": "Pizza Salmon",
+            "description": [
+                "sos, mozzarella, pieczony łosoś, pomidorki cherry, rukola, śmietanka, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/salmon.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "0OOQNNRN11",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4199,
+                        "pickup": 4199,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "0000PNRN11",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5399,
+                        "pickup": 5399,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3P5Q0NR051": {
+            "name": "Pizza Colosseo",
+            "description": [
+                "sos, mozzarella, krewetki, jalapeno, gruszka, rukola, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/colosseo.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "3P5Q0NR051",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4199,
+                        "pickup": 4199,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3R5Q0NR051",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5399,
+                        "pickup": 5399,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "OR7N7Q0O31": {
+            "name": "Pizza Wegetariana",
+            "description": [
+                "sos, mozzarella, pomidor, papryka, pieczarki, kukurydza, cebula czerwona, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/wegetariana.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "OR7N7Q0O31",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3699,
+                        "pickup": 3699,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "O7537Q0O31",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4899,
+                        "pickup": 4899,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "00003NRN11": {
+            "name": "Pizza Broccoli",
+            "description": [
+                "sos, mozzarella, brokuły, ser gorgonzola, suszone pomidory, oliwki, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/broccoli.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "00003NRN11",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3699,
+                        "pickup": 3699,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "0NN5PNRN11",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4899,
+                        "pickup": 4899,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "03003NRN11": {
+            "name": "Pizza Giardino",
+            "description": [
+                "sos, mozzarella, cukinia, ser feta, oliwki, suszone pomidory, szpinak, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/giardino.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "03003NRN11",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3699,
+                        "pickup": 3699,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "0P75PNRN11",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4899,
+                        "pickup": 4899,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "0P003NRN11": {
+            "name": "Pizza Rukola",
+            "description": [
+                "sos, mozzarella, rukola, pomidor, oliwki, parmezan, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/rukola.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "0P003NRN11",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "22ee2fa3769cf06dc301770b0d74829a",
+                        "ac67439c78fa92189f5e24018bd07994",
+                        "b5a5115b96cd7df344392bac1fb58548",
+                        "575e935e880943175fb7de8cb87c06f0",
+                        "66443c0c14aa1298f97efe9f92d6443d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3699,
+                        "pickup": 3699,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "003N7NRN11",
+                    "name": "41 cm",
+                    "optionGroupIds": [
+                        "5e9eea433d899b2ac54842149780c515",
+                        "dc0c9dc7d0f8de8715722eb91b0cafc9",
+                        "0ab4e10171bda7e7830942aff4911504",
+                        "801f4117d86e93b28b78402e6ebe9e2a",
+                        "b5395802dbc1bbb3228ea4cbc90f6eff"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4899,
+                        "pickup": 4899,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "ROP1315P5N": {
+            "name": "Rolls kurczak",
+            "description": [
+                "ciasto, sos, mozzarella, kurczak"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/rollsy-kurczak.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "ROP1315P5N",
+                    "name": null,
+                    "optionGroupIds": [
+                        "4893ec908c3bf5d1d5bc6412c15eb130",
+                        "e90d715ba07a486e8eb3507d7c130143",
+                        "35af7e453eab19d08c3a18b769bb4c0c"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3299,
+                        "pickup": 3299,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R7P1315P5N": {
+            "name": "Rolls szynka",
+            "description": [
+                "ciasto, sos, mozzarella, szynka"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/rollsy-szynka.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "R7P1315P5N",
+                    "name": null,
+                    "optionGroupIds": [
+                        "4893ec908c3bf5d1d5bc6412c15eb130",
+                        "e90d715ba07a486e8eb3507d7c130143",
+                        "35af7e453eab19d08c3a18b769bb4c0c"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3299,
+                        "pickup": 3299,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R071315P5N": {
+            "name": "Rolls boczek",
+            "description": [
+                "ciasto, sos, mozzarella, boczek"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/rollsy-boczek.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "R071315P5N",
+                    "name": null,
+                    "optionGroupIds": [
+                        "4893ec908c3bf5d1d5bc6412c15eb130",
+                        "e90d715ba07a486e8eb3507d7c130143",
+                        "35af7e453eab19d08c3a18b769bb4c0c"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3299,
+                        "pickup": 3299,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R371315P5N": {
+            "name": "Rolls pepperoni",
+            "description": [
+                "ciasto, sos, mozzarella, pepperoni"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/rollsy-pepperoni.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "R371315P5N",
+                    "name": null,
+                    "optionGroupIds": [
+                        "4893ec908c3bf5d1d5bc6412c15eb130",
+                        "e90d715ba07a486e8eb3507d7c130143",
+                        "35af7e453eab19d08c3a18b769bb4c0c"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3299,
+                        "pickup": 3299,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RP71315P5N": {
+            "name": "Rolls wege",
+            "description": [
+                "ciasto, sos, mozzarella, pomidor, kukurydza, pieczarka,cebula"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/rollsy-wege.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "RP71315P5N",
+                    "name": null,
+                    "optionGroupIds": [
+                        "4893ec908c3bf5d1d5bc6412c15eb130",
+                        "e90d715ba07a486e8eb3507d7c130143",
+                        "35af7e453eab19d08c3a18b769bb4c0c"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3299,
+                        "pickup": 3299,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "071510N311": {
+            "name": "Sałatka Pollo",
+            "description": [
+                "mix sałat, kurczak, pomidorki cherry, ogórek konserwowy, papryka,cebula czerwona, grzanki"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "071510N311",
+                    "name": null,
+                    "optionGroupIds": [
+                        "16ad53133a4ca6c1dcd217172579c1d9",
+                        "88b0d6b89a5a3fe3b2a7607917c26bc4",
+                        "f8275570d01572efd983aed9877eca05"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2799,
+                        "pickup": 2799,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "00N510N311": {
+            "name": "Sałatka Fumo",
+            "description": [
+                "mix salat, łosoś wędzony, pomidorki cherry, cebula czerwona, jajko,kapary"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "00N510N311",
+                    "name": null,
+                    "optionGroupIds": [
+                        "16ad53133a4ca6c1dcd217172579c1d9",
+                        "88b0d6b89a5a3fe3b2a7607917c26bc4",
+                        "f8275570d01572efd983aed9877eca05"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3199,
+                        "pickup": 3199,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "03N510N311": {
+            "name": "Sałatka Grecka",
+            "description": [
+                "mix sałat, pomidorki cherry, papryka, cebula czerwona, ogórek konserwowy, oliwki, feta"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "03N510N311",
+                    "name": null,
+                    "optionGroupIds": [
+                        "16ad53133a4ca6c1dcd217172579c1d9",
+                        "88b0d6b89a5a3fe3b2a7607917c26bc4",
+                        "f8275570d01572efd983aed9877eca05"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2699,
+                        "pickup": 2699,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "0PN510N311": {
+            "name": "Sałatka Tuna",
+            "description": [
+                "mix sałat, tuńczyk, ogórek konserwowy, kukurydza, jajko,cebula czerwona,"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "0PN510N311",
+                    "name": null,
+                    "optionGroupIds": [
+                        "16ad53133a4ca6c1dcd217172579c1d9",
+                        "88b0d6b89a5a3fe3b2a7607917c26bc4",
+                        "f8275570d01572efd983aed9877eca05"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2799,
+                        "pickup": 2799,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "0N3510N311": {
+            "name": "Sałatka Serrano",
+            "description": [
+                "mix salat, pomidorki cherry, feta, brokuły, szynka serano, ogórek konserwowy"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "0N3510N311",
+                    "name": null,
+                    "optionGroupIds": [
+                        "16ad53133a4ca6c1dcd217172579c1d9",
+                        "88b0d6b89a5a3fe3b2a7607917c26bc4",
+                        "f8275570d01572efd983aed9877eca05"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2799,
+                        "pickup": 2799,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RQON315P5N": {
+            "name": "Pita",
+            "description": [
+                "pita grecka, sos do wyboru, pomidor, cebula, frytki, mięso 110g"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/pita-grecka.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "RQON315P5N",
+                    "name": null,
+                    "optionGroupIds": [
+                        "b571ec4a424941e5c47f23e24ce05ef2",
+                        "f0bd57c6377a115b0ef77235316dfa6e",
+                        "3341cec084b001e4562f4c75dd52771d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1899,
+                        "pickup": 1899,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R15N315P5N": {
+            "name": "Kebab Box",
+            "description": [
+                "frytki, mięso 120g, salła, pomidor, ogórek świeży, papryka, cebula, sos do wyboru"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/kebab-box-maly.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "R15N315P5N",
+                    "name": "mały",
+                    "optionGroupIds": [
+                        "cd9af32a7a846eb31b2e655d46df6ea0",
+                        "dc24d78541ee569d8c2f0d7d6aaa9e8e",
+                        "7b5d8150aa81a7b1c6a81a3b2a017a21",
+                        "7da71c011076b709893b759aabe95494"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2099,
+                        "pickup": 2099,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "RRPN315P5N",
+                    "name": "duży",
+                    "optionGroupIds": [
+                        "cd9af32a7a846eb31b2e655d46df6ea0",
+                        "dc24d78541ee569d8c2f0d7d6aaa9e8e",
+                        "7b5d8150aa81a7b1c6a81a3b2a017a21",
+                        "7da71c011076b709893b759aabe95494"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2699,
+                        "pickup": 2699,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RO5N315P5N": {
+            "name": "Kapsalon",
+            "description": [
+                "frytki, mięso 120g, mozzarella, sałata, pomidor, ogórek świeży, papryka, cebula, sos do wyboru"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/kapsalon.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "RO5N315P5N",
+                    "name": null,
+                    "optionGroupIds": [
+                        "b571ec4a424941e5c47f23e24ce05ef2",
+                        "f0bd57c6377a115b0ef77235316dfa6e",
+                        "3341cec084b001e4562f4c75dd52771d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2699,
+                        "pickup": 2699,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R75N315P5N": {
+            "name": "Strips Box",
+            "description": [
+                "7x strips, frytki 150g, sos do wyboru"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/wings-lub-strips-box.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "R75N315P5N",
+                    "name": null,
+                    "optionGroupIds": [
+                        "b571ec4a424941e5c47f23e24ce05ef2",
+                        "f0bd57c6377a115b0ef77235316dfa6e",
+                        "3341cec084b001e4562f4c75dd52771d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2699,
+                        "pickup": 2699,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R0PN315P5N": {
+            "name": "Wings Box",
+            "description": [
+                "7x wings, frytki 150g, sos do wyboru"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/wings-lub-strips-box.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "R0PN315P5N",
+                    "name": null,
+                    "optionGroupIds": [
+                        "b571ec4a424941e5c47f23e24ce05ef2",
+                        "f0bd57c6377a115b0ef77235316dfa6e",
+                        "3341cec084b001e4562f4c75dd52771d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3299,
+                        "pickup": 3299,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R3PN315P5N": {
+            "name": "Kombo Box",
+            "description": [
+                "4x wings, 4x strips, frytki, sos do wyboru"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/kombo-box.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "R3PN315P5N",
+                    "name": null,
+                    "optionGroupIds": [
+                        "b571ec4a424941e5c47f23e24ce05ef2",
+                        "f0bd57c6377a115b0ef77235316dfa6e",
+                        "3341cec084b001e4562f4c75dd52771d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3299,
+                        "pickup": 3299,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "ORPN0PP711": {
+            "name": "Frytki 200g",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/frytki-proste.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "ORPN0PP711",
+                    "name": null,
+                    "optionGroupIds": [
+                        "bd75c3c7ba6c29b6f8ac31ab52161109",
+                        "d4de51bdc5004055f156c05b6a451712"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 999,
+                        "pickup": 999,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "33Q3P1R051": {
+            "name": "Mozzarella w panierce 150g",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/mozzarella-w-panierce.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "33Q3P1R051",
+                    "name": null,
+                    "optionGroupIds": [
+                        "bd75c3c7ba6c29b6f8ac31ab52161109",
+                        "d4de51bdc5004055f156c05b6a451712"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1699,
+                        "pickup": 1699,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "30Q3P1R051": {
+            "name": "Frytki z batata 150g",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/0R0NRP5N/products/frytki-z-batata.png?timestamp=1706889832",
+            "variants": [
+                {
+                    "id": "30Q3P1R051",
+                    "name": null,
+                    "optionGroupIds": [
+                        "bd75c3c7ba6c29b6f8ac31ab52161109",
+                        "d4de51bdc5004055f156c05b6a451712"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1299,
+                        "pickup": 1299,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        }
+    }
+}

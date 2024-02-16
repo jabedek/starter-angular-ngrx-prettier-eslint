@@ -1,0 +1,88 @@
+{{ selectedSlugs | json }}
+<app-button (click)="handleComparison()">{{ pizzasComparison.selectingActive ? "Anuluj" : "Zacznij porównanie" }}</app-button>
+<app-button (click)="getSelectedData()" [disabled]="pizzasComparison.selectedSlugs.size < 1">Wyślij</app-button>
+
+<app-pizza-calculator [data]="pizzasComparison.selectedSlugsCalcs"></app-pizza-calculator>
+
+<!-- Pyszne data table -->
+<div *ngIf="table.data.length > 0" [ngClass]="{ 'selecting-active': pizzasComparison.selectingActive }">
+  <div class="table-wrapper">
+    <div class="table-settings">
+      <div class="table-sorting"></div>
+
+      <div class="table-filters">
+        <div class="quick-options">
+          <!-- Cuisines with pizzas -->
+          <app-checkbox class="outlined" [value]="withPizza" (click)="handlePizza()" label="With pizzas"></app-checkbox>
+
+          <app-checkbox
+            class="outlined"
+            [value]="withSizes"
+            (click)="handlePizzaSizes()"
+            [disabled]="pizzasComparison.selectedSlugsProducts.length === 0"
+            label="With provided sizes in cm"></app-checkbox>
+        </div>
+        <div class="table-filter">
+          <input type="text" class="table-filter-input" placeholder="Search" />
+        </div>
+      </div>
+
+      <div class="table-pagination">
+        <app-pagination
+          [config]="{
+            page: 1,
+            pageSize: 10,
+            totalItems: table.data.length
+          }"></app-pagination>
+      </div>
+    </div>
+
+    {{ table.data.length }}
+    <div class="table">
+      <!-- Headers -->
+      <div class="table-section headers">
+        <div class="table-row header-row">
+          <div class="table-cell header-cell header-id width-small">Id</div>
+          <div class="table-cell header-cell header-brand width-large">Nazwa</div>
+          <div class="table-cell header-cell header-cuisineTypes width-large">Kuchnie</div>
+          <div class="table-cell header-cell header-location width-large">Adres</div>
+          <div class="table-cell header-cell header-rating width-small center">Ocena</div>
+          <div class="table-cell header-cell header-popularity width-small center">Popularność</div>
+          <div class="table-cell header-cell header-deliveryFee width-small">Dostawa</div>
+          <div class="table-cell header-cell header-minOrderValue width-small center">Min. zamówienie</div>
+          <!-- <div *ngFor="let header of table.headers.cells" class="table-cell header-cell {{ header.styleClasses }}">
+            {{ header.value }}
+          </div> -->
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="table-section divider"></div>
+
+      <!-- Data -->
+      <div class="table-section data">
+        <div
+          #dataRow
+          *ngFor="let record of table.data; let i = index"
+          class="table-row data-row"
+          (click)="handleClickRow(dataRow, record)">
+          <div class="table-cell data-cell data-id width-small text-small mono">{{ record.cells[0].value }}</div>
+          <div class="table-cell data-cell data-brand width-large">
+            <ng-container *ngIf="pizzasComparison.selectingActive">{{ record.cells[1].value }}</ng-container>
+            <a *ngIf="!pizzasComparison.selectingActive" [href]="'https://pyszne.pl/menu/' + record.slug" target="_blank">
+              {{ record.cells[1].value }}
+            </a>
+          </div>
+          <div class="table-cell data-cell data-cuisineTypes width-large text-small">{{ record.cells[2].value }}</div>
+          <div class="table-cell data-cell data-location width-large">{{ record.cells[3].value }}</div>
+          <div class="table-cell data-cell data-rating width-small mono-small center">{{ record.cells[4].value }}</div>
+          <div class="table-cell data-cell data-popularity width-small text-center mono center">{{ record.cells[5].value }}</div>
+          <div class="table-cell data-cell data-deliveryFee width-small text-center mono-small">{{ record.cells[6].value }}</div>
+          <div class="table-cell data-cell data-minOrderValue width-small text-center mono-small center">
+            {{ record.cells[7].value }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

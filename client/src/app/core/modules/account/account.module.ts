@@ -8,9 +8,10 @@ import { AccountFormComponent } from './components/account-form/account-form.com
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AccountDetailsComponent } from './components/account-details/account-details.component';
 import { SharedModule } from '@shared/shared.module';
+import { InboxComponent } from './components/inbox/inbox.component';
 
 @NgModule({
-  declarations: [AccountComponent, AccountFormComponent, AccountDetailsComponent],
+  declarations: [AccountComponent, AccountFormComponent, AccountDetailsComponent, InboxComponent],
   imports: [CommonModule, AuthModule, FormsModule, ReactiveFormsModule, AccountRoutingModule, SharedModule],
 })
 export class AccountModule {}

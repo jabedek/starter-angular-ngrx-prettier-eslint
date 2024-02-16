@@ -1,13 +1,12 @@
 // updated on every Player action
 
-import { DeckVariant } from '../constants/deck.constant';
-import { Card } from './card.model';
-import { GameState, GamePauseInfo, PlayerWithHand, PlayerAction } from './game.model';
-import { AsianPokerSessionSettings, AsianPokerSessionActivity } from './lobby.model';
+import { GameActivityTickLogDTO } from './game.model';
+import { AsianPokerSessionSettings, AsianPokerSessionActivity, SessionInvitation } from './session.model';
 
 export type AsianPokerSessionDTO = {
   id: string;
-  gameId: string | null;
+  gameId: string;
+  chatId: string;
   sessionSettings: AsianPokerSessionSettings;
   sessionActivity: AsianPokerSessionActivity;
 };
@@ -15,18 +14,19 @@ export type AsianPokerSessionDTO = {
 export type AsianPokerGameDTO = {
   id: string;
   sessionId: string;
+  ticks: GameActivityTickLogDTO[];
+};
 
-  gameState: GameState;
-  pausesInfo: GamePauseInfo[];
+export type AsianPokerChatDTO = {
+  id: string;
+  sessionId: string;
+  messages: AsianPokerChatMessageDTO[];
+};
 
-  roundCounter: number;
-  cycleCounter: number;
-
-  currentPlayerIndex: number;
-  currentDealerIndex: number;
-
-  deckVariant: DeckVariant;
-  publicCards: Card[];
-  playersWithHands: PlayerWithHand[];
-  playersActions: PlayerAction[];
+export type AsianPokerChatMessageDTO = {
+  id: string;
+  senderId: string;
+  senderNickname: string;
+  sentAtMS: number;
+  content: string;
 };

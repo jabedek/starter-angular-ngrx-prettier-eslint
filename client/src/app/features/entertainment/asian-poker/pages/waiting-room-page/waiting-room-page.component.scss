@@ -6,6 +6,10 @@
   overflow-wrap: break-word;
 }
 
+.lock {
+  width: 90px;
+}
+
 .status {
   width: 110px;
   overflow-wrap: break-word;
@@ -14,18 +18,23 @@
   font-weight: 700;
   padding: 5px 9px;
 
-  &.status-ready {
-    color: rgb(0, 197, 0);
+  &.status-empty {
+    color: rgb(150, 150, 150);
     text-shadow: variables.$shadow-4;
   }
 
-  &.status-disconnected {
-    color: rgb(197, 0, 0);
+  &.status-occupied {
+    color: rgb(0, 197, 0);
     text-shadow: variables.$shadow-4;
   }
 
   &.status-invited {
     color: #000;
+  }
+
+  &.status-disconnected {
+    color: rgb(197, 0, 0);
+    text-shadow: variables.$shadow-4;
   }
 }
 
@@ -56,12 +65,14 @@
 }
 
 .list-item.empty {
-  background: rgba(100, 100, 100, 1) !important;
+  background: rgba(87, 87, 87, 1) !important;
   color: rgba(155, 155, 155, 1) !important;
   font-weight: 700 !important;
   font-style: italic;
   width: 100% !important;
   justify-content: center !important;
+
+  @include mixins.clickable-btn();
 }
 
 :host::ng-deep {

@@ -1,3 +1,6 @@
+export type PyszneLocaLJSONFile = { requested: number; restaurants: Pyszne_Restaurants | null | Record<string, never> };
+export type PyszneLocaLJSON = { requested: number; restaurants: Pyszne_Restaurants };
+
 export type Pyszne_Restaurants = Record<string, Pyszne_SimpleRestaurant>;
 
 export interface Pyszne_SimpleRestaurant {
@@ -9,15 +12,10 @@ export interface Pyszne_SimpleRestaurant {
   brand: Pyszne_Brand;
   cuisineTypes: string[];
   rating: Pyszne_Rating;
-  location: Location;
+  location: Pyszne_Location;
   supports: Pyszne_Supports;
   shippingInfo: Pyszne_ShippingInfo;
   paymentMethods: string[];
-}
-
-export interface Pyszne_Shipping {
-  delivery: string[];
-  pickup: string[];
 }
 
 export interface Pyszne_ShippingInfo {

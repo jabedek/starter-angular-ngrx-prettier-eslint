@@ -3,15 +3,15 @@
   <p class="monotype">1m 20s</p>
 </div>
 
-<!-- <div *ngIf="currentUser && session" class="wrapper">
-  <app-hand-picker [deckVariant]="session.deckVariant"></app-hand-picker>
-</div> -->
+<div *ngIf="currentUser && data && gameLastTick" class="wrapper">
+  <app-hand-picker *ngIf="gameLastTick.deckVariant" [deckVariant]="gameLastTick.deckVariant"></app-hand-picker>
+</div>
 
 <!-- <app-see-data [data]="session"></app-see-data> -->
 <!-- <div class="gui current-player">
   <div class="top">
     <ng-container *ngIf="session.gameState !== 'ready' && currentUser">
-      <p class="current-user__name">{{ currentUser.nickname }}</p>
+      <p class="current-user__name">{{ currentUser.displayName }}</p>
 
       <div class="deck">
         <div *ngFor="let card of currentPlayer?.hand" class="card" [appCardStyle]="card">
@@ -64,9 +64,9 @@
       </ng-container>
     </div>
   </div>
-</div> -->
+</div>
 
-<!-- <div class="gui general" *ngIf="session.gameState !== 'ready'">
+ <div class="gui general" *ngIf="session.gameState !== 'ready'">
   <ng-container>
     <div class="gui__wall">
       <div class="gui__info">
@@ -80,12 +80,13 @@
 
       <div class="gui__info" *ngIf="currentDealer">
         <p>Who's the dealer?</p>
-        <p>{{ currentDealer.nickname }}</p>
+        <p>{{ currentDealer.displayName }}</p>
       </div>
       <div class="gui__info" *ngIf="currentPlayer">
         <p>Whose move is it?</p>
-        <p>{{ currentPlayer.nickname }}</p>
+        <p>{{ currentPlayer.displayName }}</p>
       </div>
     </div>
   </ng-container>
-</div> -->
+</div>
+-->

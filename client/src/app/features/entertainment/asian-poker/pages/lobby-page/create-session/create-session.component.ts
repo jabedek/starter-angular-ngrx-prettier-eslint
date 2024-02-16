@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validators, ControlValueAccessor } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AsianPokerService } from '@features/entertainment/asian-poker/firebase/asian-poker.service';
-import { AsianPokerSessionSettings } from '@features/entertainment/asian-poker/models/lobby.model';
+import { AsianPokerSessionSettings } from '@features/entertainment/asian-poker/models/session.model';
 import { Store } from '@ngrx/store';
 import { InputOption } from '@shared/models/common.models';
 import { BaseComponent } from '@shared/abstracts/base/base.component';
@@ -12,6 +12,8 @@ import { selectUserAppAccount } from '@store/auth/auth.selectors';
 import { UserAppAccount } from '@store/auth/auth.state';
 import { generateDocumentId } from 'frotsi';
 import { Observable, tap, takeUntil } from 'rxjs';
+
+export type AsianPokerSessionCreationForm = AsianPokerSessionSettings & { id: string; hostId: string; hostDisplayName: string };
 
 @Component({
   selector: 'app-create-session',
@@ -34,8 +36,8 @@ export class CreateSessionComponent extends BaseComponent {
     actionDurationSeconds: new FormControl({ value: 0, disabled: false }, [Validators.required, Validators.min(60)]),
   });
 
-  visibilityValues: InputOption[] = ['private', 'public'].map((value) => ({ label: value, value }));
-  accessibilityValues: InputOption[] = ['invite', 'all'].map((value) => ({ label: value, value }));
+  visibilityValues: InputOption[] = ['public', 'private'].map((value) => ({ label: value, value }));
+  accessibilityValues: InputOption[] = ['all', 'invite'].map((value) => ({ label: value, value }));
 
   appAccount$: Observable<UserAppAccount | undefined> = this.store.select(selectUserAppAccount).pipe(
     tap((a) => {
@@ -63,9 +65,9 @@ export class CreateSessionComponent extends BaseComponent {
   create() {
     if (this.sessionForm.valid) {
       const id = generateDocumentId('ap_session');
-      const data = { ...this.sessionForm.getRawValue(), id } as AsianPokerSessionSettings;
+      const data = { ...this.sessionForm.getRawValue(), id } as AsianPokerSessionCreationForm;
 
-      this.ap.startNewSession(id, data).then(() => {
+      this.ap.createNewSession(data).then(() => {
         this.ap
           .addPlayerToSession(data.hostId, id)
           .then(() => {

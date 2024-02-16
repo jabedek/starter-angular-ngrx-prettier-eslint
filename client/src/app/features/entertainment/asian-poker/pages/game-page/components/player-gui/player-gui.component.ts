@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { PlayerWithHand } from '../../../../models/game.model';
 import { AsianPokerGameDTO } from '@features/entertainment/asian-poker/models/dto';
+import { SessionGameDataPair } from '@features/entertainment/asian-poker/models/common.model';
 
 @Component({
   selector: 'app-player-gui',
@@ -9,68 +10,74 @@ import { AsianPokerGameDTO } from '@features/entertainment/asian-poker/models/dt
 })
 export class PlayerGuiComponent {
   @Input({ required: true }) currentUser: Partial<PlayerWithHand> | undefined;
-  session: AsianPokerGameDTO | undefined;
-  @Input({ required: true }) set sessionId(id: string) {
-    this._sessionId = id;
-    // this.session = this.croupier.getSession(id);
+  @Input({ required: true }) data: SessionGameDataPair | undefined;
+  get gameLastTick() {
+    return this.data?.game?.ticks.at(-1);
   }
-  get sessionId() {
-    return this._sessionId;
+
+  get currentPlayerIndex() {
+    return this.gameLastTick?.currentPlayerIndex || 0;
   }
-  private _sessionId = '';
 
-  // get currentPlayer() {
-  //   // if (this.session) {
-  //   //   return this.session.turnPlayers[this.session.currentPlayerIndex];
-  //   // }
-  //   // return undefined;
-  // }
+  get currentDealerIndex() {
+    return this.gameLastTick?.currentDealerIndex || 0;
+  }
 
-  // get currentDealer() {
-  //   // if (this.session) {
-  //   //   return this.session.turnPlayers[this.session.currentDealerIndex];
-  //   // }
-  //   // return undefined;
-  // }
+  get currentPlayer() {
+    if (this.gameLastTick) {
+      return this.gameLastTick.playersWithHands[this.currentPlayerIndex];
+    }
+    return undefined;
+  }
 
-  // get isCurrentUserMoving() {
-  //   // return this.session?.turnPlayers[this.session.currentPlayerIndex]?.nickname === this.currentUser?.nickname || false;
-  // }
+  get currentDealer() {
+    if (this.gameLastTick) {
+      return this.gameLastTick.playersWithHands[this.currentDealerIndex];
+    }
+    return undefined;
+  }
 
-  // get isCurrentUserDealer() {
-  //   // return this.session?.turnPlayers[this.session.currentDealerIndex]?.nickname === this.currentUser?.nickname || false;
-  // }
+  get isCurrentUserMoving() {
+    return this.currentPlayer?.displayName === this.currentUser?.displayName || false;
+  }
 
-  // startTurn() {
-  //   // this.croupier.startTurn(this.sessionId);
-  // }
+  get publicCards() {
+    return this.gameLastTick?.publicCards || [];
+  }
 
-  // call() {
-  //   if (this.session && this.currentPlayer) {
-  //     // this.croupier.play(this.sessionId, {
-  //     //   type: PlayerActions.PLAY_CALL,
-  //     //   data: {
-  //     //     playerId: this.currentPlayer?.id || '',
-  //     //     playerIndex: this.session?.currentPlayerIndex,
-  //     //     cycleId: this.session?.turnCycleCounter,
-  //     //     roundId: this.session?.turnCycleCounter,
-  //     //     calledCardSet: undefined,
-  //     //   },
-  //     // });
-  //   }
-  // }
+  get turnPlayers() {
+    return this.gameLastTick?.playersWithHands || [];
+  }
+  startTurn() {
+    // this.croupier.startTurn(this.sessionId);
+  }
 
-  // check() {
-  //   if (this.session && this.currentPlayer) {
-  //     // this.croupier.play(this.sessionId, {
-  //     //   type: PlayerActions.PLAY_CHECK,
-  //     //   data: {
-  //     //     playerId: this.currentPlayer?.id || '',
-  //     //     playerIndex: this.session?.currentPlayerIndex,
-  //     //     cycleId: this.session?.turnCycleCounter,
-  //     //     roundId: this.session?.turnCycleCounter,
-  //     //   },
-  //     // });
-  //   }
-  // }
+  call() {
+    // if (this.session && this.currentPlayer) {
+    // this.croupier.play(this.sessionId, {
+    //   type: PlayerActions.PLAY_CALL,
+    //   data: {
+    //     playerId: this.currentPlayer?.id || '',
+    //     playerIndex: this.session?.currentPlayerIndex,
+    //     cycleId: this.session?.turnCycleCounter,
+    //     roundId: this.session?.turnCycleCounter,
+    //     calledCardSet: undefined,
+    //   },
+    // });
+    // }
+  }
+
+  check() {
+    // if (this.session && this.currentPlayer) {
+    // this.croupier.play(this.sessionId, {
+    //   type: PlayerActions.PLAY_CHECK,
+    //   data: {
+    //     playerId: this.currentPlayer?.id || '',
+    //     playerIndex: this.session?.currentPlayerIndex,
+    //     cycleId: this.session?.turnCycleCounter,
+    //     roundId: this.session?.turnCycleCounter,
+    //   },
+    // });
+    // }
+  }
 }

@@ -1,0 +1,3508 @@
+{
+    "requested": 1708103721018,
+    "products": {
+        "OP00P3QOQ": {
+            "name": "Pizza Margherita Toniego",
+            "description": [
+                "z sosem pomidorowym, serem mozzarella, białą mozzarellą, pomidorkami cherry, oliwą czosnkową, bazylią po piecu i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pizza_margherita.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "OP00P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "1ee9d357686e7b5d9ddec48f4325c67c",
+                        "63f0b78a4d07a2d0f5df8817b7627444",
+                        "3c68725edecdf1d9c4d6b41df68d19ea",
+                        "f8fb880b1213129bf188bff12ea91fbd"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3489,
+                        "pickup": 3489,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "O111P3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "abbf6ae67a0f5172646bd892bbbfcce6",
+                        "a98f4b56318eb6a5feacc740161b23e6",
+                        "63bd98c11814899256d125e690b35a0a",
+                        "27464d07c2f7e1c82be9625f63b0f775"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4289,
+                        "pickup": 4289,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "ON10P3QOQ": {
+            "name": "Pizza Toni Peperoni",
+            "description": [
+                "z sosem pomidorowym, serem mozzarella, salami pepperoni na całej pizzy, papryczkami jalapeno, papryczką peperoni, czerwoną cebulą i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_tonipeperoni_food_tonipeperoni_1x1.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "ON10P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "1ee9d357686e7b5d9ddec48f4325c67c",
+                        "63f0b78a4d07a2d0f5df8817b7627444",
+                        "3c68725edecdf1d9c4d6b41df68d19ea",
+                        "f8fb880b1213129bf188bff12ea91fbd"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3989,
+                        "pickup": 3989,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "O0N1P3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "abbf6ae67a0f5172646bd892bbbfcce6",
+                        "a98f4b56318eb6a5feacc740161b23e6",
+                        "63bd98c11814899256d125e690b35a0a",
+                        "27464d07c2f7e1c82be9625f63b0f775"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4989,
+                        "pickup": 4989,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O510P3QOQ": {
+            "name": "Pizza Pinocio",
+            "description": [
+                "z sosem pomidorowym, mozzarellą, szynką, ananasem i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_toni_peperonipizza_pinocio.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "O510P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "1ee9d357686e7b5d9ddec48f4325c67c",
+                        "63f0b78a4d07a2d0f5df8817b7627444",
+                        "3c68725edecdf1d9c4d6b41df68d19ea",
+                        "f8fb880b1213129bf188bff12ea91fbd"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3689,
+                        "pickup": 3689,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "O3N1P3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "abbf6ae67a0f5172646bd892bbbfcce6",
+                        "a98f4b56318eb6a5feacc740161b23e6",
+                        "63bd98c11814899256d125e690b35a0a",
+                        "27464d07c2f7e1c82be9625f63b0f775"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4589,
+                        "pickup": 4589,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "OQ10P3QOQ": {
+            "name": "Pizza Capricosa",
+            "description": [
+                "z sosem pomidorowym, serem mozzarella, szynką, pieczarkami i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_tonipeperoni_food_capriciosa_1x1.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "OQ10P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "1ee9d357686e7b5d9ddec48f4325c67c",
+                        "63f0b78a4d07a2d0f5df8817b7627444",
+                        "3c68725edecdf1d9c4d6b41df68d19ea",
+                        "f8fb880b1213129bf188bff12ea91fbd"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3889,
+                        "pickup": 3889,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "O5P1P3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "abbf6ae67a0f5172646bd892bbbfcce6",
+                        "a98f4b56318eb6a5feacc740161b23e6",
+                        "63bd98c11814899256d125e690b35a0a",
+                        "27464d07c2f7e1c82be9625f63b0f775"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4889,
+                        "pickup": 4889,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O1N0P3QOQ": {
+            "name": "Pizza Kebab",
+            "description": [
+                "z sosem barbecue, serem mozzarella, kebabem z fileta drobiowego, papryką, kukurydzą, oregano i cebulką prażoną"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_toni_peperonipizza_kebab.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "O1N0P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "1ee9d357686e7b5d9ddec48f4325c67c",
+                        "63f0b78a4d07a2d0f5df8817b7627444",
+                        "3c68725edecdf1d9c4d6b41df68d19ea",
+                        "f8fb880b1213129bf188bff12ea91fbd"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4089,
+                        "pickup": 4089,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "OQP1P3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "abbf6ae67a0f5172646bd892bbbfcce6",
+                        "a98f4b56318eb6a5feacc740161b23e6",
+                        "63bd98c11814899256d125e690b35a0a",
+                        "27464d07c2f7e1c82be9625f63b0f775"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4989,
+                        "pickup": 4989,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "OON0P3QOQ": {
+            "name": "Pizza Bruno",
+            "description": [
+                "z sosem pomidorowym, serem mozzarella, salami, pieczarkami, cebulą i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_toni_peperonipizza_bruno.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "OON0P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "1ee9d357686e7b5d9ddec48f4325c67c",
+                        "63f0b78a4d07a2d0f5df8817b7627444",
+                        "3c68725edecdf1d9c4d6b41df68d19ea",
+                        "f8fb880b1213129bf188bff12ea91fbd"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3789,
+                        "pickup": 3789,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "O171P3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "abbf6ae67a0f5172646bd892bbbfcce6",
+                        "a98f4b56318eb6a5feacc740161b23e6",
+                        "63bd98c11814899256d125e690b35a0a",
+                        "27464d07c2f7e1c82be9625f63b0f775"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4889,
+                        "pickup": 4889,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O7N0P3QOQ": {
+            "name": "Pizza Wiosenna",
+            "description": [
+                "z sosem serowym, mozzarellą, grillowanym filetem z kurczaka w curry, serem pleśniowym, serem feta, rukolą i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_toni_peperonipizza_wiosenna.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "O7N0P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "1ee9d357686e7b5d9ddec48f4325c67c",
+                        "63f0b78a4d07a2d0f5df8817b7627444",
+                        "3c68725edecdf1d9c4d6b41df68d19ea",
+                        "f8fb880b1213129bf188bff12ea91fbd"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4189,
+                        "pickup": 4189,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "OO71P3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "abbf6ae67a0f5172646bd892bbbfcce6",
+                        "a98f4b56318eb6a5feacc740161b23e6",
+                        "63bd98c11814899256d125e690b35a0a",
+                        "27464d07c2f7e1c82be9625f63b0f775"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5189,
+                        "pickup": 5189,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O030P3QOQ": {
+            "name": "Pizza Podlasianka",
+            "description": [
+                "z sosem pomidorowym, serem mozzarella, boczkiem, kiełbasą z szynki, ogórkiem konserwowym talarkami ziemniaczanymi, cebulą czerwoną i koperkiem"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_tonipeperoni_food_podlasianka_1x1.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "O030P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "1ee9d357686e7b5d9ddec48f4325c67c",
+                        "63f0b78a4d07a2d0f5df8817b7627444",
+                        "3c68725edecdf1d9c4d6b41df68d19ea",
+                        "f8fb880b1213129bf188bff12ea91fbd"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4089,
+                        "pickup": 4089,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "O771P3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "abbf6ae67a0f5172646bd892bbbfcce6",
+                        "a98f4b56318eb6a5feacc740161b23e6",
+                        "63bd98c11814899256d125e690b35a0a",
+                        "27464d07c2f7e1c82be9625f63b0f775"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5089,
+                        "pickup": 5089,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O330P3QOQ": {
+            "name": "Pizza Wiejska",
+            "description": [
+                "z sosem barbecue, mozzarellą, kiełbasą z szynki, boczkiem, ogórkiem konserwowym, kukurydzą, cebulką prażoną i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_tonipeperoni_food_wiejska_1x1.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "O330P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "1ee9d357686e7b5d9ddec48f4325c67c",
+                        "63f0b78a4d07a2d0f5df8817b7627444",
+                        "3c68725edecdf1d9c4d6b41df68d19ea",
+                        "f8fb880b1213129bf188bff12ea91fbd"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4089,
+                        "pickup": 4089,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "OPQ1P3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "abbf6ae67a0f5172646bd892bbbfcce6",
+                        "a98f4b56318eb6a5feacc740161b23e6",
+                        "63bd98c11814899256d125e690b35a0a",
+                        "27464d07c2f7e1c82be9625f63b0f775"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5089,
+                        "pickup": 5089,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "OP30P3QOQ": {
+            "name": "Pizza Nicejska",
+            "description": [
+                "z sosem pomidorowym, mozzarellą, salami, świeżym szpinakiem, suszonymi pomidorami, oliwą czosnkową i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_toni_peperonipizza_nicejska.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "OP30P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "1ee9d357686e7b5d9ddec48f4325c67c",
+                        "63f0b78a4d07a2d0f5df8817b7627444",
+                        "3c68725edecdf1d9c4d6b41df68d19ea",
+                        "f8fb880b1213129bf188bff12ea91fbd"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3889,
+                        "pickup": 3889,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "ORQ1P3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "abbf6ae67a0f5172646bd892bbbfcce6",
+                        "a98f4b56318eb6a5feacc740161b23e6",
+                        "63bd98c11814899256d125e690b35a0a",
+                        "27464d07c2f7e1c82be9625f63b0f775"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4889,
+                        "pickup": 4889,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "OR30P3QOQ": {
+            "name": "Pizza Korycińska",
+            "description": [
+                "z sosem pomidorowym, regionalnym serem korycińskim, pomidorkami cherry i świeżą bazylią po piecu"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_toni_peperonipizza_koryciska.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "OR30P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "1ee9d357686e7b5d9ddec48f4325c67c",
+                        "63f0b78a4d07a2d0f5df8817b7627444",
+                        "3c68725edecdf1d9c4d6b41df68d19ea",
+                        "f8fb880b1213129bf188bff12ea91fbd"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3889,
+                        "pickup": 3889,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "ONR1P3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "abbf6ae67a0f5172646bd892bbbfcce6",
+                        "a98f4b56318eb6a5feacc740161b23e6",
+                        "63bd98c11814899256d125e690b35a0a",
+                        "27464d07c2f7e1c82be9625f63b0f775"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4789,
+                        "pickup": 4789,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "ONO0P3QOQ": {
+            "name": "Pizza Carbonara",
+            "description": [
+                "z sosem serowym, mozzarellą, boczkiem, pieczarkami, czerwoną cebulą, oregano, opcjonalnie z jajkiem przed piecem."
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/1295995_tonipepperoni_food_pizzacarbonara.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "ONO0P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "12258a34c8babf907ee34a80230c814b",
+                        "e366e204be301ab2b9e63fae9ecc19e2",
+                        "24cf19d2359de5ec0e347ccb22106df8",
+                        "ab12da71cd127d6ac6f8638b25c5e19a",
+                        "420e39ecc4fbeec679ad4a1c9ab3744e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4089,
+                        "pickup": 4089,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "O5R1P3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "cf6fc3bce7d6ef0aff35fa7067d67cd4",
+                        "197bbce49d113d2e27c121bec5eeb9ea",
+                        "992716af65f664f3d052de3341f58708",
+                        "ee2eb3d789ec89f0f08797ca67fc9189",
+                        "5100d21783b5c8fb152b025c3de6c789"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5089,
+                        "pickup": 5089,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O5O0P3QOQ": {
+            "name": "Pizza Vegetariana",
+            "description": [
+                "z sosem pomidorowym, mozzarellą, świeżym szpinakiem, papryką, cukinią, oliwkami, pomidorkami, serem feta, oliwą czosnkową i serem grana padano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_tonipeperoni_food_wegetariana_1x1.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "O5O0P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "1ee9d357686e7b5d9ddec48f4325c67c",
+                        "63f0b78a4d07a2d0f5df8817b7627444",
+                        "3c68725edecdf1d9c4d6b41df68d19ea",
+                        "f8fb880b1213129bf188bff12ea91fbd"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4089,
+                        "pickup": 4089,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "OQR1P3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "abbf6ae67a0f5172646bd892bbbfcce6",
+                        "a98f4b56318eb6a5feacc740161b23e6",
+                        "63bd98c11814899256d125e690b35a0a",
+                        "27464d07c2f7e1c82be9625f63b0f775"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5089,
+                        "pickup": 5089,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "OQO0P3QOQ": {
+            "name": "Pizza Di Carne pełna mięsa",
+            "description": [
+                "z sosem barbecue, serem mozzarella, kabanosem, boczkiem, salami, kiełbasą z szynki, ogórkiem konserwowym, kukurydzą, cebulą czerwoną i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_tonipeperoni_food_dicarne_1x1.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "OQO0P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "1ee9d357686e7b5d9ddec48f4325c67c",
+                        "63f0b78a4d07a2d0f5df8817b7627444",
+                        "3c68725edecdf1d9c4d6b41df68d19ea",
+                        "f8fb880b1213129bf188bff12ea91fbd"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4389,
+                        "pickup": 4389,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "O10NP3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "abbf6ae67a0f5172646bd892bbbfcce6",
+                        "a98f4b56318eb6a5feacc740161b23e6",
+                        "63bd98c11814899256d125e690b35a0a",
+                        "27464d07c2f7e1c82be9625f63b0f775"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5289,
+                        "pickup": 5289,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O150P3QOQ": {
+            "name": "Pizza Maestro",
+            "description": [
+                "z sosem serowym, serem mozzarella, szynką, salami, pieczarkami, czerwoną cebulą i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_toni_peperonipizza_maestro.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "O150P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "1ee9d357686e7b5d9ddec48f4325c67c",
+                        "63f0b78a4d07a2d0f5df8817b7627444",
+                        "3c68725edecdf1d9c4d6b41df68d19ea",
+                        "f8fb880b1213129bf188bff12ea91fbd"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3989,
+                        "pickup": 3989,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "O70NP3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "abbf6ae67a0f5172646bd892bbbfcce6",
+                        "a98f4b56318eb6a5feacc740161b23e6",
+                        "63bd98c11814899256d125e690b35a0a",
+                        "27464d07c2f7e1c82be9625f63b0f775"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4889,
+                        "pickup": 4889,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "OO50P3QOQ": {
+            "name": "Pizza Salmone",
+            "description": [
+                "z sosem serowym, mozzarellą, łososiem, serem pleśniowym, pomidorami suszonymi, oregano, koperkiem, cytryną i oliwą czosnkową"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/1295995_tonipepperoni_food_pizzasalmone.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "OO50P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "1ee9d357686e7b5d9ddec48f4325c67c",
+                        "63f0b78a4d07a2d0f5df8817b7627444",
+                        "3c68725edecdf1d9c4d6b41df68d19ea",
+                        "f8fb880b1213129bf188bff12ea91fbd"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4389,
+                        "pickup": 4389,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "O01NP3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "abbf6ae67a0f5172646bd892bbbfcce6",
+                        "a98f4b56318eb6a5feacc740161b23e6",
+                        "63bd98c11814899256d125e690b35a0a",
+                        "27464d07c2f7e1c82be9625f63b0f775"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5289,
+                        "pickup": 5289,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O750P3QOQ": {
+            "name": "Pizza Capo",
+            "description": [
+                "z sosem pomidorowym, serem mozzarella, grillowanym filetem drobiowym, salami pepperoni, pieczarkami, czerwoną cebulą i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_toni_peperonipizza_capo.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "O750P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "1ee9d357686e7b5d9ddec48f4325c67c",
+                        "63f0b78a4d07a2d0f5df8817b7627444",
+                        "3c68725edecdf1d9c4d6b41df68d19ea",
+                        "f8fb880b1213129bf188bff12ea91fbd"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4089,
+                        "pickup": 4089,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "O31NP3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "abbf6ae67a0f5172646bd892bbbfcce6",
+                        "a98f4b56318eb6a5feacc740161b23e6",
+                        "63bd98c11814899256d125e690b35a0a",
+                        "27464d07c2f7e1c82be9625f63b0f775"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4989,
+                        "pickup": 4989,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O0P0P3QOQ": {
+            "name": "Pizza Frutti di Mare",
+            "description": [
+                "z sosem pomidorowym, krewetkami tygrysimi i koktajlowymi, mieszanką owoców morza, oliwkami, pomidorkami, natką pietruszki, cytryną i oliwą czosnkową"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_tonipeperoni_food_fruttidimare_1x1.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "O0P0P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "1ee9d357686e7b5d9ddec48f4325c67c",
+                        "63f0b78a4d07a2d0f5df8817b7627444",
+                        "3c68725edecdf1d9c4d6b41df68d19ea",
+                        "f8fb880b1213129bf188bff12ea91fbd"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4689,
+                        "pickup": 4689,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "OP1NP3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "abbf6ae67a0f5172646bd892bbbfcce6",
+                        "a98f4b56318eb6a5feacc740161b23e6",
+                        "63bd98c11814899256d125e690b35a0a",
+                        "27464d07c2f7e1c82be9625f63b0f775"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5689,
+                        "pickup": 5689,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O3P0P3QOQ": {
+            "name": "Pizza Roma",
+            "description": [
+                "z sosem pomidorowym, serem mozzarella, grillowanym filetem drobiowym, salami, szynką, oliwkami, cebulą czerwoną i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_toni_peperonipizza_roma.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "O3P0P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "1ee9d357686e7b5d9ddec48f4325c67c",
+                        "63f0b78a4d07a2d0f5df8817b7627444",
+                        "3c68725edecdf1d9c4d6b41df68d19ea",
+                        "f8fb880b1213129bf188bff12ea91fbd"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4189,
+                        "pickup": 4189,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "O13NP3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "abbf6ae67a0f5172646bd892bbbfcce6",
+                        "a98f4b56318eb6a5feacc740161b23e6",
+                        "63bd98c11814899256d125e690b35a0a",
+                        "27464d07c2f7e1c82be9625f63b0f775"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5189,
+                        "pickup": 5189,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "OPP0P3QOQ": {
+            "name": "Pizza Quatro Stagioni",
+            "description": [
+                "z sosem pomidorowym, serem mozzarella, szynką, salami, pieczarkami, papryką i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_toni_peperonipizza_quatro_stagioni.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "OPP0P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "1ee9d357686e7b5d9ddec48f4325c67c",
+                        "63f0b78a4d07a2d0f5df8817b7627444",
+                        "3c68725edecdf1d9c4d6b41df68d19ea",
+                        "f8fb880b1213129bf188bff12ea91fbd"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3989,
+                        "pickup": 3989,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "OO3NP3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "abbf6ae67a0f5172646bd892bbbfcce6",
+                        "a98f4b56318eb6a5feacc740161b23e6",
+                        "63bd98c11814899256d125e690b35a0a",
+                        "27464d07c2f7e1c82be9625f63b0f775"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4889,
+                        "pickup": 4889,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "ORP0P3QOQ": {
+            "name": "Pizza Quatro Formaggi",
+            "description": [
+                "z sosem pomidorowym, mozzarellą, serem pleśniowym, serem koryciński, kulką białej mozzarelli, pomidorami suszonymi, oliwą truflową i świeżą bazylią po piecu"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_toni_peperonipizza_quatro_formaggi.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "ORP0P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "1ee9d357686e7b5d9ddec48f4325c67c",
+                        "63f0b78a4d07a2d0f5df8817b7627444",
+                        "3c68725edecdf1d9c4d6b41df68d19ea",
+                        "f8fb880b1213129bf188bff12ea91fbd"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4089,
+                        "pickup": 4089,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "O73NP3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "abbf6ae67a0f5172646bd892bbbfcce6",
+                        "a98f4b56318eb6a5feacc740161b23e6",
+                        "63bd98c11814899256d125e690b35a0a",
+                        "27464d07c2f7e1c82be9625f63b0f775"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5189,
+                        "pickup": 5189,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "ON70P3QOQ": {
+            "name": "Pizza Siciliana",
+            "description": [
+                "z sosem serowym, serem mozzarella, grillowanym filetem z kurczaka, szynką, brokułami, serem feta i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/1295995_tonipepperoni_food_pizzasycyliana.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "ON70P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "1ee9d357686e7b5d9ddec48f4325c67c",
+                        "63f0b78a4d07a2d0f5df8817b7627444",
+                        "3c68725edecdf1d9c4d6b41df68d19ea",
+                        "f8fb880b1213129bf188bff12ea91fbd"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3989,
+                        "pickup": 3989,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "O0ONP3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "abbf6ae67a0f5172646bd892bbbfcce6",
+                        "a98f4b56318eb6a5feacc740161b23e6",
+                        "63bd98c11814899256d125e690b35a0a",
+                        "27464d07c2f7e1c82be9625f63b0f775"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4989,
+                        "pickup": 4989,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O570P3QOQ": {
+            "name": "Pizza Primavera",
+            "description": [
+                "z sosem pomidorowym, serem mozzarella, salami, krewetkami, boczkiem, cebulą, oliwkami, oliwą czosnkową i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_toni_peperonipizza_primavera.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "O570P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "1ee9d357686e7b5d9ddec48f4325c67c",
+                        "63f0b78a4d07a2d0f5df8817b7627444",
+                        "3c68725edecdf1d9c4d6b41df68d19ea",
+                        "f8fb880b1213129bf188bff12ea91fbd"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4289,
+                        "pickup": 4289,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "O3ONP3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "abbf6ae67a0f5172646bd892bbbfcce6",
+                        "a98f4b56318eb6a5feacc740161b23e6",
+                        "63bd98c11814899256d125e690b35a0a",
+                        "27464d07c2f7e1c82be9625f63b0f775"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5389,
+                        "pickup": 5389,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "OQ70P3QOQ": {
+            "name": "Pizza Chorizo",
+            "description": [
+                "z sosem pomidorowym, serem mozzarella, kiełbasą chorizo, jalapeno, oliwkami, sosem bazyliowym i bazylią po piecu"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_tonipeperoni_food_chorizo_1x1.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "OQ70P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "1ee9d357686e7b5d9ddec48f4325c67c",
+                        "63f0b78a4d07a2d0f5df8817b7627444",
+                        "3c68725edecdf1d9c4d6b41df68d19ea",
+                        "f8fb880b1213129bf188bff12ea91fbd"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4089,
+                        "pickup": 4089,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "OPONP3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "abbf6ae67a0f5172646bd892bbbfcce6",
+                        "a98f4b56318eb6a5feacc740161b23e6",
+                        "63bd98c11814899256d125e690b35a0a",
+                        "27464d07c2f7e1c82be9625f63b0f775"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5189,
+                        "pickup": 5189,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O1Q0P3QOQ": {
+            "name": "Pizza Preferita",
+            "description": [
+                "z sosem pomidorowym, serem mozzarella, szynką, boczkiem, pieczarkami i cebulką prażoną"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_tonipeperoni_food_preferita_1x1.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "O1Q0P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "1ee9d357686e7b5d9ddec48f4325c67c",
+                        "63f0b78a4d07a2d0f5df8817b7627444",
+                        "3c68725edecdf1d9c4d6b41df68d19ea",
+                        "f8fb880b1213129bf188bff12ea91fbd"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3989,
+                        "pickup": 3989,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "ORONP3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "abbf6ae67a0f5172646bd892bbbfcce6",
+                        "a98f4b56318eb6a5feacc740161b23e6",
+                        "63bd98c11814899256d125e690b35a0a",
+                        "27464d07c2f7e1c82be9625f63b0f775"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4889,
+                        "pickup": 4889,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "OOQ0P3QOQ": {
+            "name": "Pizza Meksykańska Hot",
+            "description": [
+                "z sosem salsa, mozzarellą, kiełbasą chorizo, boczkiem, papryką, papryczkami jalapeno, kukurydzą, czerwoną fasolą i ostrym sosem chilli"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/1295995_tonipepperoni_food_pizzameksykanskahot.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "OOQ0P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "1ee9d357686e7b5d9ddec48f4325c67c",
+                        "63f0b78a4d07a2d0f5df8817b7627444",
+                        "3c68725edecdf1d9c4d6b41df68d19ea",
+                        "f8fb880b1213129bf188bff12ea91fbd"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4189,
+                        "pickup": 4189,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "ON5NP3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "abbf6ae67a0f5172646bd892bbbfcce6",
+                        "a98f4b56318eb6a5feacc740161b23e6",
+                        "63bd98c11814899256d125e690b35a0a",
+                        "27464d07c2f7e1c82be9625f63b0f775"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5289,
+                        "pickup": 5289,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O7Q0P3QOQ": {
+            "name": "Pizza Ulubiona Toniego",
+            "description": [
+                "z sosem serowym, serem mozzarella, kabanosem, szynką, jajkiem gotowanym, majonezem i szczypiorem po piecu"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/1295995_tonipepperoni_food_pizzaulubionatoniego.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "O7Q0P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "1ee9d357686e7b5d9ddec48f4325c67c",
+                        "63f0b78a4d07a2d0f5df8817b7627444",
+                        "3c68725edecdf1d9c4d6b41df68d19ea",
+                        "f8fb880b1213129bf188bff12ea91fbd"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3889,
+                        "pickup": 3889,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "O55NP3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "abbf6ae67a0f5172646bd892bbbfcce6",
+                        "a98f4b56318eb6a5feacc740161b23e6",
+                        "63bd98c11814899256d125e690b35a0a",
+                        "27464d07c2f7e1c82be9625f63b0f775"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4889,
+                        "pickup": 4889,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O0R0P3QOQ": {
+            "name": "Pizza Al Tonno",
+            "description": [
+                "z sosem pomidorowym, mozzarellą, tuńczykiem, białą mozzarellą, oliwkami, cebulą czerwoną, rukolą, oliwą czosnkową i oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_toni_peperonipizza_al_tonno.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "O0R0P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "1ee9d357686e7b5d9ddec48f4325c67c",
+                        "63f0b78a4d07a2d0f5df8817b7627444",
+                        "3c68725edecdf1d9c4d6b41df68d19ea",
+                        "f8fb880b1213129bf188bff12ea91fbd"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3989,
+                        "pickup": 3989,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "OQ5NP3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "abbf6ae67a0f5172646bd892bbbfcce6",
+                        "a98f4b56318eb6a5feacc740161b23e6",
+                        "63bd98c11814899256d125e690b35a0a",
+                        "27464d07c2f7e1c82be9625f63b0f775"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5089,
+                        "pickup": 5089,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O3R0P3QOQ": {
+            "name": "Pizza Twój Wybór",
+            "description": [
+                "z sosem, serem mozzarella i czterema składnikami do wyboru"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "O3R0P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "05256dfc94ea5d8f99017bcaa0731348",
+                        "d749d334319198752173b29cc909a5b2",
+                        "8fdaf68b39b6adbc201095dddb472242",
+                        "695269b4c87c66fe07cb0f7e8678a801",
+                        "f084c8af8addd4ae49f1400147abe360",
+                        "f9779a225dea0958254d761dfa33923b",
+                        "f7afe5e42154b8f330b2dfd7c0b60e43"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4389,
+                        "pickup": 4389,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "O1PNP3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "05256dfc94ea5d8f99017bcaa0731348",
+                        "d749d334319198752173b29cc909a5b2",
+                        "8fdaf68b39b6adbc201095dddb472242",
+                        "695269b4c87c66fe07cb0f7e8678a801",
+                        "f084c8af8addd4ae49f1400147abe360",
+                        "f9779a225dea0958254d761dfa33923b",
+                        "f7afe5e42154b8f330b2dfd7c0b60e43"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5489,
+                        "pickup": 5489,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "ORR0P3QOQ": {
+            "name": "Pizza Strappato",
+            "description": [
+                "z sosem serowym, szarpaną wieprzowiną BBQ, serem mozzarella, jalapeno, papryką, ogórkiem konserwowym i cebulka czerwona"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_toni_peperonipizza_strappato.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "ORR0P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "1ee9d357686e7b5d9ddec48f4325c67c",
+                        "63f0b78a4d07a2d0f5df8817b7627444",
+                        "3c68725edecdf1d9c4d6b41df68d19ea",
+                        "f8fb880b1213129bf188bff12ea91fbd"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4089,
+                        "pickup": 4089,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "OOPNP3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "abbf6ae67a0f5172646bd892bbbfcce6",
+                        "a98f4b56318eb6a5feacc740161b23e6",
+                        "63bd98c11814899256d125e690b35a0a",
+                        "27464d07c2f7e1c82be9625f63b0f775"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5089,
+                        "pickup": 5089,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "ON01P3QOQ": {
+            "name": "Pizza Italiana",
+            "description": [
+                "z sosem pomidorowym, mozzarellą, speck - włoską szynką wędzoną dojrzewającą, serem pleśniowym, prażonymi orzechami włoskimi, sosem balsamicznym i i bazylią po piecu"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_toni_peperonipizza_italiana.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "ON01P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "1ee9d357686e7b5d9ddec48f4325c67c",
+                        "63f0b78a4d07a2d0f5df8817b7627444",
+                        "3c68725edecdf1d9c4d6b41df68d19ea",
+                        "f8fb880b1213129bf188bff12ea91fbd"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4189,
+                        "pickup": 4189,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "O7PNP3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "abbf6ae67a0f5172646bd892bbbfcce6",
+                        "a98f4b56318eb6a5feacc740161b23e6",
+                        "63bd98c11814899256d125e690b35a0a",
+                        "27464d07c2f7e1c82be9625f63b0f775"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5189,
+                        "pickup": 5189,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "OPR0P3QOQ": {
+            "name": "Pizza Parma",
+            "description": [
+                "z sosem pomidorowym, serem mozzarella, włoską szynką dojrzewającą, białą mozzarellą, suszonymi pomidorami, rukolą po piecu, serem grana padano i oliwą truflową"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_tonipeperoni_food_parma_1x1.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "OPR0P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "1ee9d357686e7b5d9ddec48f4325c67c",
+                        "63f0b78a4d07a2d0f5df8817b7627444",
+                        "3c68725edecdf1d9c4d6b41df68d19ea",
+                        "f8fb880b1213129bf188bff12ea91fbd"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4289,
+                        "pickup": 4289,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "OP7NP3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "abbf6ae67a0f5172646bd892bbbfcce6",
+                        "a98f4b56318eb6a5feacc740161b23e6",
+                        "63bd98c11814899256d125e690b35a0a",
+                        "27464d07c2f7e1c82be9625f63b0f775"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5289,
+                        "pickup": 5289,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "OQ01P3QOQ": {
+            "name": "Pizza Vege",
+            "description": [
+                "z sosem pomidorowym, wegańskim serem cheddar, wege serem feta, wędzonym tofu, papryką, cukinią, pieczarkami i rukolą po piecu"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_tonipeperoni_food_vege_1x1.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "OQ01P3QOQ",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "1ee9d357686e7b5d9ddec48f4325c67c",
+                        "63f0b78a4d07a2d0f5df8817b7627444",
+                        "3c68725edecdf1d9c4d6b41df68d19ea",
+                        "f8fb880b1213129bf188bff12ea91fbd"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4089,
+                        "pickup": 4089,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "O37NP3QOQ",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "abbf6ae67a0f5172646bd892bbbfcce6",
+                        "a98f4b56318eb6a5feacc740161b23e6",
+                        "63bd98c11814899256d125e690b35a0a",
+                        "27464d07c2f7e1c82be9625f63b0f775"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5089,
+                        "pickup": 5089,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "OOOQ53QOQ": {
+            "name": "Spaghetti Carbonara",
+            "description": [
+                "makaron spaghetti Barilla, boczek w jajecznym sosie śmietanowym, parmezanem i natką"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/1295995_tonipepperoni_food_spaghetticarbonara.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "OOOQ53QOQ",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3289,
+                        "pickup": 3289,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O7OQ53QOQ": {
+            "name": "Spaghetti Bolognese",
+            "description": [
+                "makaron spaghetti Barilla z sosem Bolońskim z wołowiny, zapiekany pod mozzarellą i pomidorkami cherry"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_tonipeperoni_food_spaghettibolognese_1x1.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "O7OQ53QOQ",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3289,
+                        "pickup": 3289,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O05Q53QOQ": {
+            "name": "Penne Pola",
+            "description": [
+                "makaron penne Barilla z grillowanym filetem z kurczaka i suszonymi pomidorami, świeżym szpinakiem w sosie śmietanowym z parmezanem"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_tonipeperoni_food_pennepola_1x1.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "O05Q53QOQ",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3389,
+                        "pickup": 3389,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O35Q53QOQ": {
+            "name": "Penne All Gorgonzola",
+            "description": [
+                "makaron penne Barilla z grillowanym filetem z kurczaka i świeżym szpinakiem w sosie serowym gorgonzola"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_toni_peperonipenne_all_gorgonzola.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "O35Q53QOQ",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3489,
+                        "pickup": 3489,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "OP5Q53QOQ": {
+            "name": "Penne Salmone",
+            "description": [
+                "makaron penne Barilla z wędzonym łososiem, cukinią, rukolą, koperkiem w sosie śmietanowym i serem grana padano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_toni_peperonipenne_salmone.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "OP5Q53QOQ",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3589,
+                        "pickup": 3589,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "OR5Q53QOQ": {
+            "name": "Tagliatelle con Gamberetti",
+            "description": [
+                "makaron tagliatelle Barilla z krewetkami, cukinią, papryczką chilli, natką pietruszki w sosie śmietanowo-sojowym i serem grana padano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_tonipeperoni_food_tagliatellecongamberetti_1x1.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "OR5Q53QOQ",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3889,
+                        "pickup": 3889,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "ONPQ53QOQ": {
+            "name": "Tagliatelle con Porcini",
+            "description": [
+                "makaron tagliatelle z borowikami, boczkiem w sosie śmietanowym, rukolą, rozmarynem i serem grana padano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_toni_peperonitagliatelle_con_porcini.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "ONPQ53QOQ",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3789,
+                        "pickup": 3789,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3PPNN1NN51": {
+            "name": "Burger Drwala Classic",
+            "description": [
+                "z kotletem wołowym 180g, panierowanym serem gouda, boczkiem, sałatą, pomidorem, ogórkami konserwowymi, pomidorem, czerwoną cebulką, rukolą, sosem tysiąca wysp i frytkami"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_toni_peperoniburger_drwala_classic.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "3PPNN1NN51",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3689,
+                        "pickup": 3689,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3RPNN1NN51": {
+            "name": "Burger Drwala Hot - na ostro",
+            "description": [
+                "z kotletem wołowym 180g, panierowanym serem gouda, boczkiem, papryczkami jalapeno, sałatą, pomidorem, ogórkami konserwowymi, pomidorem, czerwoną cebulką, rukolą, sosem tysiąca wysp i frytkami"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_toni_peperoniburger_drwala_hot_-_na_ostro.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "3RPNN1NN51",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3689,
+                        "pickup": 3689,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "OPNQ53QOQ": {
+            "name": "Sałatka Paryska",
+            "description": [
+                "mix sałat z pomidorkami cherry, ogórkiem, grillowanym filetem z kurczaka, opiekanymi ziemniaczkami i serem mozzarella oraz sosem do wyboru"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/1295995_tonipepperoni_food_salatkaparyska.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "OPNQ53QOQ",
+                    "name": null,
+                    "optionGroupIds": [
+                        "9d6e05426722a89409b8bd58adcf1ee4"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3289,
+                        "pickup": 3289,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "ORNQ53QOQ": {
+            "name": "Sałata Caprino",
+            "description": [
+                "sałata, świeże liście szpinaku i rukoli, pieczone buraczki, grillowana papryka, ser kozi, ser feta, ser pecorino, biała mozzarella, pomidorki cherry, prażone orzechy włoskie i sos balsamiczny"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_tonipeperoni_food_salatacaprino_1x1.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "ORNQ53QOQ",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3289,
+                        "pickup": 3289,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "ON3Q53QOQ": {
+            "name": "Sałatka Prosciutto",
+            "description": [
+                "z mixem sałat, szynką włoską dojrzewającą, kulkami mozzarelli, pomidorkami cherry, ogórkiem, oliwkami, ciecierzycą, prażoną czarnuszką, parmezanem oraz sosem do wyboru"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_tonipeperoni_food_salataprosciutto_1x1.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "ON3Q53QOQ",
+                    "name": null,
+                    "optionGroupIds": [
+                        "9d6e05426722a89409b8bd58adcf1ee4"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3489,
+                        "pickup": 3489,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "OQ3Q53QOQ": {
+            "name": "Sałata Nicejska",
+            "description": [
+                "mix sałat z tuńczykiem, jajkiem gotowanym, ogórkiem, pomidorkami, oliwkami, kaparami, cebulą i sosem do wyboru"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_tonipeperoni_food_salatanicejska_1x1.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "OQ3Q53QOQ",
+                    "name": null,
+                    "optionGroupIds": [
+                        "796f18281e14c773db3ed3c97f594ea4"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3289,
+                        "pickup": 3289,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O53Q53QOQ": {
+            "name": "Sałata Polo",
+            "description": [
+                "mix sałat z grillowanym filetem z kurczaka, ciecierzycą, serem feta, pomidorkami cherry, ogórkiem, papryką, oliwkami, cebulą czerwoną i sosem do wyboru"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/1295995_tonipepperoni_food_salatkapolo.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "O53Q53QOQ",
+                    "name": null,
+                    "optionGroupIds": [
+                        "af369afd03b2595908f05b177fa04122"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3289,
+                        "pickup": 3289,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O1OQ53QOQ": {
+            "name": "Sałatka Gamberi",
+            "description": [
+                "ze smażonymi krewetkami tygrysimi i koktajlowymi, mixem sałat, rukolą, ogórkiem, pomidorkami, oliwkami, cebulą czerwoną z sosem do wyboru i serem grana padano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_toni_peperonisaata_gamberi.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "O1OQ53QOQ",
+                    "name": null,
+                    "optionGroupIds": [
+                        "a97a7704d211bde56149080bff227fa0"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3889,
+                        "pickup": 3889,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O3R753QOQ": {
+            "name": "Kebab Fit",
+            "description": [
+                "oryginalny wyrób własny z fileta z kurczaka, sos tzatziki, frytki i sałatka"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_toni_peperonikebab_fit.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "O3R753QOQ",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3389,
+                        "pickup": 3389,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "OO1Q53QOQ": {
+            "name": "Quesadilla z szarpaną wieprzowiną BBQ",
+            "description": [
+                "dwie tortille przekładane sosem bazyliowym, serem mozzarella, szarpaną wieprzowiną, papryczką jalapeno, smażoną cebulką oraz rukolą po piecu"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_toni_peperoniquesadilla_z_szarpan_wieprzowin_bbq.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "OO1Q53QOQ",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3189,
+                        "pickup": 3189,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "OPR753QOQ": {
+            "name": "Zapiekanka Firmowa Toniego",
+            "description": [
+                "filet z kurczaka zapiekany na frytkach zapiekany pod serem mozzarellą z mixem sałat, ogórkiem, pomidorkami, sos czosnkowy lub 1000 wysp do wyboru"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_tonipeperoni_food_zapiekankafirmowatoniego_1x1.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "OPR753QOQ",
+                    "name": null,
+                    "optionGroupIds": [
+                        "5097cf0a34be54a9c4951e89711bd22d"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3289,
+                        "pickup": 3289,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "ORR753QOQ": {
+            "name": "Zapiekanka Pollo e Gorgonzola",
+            "description": [
+                "filet z kurczaka w sosie gorgonzola na talarkach ziemniaczanych, zapiekany pod mozzarellą, z sałatką"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_toni_peperonizapiekanka_pollo_e_gorgozola.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "ORR753QOQ",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3389,
+                        "pickup": 3389,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O50Q53QOQ": {
+            "name": "Quesadilla z kurczakiem z pieca",
+            "description": [
+                "dwie tortille przekładane serem mozzarella, grillowanym filetem z kurczaka, papryką, rukolą po piecu, i sosem do wyboru"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_toni_peperoniquesadilla_z_kurczakiem_z_pieca.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "O50Q53QOQ",
+                    "name": null,
+                    "optionGroupIds": [
+                        "616533283b195fb8a83b9fc64fca465e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3289,
+                        "pickup": 3289,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O71Q53QOQ": {
+            "name": "Calzone Toniego",
+            "description": [
+                "pieczone w piecu pierogi, nadziewane łososiem, szpinakiem z sosem jogurtowo czosnkowym i sałatką"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/1295995_tonipepperoni_food_calzonetoniego.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "O71Q53QOQ",
+                    "name": null,
+                    "optionGroupIds": [
+                        "8c835baadc9f6bba697be531e290a1a9"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3589,
+                        "pickup": 3589,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "OQ0Q53QOQ": {
+            "name": "Stripsy",
+            "description": [
+                "panierowane polędwiczki z kurczaka (wyrób własny) pieczone w piecu bez tłuszczu, frytki, surówka, sos do wyboru"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_toni_peperonistripsy.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "OQ0Q53QOQ",
+                    "name": null,
+                    "optionGroupIds": [
+                        "616533283b195fb8a83b9fc64fca465e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3189,
+                        "pickup": 3189,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O11Q53QOQ": {
+            "name": "Tortilla Fit",
+            "description": [
+                "tortilla nadziewana gyrosem z fileta z kurczaka, warzywa i sos do wyboru"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/pl_1295995_toni_peperonitortilla_fit.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "O11Q53QOQ",
+                    "name": null,
+                    "optionGroupIds": [
+                        "616533283b195fb8a83b9fc64fca465e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2689,
+                        "pickup": 2689,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "OR330QQ031": {
+            "name": "Coca-Cola 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/coca-cola-05l.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "OR330QQ031",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1000,
+                        "pickup": 1000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "ONO30QQ031": {
+            "name": "Fanta Pomarańczowa 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/fanta-pomaranczowa-05l.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "ONO30QQ031",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1000,
+                        "pickup": 1000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O5O30QQ031": {
+            "name": "Sprite 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/sprite-05l.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "O5O30QQ031",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1000,
+                        "pickup": 1000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "OQO30QQ031": {
+            "name": "Coca-Cola 0,85l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/coca-cola-085l.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "OQO30QQ031",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1500,
+                        "pickup": 1500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O1530QQ031": {
+            "name": "Fanta Pomarańczowa 0,85l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/fanta-pomaranczowa-085l.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "O1530QQ031",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1500,
+                        "pickup": 1500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "OO530QQ031": {
+            "name": "Sprite 0,85l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/sprite-085l.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "OO530QQ031",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1500,
+                        "pickup": 1500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O7530QQ031": {
+            "name": "Kropla Beskidu woda gazowana 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/kropla-beskidu-woda-gazowana-05l.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "O7530QQ031",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 800,
+                        "pickup": 800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O0P30QQ031": {
+            "name": "Kropla Beskidu woda niegazowana 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/kropla-beskidu-woda-niegazowana-05l.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "O0P30QQ031",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 800,
+                        "pickup": 800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O13Q0QQ031": {
+            "name": "Cappy Sok jabłkowy 0,33l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/cappy_apple_cappy_330_ml.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "O13Q0QQ031",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 900,
+                        "pickup": 900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "OO3Q0QQ031": {
+            "name": "Cappy Sok pomarańczowy 0,33l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/cappy_orange_cappy_330_ml.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "OO3Q0QQ031",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 900,
+                        "pickup": 900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O73Q0QQ031": {
+            "name": "FuzeTea brzoskwiniowa z czarną herbatą i hibiskusem 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/500_ml_fuzetea_fuzetea_black_ice_tea_peach_hibiscus.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "O73Q0QQ031",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 900,
+                        "pickup": 900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O0OQ0QQ031": {
+            "name": "FuzeTea cytrynowa z czarną herbatą i trawą cytynową 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/500_ml_fuzetea_fuzetea_black_ice_tea_lemon_lemongrass.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "O0OQ0QQ031",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 900,
+                        "pickup": 900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O3OQ0QQ031": {
+            "name": "FuzeTea cytrynowa z zieloną herbatą 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/5QR7QQ3/products/500_ml_fuzetea_fuzetea_green_ice_tea_citrus.png?timestamp=1707140762",
+            "variants": [
+                {
+                    "id": "O3OQ0QQ031",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 900,
+                        "pickup": 900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        }
+    }
+}

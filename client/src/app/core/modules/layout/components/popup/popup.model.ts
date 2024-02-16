@@ -18,6 +18,7 @@ export type PopupConfig = {
   showCloseButton: boolean;
   closeOnOutclick: boolean;
   callbackAfterClosing?: (...args: unknown[]) => unknown;
+  callbackOnDestroy?: () => unknown;
 };
 
 type P1<C> = {

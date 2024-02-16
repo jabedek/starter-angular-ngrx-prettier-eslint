@@ -1,5 +1,6 @@
 @use "/src/assets/styles/mixins";
 @use "/src/assets/styles/variables";
+@use "/src/assets/styles/controls";
 
 $asian-poker-gui-height: 220px;
 
@@ -22,4 +23,179 @@ $asian-poker-gui-height: 220px;
 
   z-index: 200;
   position: absolute;
+}
+
+@mixin asian-poker-form-controls {
+  .main-form-title {
+    text-align: center;
+    text-shadow: 0.13em 0.13em 2px rgba(0, 0, 0, 0.75);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-family: Manrope;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 14px;
+    height: 20px;
+  }
+
+  .main-form {
+    background: rgba(95, 95, 95, 11);
+    padding: 8px 16px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .control {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 58px;
+    border-radius: 3px;
+    padding: 0 17px;
+    margin: 0px 0;
+
+    text-transform: uppercase;
+    font-size: 0.8rem !important;
+    font-family: Manrope;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 0.13em 0.13em 2px rgba(0, 0, 0, 0.75);
+    color: #fff;
+    background-color: rgba(125, 125, 125, 1);
+
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s ease-in-out;
+
+    box-shadow: variables.$shadow-0;
+    border-radius: 3px;
+    border: none;
+    border: variables.$border-top-width solid variables.$bg-main;
+    border-top: variables.$border-top-width solid variables.$bg-roof;
+
+    &.disabled {
+      filter: grayscale(1);
+
+      .input {
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+
+    .mini {
+      .input {
+        font-family: "Azeret Mono";
+        font-size: 0.77rem !important;
+        text-align: center;
+      }
+    }
+
+    .duration {
+      display: flex;
+      gap: 20px;
+    }
+
+    .label {
+      display: flex;
+      font-size: 12px;
+      justify-content: space-between;
+      .values {
+        font-family: "Azeret Mono";
+      }
+    }
+
+    .input {
+      width: 270px !important;
+      border-radius: 3px;
+      height: 22px;
+      outline: 0;
+      background-color: rgba(0, 0, 0, 0.1);
+      transition: all 200ms ease;
+      padding: 0 4px;
+      text-shadow: variables.$shadow-2;
+      font-size: 0.8rem !important;
+      font-family: Manrope;
+      font-weight: 600;
+      color: #ddd;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    app-range {
+      width: 100% !important;
+
+      ::ng-deep {
+        div.range {
+          flex-direction: row;
+          justify-content: space-between !important;
+          width: 100% !important;
+          padding: 0;
+          margin: 0;
+        }
+
+        .slider {
+          width: 100% !important;
+          max-width: 200px !important;
+        }
+
+        .desc {
+          padding: 0 !important;
+          font-size: 12px;
+        }
+
+        .range {
+          .values {
+            position: relative;
+            right: 4px;
+          }
+        }
+
+        .ranges {
+          flex-direction: row;
+        }
+      }
+    }
+  }
+
+  app-button {
+    justify-content: center;
+    margin-top: 24px;
+    ::ng-deep {
+      button {
+        justify-content: center;
+      }
+    }
+  }
+
+  .error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    max-height: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(255, 97, 97);
+    text-shadow: variables.$shadow-6;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }

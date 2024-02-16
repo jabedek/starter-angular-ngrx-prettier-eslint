@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { PlayerWithHand } from '../../../../models/game.model';
-import { AsianPokerGameDTO } from '@features/entertainment/asian-poker/models/dto';
+import { SessionGameDataPair } from '@features/entertainment/asian-poker/models/common.model';
 
 @Component({
   selector: 'app-playing-table',
@@ -9,24 +9,44 @@ import { AsianPokerGameDTO } from '@features/entertainment/asian-poker/models/dt
 })
 export class PlayingTableComponent {
   @Input({ required: true }) currentUser: Partial<PlayerWithHand> | undefined;
-  @Input({ required: true }) game: AsianPokerGameDTO | undefined;
+  @Input({ required: true }) data: SessionGameDataPair | undefined;
+
+  get gameLastTick() {
+    return this.data?.game?.ticks.at(-1);
+  }
+
+  get currentPlayerIndex() {
+    return this.gameLastTick?.currentPlayerIndex || 0;
+  }
+
+  get currentDealerIndex() {
+    return this.gameLastTick?.currentDealerIndex || 0;
+  }
 
   get currentPlayer() {
-    if (this.game) {
-      return this.game.playersWithHands[this.game.currentPlayerIndex];
+    if (this.gameLastTick) {
+      return this.gameLastTick.playersWithHands[this.currentPlayerIndex];
     }
     return undefined;
   }
 
   get currentDealer() {
-    if (this.game) {
-      return this.game.playersWithHands[this.game.currentDealerIndex];
+    if (this.gameLastTick) {
+      return this.gameLastTick.playersWithHands[this.currentDealerIndex];
     }
     return undefined;
   }
 
   get isCurrentUserMoving() {
-    return this.currentPlayer?.nickname === this.currentUser?.nickname || false;
+    return this.currentPlayer?.displayName === this.currentUser?.displayName || false;
+  }
+
+  get publicCards() {
+    return this.gameLastTick?.publicCards || [];
+  }
+
+  get turnPlayers() {
+    return this.gameLastTick?.playersWithHands || [];
   }
 
   cardsHidden = false;

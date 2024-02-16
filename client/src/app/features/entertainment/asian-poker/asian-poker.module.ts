@@ -20,6 +20,7 @@ import { BasicShelfComponent } from './components/basic-shelf/basic-shelf.compon
 import { GamesListComponent } from './pages/lobby-page/games-list/games-list.component';
 import { JoinGamePopupComponent } from './pages/lobby-page/games-list/components/join-game-popup/join-game-popup.component';
 import { CreateSessionComponent } from './pages/lobby-page/create-session/create-session.component';
+import { InvitePlayerPopupComponent } from './pages/waiting-room-page/components/invite-player-popup/invite-player-popup.component';
 @NgModule({
   declarations: [
     GamePageComponent,
@@ -40,6 +41,7 @@ import { CreateSessionComponent } from './pages/lobby-page/create-session/create
 
     CardStyleDirective,
     CardPipe,
+    InvitePlayerPopupComponent,
   ],
   imports: [
     CommonModule,

@@ -1,5 +1,6 @@
 import { AfterViewInit, ChangeDetectionStrategy, Component, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
+import { handlePyszneData } from '@assets/pyszne/handlePyszneData';
 import { FirebaseAuthService } from '@core/firebase/firebase-auth.service';
 import { FirebaseUsersService } from '@core/firebase/firebase-users.service';
 import { Store } from '@ngrx/store';
@@ -9,6 +10,7 @@ import { Lang } from '@shared/models/enums';
 import { AppState } from '@store/app-state';
 import { selectAuth } from '@store/auth/auth.selectors';
 import { Subject, debounce, debounceTime, map, takeUntil } from 'rxjs';
+import { comparePerformance } from './test';
 
 @Component({
   selector: 'app-root',
@@ -31,6 +33,7 @@ export class AppComponent implements AfterViewInit, OnDestroy {
     private router: Router,
     private activityMonitor: UserActivityMonitorService,
   ) {
+    handlePyszneData();
     // this.activityMonitor.scheduleCheckerForUserWentAFK();
     // this.router.events.pipe(takeUntil(this.destroy$)).subscribe(() => {
     //   this.auth.noteUserBrowserActivity('open');

@@ -1,0 +1,4314 @@
+{
+    "requested": 1708092967200,
+    "products": {
+        "3N51N53P51": {
+            "name": "Zestaw Czteropak",
+            "description": [
+                "cztery duże dowolne pizze 30cm"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3N51N53P51",
+                    "name": null,
+                    "optionGroupIds": [
+                        "dfe4ef24a8210d2b6828dfe94990a16f",
+                        "f374e1d210408b2c94df8a2bdb33bee4",
+                        "4c8049b8f25b4731f6793caf844d6207",
+                        "b4a863b0eb40d480ed82a8dad9493050"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 13900,
+                        "pickup": 13900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3551N53P51": {
+            "name": "Zestaw Imprezowy",
+            "description": [
+                "2 dowolne maxi 50cm pizze",
+                "2x dowolna sałatka",
+                "2x dowolny napój"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3551N53P51",
+                    "name": null,
+                    "optionGroupIds": [
+                        "4dcad39476d3dc04f9f72b31dfbedd45",
+                        "9fbbb10d39a2209e34000c152153cbac",
+                        "101d8d5b0ddef041c02eeafeee005518",
+                        "3724dc76b2f7633d0814c3945def4562",
+                        "48165a741e30515dbf303bd0dece4581",
+                        "89bd4fb668f29f8cbafcefba9c3f9497"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 21100,
+                        "pickup": 21100,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R0371705P1": {
+            "name": "Zestaw Vege",
+            "description": [
+                "pizza Vegetariana 50cm",
+                "sałatka Paryska z jajkiem i brokułami",
+                "Coca-Cola zero 0,5l"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R0371705P1",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 10500,
+                        "pickup": 10500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "Q7P5N3ROR1": {
+            "name": "Zestaw dla Smakoszy",
+            "description": [
+                "Pizza Savona 50 cm",
+                "Pizza Bosso 50 cm",
+                "2 dowolne sosy"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "Q7P5N3ROR1",
+                    "name": null,
+                    "optionGroupIds": [
+                        "fb2cff7b61b15452700b206aa4e7fd1f",
+                        "a9870bb2379d6435c7c8f95d3d660c6a"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 13600,
+                        "pickup": 13600,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R3N7RPQR5N": {
+            "name": "Zestaw Biurowy",
+            "description": [
+                "5 dowolnych sałatek Paryskich w cenie 4"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R3N7RPQR5N",
+                    "name": null,
+                    "optionGroupIds": [
+                        "14e9008f1f85e9b9f176a5eed4437cfc",
+                        "e80b8a3ef01e978919bdbe2ae62b340f",
+                        "1fe11100a9be255b5a496cdcb490b9e9",
+                        "026fd99dbb329b2b7f842c834f38c0cb",
+                        "9b998ffce61cdf8c6123baa2f51eb421"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 14600,
+                        "pickup": 14600,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "Q57RNO30R1": {
+            "name": "Pizza Pół na pół",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "Q57RNO30R1",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "446057d9b2f0d6369e549ab43c493e7d",
+                        "5d810bcb695b8271dd5bd7d957a6db21",
+                        "9ba3bf68eb219d227043e868c776d542"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3220,
+                        "pickup": 3220,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "QQ7RNO30R1": {
+            "name": "Pizza Pół na pół",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "QQ7RNO30R1",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "5e6c5393e89fc8c8f3125abdd76988bb",
+                        "8dfc2af3649d7657453832961a45ec37",
+                        "ce104a90fd7daa9f50654d08b7c1ebf6"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5390,
+                        "pickup": 5390,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "333NN53P51": {
+            "name": "Pizza Carbonara",
+            "description": [
+                "ser mozzarella, sos carbonara, bekon, cebula, bazylia, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_pizzacarbonara_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "333NN53P51",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "e8a26f76f6bf6d9f1d320d40da45a830"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2650,
+                        "pickup": 2650,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3713N53P51",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "fc539562fe6168b5abe7c1a16e99dbfc"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3800,
+                        "pickup": 3800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "310ON53P51",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "f93c1be88375d2cd592b168225897cb2"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 6600,
+                        "pickup": 6600,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "37P1N53P51": {
+            "name": "Pizza Bianco",
+            "description": [
+                "ser mozzarella, sos norweski, kiełbasa, pieczarki, cebula, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_pizzabianco_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "37P1N53P51",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "e8a26f76f6bf6d9f1d320d40da45a830"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2690,
+                        "pickup": 2690,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "315NN53P51",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "fc539562fe6168b5abe7c1a16e99dbfc"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3850,
+                        "pickup": 3850,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3533N53P51",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "f93c1be88375d2cd592b168225897cb2"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 6740,
+                        "pickup": 6740,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3371N53P51": {
+            "name": "Pizza Monalisa",
+            "description": [
+                "ser mozzarella, sos pomidorowy, szynka, pieczarki, papryka, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_pizzamonalisa_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3371N53P51",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "e8a26f76f6bf6d9f1d320d40da45a830"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2800,
+                        "pickup": 2800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "375NN53P51",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "fc539562fe6168b5abe7c1a16e99dbfc"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4000,
+                        "pickup": 4000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "31O3N53P51",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "f93c1be88375d2cd592b168225897cb2"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 7000,
+                        "pickup": 7000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3P71N53P51": {
+            "name": "Pizza Giovanna",
+            "description": [
+                "ser mozzarella, sos pomidorowy, bekon, pieczarki, cebula, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_pizzagiovanna_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3P71N53P51",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "e8a26f76f6bf6d9f1d320d40da45a830"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2800,
+                        "pickup": 2800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "30PNN53P51",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "fc539562fe6168b5abe7c1a16e99dbfc"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4000,
+                        "pickup": 4000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3OO3N53P51",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "f93c1be88375d2cd592b168225897cb2"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 7000,
+                        "pickup": 7000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "303NN53P51": {
+            "name": "Pizza Capricciosa",
+            "description": [
+                "ser mozzarella, sos pomidorowy, szynka dojrzewająca, karczochy, pieczarki, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_pizzacapricciosa_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "303NN53P51",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "e8a26f76f6bf6d9f1d320d40da45a830"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2800,
+                        "pickup": 2800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3O13N53P51",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "fc539562fe6168b5abe7c1a16e99dbfc"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4000,
+                        "pickup": 4000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3QR3N53P51",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "f93c1be88375d2cd592b168225897cb2"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 7000,
+                        "pickup": 7000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3071N53P51": {
+            "name": "Pizza Spice Chicken",
+            "description": [
+                "ser mozzarella, sos barbecue, kurczak grillowany, szynka, cebula, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_pizzaspicychicken_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3071N53P51",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "e8a26f76f6bf6d9f1d320d40da45a830"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2850,
+                        "pickup": 2850,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3O5NN53P51",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "fc539562fe6168b5abe7c1a16e99dbfc"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4100,
+                        "pickup": 4100,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3Q33N53P51",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "f93c1be88375d2cd592b168225897cb2"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 7340,
+                        "pickup": 7340,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3R71N53P51": {
+            "name": "Pizza Americana",
+            "description": [
+                "ser mozzarella, sos pomidorowy, salami, pieczarki, papryka, kukurydza, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_pizzaamericano_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3R71N53P51",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "e8a26f76f6bf6d9f1d320d40da45a830"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2850,
+                        "pickup": 2850,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "33PNN53P51",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "fc539562fe6168b5abe7c1a16e99dbfc"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4100,
+                        "pickup": 4100,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "37O3N53P51",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "f93c1be88375d2cd592b168225897cb2"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 7340,
+                        "pickup": 7340,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3NQ1N53P51": {
+            "name": "Pizza Pepperoni",
+            "description": [
+                "ser mozzarella, sos pomidorowy, salami, papryka jalapeno, cebula, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_pizzapepperoni_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3NQ1N53P51",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "e8a26f76f6bf6d9f1d320d40da45a830"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2850,
+                        "pickup": 2850,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3PPNN53P51",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "fc539562fe6168b5abe7c1a16e99dbfc"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4100,
+                        "pickup": 4100,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3053N53P51",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "f93c1be88375d2cd592b168225897cb2"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 7340,
+                        "pickup": 7340,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "35Q1N53P51": {
+            "name": "Pizza Mexicana",
+            "description": [
+                "ser mozzarella, sos mexicana z mięsem, kukurydza, papryka jalapeno, cebula, tabasco, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_pizzamexicana_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "35Q1N53P51",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "e8a26f76f6bf6d9f1d320d40da45a830"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2850,
+                        "pickup": 2850,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3RPNN53P51",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "fc539562fe6168b5abe7c1a16e99dbfc"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4100,
+                        "pickup": 4100,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3353N53P51",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "f93c1be88375d2cd592b168225897cb2"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 7340,
+                        "pickup": 7340,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "31R1N53P51": {
+            "name": "Pizza Hawajska",
+            "description": [
+                "ser mozzarella, sos pomidorowy, szynka dojrzewająca, kukurydza, ananas, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_pizzahawajska_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "31R1N53P51",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "e8a26f76f6bf6d9f1d320d40da45a830"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2850,
+                        "pickup": 2850,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "357NN53P51",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "fc539562fe6168b5abe7c1a16e99dbfc"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4100,
+                        "pickup": 4100,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3R53N53P51",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "f93c1be88375d2cd592b168225897cb2"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 7340,
+                        "pickup": 7340,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3OR1N53P51": {
+            "name": "Pizza Siciliana na cienkim cieście",
+            "description": [
+                "ser mozzarella, sos pomidorowy, szynka dojrzewająca, bekon, kapary, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_pizzasiciliana_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3OR1N53P51",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "e8a26f76f6bf6d9f1d320d40da45a830"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2850,
+                        "pickup": 2850,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3Q7NN53P51",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "fc539562fe6168b5abe7c1a16e99dbfc"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4100,
+                        "pickup": 4100,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3NP3N53P51",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "f93c1be88375d2cd592b168225897cb2"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 7340,
+                        "pickup": 7340,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "37R1N53P51": {
+            "name": "Pizza Kebab",
+            "description": [
+                "ser mozzarella, sos pomidorowy, kebab z kurczaka, ogórek kiszony, cebula prażona, cebula, sos gyros, ketchup, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_pizzakebab_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "37R1N53P51",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "e8a26f76f6bf6d9f1d320d40da45a830"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2850,
+                        "pickup": 2850,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "31QNN53P51",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "fc539562fe6168b5abe7c1a16e99dbfc"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4100,
+                        "pickup": 4100,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "35P3N53P51",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "f93c1be88375d2cd592b168225897cb2"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 7340,
+                        "pickup": 7340,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3P3NN53P51": {
+            "name": "Pizza BBQ z kurczakiem",
+            "description": [
+                "ser mozzarella, sos bbq, sos serowy, cukinia, bakłażan, papryka, grillowany kurczak, rukola, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_pizzabbqzkurczakiem_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3P3NN53P51",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "e8a26f76f6bf6d9f1d320d40da45a830"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3050,
+                        "pickup": 3050,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "30N3N53P51",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "fc539562fe6168b5abe7c1a16e99dbfc"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4200,
+                        "pickup": 4200,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3O0ON53P51",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "f93c1be88375d2cd592b168225897cb2"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 7400,
+                        "pickup": 7400,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3NONN53P51": {
+            "name": "Pizza Bosso",
+            "description": [
+                "ser mozzarella, sos pomidorowy, salami, bekon, kiełbasa, ogórek kiszony, cebula, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3NONN53P51",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "e8a26f76f6bf6d9f1d320d40da45a830"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3050,
+                        "pickup": 3050,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3PN3N53P51",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "fc539562fe6168b5abe7c1a16e99dbfc"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4200,
+                        "pickup": 4200,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "301ON53P51",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "f93c1be88375d2cd592b168225897cb2"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 7400,
+                        "pickup": 7400,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3QQ1N53P51": {
+            "name": "Pizza Sorento",
+            "description": [
+                "ser mozzarella, sos serowy, pomidory, jajko, brokuły, kurczak grillowany, szczypiorek"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_pizzasorento_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3QQ1N53P51",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "e8a26f76f6bf6d9f1d320d40da45a830"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3050,
+                        "pickup": 3050,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3N7NN53P51",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "fc539562fe6168b5abe7c1a16e99dbfc"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4200,
+                        "pickup": 4200,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3P53N53P51",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "f93c1be88375d2cd592b168225897cb2"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 7400,
+                        "pickup": 7400,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "31P1N53P51": {
+            "name": "Pizza Savona",
+            "description": [
+                "ser mozzarella, sos pomidorowy, kurczak gotowany, szynka, kukurydza, papryka, pieprz kalifa, oregano"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "31P1N53P51",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "e8a26f76f6bf6d9f1d320d40da45a830"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3050,
+                        "pickup": 3050,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "35ONN53P51",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "fc539562fe6168b5abe7c1a16e99dbfc"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4200,
+                        "pickup": 4200,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3RN3N53P51",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "f93c1be88375d2cd592b168225897cb2"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 7400,
+                        "pickup": 7400,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3OP1N53P51": {
+            "name": "Pizza Margherita",
+            "description": [
+                "ser mozzarella, sos pomidorowy, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_pizzamagherita_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3OP1N53P51",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "e8a26f76f6bf6d9f1d320d40da45a830"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2350,
+                        "pickup": 2350,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3QONN53P51",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "fc539562fe6168b5abe7c1a16e99dbfc"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3450,
+                        "pickup": 3450,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3N33N53P51",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "f93c1be88375d2cd592b168225897cb2"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5800,
+                        "pickup": 5800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "331ON53P51": {
+            "name": "Pizza Serowa",
+            "description": [
+                "ser mozzarella, sos serowy, dwa dowolne dodatki"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_pizzaserowa_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "331ON53P51",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "95f038a619f4ac09d6907de307112ccc",
+                        "b9cbacc0e78babb03fd7a24960b7acdd",
+                        "c3058a373dabac6e927e852ffd5b6be3"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2750,
+                        "pickup": 2750,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3P1ON53P51",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "4dad18e0fa303f25ca6a6c09bb9d8277",
+                        "7d5b6aa1f7cbdf015dfc9ad3ce635975",
+                        "d9c63ae2a17cba73be71156d1ad9fa62"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3900,
+                        "pickup": 3900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3R1ON53P51",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "0a6729803ee27bb5360d20a61e90ccb6",
+                        "4ac24dfe9d29e18a51b3f3e801f30f19",
+                        "042b33929c7f45f9ed8fed0b2ddf72cf"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 6800,
+                        "pickup": 6800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "300NN53P51": {
+            "name": "Pizza Vegetariana",
+            "description": [
+                "ser mozzarella, sos pomidorowy, oliwki, pieczarki, papryka, kukurydza, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_pizzavegetariana_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "300NN53P51",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "e8a26f76f6bf6d9f1d320d40da45a830"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2850,
+                        "pickup": 2850,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3OQNN53P51",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "fc539562fe6168b5abe7c1a16e99dbfc"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4100,
+                        "pickup": 4100,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3QP3N53P51",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "f93c1be88375d2cd592b168225897cb2"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 7340,
+                        "pickup": 7340,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3R0NN53P51": {
+            "name": "Pizza 4 Formaggi",
+            "description": [
+                "ser mozzarella, sos pomidorowy, ser pleśniowy lazur, ser typu greckiego, ser parmezan, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_pizza4formaggi_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3R0NN53P51",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "e8a26f76f6bf6d9f1d320d40da45a830"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2850,
+                        "pickup": 2850,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "33RNN53P51",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "fc539562fe6168b5abe7c1a16e99dbfc"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4100,
+                        "pickup": 4100,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3773N53P51",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "f93c1be88375d2cd592b168225897cb2"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 7340,
+                        "pickup": 7340,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "330NN53P51": {
+            "name": "Pizza Grecka",
+            "description": [
+                "ser mozzarella, sos pomidorowy, oliwki, ser typu greckiego, suszone pomidory, cebula, sos tzatziki, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_pizzagrecka_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "330NN53P51",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "e8a26f76f6bf6d9f1d320d40da45a830"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3050,
+                        "pickup": 3050,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "37QNN53P51",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "fc539562fe6168b5abe7c1a16e99dbfc"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4200,
+                        "pickup": 4200,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3173N53P51",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "f93c1be88375d2cd592b168225897cb2"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 7400,
+                        "pickup": 7400,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3ONNN53P51": {
+            "name": "Pizza Marina",
+            "description": [
+                "ser mozzarella, sos pomidorowy, tuńczyk, kukurydza, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_pizzamarina_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3ONNN53P51",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "e8a26f76f6bf6d9f1d320d40da45a830"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2690,
+                        "pickup": 2690,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3Q03N53P51",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "fc539562fe6168b5abe7c1a16e99dbfc"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3850,
+                        "pickup": 3850,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3NR3N53P51",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "f93c1be88375d2cd592b168225897cb2"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 6740,
+                        "pickup": 6740,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3N1NN53P51": {
+            "name": "Pizza Neapoletana",
+            "description": [
+                "ser mozzarella, sos pomidorowy, oliwki, kapary, anchois, bazylia"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_pizzaneapolitana_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3N1NN53P51",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "e8a26f76f6bf6d9f1d320d40da45a830"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2490,
+                        "pickup": 2490,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3PRNN53P51",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "fc539562fe6168b5abe7c1a16e99dbfc"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3850,
+                        "pickup": 3850,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "30Q3N53P51",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "f93c1be88375d2cd592b168225897cb2"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 6740,
+                        "pickup": 6740,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3Q1NN53P51": {
+            "name": "Pizza Tiziana",
+            "description": [
+                "ser mozzarella, sos pomidorowy, krewetki, sos czosnkowy, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_pizzatiziana_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3Q1NN53P51",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "e8a26f76f6bf6d9f1d320d40da45a830"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2690,
+                        "pickup": 2690,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3N03N53P51",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "fc539562fe6168b5abe7c1a16e99dbfc"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3850,
+                        "pickup": 3850,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3PQ3N53P51",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "f93c1be88375d2cd592b168225897cb2"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 6740,
+                        "pickup": 6740,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "351NN53P51": {
+            "name": "Pizza Marinella",
+            "description": [
+                "ser mozzarella, sos pomidorowy, małże, krewetki, łosoś, sos czosnkowy, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_pizzamarinella_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "351NN53P51",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "e8a26f76f6bf6d9f1d320d40da45a830"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3000,
+                        "pickup": 3000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3RRNN53P51",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "fc539562fe6168b5abe7c1a16e99dbfc"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4150,
+                        "pickup": 4150,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "33Q3N53P51",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "f93c1be88375d2cd592b168225897cb2"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 7800,
+                        "pickup": 7800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "37NNN53P51": {
+            "name": "Pizza Rosamaria",
+            "description": [
+                "ser mozzarella, sos pomidorowy, oliwki, salami, bekon, krewetki, sos czosnkowy, oregano"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_pizzarosamaria_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "37NNN53P51",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "e8a26f76f6bf6d9f1d320d40da45a830"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3070,
+                        "pickup": 3070,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3113N53P51",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "fc539562fe6168b5abe7c1a16e99dbfc"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4230,
+                        "pickup": 4230,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "35R3N53P51",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "f93c1be88375d2cd592b168225897cb2"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 7420,
+                        "pickup": 7420,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "31NNN53P51": {
+            "name": "Pizza Zrób to sam",
+            "description": [
+                "skomponuj swoją ulubioną pizzę",
+                "do wyboru dwa sosy: pomidorowy lub serowy + 4 dowolne składniki"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_pizzasalmone_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "31NNN53P51",
+                    "name": "24 cm",
+                    "optionGroupIds": [
+                        "a7548526d82eb844db49efe4a3d46df5",
+                        "5cd625536204916aa0608d4db41bbce1",
+                        "c546abe3d1da72650671e6e8bf84d160",
+                        "5e6562bdaf49853fc1b1fed55e78af27",
+                        "905a8b2d61f3d85581d96c4084e5a518",
+                        "863970a7563f66a1806d7991fbd8fa62"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3700,
+                        "pickup": 3700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3503N53P51",
+                    "name": "30 cm",
+                    "optionGroupIds": [
+                        "704765bb4491e8fa4ad9fb38ad59691a",
+                        "4578a75a624eea2afc5192dcfd776674",
+                        "f2b907cf637cb5883a3e3c712e18cad7",
+                        "570ceb683a8a3912077312436224709a",
+                        "15ad24de44b5cc06f1393169435dcb90",
+                        "c0bef07ffb0f91e3a7c0bffc0e869c70"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5150,
+                        "pickup": 5150,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                },
+                {
+                    "id": "3RQ3N53P51",
+                    "name": "50 cm",
+                    "optionGroupIds": [
+                        "1ce577bfc49cabe6108fc29618a8eaa1",
+                        "566002124a8c065052bb9ad64efced12",
+                        "21536ec29bc8e47ffdf4ab0492712088",
+                        "8be2f022da54aedb53d0487e03819f2d",
+                        "95ebcff7caacf5371831a9f447ef716c",
+                        "8f2972bf0d01bd2ecc3e89770a3b6875"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 7850,
+                        "pickup": 7850,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3NNON53P51": {
+            "name": "Spaghetti Bolognese",
+            "description": [
+                "makaron spaghetti, sos bolognese z pieczarkami, parmezan"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_savona_food_bolognese.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3NNON53P51",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3500,
+                        "pickup": 3500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "35NON53P51": {
+            "name": "Spaghetti Carbonara",
+            "description": [
+                "makaron spaghetti, sos carbonara, bekon, cebula, parmezan"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_savona_food_carbonara.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "35NON53P51",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3640,
+                        "pickup": 3640,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3QNON53P51": {
+            "name": "Spaghetti Frutti di mare",
+            "description": [
+                "makaron spaghetti, sos pomidorowy, sos czosnkowy, małże, krewetki, parmezan"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_savona_food_fruttidimare.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3QNON53P51",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4240,
+                        "pickup": 4240,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "313ON53P51": {
+            "name": "Spaghetti Pesto",
+            "description": [
+                "makaron spaghetti, sos pesto, ser mascarpone, parmezan"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_savona_food_pest.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "313ON53P51",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3500,
+                        "pickup": 3500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3O3ON53P51": {
+            "name": "Spaghetti Pesto z szynką",
+            "description": [
+                "makaron spaghetti, sos pesto, ser mascarpone, szynka, parmezan"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_savona_food_pestozszynk.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3O3ON53P51",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4040,
+                        "pickup": 4040,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "373ON53P51": {
+            "name": "Penne Carbonara",
+            "description": [
+                "makaron penne, sos carbonara, bekon, cebula, pieczarki, mozzarella"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_savona_food_pennecarbonara.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "373ON53P51",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4040,
+                        "pickup": 4040,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "30OON53P51": {
+            "name": "Penne Mexicana",
+            "description": [
+                "makaron penne, sos bolognese, kiełbasa, mozzarella, jalapeno"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_savona_food_pennemexicana.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "30OON53P51",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4040,
+                        "pickup": 4040,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "33OON53P51": {
+            "name": "Penne Vegetariana",
+            "description": [
+                "makaron penne, sos serowy, brokuły, kukurydza, ser mozzarella"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_savona_food_pennevegetariana.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "33OON53P51",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4040,
+                        "pickup": 4040,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R3P75PQR5N": {
+            "name": "Mac and Cheese 250g",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R3P75PQR5N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2750,
+                        "pickup": 2750,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RPP75PQR5N": {
+            "name": "Mac and Cheese z łososiem i szczypiorem 250g",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RPP75PQR5N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2950,
+                        "pickup": 2950,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RRP75PQR5N": {
+            "name": "Mac and Cheese z podsmażonym boczkiem i szczypiorem 250g",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RRP75PQR5N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2950,
+                        "pickup": 2950,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3OPON53P51": {
+            "name": "Sałatka Sycylijska",
+            "description": [
+                "sałata lodowa, rukola, oliwki, ser mozzarella, koreczki tostowe, pomidor, sos vinegrette, podawana w \"miseczce\" z gorącego ciasta"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_saatkasycylijska_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3OPON53P51",
+                    "name": null,
+                    "optionGroupIds": [
+                        "18ff068555cbe7e7364d2a162de6cb5c",
+                        "aa6b81ac31894b2e9d22b780008d45d6"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4150,
+                        "pickup": 4150,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "31PON53P51": {
+            "name": "Sałatka Paryska",
+            "description": [
+                "sałata lodowa, ser mozzarella, koreczki tostowe, pomidor, sos norweski, talarki ziemniaczane"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_saatkaparyska_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "31PON53P51",
+                    "name": null,
+                    "optionGroupIds": [
+                        "18ff068555cbe7e7364d2a162de6cb5c",
+                        "aa6b81ac31894b2e9d22b780008d45d6"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3750,
+                        "pickup": 3750,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3POON53P51": {
+            "name": "Sałatka Cezar",
+            "description": [
+                "sałata lodowa, filet z kurczaka, sos rzymski, parmezan, koreczki tostowe, pomidory"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_saatkacezar_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3POON53P51",
+                    "name": null,
+                    "optionGroupIds": [
+                        "1e63932d34f8c7f6e6f5b2ebbdf4342e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3750,
+                        "pickup": 3750,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3ROON53P51": {
+            "name": "Sałatka Norweska",
+            "description": [
+                "sałata lodowa, sos norweski, łosoś, krewetki, szparagi"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_saatkanorweska_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3ROON53P51",
+                    "name": null,
+                    "optionGroupIds": [
+                        "1e63932d34f8c7f6e6f5b2ebbdf4342e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4300,
+                        "pickup": 4300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3N5ON53P51": {
+            "name": "Sałatka Włoska",
+            "description": [
+                "sałata lodowa, sałata rukola, sos winegret, sos balsamiczny, ser mozzarella, pomidory, ogórek"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_saatkawoska_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3N5ON53P51",
+                    "name": null,
+                    "optionGroupIds": [
+                        "1e63932d34f8c7f6e6f5b2ebbdf4342e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3640,
+                        "pickup": 3640,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "355ON53P51": {
+            "name": "Sałatka Grecka",
+            "description": [
+                "sałata lodowa, sos winegret, pomidory, cebula, ogórek, oliwki, ser typu greckiego"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_saatkagrecka_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "355ON53P51",
+                    "name": null,
+                    "optionGroupIds": [
+                        "1e63932d34f8c7f6e6f5b2ebbdf4342e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3640,
+                        "pickup": 3640,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3Q5ON53P51": {
+            "name": "Sałatka Polska z pieczywem firmowym",
+            "description": [
+                "sałata lodowa, gotowany filet z kurczaka, kukurydza, ogórek, majonez, pieczywo firmowe (1 paluch)"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_saatkapolska_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3Q5ON53P51",
+                    "name": null,
+                    "optionGroupIds": [
+                        "1e63932d34f8c7f6e6f5b2ebbdf4342e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3800,
+                        "pickup": 3800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "37PON53P51": {
+            "name": "Skrzydełka z kurczaka w panierce 6 szt.",
+            "description": [
+                "frytki, sałatka z sosem winegret"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_savona_food_skrzydekazkurczaka.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "37PON53P51",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3500,
+                        "pickup": 3500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3R7ON53P51": {
+            "name": "Frytki 150g",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_savona_food_frytki.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3R7ON53P51",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1250,
+                        "pickup": 1250,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3NQON53P51": {
+            "name": "Góra frytek 300g",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_savona_food_grafrytek.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3NQON53P51",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1950,
+                        "pickup": 1950,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "35QON53P51": {
+            "name": "Talarki ziemniaczane 200g",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_savona_food_talarkiziemniaczane.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "35QON53P51",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1250,
+                        "pickup": 1250,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3QQON53P51": {
+            "name": "Pieczywo firmowe 120g",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_pieczywofirmowe_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3QQON53P51",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1000,
+                        "pickup": 1000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3305N53P51": {
+            "name": "Pizzolinki 10cm 5 szt.",
+            "description": [
+                "ser mozzarella, sos pomidorowy, dodatek"
+            ],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_ebeerkownia_food_pizzerinki_notonmenu.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3305N53P51",
+                    "name": null,
+                    "optionGroupIds": [
+                        "a88c0def92c8e2dd0e326c70eb88fa56"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2750,
+                        "pickup": 2750,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3P05N53P51": {
+            "name": "Sos norweski (śmietanowo-czosnkowy)",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_savona_food_sosnorweski.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3P05N53P51",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 400,
+                        "pickup": 400,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3R05N53P51": {
+            "name": "Ketchup",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_savona_food_ketchup.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3R05N53P51",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 300,
+                        "pickup": 300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3N15N53P51": {
+            "name": "Dressing czosnkowy (na oleju)",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_savona_food_dressingczosnkowy.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3N15N53P51",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 300,
+                        "pickup": 300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3515N53P51": {
+            "name": "Sos barbecue",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3515N53P51",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 400,
+                        "pickup": 400,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3Q15N53P51": {
+            "name": "Sos serowy",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_savona_food_sosserowy.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3Q15N53P51",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 400,
+                        "pickup": 400,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "31N5N53P51": {
+            "name": "Sos gyros",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "31N5N53P51",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 400,
+                        "pickup": 400,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3ON5N53P51": {
+            "name": "Sos tzatziki",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3ON5N53P51",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 400,
+                        "pickup": 400,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "37N5N53P51": {
+            "name": "Sos pomidorowy",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_savona_food_sospomidorowy.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "37N5N53P51",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 300,
+                        "pickup": 300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3035N53P51": {
+            "name": "Majonez",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/1922994_savona_food_sosmajonezowy.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3035N53P51",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 300,
+                        "pickup": 300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3335N53P51": {
+            "name": "Sos mexicana",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3335N53P51",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 400,
+                        "pickup": 400,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "35O5N53P51": {
+            "name": "Coca-Cola 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/coca-cola-05l.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "35O5N53P51",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1000,
+                        "pickup": 1000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R7NNOP05P1": {
+            "name": "Coca-Cola zero 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/coca-cola-zero-05l.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "R7NNOP05P1",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1000,
+                        "pickup": 1000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R03NOP05P1": {
+            "name": "Coca-Cola Cherry Taste 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/coca-cola-cherry-05l.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "R03NOP05P1",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1000,
+                        "pickup": 1000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R33NOP05P1": {
+            "name": "Coca-Cola zero Peach Taste 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/coca-cola-zero-peach-05l.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "R33NOP05P1",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1000,
+                        "pickup": 1000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RP3NOP05P1": {
+            "name": "Coca-Cola Lime 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/coca-cola-lime-05l.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "RP3NOP05P1",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1000,
+                        "pickup": 1000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3QO5N53P51": {
+            "name": "Fanta Pomarańczowa 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/fanta-pomaranczowa-05l.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3QO5N53P51",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1000,
+                        "pickup": 1000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3155N53P51": {
+            "name": "Sprite 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/sprite-05l.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3155N53P51",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1000,
+                        "pickup": 1000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3O55N53P51": {
+            "name": "Kropla Beskidu woda gazowana 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/kropla-beskidu-woda-gazowana-05l.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3O55N53P51",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 800,
+                        "pickup": 800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3755N53P51": {
+            "name": "Kropla Beskidu woda niegazowana 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/kropla-beskidu-woda-niegazowana-05l.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "3755N53P51",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 800,
+                        "pickup": 800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R5QR5P05P1": {
+            "name": "FuzeTea cytrynowa z czarną herbatą i trawą cytrynową 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/fuzetea-cytrynowa-z-czarna-herbata-i-trawa-cytynowa-05l1.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "R5QR5P05P1",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1000,
+                        "pickup": 1000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RQQR5P05P1": {
+            "name": "FuzeTea brzoskwiniowa z czarną herbatą i hibiskusem 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/fuzetea-brzoskwiniowa-z-czarna-herbata-i-hibiskusem-05l.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "RQQR5P05P1",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1000,
+                        "pickup": 1000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R1RR5P05P1": {
+            "name": "FuzeTea mango z zieloną herbatą i rumiankiem 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/fuzetea-mango-z-zielona-herbata-i-rumiankiem-05l.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "R1RR5P05P1",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1000,
+                        "pickup": 1000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RORR5P05P1": {
+            "name": "FuzeTea No Sugar brzoskwiniowa z różą 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/fuzetea-no-sugar-brzoskwiniowa-z-roza-05l.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "RORR5P05P1",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1000,
+                        "pickup": 1000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R7RR5P05P1": {
+            "name": "FuzeTea No Sugar marakuja z zieloną herbatą 0,5l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/NQRQP75/products/fuzetea-no-sugar-marakuja-z-zielona-herbata-05l.png?timestamp=1707384012",
+            "variants": [
+                {
+                    "id": "R7RR5P05P1",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1000,
+                        "pickup": 1000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        }
+    }
+}

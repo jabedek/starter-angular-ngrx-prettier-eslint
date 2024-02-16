@@ -36,7 +36,7 @@ export class UserActivityMonitorProgressBarComponent {
         tap(() => this.cdr.detectChanges()),
         takeUntil(
           this.activityMonitor.activePresenceInCurrentInterval$.pipe(
-            debounceTime(1000),
+            debounceTime(3000),
             tap(() => this.progressLength?.setValue(MonitorTracking.secondsInt)),
           ),
         ),

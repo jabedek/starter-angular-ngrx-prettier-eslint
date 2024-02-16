@@ -1,0 +1,3859 @@
+{
+    "requested": 1708099769213,
+    "products": {
+        "O7PNQQO1Q": {
+            "name": "Pizza Tartufella",
+            "description": [
+                "z sosem truflowym, mozzarellą, kurkami, boczkiem, serem provolone"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "O7PNQQO1Q",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "0cc60913e783e9d009d5b93db6ba6eb2",
+                        "646fcfb2c15916a5136c0b664df4a82a",
+                        "ca8cff49fe9e0b490a042beaaf6c37df"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4500,
+                        "pickup": 4500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O07NQQO1Q": {
+            "name": "Pizza Tartufella",
+            "description": [
+                "z sosem truflowym, mozzarellą, kurkami, boczkiem, serem provolone"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "O07NQQO1Q",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "08c2d8715370ea4df06d996a81bfc292",
+                        "5ded04c158aaa7075d79491f4fe3043e",
+                        "d74fb0c0dea7999ebf3e996a81de6c5e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5700,
+                        "pickup": 5700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O37NQQO1Q": {
+            "name": "Pizza Tonno",
+            "description": [
+                "sos pomidorowy, mozzarella, tuńczyk, ser typu feta, kapary"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "O37NQQO1Q",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "0cc60913e783e9d009d5b93db6ba6eb2",
+                        "646fcfb2c15916a5136c0b664df4a82a",
+                        "ca8cff49fe9e0b490a042beaaf6c37df"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4000,
+                        "pickup": 4000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "OP7NQQO1Q": {
+            "name": "Pizza Tonno",
+            "description": [
+                "sos pomidorowy, mozzarella, tuńczyk, ser typu feta, kapary"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "OP7NQQO1Q",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "08c2d8715370ea4df06d996a81bfc292",
+                        "5ded04c158aaa7075d79491f4fe3043e",
+                        "d74fb0c0dea7999ebf3e996a81de6c5e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5400,
+                        "pickup": 5400,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N07RRPNPO": {
+            "name": "Pizza Margherita",
+            "description": [
+                "sos pomidorowy, mozzarella, bazylia"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N07RRPNPO",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "0cc60913e783e9d009d5b93db6ba6eb2",
+                        "646fcfb2c15916a5136c0b664df4a82a",
+                        "ca8cff49fe9e0b490a042beaaf6c37df"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3600,
+                        "pickup": 3600,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N37RRPNPO": {
+            "name": "Pizza Margherita",
+            "description": [
+                "sos pomidorowy, mozzarella, bazylia"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N37RRPNPO",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "08c2d8715370ea4df06d996a81bfc292",
+                        "5ded04c158aaa7075d79491f4fe3043e",
+                        "d74fb0c0dea7999ebf3e996a81de6c5e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4300,
+                        "pickup": 4300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NR7RRPNPO": {
+            "name": "Pizza Capriciosa",
+            "description": [
+                "sos pomidorowy, mozzarella, szynka, pieczarki"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NR7RRPNPO",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "0cc60913e783e9d009d5b93db6ba6eb2",
+                        "646fcfb2c15916a5136c0b664df4a82a",
+                        "ca8cff49fe9e0b490a042beaaf6c37df"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3900,
+                        "pickup": 3900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NNQRRPNPO": {
+            "name": "Pizza Capriciosa",
+            "description": [
+                "sos pomidorowy, mozzarella, szynka, pieczarki"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NNQRRPNPO",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "08c2d8715370ea4df06d996a81bfc292",
+                        "5ded04c158aaa7075d79491f4fe3043e",
+                        "d74fb0c0dea7999ebf3e996a81de6c5e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5200,
+                        "pickup": 5200,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NQQRRPNPO": {
+            "name": "Pizza Pepperoni passion",
+            "description": [
+                "z sosem pomidorowym, mozzarellą, pepperoni i jalapeno"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NQQRRPNPO",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "0cc60913e783e9d009d5b93db6ba6eb2",
+                        "646fcfb2c15916a5136c0b664df4a82a",
+                        "ca8cff49fe9e0b490a042beaaf6c37df"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4000,
+                        "pickup": 4000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N1RRRPNPO": {
+            "name": "Pizza Pepperoni passion",
+            "description": [
+                "z sosem pomidorowym, mozzarellą, pepperoni i jalapeno"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N1RRRPNPO",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "08c2d8715370ea4df06d996a81bfc292",
+                        "5ded04c158aaa7075d79491f4fe3043e",
+                        "d74fb0c0dea7999ebf3e996a81de6c5e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5400,
+                        "pickup": 5400,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NRQ107NPO": {
+            "name": "Pizza Pera",
+            "description": [
+                "sos śmietanowy, mozzarella, gruszka i orzechy włoskie"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NRQ107NPO",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "0cc60913e783e9d009d5b93db6ba6eb2",
+                        "646fcfb2c15916a5136c0b664df4a82a",
+                        "ca8cff49fe9e0b490a042beaaf6c37df"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3800,
+                        "pickup": 3800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NNR107NPO": {
+            "name": "Pizza Pera",
+            "description": [
+                "sos śmietanowy, mozzarella, gruszka i orzechy włoskie"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NNR107NPO",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "08c2d8715370ea4df06d996a81bfc292",
+                        "5ded04c158aaa7075d79491f4fe3043e",
+                        "d74fb0c0dea7999ebf3e996a81de6c5e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5000,
+                        "pickup": 5000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "ONQNQQO1Q": {
+            "name": "Pizza Acciuga",
+            "description": [
+                "sos pomidorowy, mozzarella, anchois, salami picante, bazylia"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "ONQNQQO1Q",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "0cc60913e783e9d009d5b93db6ba6eb2",
+                        "646fcfb2c15916a5136c0b664df4a82a",
+                        "ca8cff49fe9e0b490a042beaaf6c37df"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4100,
+                        "pickup": 4100,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O5QNQQO1Q": {
+            "name": "Pizza Acciuga",
+            "description": [
+                "sos pomidorowy, mozzarella, anchois, salami picante, bazylia"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "O5QNQQO1Q",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "08c2d8715370ea4df06d996a81bfc292",
+                        "5ded04c158aaa7075d79491f4fe3043e",
+                        "d74fb0c0dea7999ebf3e996a81de6c5e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5300,
+                        "pickup": 5300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NP0007NPO": {
+            "name": "Pizza Vegetariana",
+            "description": [
+                "z sosem pomidorowym, mozzarellą, duszonymi pieczarkami, cukinią, cebulą i brokułami"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NP0007NPO",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "0cc60913e783e9d009d5b93db6ba6eb2",
+                        "646fcfb2c15916a5136c0b664df4a82a",
+                        "ca8cff49fe9e0b490a042beaaf6c37df"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4100,
+                        "pickup": 4100,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NR0007NPO": {
+            "name": "Pizza Vegetariana",
+            "description": [
+                "z sosem pomidorowym, mozzarellą, duszonymi pieczarkami, cukinią, cebulą i brokułami"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NR0007NPO",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "08c2d8715370ea4df06d996a81bfc292",
+                        "5ded04c158aaa7075d79491f4fe3043e",
+                        "d74fb0c0dea7999ebf3e996a81de6c5e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5300,
+                        "pickup": 5300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N51007NPO": {
+            "name": "Pizza Montenero",
+            "description": [
+                "sos pomidorowy, mozzarella, boczek, oscypek, żurawina"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N51007NPO",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "0cc60913e783e9d009d5b93db6ba6eb2",
+                        "646fcfb2c15916a5136c0b664df4a82a",
+                        "ca8cff49fe9e0b490a042beaaf6c37df"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3800,
+                        "pickup": 3800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NQ1007NPO": {
+            "name": "Pizza Montenero",
+            "description": [
+                "sos pomidorowy, mozzarella, boczek, oscypek, żurawina"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NQ1007NPO",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "08c2d8715370ea4df06d996a81bfc292",
+                        "5ded04c158aaa7075d79491f4fe3043e",
+                        "d74fb0c0dea7999ebf3e996a81de6c5e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5000,
+                        "pickup": 5000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "005P7330R": {
+            "name": "Pizza Calabria",
+            "description": [
+                "z sosem pomidorowym, mozzarellą, pancettą, oliwkami i papryczka chilli"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "005P7330R",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "0cc60913e783e9d009d5b93db6ba6eb2",
+                        "646fcfb2c15916a5136c0b664df4a82a",
+                        "ca8cff49fe9e0b490a042beaaf6c37df"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3900,
+                        "pickup": 3900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "035P7330R": {
+            "name": "Pizza Calabria",
+            "description": [
+                "z sosem pomidorowym, mozzarellą, pancettą, oliwkami i papryczka chilli"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "035P7330R",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "08c2d8715370ea4df06d996a81bfc292",
+                        "5ded04c158aaa7075d79491f4fe3043e",
+                        "d74fb0c0dea7999ebf3e996a81de6c5e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5100,
+                        "pickup": 5100,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "0QPP7330R": {
+            "name": "Pizza Amicii",
+            "description": [
+                "z sosem serowym, mozzarellą, gorgonzolą, cebulą i boczkiem"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "0QPP7330R",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "0cc60913e783e9d009d5b93db6ba6eb2",
+                        "646fcfb2c15916a5136c0b664df4a82a",
+                        "ca8cff49fe9e0b490a042beaaf6c37df"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3700,
+                        "pickup": 3700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "017P7330R": {
+            "name": "Pizza Amicii",
+            "description": [
+                "z sosem serowym, mozzarellą, gorgonzolą, cebulą i boczkiem"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "017P7330R",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "08c2d8715370ea4df06d996a81bfc292",
+                        "5ded04c158aaa7075d79491f4fe3043e",
+                        "d74fb0c0dea7999ebf3e996a81de6c5e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5200,
+                        "pickup": 5200,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NNO007NPO": {
+            "name": "Pizza Hawaii",
+            "description": [
+                "z sosem pomidorowym, mozzarellą, szynką, ananasem i kukurydzą"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NNO007NPO",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "0cc60913e783e9d009d5b93db6ba6eb2",
+                        "646fcfb2c15916a5136c0b664df4a82a",
+                        "ca8cff49fe9e0b490a042beaaf6c37df"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3800,
+                        "pickup": 3800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N5O007NPO": {
+            "name": "Pizza Hawaii",
+            "description": [
+                "z sosem pomidorowym, mozzarellą, szynką, ananasem i kukurydzą"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N5O007NPO",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "08c2d8715370ea4df06d996a81bfc292",
+                        "5ded04c158aaa7075d79491f4fe3043e",
+                        "d74fb0c0dea7999ebf3e996a81de6c5e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5100,
+                        "pickup": 5100,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N15007NPO": {
+            "name": "Pizza Roma",
+            "description": [
+                "z sosem pomidorowym, włoskim salami, oliwkami i cebulą"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N15007NPO",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "0cc60913e783e9d009d5b93db6ba6eb2",
+                        "646fcfb2c15916a5136c0b664df4a82a",
+                        "ca8cff49fe9e0b490a042beaaf6c37df"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4000,
+                        "pickup": 4000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NO5007NPO": {
+            "name": "Pizza Roma",
+            "description": [
+                "z sosem pomidorowym, włoskim salami, oliwkami i cebulą"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NO5007NPO",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "08c2d8715370ea4df06d996a81bfc292",
+                        "5ded04c158aaa7075d79491f4fe3043e",
+                        "d74fb0c0dea7999ebf3e996a81de6c5e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5300,
+                        "pickup": 5300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N0P007NPO": {
+            "name": "Pizza Fromage",
+            "description": [
+                "z sosem serowym, mozzarellą, blue cheese, parmezanem i serem feta"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N0P007NPO",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "0cc60913e783e9d009d5b93db6ba6eb2",
+                        "646fcfb2c15916a5136c0b664df4a82a",
+                        "ca8cff49fe9e0b490a042beaaf6c37df"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4000,
+                        "pickup": 4000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N3P007NPO": {
+            "name": "Pizza Fromage",
+            "description": [
+                "z sosem serowym, mozzarellą, blue cheese, parmezanem i serem feta"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N3P007NPO",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "08c2d8715370ea4df06d996a81bfc292",
+                        "5ded04c158aaa7075d79491f4fe3043e",
+                        "d74fb0c0dea7999ebf3e996a81de6c5e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5200,
+                        "pickup": 5200,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N7RRRPNPO": {
+            "name": "Pizza Grecka",
+            "description": [
+                "z sosem pomidorowym, mozzarellą, serem feta, suszonymi pomidorami, czerwoną cebulą i oliwkami"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N7RRRPNPO",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "0cc60913e783e9d009d5b93db6ba6eb2",
+                        "646fcfb2c15916a5136c0b664df4a82a",
+                        "ca8cff49fe9e0b490a042beaaf6c37df"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3800,
+                        "pickup": 3800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N00007NPO": {
+            "name": "Pizza Grecka",
+            "description": [
+                "z sosem pomidorowym, mozzarellą, serem feta, suszonymi pomidorami, czerwoną cebulą i oliwkami"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N00007NPO",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "08c2d8715370ea4df06d996a81bfc292",
+                        "5ded04c158aaa7075d79491f4fe3043e",
+                        "d74fb0c0dea7999ebf3e996a81de6c5e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5000,
+                        "pickup": 5000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "OQ0ON0Q331": {
+            "name": "Pizza Paura",
+            "description": [
+                "z sosem pomidorowym, mozzarellą, cebulą karmelizowaną, pomidorkami, pancettą i gorgonzolą"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "OQ0ON0Q331",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "4656cc4de743448eaeeac7f5fff6e5bb",
+                        "7ffe486a0185e35690ec6a51ac043fe3",
+                        "b9f4ffcd9aff38c96f43a88ac9314b74"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3900,
+                        "pickup": 3900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O11ON0Q331": {
+            "name": "Pizza Paura",
+            "description": [
+                "z sosem pomidorowym, mozzarellą, cebulą karmelizowaną, pomidorkami, pancettą i gorgonzolą"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "O11ON0Q331",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "d43a5bdea3810f10ff625b127260acc1",
+                        "49c62fbc7726422f37dc6622df71c55f",
+                        "381bd88410ee36a36c7574c940665eab"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5300,
+                        "pickup": 5300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N3N107NPO": {
+            "name": "Pizza Parma",
+            "description": [
+                "z sosem pomidorowym, mozzarellą, szynką parmeńską, czerwoną cebulą i rukolą"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N3N107NPO",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "0cc60913e783e9d009d5b93db6ba6eb2",
+                        "646fcfb2c15916a5136c0b664df4a82a",
+                        "ca8cff49fe9e0b490a042beaaf6c37df"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4100,
+                        "pickup": 4100,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NPN107NPO": {
+            "name": "Pizza Parma",
+            "description": [
+                "z sosem pomidorowym, mozzarellą, szynką parmeńską, czerwoną cebulą i rukolą"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NPN107NPO",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "08c2d8715370ea4df06d996a81bfc292",
+                        "5ded04c158aaa7075d79491f4fe3043e",
+                        "d74fb0c0dea7999ebf3e996a81de6c5e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5500,
+                        "pickup": 5500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NN3107NPO": {
+            "name": "Pizza Mavona",
+            "description": [
+                "z sosem pomidorowym, mozzarellą i salami"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NN3107NPO",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "0cc60913e783e9d009d5b93db6ba6eb2",
+                        "646fcfb2c15916a5136c0b664df4a82a",
+                        "ca8cff49fe9e0b490a042beaaf6c37df"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3900,
+                        "pickup": 3900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N53107NPO": {
+            "name": "Pizza Mavona",
+            "description": [
+                "z sosem pomidorowym, mozzarellą i salami"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N53107NPO",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "08c2d8715370ea4df06d996a81bfc292",
+                        "5ded04c158aaa7075d79491f4fe3043e",
+                        "d74fb0c0dea7999ebf3e996a81de6c5e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5100,
+                        "pickup": 5100,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N1O107NPO": {
+            "name": "Pizza Spinachi",
+            "description": [
+                "z sosem serowym, szpinakiem, serem feta i suszonymi pomidorami"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N1O107NPO",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "0cc60913e783e9d009d5b93db6ba6eb2",
+                        "646fcfb2c15916a5136c0b664df4a82a",
+                        "ca8cff49fe9e0b490a042beaaf6c37df"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3900,
+                        "pickup": 3900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NOO107NPO": {
+            "name": "Pizza Spinachi",
+            "description": [
+                "z sosem serowym, szpinakiem, serem feta i suszonymi pomidorami"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NOO107NPO",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "08c2d8715370ea4df06d996a81bfc292",
+                        "5ded04c158aaa7075d79491f4fe3043e",
+                        "d74fb0c0dea7999ebf3e996a81de6c5e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5200,
+                        "pickup": 5200,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NR5107NPO": {
+            "name": "Pizza Kristina",
+            "description": [
+                "z sosem pomidorowy, mozzarellą, salami, cebulą, czosnkiem, kurczakiem i parmezanem"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NR5107NPO",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "0cc60913e783e9d009d5b93db6ba6eb2",
+                        "646fcfb2c15916a5136c0b664df4a82a",
+                        "ca8cff49fe9e0b490a042beaaf6c37df"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4200,
+                        "pickup": 4200,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NNP107NPO": {
+            "name": "Pizza Kristina",
+            "description": [
+                "z sosem pomidorowy, mozzarellą, salami, cebulą, czosnkiem, kurczakiem i parmezanem"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NNP107NPO",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "08c2d8715370ea4df06d996a81bfc292",
+                        "5ded04c158aaa7075d79491f4fe3043e",
+                        "d74fb0c0dea7999ebf3e996a81de6c5e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5500,
+                        "pickup": 5500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NQP107NPO": {
+            "name": "Pizza Italia",
+            "description": [
+                "sos pomidorowy, mozzarell, szynka parmeńska, rukola, czarne oliwki, pomidory koktajlowe"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NQP107NPO",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "0cc60913e783e9d009d5b93db6ba6eb2",
+                        "646fcfb2c15916a5136c0b664df4a82a",
+                        "ca8cff49fe9e0b490a042beaaf6c37df"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4300,
+                        "pickup": 4300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N17107NPO": {
+            "name": "Pizza Italia",
+            "description": [
+                "sos pomidorowy, mozzarell, szynka parmeńska, rukola, czarne oliwki, pomidory koktajlowe"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N17107NPO",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "08c2d8715370ea4df06d996a81bfc292",
+                        "5ded04c158aaa7075d79491f4fe3043e",
+                        "d74fb0c0dea7999ebf3e996a81de6c5e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5500,
+                        "pickup": 5500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N77107NPO": {
+            "name": "Pizza Pico",
+            "description": [
+                "sos śmietanowy, mozzarell, boczek, pieczarki, cebula"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N77107NPO",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "0cc60913e783e9d009d5b93db6ba6eb2",
+                        "646fcfb2c15916a5136c0b664df4a82a",
+                        "ca8cff49fe9e0b490a042beaaf6c37df"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3900,
+                        "pickup": 3900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N0Q107NPO": {
+            "name": "Pizza Pico",
+            "description": [
+                "sos śmietanowy, mozzarell, boczek, pieczarki, cebula"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N0Q107NPO",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "08c2d8715370ea4df06d996a81bfc292",
+                        "5ded04c158aaa7075d79491f4fe3043e",
+                        "d74fb0c0dea7999ebf3e996a81de6c5e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5200,
+                        "pickup": 5200,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O737PQ07P": {
+            "name": "Pizza Uovo",
+            "description": [
+                "sos pomidorowy, mozzarella, szynka, kurczak, jajko pomidor koktajlowy, szczypior"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "O737PQ07P",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "0cc60913e783e9d009d5b93db6ba6eb2",
+                        "646fcfb2c15916a5136c0b664df4a82a",
+                        "ca8cff49fe9e0b490a042beaaf6c37df"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4200,
+                        "pickup": 4200,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O0O7PQ07P": {
+            "name": "Pizza Uovo",
+            "description": [
+                "sos pomidorowy, mozzarella, szynka, kurczak, jajko pomidor koktajlowy, szczypior"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "O0O7PQ07P",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "08c2d8715370ea4df06d996a81bfc292",
+                        "5ded04c158aaa7075d79491f4fe3043e",
+                        "d74fb0c0dea7999ebf3e996a81de6c5e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5300,
+                        "pickup": 5300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N50107NPO": {
+            "name": "Pizza Pollo da Mexico",
+            "description": [
+                "sos BBQ, mozzarella, kurczak, pieczarki, kukurydza"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N50107NPO",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "0cc60913e783e9d009d5b93db6ba6eb2",
+                        "646fcfb2c15916a5136c0b664df4a82a",
+                        "ca8cff49fe9e0b490a042beaaf6c37df"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4100,
+                        "pickup": 4100,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NQ0107NPO": {
+            "name": "Pizza Pollo da Mexico",
+            "description": [
+                "sos BBQ, mozzarella, kurczak, pieczarki, kukurydza"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NQ0107NPO",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "08c2d8715370ea4df06d996a81bfc292",
+                        "5ded04c158aaa7075d79491f4fe3043e",
+                        "d74fb0c0dea7999ebf3e996a81de6c5e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5400,
+                        "pickup": 5400,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NO1107NPO": {
+            "name": "Pizza Puzzle",
+            "description": [
+                "sos pomidorowy, mozzarella, trzy dowolne składniki"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NO1107NPO",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "6c2f7b904f0418b80264ebd1b1480c33",
+                        "071cccd3e7c82c76be2dd9e13b0fe7a2",
+                        "f53f6cc4dfaf3239a43caf67183710da",
+                        "1f38d59d65d1e6206dabab5ba1ad3c01",
+                        "5a1835175bceee99a172b874e3701e29",
+                        "7f791aced9706a8afe0ee61af04a2782"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4500,
+                        "pickup": 4500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N71107NPO": {
+            "name": "Pizza Puzzle",
+            "description": [
+                "sos pomidorowy, mozzarella, trzy dowolne składniki"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N71107NPO",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "615d1839ff0bacfd33cab2ca085992ee",
+                        "d634d61195bf3071271c5ef2caa2d889",
+                        "39a0d92e6a23a501076fceb8340f0e62",
+                        "9e1855b4976a044902b88f0bc14a443c",
+                        "35f816755e5069c04c260758ec1d1520",
+                        "25d10088072bce2fc8d28072641276c1"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5700,
+                        "pickup": 5700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N3PRPNO37": {
+            "name": "Pizza Picante",
+            "description": [
+                "z sosem pomidorowym, wołowiną, oliwkami czarnymi i habanero"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N3PRPNO37",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "0cc60913e783e9d009d5b93db6ba6eb2",
+                        "646fcfb2c15916a5136c0b664df4a82a",
+                        "ca8cff49fe9e0b490a042beaaf6c37df"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4000,
+                        "pickup": 4000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NPPRPNO37": {
+            "name": "Pizza Picante",
+            "description": [
+                "z sosem pomidorowym, wołowiną, oliwkami czarnymi i habanero"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NPPRPNO37",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "08c2d8715370ea4df06d996a81bfc292",
+                        "5ded04c158aaa7075d79491f4fe3043e",
+                        "d74fb0c0dea7999ebf3e996a81de6c5e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5500,
+                        "pickup": 5500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N7Q007NPO": {
+            "name": "Pizza Mięsna uczta",
+            "description": [
+                "sos BBQ, mozzarella, szynka, salami, wołowina"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N7Q007NPO",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "0cc60913e783e9d009d5b93db6ba6eb2",
+                        "646fcfb2c15916a5136c0b664df4a82a",
+                        "ca8cff49fe9e0b490a042beaaf6c37df"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4200,
+                        "pickup": 4200,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N0R007NPO": {
+            "name": "Pizza Mięsna uczta",
+            "description": [
+                "sos BBQ, mozzarella, szynka, salami, wołowina"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N0R007NPO",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "08c2d8715370ea4df06d996a81bfc292",
+                        "5ded04c158aaa7075d79491f4fe3043e",
+                        "d74fb0c0dea7999ebf3e996a81de6c5e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5400,
+                        "pickup": 5400,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NPR007NPO": {
+            "name": "Pizza Frutti di mare",
+            "description": [
+                "sos pomidorowy, mozzarella, tuńczyk, krewetki, łosoś wędzony, kapary"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NPR007NPO",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "0cc60913e783e9d009d5b93db6ba6eb2",
+                        "646fcfb2c15916a5136c0b664df4a82a",
+                        "ca8cff49fe9e0b490a042beaaf6c37df"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4400,
+                        "pickup": 4400,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NRR007NPO": {
+            "name": "Pizza Frutti di mare",
+            "description": [
+                "sos pomidorowy, mozzarella, tuńczyk, krewetki, łosoś wędzony, kapary"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NRR007NPO",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "08c2d8715370ea4df06d996a81bfc292",
+                        "5ded04c158aaa7075d79491f4fe3043e",
+                        "d74fb0c0dea7999ebf3e996a81de6c5e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5600,
+                        "pickup": 5600,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NRP007NPO": {
+            "name": "Pizza Broccoli",
+            "description": [
+                "sos serowy, mozzarella, brokuł, boczek, cebula"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NRP007NPO",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "0cc60913e783e9d009d5b93db6ba6eb2",
+                        "646fcfb2c15916a5136c0b664df4a82a",
+                        "ca8cff49fe9e0b490a042beaaf6c37df"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3700,
+                        "pickup": 3700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NN7007NPO": {
+            "name": "Pizza Broccoli",
+            "description": [
+                "sos serowy, mozzarella, brokuł, boczek, cebula"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NN7007NPO",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "08c2d8715370ea4df06d996a81bfc292",
+                        "5ded04c158aaa7075d79491f4fe3043e",
+                        "d74fb0c0dea7999ebf3e996a81de6c5e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5100,
+                        "pickup": 5100,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NQ7007NPO": {
+            "name": "Pizza Texas bbq",
+            "description": [
+                "z sosem bbq, mozzarellą, kurczakiem pieczonym, czerwoną cebulą, papryką i boczkiem"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NQ7007NPO",
+                    "name": "32 cm",
+                    "optionGroupIds": [
+                        "0cc60913e783e9d009d5b93db6ba6eb2",
+                        "646fcfb2c15916a5136c0b664df4a82a",
+                        "ca8cff49fe9e0b490a042beaaf6c37df"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 4300,
+                        "pickup": 4300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N1Q007NPO": {
+            "name": "Pizza Texas bbq",
+            "description": [
+                "z sosem bbq, mozzarellą, kurczakiem pieczonym, czerwoną cebulą, papryką i boczkiem"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N1Q007NPO",
+                    "name": "42 cm",
+                    "optionGroupIds": [
+                        "08c2d8715370ea4df06d996a81bfc292",
+                        "5ded04c158aaa7075d79491f4fe3043e",
+                        "d74fb0c0dea7999ebf3e996a81de6c5e"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 5500,
+                        "pickup": 5500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NQR107NPO": {
+            "name": "Bruschetta z pomidorami",
+            "description": [
+                "3 szt."
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NQR107NPO",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1800,
+                        "pickup": 1800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N10N07NPO": {
+            "name": "Bruschetta z pomidorem i szynką dojrzewającą",
+            "description": [
+                "3 szt."
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N10N07NPO",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2300,
+                        "pickup": 2300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NO0N07NPO": {
+            "name": "Frytki",
+            "description": [
+                "180g"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NO0N07NPO",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 900,
+                        "pickup": 900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3NRROQO351": {
+            "name": "Frytki z batatów",
+            "description": [
+                "180g"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3NRROQO351",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1400,
+                        "pickup": 1400,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N111N51O7": {
+            "name": "Frytki serowe",
+            "description": [
+                "200g"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N111N51O7",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1500,
+                        "pickup": 1500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N70N07NPO": {
+            "name": "Ziemniaki opiekane",
+            "description": [
+                "serwowane z sosem czosnkowym"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N70N07NPO",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1400,
+                        "pickup": 1400,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N31N07NPO": {
+            "name": "Carpaccio wołowe",
+            "description": [
+                "serwowane z rukolą, kaparami i parmezanem, 150g"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N31N07NPO",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2700,
+                        "pickup": 2700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NP1N07NPO": {
+            "name": "Nachos",
+            "description": [
+                "450g zapiekane z mozzarellą i jalapeno, podawane z sosem pomidorowym i czosnkowym"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NP1N07NPO",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1900,
+                        "pickup": 1900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O0NO50Q331": {
+            "name": "Nachos grande",
+            "description": [
+                "450g zapiekane z mozzarellą, wołowiną i jalapeno, podawane z sosem pomidorowym i czosnkowym"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "O0NO50Q331",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2800,
+                        "pickup": 2800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "Q77R13NP0N": {
+            "name": "Bruschetta z pomidorem i bazylią",
+            "description": [
+                "3szt"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "Q77R13NP0N",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 1800,
+                        "pickup": 1800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "3P105QO351": {
+            "name": "Filet z łososia 250g",
+            "description": [
+                "pieczony łosoś/ziemniaki gratin/kiełki"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "3P105QO351",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3700,
+                        "pickup": 3700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NNNN07NPO": {
+            "name": "Kotlet schabowy w panko",
+            "description": [
+                "serwowany z ziemniakami lub frytkami i mixem sałat"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NNNN07NPO",
+                    "name": null,
+                    "optionGroupIds": [
+                        "884fd8888f0e1abbfdbbc6ec5e6393ce"
+                    ],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2900,
+                        "pickup": 2900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N73N07NPO": {
+            "name": "Quesadilla z kurczakiem",
+            "description": [
+                "dwie tortille zapiekane z sosem pomidorowym, mozzarellą, cebulą i papryką, podawane z sałatą"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N73N07NPO",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3000,
+                        "pickup": 3000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N0ON07NPO": {
+            "name": "Quesadilla z wołowiną",
+            "description": [
+                "dwie tortille zapiekane z sosem BBQ, mozzarellą, jalapeno, cebulą i papryką, podawane z sałatą"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N0ON07NPO",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3200,
+                        "pickup": 3200,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RN3R7507Q1": {
+            "name": "Filet z kurczaka z gorgonzolą i orzechami",
+            "description": [
+                "Filet z kurczaka/gorgonzola/gruszka/orzechy włoskie/gnocchi szpinakowe/rukola"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RN3R7507Q1",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3200,
+                        "pickup": 3200,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RR35Q037NN": {
+            "name": "Pierogi wegge",
+            "description": [
+                "kapusta/czosnek/por/marchew/cebula/sos sojowo miodowy"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RR35Q037NN",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2900,
+                        "pickup": 2900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O70700Q331": {
+            "name": "Bucatini Carbonara",
+            "description": [
+                "z pancettą, jajkiem i pecorino"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "O70700Q331",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3200,
+                        "pickup": 3200,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NN5N07NPO": {
+            "name": "Tagliatelle z kurkami i boczkiem",
+            "description": [
+                "na sosie śmietanowym, serwowane z rukolą"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NN5N07NPO",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2900,
+                        "pickup": 2900,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RQN31P5ONN": {
+            "name": "Spaghetti z krewetkami",
+            "description": [
+                "krewetki tygrysie/pesto ze szczypioru/imbir/olej sezamowy/czosnek/chilli/sos sosjow/sos ostrygowy"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RQN31P5ONN",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3700,
+                        "pickup": 3700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R5Q31P5ONN": {
+            "name": "Bucatini al limone",
+            "description": [
+                "parmezan/pecorino/cytryna/masło/sól/pieprz"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R5Q31P5ONN",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3200,
+                        "pickup": 3200,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "R7R31P5ONN": {
+            "name": "Tagliatelle z buratą i pistacjami",
+            "description": [
+                "pesto bazyliowe/pisatcje/burrata/płatki chilli"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "R7R31P5ONN",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3600,
+                        "pickup": 3600,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O1RR0RN17": {
+            "name": "Sałatka Wiejska",
+            "description": [
+                "mix sałat, boczk grillowany, ziemniaki opiekane, pomidory koktajlowe, cebula czerwona"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "O1RR0RN17",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3000,
+                        "pickup": 3000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N1PN07NPO": {
+            "name": "Sałata Grecka",
+            "description": [
+                "mix sałat z rukolą, czerwona cebula, pomidory koktajlowe, ser typu feta, oliwki, suszone pomidory, focaccia"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N1PN07NPO",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2700,
+                        "pickup": 2700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NRQ07NO37": {
+            "name": "Sałatka Aranci",
+            "description": [
+                "mix sałat/pomarańcza/kurczak pieczony/orzechy włoskie/ser gorgonzola/winegret/ focaccia"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NRQ07NO37",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3300,
+                        "pickup": 3300,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N7PN07NPO": {
+            "name": "Sałatka Norweska",
+            "description": [
+                "sezonowy mix sałat, oliwki, wędzony łosoś, ogórek,  dresing jogurtowo-koperkowy, focaccia"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N7PN07NPO",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3500,
+                        "pickup": 3500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N37N07NPO": {
+            "name": "Sałatka Pollo",
+            "description": [
+                "mix sałat z oliwkami, ser typu feta, grillowany kurczak, grzanki,  dresing na bazie miodu i musztardy, focaccia"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N37N07NPO",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3000,
+                        "pickup": 3000,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RN370137NN": {
+            "name": "Sałatka Włoska",
+            "description": [
+                "mix sałat/szynka parmeńska/pomidorki koktajlowe/oliwki/grzanki ziołowe/parmezan"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RN370137NN",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3500,
+                        "pickup": 3500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "ON5100Q331": {
+            "name": "Burger camembert (wegge)",
+            "description": [
+                "wołowina, bułka własnego wypieku, panierowany camembert, placek ziemniaczany, karmelizowana cebula, sałata, pomidor, ogórek, czerwona cebula, rukola, frytki"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "ON5100Q331",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3800,
+                        "pickup": 3800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NP7N07NPO": {
+            "name": "Burger klasyczny",
+            "description": [
+                "wołowina, bułka własnego wypieku, sałata, pomidor, ogórek, czerwona cebula, rukola, frytki"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NP7N07NPO",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3600,
+                        "pickup": 3600,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N5QN07NPO": {
+            "name": "Bacon & Cheese burger",
+            "description": [
+                "wołowina, bułka własnego wypieku, sałata, pomidor, ogórek, czerwona cebula, rukola, frytki"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N5QN07NPO",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 3800,
+                        "pickup": 3800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "RQN7Q037NN": {
+            "name": "Canolli",
+            "description": [
+                "mascarpone/pistacje/sok z cytryny/czekolada"
+            ],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "RQN7Q037NN",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 2500,
+                        "pickup": 2500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NORN07NPO": {
+            "name": "Sos czosnkowy",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NORN07NPO",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 500,
+                        "pickup": 500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N7RN07NPO": {
+            "name": "Sos pomidorowy",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N7RN07NPO",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 500,
+                        "pickup": 500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N00307NPO": {
+            "name": "Ketchup",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N00307NPO",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 400,
+                        "pickup": 400,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N30307NPO": {
+            "name": "Sos serowy",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N30307NPO",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 500,
+                        "pickup": 500,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NP0307NPO": {
+            "name": "Sos ostry",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NP0307NPO",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 400,
+                        "pickup": 400,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NN1307NPO": {
+            "name": "Sos bbq",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "NN1307NPO",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 400,
+                        "pickup": 400,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N51307NPO": {
+            "name": "Sos tysiąca wysp",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "N51307NPO",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 400,
+                        "pickup": 400,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NQ1307NPO": {
+            "name": "Coca-Cola 0,25l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/N33NP05/products/coca-cola-02l.png?timestamp=1704990612",
+            "variants": [
+                {
+                    "id": "NQ1307NPO",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 800,
+                        "pickup": 800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": "9,60",
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O7O3P0Q331": {
+            "name": "Coca-Cola zero 0,25l",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "O7O3P0Q331",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 800,
+                        "pickup": 800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N1N307NPO": {
+            "name": "Fanta Pomarańczowa 0,25l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/N33NP05/products/fanta-pomaranczowa-02l.png?timestamp=1704990612",
+            "variants": [
+                {
+                    "id": "N1N307NPO",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 600,
+                        "pickup": 600,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "NON307NPO": {
+            "name": "Sprite 0,25l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/N33NP05/products/sprite-02l.png?timestamp=1704990612",
+            "variants": [
+                {
+                    "id": "NON307NPO",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 800,
+                        "pickup": 800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O353P0Q331": {
+            "name": "Kinley Tonic Water 0,25l",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "O353P0Q331",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 800,
+                        "pickup": 800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N7N307NPO": {
+            "name": "Kropla Beskidu woda niegazowana 0,33l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/N33NP05/products/kropla-beskidu-woda-niegazowana-033l.png?timestamp=1704990612",
+            "variants": [
+                {
+                    "id": "N7N307NPO",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 700,
+                        "pickup": 700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "N03307NPO": {
+            "name": "Kropla Delice woda gazowana 0,33l",
+            "description": [],
+            "imageUrl": "https://static.takeaway.com/images/restaurants/pl/N33NP05/products/kropla-delice-woda-gazowana-033l.png?timestamp=1704990612",
+            "variants": [
+                {
+                    "id": "N03307NPO",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 700,
+                        "pickup": 700,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": "10,00",
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "O13OP0Q331": {
+            "name": "FuzeTea cytrynowa z czarną herbatą i trawą cytrynową 0,25l",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "O13OP0Q331",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 800,
+                        "pickup": 800,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        },
+        "OO3OP0Q331": {
+            "name": "FuzeTea brzoskwiniowa z czarną herbatą i hibiskusem 0,25l",
+            "description": [],
+            "imageUrl": null,
+            "variants": [
+                {
+                    "id": "OO3OP0Q331",
+                    "name": null,
+                    "optionGroupIds": [],
+                    "shippingTypes": [
+                        "DELIVERY",
+                        "PICKUP"
+                    ],
+                    "prices": {
+                        "delivery": 600,
+                        "pickup": 600,
+                        "deposit": null
+                    },
+                    "metric": {
+                        "unit": null,
+                        "quantity": null
+                    },
+                    "priceUnit": null,
+                    "pricePerUnitPickup": null,
+                    "pricePerUnitDelivery": null,
+                    "alcoholVolume": null,
+                    "caffeineAmount": null,
+                    "isSoldOut": false,
+                    "isExcludedFromMov": false
+                }
+            ]
+        }
+    }
+}

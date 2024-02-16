@@ -1,0 +1,38 @@
+<div class="actions">
+  <button class="btn" (click)="addRow()">Add row</button>
+  <button class="btn" (click)="reset()">Reset</button>
+</div>
+<form [formGroup]="form" class="calc-container">
+  <ng-container *ngIf="form.controls">
+    <div formArrayName="pizzas" *ngFor="let pizza of form.controls.pizzas?.value; let i = index; trackBy: trackByInputs">
+      <div class="calc-row" [formGroupName]="i">
+        <div class="calc-detail">
+          <label for="name">Etykieta</label>
+          <textarea formControlName="name" name="name" class="name"></textarea>
+        </div>
+
+        <section>
+          <div class="calc-detail">
+            <label for="size">Rozmiar pizzy (cm)</label>
+            <input formControlName="size" name="size" class="size" type="text" pattern="[0-9]" />
+          </div>
+          <div class="calc-detail">
+            <label for="price">Cena (zł)</label>
+            <input formControlName="price" name="price" class="price" type="text" pattern="[0-9]" />
+          </div>
+        </section>
+
+        <section>
+          <div class="calc-detail">
+            <label for="area">Obszar (cm²)</label>
+            <input formControlName="area" name="area" class="area" type="text" />
+          </div>
+          <div class="calc-detail">
+            <label for="priceAvg">Wartość za 100cm²</label>
+            <input formControlName="priceAvg" name="priceAvg" type="text" />
+          </div>
+        </section>
+      </div>
+    </div>
+  </ng-container>
+</form>

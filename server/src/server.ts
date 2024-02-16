@@ -1,6 +1,8 @@
 import { Request, Response, Application } from "express";
 import { providePyszneData } from "./pyszne/pyszne-data-scraper";
 
+import { scrapRoutes } from "./api/routes/scrap.routes";
+
 const express = require("express");
 const app: Application = express();
 const http = require("http").createServer(app);
@@ -24,6 +26,7 @@ async function setup() {
     res.json({ message: "Hello" });
   });
 
+  scrapRoutes(app);
   http.listen(process.env.PORT, () => console.log("listening on *:3000"));
 
   // fetch(
