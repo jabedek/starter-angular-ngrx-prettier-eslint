@@ -15,6 +15,7 @@
         "no-extra-boolean-cast": 0,
         "@typescript-eslint/no-explicit-any": "warn",
         "@typescript-eslint": "warn",
+        "@typescript-eslint/ban-types": "off",
 
         "@angular-eslint/directive-selector": [
           "error",

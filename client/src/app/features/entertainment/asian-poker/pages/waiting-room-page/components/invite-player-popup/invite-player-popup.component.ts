@@ -16,7 +16,7 @@ export class InvitePlayerPopupComponent {
   @Input() sessionId = '';
   inviteForm = new FormGroup({
     playerEmail: new FormControl('', { validators: [Validators.required, Validators.email] }),
-    additionalText: new FormControl('', { validators: [Validators.required] }),
+    additionalText: new FormControl(''),
   });
 
   constructor(
@@ -26,10 +26,13 @@ export class InvitePlayerPopupComponent {
   ) {}
 
   invite() {
+    console.log('invite');
+
+    this.error = '';
     const { playerEmail, additionalText } = this.inviteForm.getRawValue();
-    if (this.order && playerEmail && additionalText) {
+    if (this.order && playerEmail) {
       this.ap
-        .invite(this.sessionId, { playerEmail, additionalText }, this.order)
+        .invite(this.sessionId, { playerEmail, additionalText: additionalText || '' }, this.order)
         .then(() => {
           // show toast
           this.popup.hidePopup();

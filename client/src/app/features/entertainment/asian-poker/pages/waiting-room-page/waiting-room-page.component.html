@@ -6,9 +6,10 @@
   <ng-container content>
     <div class="list-wrapper">
       <div class="list-headers">
+        <div class="actions"></div>
         <div class="playerName">Nazwa gracza</div>
         <div class="status">Status</div>
-        <div class="lock">Przypisane</div>
+        <div class="lock">Przytrzymanie</div>
       </div>
       <div class="list">
         <ng-container *ngFor="let slot of slots | slice: 0 : session.sessionSettings.playersLimit + 1; trackBy: trackBySlots">
@@ -24,6 +25,7 @@
 
     <div class="info">{{ session.sessionActivity.playersJoinedAmount }} / {{ session.sessionSettings.playersLimit }}</div>
     <div class="info">Gra rozpoczyna się automatycznie gdy dołączy max graczy</div>
+    <div class="info">TODO: JAKO HOST MOZESZ ZAZNACZYC GRACZY I NASTEPNIE ICH USUNAC</div>
   </ng-container>
 
   <ng-container actions>
@@ -32,7 +34,10 @@
     </div> -->
 
     <div class="action-item">
-      <app-button [disabled]="session.sessionActivity.playersJoinedAmount < 3">Zacznij grę natychmiast</app-button>
+      <div class="action-buttons">
+        <app-button (click)="leavePopup()">Zrezygnuj</app-button>
+        <app-button [disabled]="session.sessionActivity.playersJoinedAmount < 3">Zacznij grę natychmiast</app-button>
+      </div>
       <div class="info">Min 3 graczy</div>
     </div>
 
@@ -43,13 +48,38 @@
 <ng-template #player let-slot let-session="session">
   <ng-container [ngSwitch]="slot.status">
     <ng-container *ngSwitchDefault>
-      <div
-        class="list-item wrapper-status-{{ slot.status }}"
-        [ngClass]="{ host: slot.user?.id === session.sessionSettings.hostId }">
-        <div class="playerName">{{ slot.user?.displayName || "[ oczekiwanie na dołączenie ]" }}</div>
-        <div class="status status-{{ slot.status }}">{{ slot.status || "" }}</div>
-        <div class="lock lock-{{ slot.locked }}">{{ slot.locked ? "TAK" : "NIE" }}</div>
-      </div>
+      <ng-container *ngIf="slot.user?.id as userId">
+        <div
+          class="list-item wrapper-status-{{ slot.status }} "
+          [ngClass]="{
+            isHost: userId === session.sessionActivity.hostId,
+            currentUser: userId === currentUserId,
+            invitePending: slot.status === 'invited'
+          }">
+          <div class="actions">
+            <div *ngIf="userId !== currentUserId" class="remove" (click)="kick(userId)"></div>
+          </div>
+          <div class="playerName">
+            <p>
+              {{ slot.status === "invited" ? "Zaproszono: " : "" }}
+              {{ slot.user?.displayName || "[ oczekiwanie na dołączenie ]" }}
+            </p>
+          </div>
+          <div class="status status-{{ slot.status }}">
+            <div class="status-wrapper">
+              <div class="occupied" *ngIf="slot.status === 'occupied'"></div>
+              <app-spinner [color]="'orange'" *ngIf="slot.status === 'invited'"></app-spinner>
+              <app-spinner [color]="'red'" *ngIf="slot.status === 'disconnected'"></app-spinner>
+            </div>
+          </div>
+          <!-- <div class="status status-{{ slot.status }}">{{ slot.status || "" }}</div> -->
+          <div
+            class="lock lock-{{ slot.locked }}"
+            (click)="userId !== session.sessionActivity.hostId && userId === currentUserId && toggleSlot(userId, slot)">
+            <div class="icon-{{ slot.locked }}"></div>
+          </div>
+        </div>
+      </ng-container>
     </ng-container>
 
     <ng-container *ngSwitchCase="'empty'">

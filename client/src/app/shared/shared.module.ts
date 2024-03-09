@@ -18,6 +18,10 @@ import { DurationPickerComponent } from './components/controls/duration-picker/d
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { UserActivityMonitorProgressBarComponent } from './components/user-activity-monitor/user-activity-monitor-progress-bar.component';
 import { CountdownTimerComponent } from './components/countdown-timer/countdown-timer.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { HttpLoaderFactory } from '../app.module';
+import { HttpClient } from '@angular/common/http';
+import { Lang } from './models/enums';
 
 @NgModule({
   declarations: [
@@ -39,7 +43,20 @@ import { CountdownTimerComponent } from './components/countdown-timer/countdown-
     UserActivityMonitorProgressBarComponent,
     CountdownTimerComponent,
   ],
-  imports: [CommonModule, FormsModule, ReactiveFormsModule],
+  imports: [
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    TranslateModule.forChild({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient],
+      },
+      defaultLanguage: Lang.pl,
+      isolate: true,
+    }),
+  ],
   exports: [
     FormsModule,
     ReactiveFormsModule,

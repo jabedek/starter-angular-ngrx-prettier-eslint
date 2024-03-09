@@ -6,13 +6,64 @@
   overflow-wrap: break-word;
 }
 
+.actions {
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  .remove {
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      box-shadow: variables.$shadow-4;
+      cursor: pointer;
+      @include mixins.icon-mask("^assets/icons/close.svg", 18px, 18px, #ff3f3f);
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
 .lock {
   width: 90px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  div {
+    &::after {
+      content: "";
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      transform: translate(0, -12px);
+    }
+
+    &.icon-true {
+      &::after {
+        @include mixins.icon-mask("^assets/icons/lock.svg", 24px, 24px, rgb(0, 197, 0));
+      }
+    }
+
+    &.icon-false {
+      &::after {
+        color: rgb(197, 0, 0);
+
+        @include mixins.icon-mask("^assets/icons/lock.svg", 24px, 24px, #bbb);
+      }
+    }
+  }
 }
 
 .status {
   width: 110px;
   overflow-wrap: break-word;
+  display: flex;
+  justify-content: center;
 
   text-transform: uppercase;
   font-weight: 700;
@@ -38,28 +89,86 @@
   }
 }
 
+.status-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+
+  .occupied {
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    background: radial-gradient(rgb(0, 154, 0), rgb(3, 190, 3));
+    box-shadow: variables.$shadow-4;
+  }
+}
+
 .activity {
   width: 110px;
   overflow-wrap: break-word;
 }
 
-.list-item.host {
-  .playerName {
+.isHost {
+  .playerName p {
     position: relative;
 
     &::after {
       font-family: Manrope;
       content: "HOST";
       $size: 14px;
-      color: variables.$bg-roof;
-      font-size: 10px;
+      background-color: variables.$bg-main;
+      padding: 1px 2px;
+      border-radius: 3px;
+
+      font-size: 11px;
       font-weight: 700;
 
       width: fit-content;
       height: $size;
       position: absolute;
       text-shadow: variables.$shadow-4;
-      transform: translate(-1px, -8px);
+      transform: translate(2px, -8px);
+    }
+  }
+}
+
+.playerName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.currentUser {
+  .lock {
+    cursor: pointer;
+  }
+
+  .playerName p {
+    width: fit-content;
+    border-radius: 9px;
+    padding: 4px 7px;
+    transition: all 0.2s ease;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    transition: all 200ms ease;
+  }
+}
+
+.currentUser:not(.isHost) {
+  .lock-false {
+    @include mixins.clickable-btn();
+    animation: pulse 2s infinite;
+
+    &:hover {
+      animation: none;
+      color: white;
     }
   }
 }
@@ -92,6 +201,13 @@
   }
 }
 
+.invitePending {
+  .playerName p {
+    color: orange !important;
+    font-size: 12px !important;
+  }
+}
+
 .info {
   font-size: 14px;
   padding: 5px 9px;
@@ -110,5 +226,22 @@
 
   .info {
     margin-right: 10px;
+  }
+
+  .action-buttons {
+    display: flex;
+  }
+}
+
+// animation for pulsing color
+@keyframes pulse {
+  0% {
+    color: rgb(0, 0, 0);
+  }
+  50% {
+    color: rgba(255, 255, 255, 1);
+  }
+  100% {
+    color: rgb(0, 0, 0);
   }
 }

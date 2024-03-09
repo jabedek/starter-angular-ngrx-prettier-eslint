@@ -11,7 +11,7 @@ import {
 } from './hand-picker.model';
 import { HandName } from '../../../../models/hand.model';
 import { DeckVariant } from '../../../../constants/deck.constant';
-import { HandInstance } from '../../../../models/analysis.model';
+import { HandInstance } from '../../../../models/in-game-analysis.model';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { getChoiceSubSet, getEmptyBettingSlotsGroups, getEmptySlots, getPropositionsKeys } from './hand-picker.utils';
 import { debounce, fromEvent, takeUntil, tap, timer } from 'rxjs';

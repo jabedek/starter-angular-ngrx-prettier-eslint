@@ -1,9 +1,9 @@
-<div *ngIf="!mini" [ngClass]="{ disabled }" appAccess (access)="!disabled && (value = !value)">
+<div *ngIf="!mini" [ngClass]="{ disabled }" appAccess (access)="handleSelect($event)">
   <p class="icon-container" [ngClass]="{ selected: value }"></p>
   {{ label }}
 </div>
 
-<div *ngIf="mini" [ngClass]="{ disabled, mini }" appAccess (access)="!disabled && (value = !value)">
+<div *ngIf="mini" [ngClass]="{ disabled, mini }" appAccess (access)="handleSelect($event)">
   {{ label }}
   <p class="icon-container" [ngClass]="{ selected: value }"></p>
 </div>

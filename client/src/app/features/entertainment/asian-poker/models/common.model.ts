@@ -1,4 +1,5 @@
-import { AsianPokerSessionDTO, AsianPokerGameDTO } from './dto';
+import { AsianPokerGameDTO } from './session-game-chat/game.model';
+import { AsianPokerSessionDTO } from './session-game-chat/session.model';
 
 export type SessionGameIdsPair = {
   sessionId: string;

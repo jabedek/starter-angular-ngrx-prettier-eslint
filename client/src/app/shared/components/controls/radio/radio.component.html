@@ -5,7 +5,7 @@
   <div class="items">
     <ng-container *ngFor="let item of options">
       <div class="item" [ngClass]="{ disabled }" appAccess (access)="!disabled && writeValue(item.value)">
-        {{ item.label }}
+        {{ item.label | translate }}
         <p class="icon-container" [ngClass]="{ selected: item.value === value }"></p>
       </div>
     </ng-container>

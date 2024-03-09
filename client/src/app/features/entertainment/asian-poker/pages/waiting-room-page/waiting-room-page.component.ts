@@ -4,10 +4,13 @@ import { AsianPokerService } from '@features/entertainment/asian-poker/firebase/
 import { Unsubscribe } from 'firebase/firestore';
 import { BaseComponent } from '@shared/abstracts/base/base.component';
 import { FirebaseUsersService } from '@core/firebase/firebase-users.service';
-import { AsianPokerSessionDTO, AsianPokerGameDTO } from '../../models/dto';
 import { PopupService } from '@core/modules/layout/components/popup/popup.service';
 import { InvitePlayerPopupComponent } from './components/invite-player-popup/invite-player-popup.component';
-import { WaitingSlot } from '../../models/session.model';
+import { AsianPokerSessionDTO } from '../../models/session-game-chat/session.model';
+import { takeUntil } from 'rxjs';
+import { FirebaseAuthService } from '@core/firebase/firebase-auth.service';
+import { AsianPokerGameDTO } from '../../models/session-game-chat/game.model';
+import { SessionSlot } from '../../models/session-game-chat/player-slot.model';
 
 @Component({
   selector: 'app-waiting-room-page',
@@ -15,7 +18,8 @@ import { WaitingSlot } from '../../models/session.model';
   styleUrls: ['./waiting-room-page.component.scss'],
 })
 export class WaitingRoomPageComponent extends BaseComponent implements OnDestroy, AfterContentInit {
-  slots: WaitingSlot[] = [
+  currentUserId = '';
+  slots: SessionSlot[] = [
     // { user: undefined },
     // { user: undefined },
     // { user: undefined },
@@ -53,12 +57,15 @@ export class WaitingRoomPageComponent extends BaseComponent implements OnDestroy
   constructor(
     private route: ActivatedRoute,
     private ap: AsianPokerService,
+    private auth: FirebaseAuthService,
     private firebaseUsers: FirebaseUsersService,
     private router: Router,
     private popup: PopupService,
   ) {
     super('WaitingRoomPageComponent');
-    this.route.data.subscribe((routeData) => (this.session = routeData.data[0]));
+    this.route.data.pipe(takeUntil(this.__destroy)).subscribe((routeData) => (this.session = routeData.data[0]));
+
+    this.auth.appAccount$.pipe(takeUntil(this.__destroy)).subscribe((user) => (this.currentUserId = user?.id || ''));
   }
 
   ngAfterContentInit(): void {
@@ -88,14 +95,20 @@ export class WaitingRoomPageComponent extends BaseComponent implements OnDestroy
 
   private async getPlayersDetails() {
     if (this.session) {
-      const slots: WaitingSlot[] = [...this.session.sessionActivity.playersSlots];
+      const slots: SessionSlot[] = [...this.session.sessionActivity.playersSlots];
 
-      const usersDetails = await Promise.allSettled([
-        ...slots.map(({ playerId }) => (!!playerId ? this.firebaseUsers.getUserById(playerId) : null)),
-      ]);
+      const playersIds = slots
+        .filter((slot) => !!(slot.playerId || slot.invitedId))
+        .map((p) => p.playerId || p.invitedId) as string[];
 
-      usersDetails.forEach((result, index) => {
-        slots[index].user = result.status === 'fulfilled' && result.value ? result.value : null;
+      const usersDetails = await this.firebaseUsers.getUsersByIds(playersIds);
+
+      // const usersDetails = await Promise.allSettled([
+      //   ...slots.map(({ playerId, invitedId }) => (!!playerId ? this.firebaseUsers.getUserById(playerId || invitedId) : null)),
+      // ]);
+
+      usersDetails.forEach((user, index) => {
+        slots[index].user = user;
       });
 
       this.slots = slots;
@@ -134,6 +147,22 @@ export class WaitingRoomPageComponent extends BaseComponent implements OnDestroy
           },
         },
       });
+    }
+  }
+
+  async leavePopup() {}
+
+  async kick(playerId: string) {
+    if (this.session) {
+      await this.ap.kickFromWaiting(this.session.id, playerId);
+    }
+  }
+
+  async toggleSlot(userId: string, slot: SessionSlot) {
+    console.log(userId, slot.order);
+
+    if (this.session) {
+      await this.ap.toggleSlot(this.session.id, userId);
     }
   }
 

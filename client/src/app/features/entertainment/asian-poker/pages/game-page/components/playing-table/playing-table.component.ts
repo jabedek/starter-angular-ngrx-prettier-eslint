@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { PlayerWithHand } from '../../../../models/game.model';
 import { SessionGameDataPair } from '@features/entertainment/asian-poker/models/common.model';
+import { UserAppAccount } from '@store/auth/auth.state';
 
 @Component({
   selector: 'app-playing-table',
@@ -8,7 +8,7 @@ import { SessionGameDataPair } from '@features/entertainment/asian-poker/models/
   styleUrls: ['./playing-table.component.scss'],
 })
 export class PlayingTableComponent {
-  @Input({ required: true }) currentUser: Partial<PlayerWithHand> | undefined;
+  @Input({ required: true }) currentUser: UserAppAccount | undefined;
   @Input({ required: true }) data: SessionGameDataPair | undefined;
 
   get gameLastTick() {
@@ -16,37 +16,37 @@ export class PlayingTableComponent {
   }
 
   get currentPlayerIndex() {
-    return this.gameLastTick?.currentPlayerIndex || 0;
+    return this.gameLastTick?.cycleInfo?.currentPlayerIndex || 0;
   }
 
   get currentDealerIndex() {
-    return this.gameLastTick?.currentDealerIndex || 0;
+    return this.gameLastTick?.roundInfo?.currentDealerIndex || 0;
   }
 
   get currentPlayer() {
     if (this.gameLastTick) {
-      return this.gameLastTick.playersWithHands[this.currentPlayerIndex];
+      return this.gameLastTick.cycleInfo?.gameSlots[this.currentPlayerIndex];
     }
     return undefined;
   }
 
   get currentDealer() {
     if (this.gameLastTick) {
-      return this.gameLastTick.playersWithHands[this.currentDealerIndex];
+      return this.gameLastTick.cycleInfo?.gameSlots[this.currentDealerIndex];
     }
     return undefined;
   }
 
   get isCurrentUserMoving() {
-    return this.currentPlayer?.displayName === this.currentUser?.displayName || false;
+    return this.currentPlayer?.playerWithHand.displayName === this.currentUser?.displayName || false;
   }
 
   get publicCards() {
-    return this.gameLastTick?.publicCards || [];
+    return this.gameLastTick?.roundInfo?.publicCards || [];
   }
 
   get turnPlayers() {
-    return this.gameLastTick?.playersWithHands || [];
+    return this.gameLastTick?.cycleInfo?.gameSlots || [];
   }
 
   cardsHidden = false;

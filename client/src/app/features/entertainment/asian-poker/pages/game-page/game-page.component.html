@@ -1,7 +1,7 @@
-<div class="table-wrapper">
+<div class="table-wrapper" *ngIf="dataPair">
   <app-playing-table [data]="dataPair" [currentUser]="currentUser"></app-playing-table>
 </div>
 
-<div class="gui-wrapper">
-  <!-- <app-player-gui [dataPair]="dataPair" [currentUser]="currentUser"></app-player-gui> -->
+<div class="gui-wrapper" *ngIf="dataPair">
+  <app-player-gui [dataPair]="dataPair" [currentUser]="currentUser"></app-player-gui>
 </div>

@@ -13,7 +13,7 @@
       <div class="table-filters">
         <div class="quick-options">
           <!-- Cuisines with pizzas -->
-          <app-checkbox class="outlined" [value]="withPizza" (click)="handlePizza()" label="With pizzas"></app-checkbox>
+          <app-checkbox class="outlined" [value]="withPizza" (appChange)="(test)" label="With pizzas"></app-checkbox>
 
           <app-checkbox
             class="outlined"

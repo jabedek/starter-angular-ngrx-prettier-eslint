@@ -9,6 +9,7 @@
   (mouseleave)="mousePressed = false"
   (touchend)="mousePressed = false"
   (touchcancel)="mousePressed = false"></canvas>
+<canvas #canvasElBg class="canvas-bg"></canvas>
 
 <div class="gui">
   <ul class="color-palette">
@@ -23,10 +24,14 @@
   </ul>
 
   <app-range [(ngModel)]="brushSize" [min]="1" [max]="11" [step]="2" label="Brush size"></app-range>
-
   <div class="actions">
     <app-button (click)="clearArea()">CLEAR</app-button>
     <app-button (click)="downloadImg()">SAVE IMAGE</app-button>
-    <app-checkbox class="outlined" [(ngModel)]="saveWithBg" label="Save with background" [disabled]="!true"></app-checkbox>
+    <app-checkbox
+      class="outlined"
+      [value]="saveWithBg"
+      (appChange)="saveWithBg = $event.value"
+      label="Save with background"
+      [disabled]="!true"></app-checkbox>
   </div>
 </div>

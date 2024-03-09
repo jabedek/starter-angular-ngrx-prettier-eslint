@@ -3,8 +3,16 @@
   <p class="monotype">1m 20s</p>
 </div>
 
-<div *ngIf="currentUser && data && gameLastTick" class="wrapper">
-  <app-hand-picker *ngIf="gameLastTick.deckVariant" [deckVariant]="gameLastTick.deckVariant"></app-hand-picker>
+<div class="center" *ngIf="dataPair?.session?.sessionActivity?.status === 'game-created'">
+  <app-asian-poker-button *ngIf="true || isCurrentUserDealer" variant="default" (click)="startFirstRound()" class="">
+    <span>Start</span>
+  </app-asian-poker-button>
+</div>
+
+<div *ngIf="currentUser && dataPair && gameLastTick" class="wrapper">
+  <ng-container *ngIf="gameLastTick?.roundInfo?.deckVariant as deckVariant">
+    <app-hand-picker [deckVariant]="deckVariant"></app-hand-picker>
+  </ng-container>
 </div>
 
 <!-- <app-see-data [data]="session"></app-see-data> -->

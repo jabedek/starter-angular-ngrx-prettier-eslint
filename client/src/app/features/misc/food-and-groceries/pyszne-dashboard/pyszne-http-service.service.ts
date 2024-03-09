@@ -22,7 +22,19 @@ export class PyszneHttpService {
       map((res: SimpleProductsData[]) => {
         return res.map((restaurant) => {
           Object.values(restaurant.products).forEach((product) => (product.name = product.name.toLowerCase()));
-          const pizzaProducts = Object.values(restaurant.products).filter((product) => product.name.includes('pizza'));
+          const pizzaProducts = Object.values(restaurant.products).filter((product) => {
+            const condition0 = product.name.includes('pizza');
+            const condition1 = product.variants.every((variant) => {
+              let size = (variant.name || '').toLowerCase();
+              if (!size) {
+                size = `${variant.metric.quantity} ${variant.metric.unit}`.toLowerCase();
+              }
+              const price = variant.prices.delivery || variant.prices.pickup || 0;
+              return size.includes('cm') && price > 2250;
+            });
+
+            return condition0 && condition1;
+          });
 
           // Regex for margarita - "marg" + "ta" in order, in text like: "pizza margherita" (variants of word 'margarita': margarita,margharita, margerita, margherita, margaritta, margharitta , margeritta, margheritta)
           const margaritaRegex = new RegExp(`marg.*ta`, 'i');

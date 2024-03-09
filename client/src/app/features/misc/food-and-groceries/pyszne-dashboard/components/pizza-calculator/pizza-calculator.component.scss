@@ -58,10 +58,10 @@ form {
     }
     input,
     textarea {
-      width: 150px;
+      width: 120px;
       height: 30px;
       text-align: center;
-      font-size: 16px;
+      font-size: 15px;
       border-radius: 2px;
       padding: 0 6px;
       outline: none !important;
@@ -71,7 +71,7 @@ form {
       resize: none;
 
       &.name {
-        width: 200px;
+        width: 180px;
         height: 83px;
         font-size: 12px;
         padding: 6px;

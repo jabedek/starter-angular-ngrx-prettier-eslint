@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Card } from '../models/card.model';
 import { DeckVariant } from '../constants/deck.constant';
-import { CycleAnalyticsA, CycleAnalyticsB, HandInstance } from '../models/analysis.model';
+import { CycleAnalyticsA, CycleAnalyticsB, HandInstance } from '../models/in-game-analysis.model';
 import { HighHandsNames, LowHandsNames } from '../constants/hand.constant';
-import { AsianPokerGameDTO } from '../models/dto';
+import { AsianPokerGameDTO } from '../models/session-game-chat/game.model';
 
 @Injectable({
   providedIn: 'root',
@@ -77,10 +77,10 @@ export class GameAnalyzerService {
 
   private getAnalyticsA() {
     if (this.gameLastTick) {
-      this.analyticsA.publicCards = [...this.gameLastTick.publicCards];
-      this.analyticsA.currentPlayerHand = this.gameLastTick.playersWithHands.map((player) => ({
-        playerId: player.id,
-        cards: [...player.hand],
+      this.analyticsA.publicCards = [...this.gameLastTick.roundInfo.publicCards];
+      this.analyticsA.currentPlayerHand = this.gameLastTick.cycleInfo.gameSlots.map((player) => ({
+        playerId: player.playerWithHand.id,
+        cards: [...player.playerWithHand.hand],
       }));
 
       // cards available to all
@@ -209,8 +209,8 @@ export class GameAnalyzerService {
 
     // sort hands by hierarchy
     const sortedHighHands = onlyHighHands.sort((a, b) => {
-      const aSuitAt = (this.getHighHandsFromDeck(this.gameLastTick?.deckVariant) || []).indexOf(a.name as any);
-      const bSuitAt = (this.getHighHandsFromDeck(this.gameLastTick?.deckVariant) || []).indexOf(b.name as any);
+      const aSuitAt = (this.getHighHandsFromDeck(this.gameLastTick?.roundInfo.deckVariant) || []).indexOf(a.name as any);
+      const bSuitAt = (this.getHighHandsFromDeck(this.gameLastTick?.roundInfo.deckVariant) || []).indexOf(b.name as any);
 
       if (aSuitAt < bSuitAt) {
         return -1;

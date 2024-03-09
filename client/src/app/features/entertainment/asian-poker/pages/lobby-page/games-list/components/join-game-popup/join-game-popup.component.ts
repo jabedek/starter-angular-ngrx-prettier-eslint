@@ -5,7 +5,7 @@ import { AsianPokerService } from '@features/entertainment/asian-poker/firebase/
 import { PopupService } from '@core/modules/layout/components/popup/popup.service';
 import { consoleError, tryCatch } from '@shared/helpers/common.utils';
 import { UserAppAccount } from '@store/auth/auth.state';
-import { AsianPokerSessionDTO } from '@features/entertainment/asian-poker/models/dto';
+import { AsianPokerSessionDTO } from '@features/entertainment/asian-poker/models/session-game-chat/session.model';
 /**
  * Variant I: join public game -> pass selected session id. SessionId is set into the input field.
  * Variant II: join private game -> pass nothing. User must enter session id manually.

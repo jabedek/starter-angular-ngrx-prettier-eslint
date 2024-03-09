@@ -25,10 +25,10 @@ click on player to see a 3-second tooltip (also throttled for next 5 seconds) wi
       [ngClass]="{
         dealer: currentDealerIndex === i,
         currentPlayer: currentPlayerIndex === i,
-        userPlayer: player.id === currentUser?.id
+        userPlayer: player.playerWithHand.id === currentUser?.id
       }">
       <div class="name-label">
-        <span>{{ player.displayName }}</span>
+        <span>{{ player.playerWithHand.displayName }}</span>
       </div>
     </div>
   </div>
@@ -36,15 +36,15 @@ click on player to see a 3-second tooltip (also throttled for next 5 seconds) wi
   <div class="decks">
     <ul *ngFor="let player of turnPlayers" class="deck deck-x-{{ turnPlayers.length }}">
       <li
-        *ngFor="let card of player.hand"
+        *ngFor="let card of player.playerWithHand.hand"
         class="card"
-        [ngClass]="{ 'card-hidden': player.id !== currentUser.id }"
+        [ngClass]="{ 'card-hidden': player.playerWithHand.id !== currentUser.id }"
         [appCardStyle]="card">
         <div class="content">
-          <span *ngIf="player.id === currentUser.id" class="suit">
+          <span *ngIf="player.playerWithHand.id === currentUser.id" class="suit">
             {{ card.suit.symbol }}
           </span>
-          <span *ngIf="player.id === currentUser.id" class="rank">
+          <span *ngIf="player.playerWithHand.id === currentUser.id" class="rank">
             {{ card.rank.name }}
           </span>
         </div>

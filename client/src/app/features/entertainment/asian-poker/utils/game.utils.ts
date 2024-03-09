@@ -7,11 +7,11 @@ import {
 } from '../constants/card.constant';
 import { DeckAmountStandard, DeckVariant } from '../constants/deck.constant';
 import { Card } from '../models/card.model';
-import { PlayerWithHand } from '../models/game.model';
+import { GameSlot } from '../models/session-game-chat/player-slot.model';
 
-export function createNewDeck(players: PlayerWithHand[]) {
-  const publicCardsAmount = players.every((player) => player.fixedHandSize > 1) ? 1 : 2;
-  const playersCardsAmount = players.reduce((acc, player) => acc + player.fixedHandSize, 0);
+export function createNewDeck(players: GameSlot[]) {
+  const publicCardsAmount = players.every((player) => player?.playerWithHand?.fixedHandSize > 1) ? 1 : 2;
+  const playersCardsAmount = players.reduce((acc, player) => acc + player.playerWithHand.fixedHandSize, 0);
   const cardsNeeded = publicCardsAmount + playersCardsAmount;
   const deckToDealFrom =
     players.length === 2
@@ -31,11 +31,11 @@ export function createNewDeck(players: PlayerWithHand[]) {
   return { cards, deckVariant };
 }
 
-export function drawCards(cards: Card[], players: PlayerWithHand[]) {
+export function drawCards(cards: Card[], players: GameSlot[]) {
   const cardsCopied = [...cards];
-  const hands = players.map(({ id, fixedHandSize }) => ({
-    id,
-    fixedHandSize,
+  const hands = players.map(({ playerWithHand }) => ({
+    id: playerWithHand.id,
+    fixedHandSize: playerWithHand.fixedHandSize,
   }));
 
   const biggestHand = Math.max(...hands.map((d) => d.fixedHandSize));
@@ -62,7 +62,7 @@ export function drawCards(cards: Card[], players: PlayerWithHand[]) {
     }
   });
 
-  const cardsAmount = players.every((player) => player.fixedHandSize > 1) ? 1 : 2;
+  const cardsAmount = players.every((player) => player.playerWithHand.fixedHandSize > 1) ? 1 : 2;
   const publicCards: Card[] = [];
 
   loop(cardsAmount).forEach(() => {

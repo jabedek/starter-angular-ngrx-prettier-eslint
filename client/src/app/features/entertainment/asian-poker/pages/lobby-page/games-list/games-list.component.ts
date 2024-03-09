@@ -5,7 +5,7 @@ import { BaseComponent } from '@shared/abstracts/base/base.component';
 import { FirebaseAuthService } from '@core/firebase/firebase-auth.service';
 import { take } from 'rxjs';
 import { JoinGamePopupComponent } from './components/join-game-popup/join-game-popup.component';
-import { AsianPokerSessionDTO } from '@features/entertainment/asian-poker/models/dto';
+import { AsianPokerSessionDTO } from '@features/entertainment/asian-poker/models/session-game-chat/session.model';
 
 @Component({
   selector: 'app-games-list',
@@ -34,7 +34,7 @@ export class GamesListComponent extends BaseComponent {
   }
 
   async fetchJoinableSessions() {
-    this.ap.getSessionsByStates(['setup', 'in-game']).then((sessions) => {
+    this.ap.getSessionsByStates(['session-started', 'game-created', 'running', 'paused']).then((sessions) => {
       console.log(sessions);
       this.sessions = sessions;
     });

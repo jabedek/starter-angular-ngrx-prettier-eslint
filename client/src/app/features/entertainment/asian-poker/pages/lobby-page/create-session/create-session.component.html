@@ -24,11 +24,17 @@
       </div>
 
       <div class="control">
-        <app-radio [options]="visibilityValues" [label]="'Widoczność'" formControlName="visibility"></app-radio>
+        <app-radio [options]="visibilityValues" [label]="'Widoczność na liście gier'" formControlName="visibility"></app-radio>
       </div>
 
       <div class="control">
-        <app-radio [options]="accessibilityValues" [label]="'Dostępność'" formControlName="accessibility"></app-radio>
+        <app-radio [options]="accessibilityValues" [label]="'Możliwość dołączania'" formControlName="accessibility"></app-radio>
+      </div>
+
+      <div class="control">
+        <div class="duration">
+          <app-checkbox [label]="'Możliwość podglądania'" [mini]="true" formControlName="spectatorsAllowed"></app-checkbox>
+        </div>
       </div>
 
       <div class="control">
@@ -37,10 +43,10 @@
           <app-duration-picker
             id="actionDurationSeconds"
             formControlName="actionDurationSeconds"
-            [step]="60"
+            [step]="durationStep"
             [disabled]="sessionForm.controls.actionDurationSeconds.disabled"></app-duration-picker>
           <app-checkbox
-            (change)="unlimitedDuration($event)"
+            (appChange)="unlimitedDuration($event)"
             [value]="sessionForm.controls.actionDurationSeconds.getRawValue() === 99999"
             [mini]="true"
             label="No limit"></app-checkbox>

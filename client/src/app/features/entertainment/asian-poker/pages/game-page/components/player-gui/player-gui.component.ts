@@ -1,7 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { PlayerWithHand } from '../../../../models/game.model';
-import { AsianPokerGameDTO } from '@features/entertainment/asian-poker/models/dto';
+import { Component, Input } from '@angular/core';
 import { SessionGameDataPair } from '@features/entertainment/asian-poker/models/common.model';
+import { PlayerWithHand } from '@features/entertainment/asian-poker/models/session-game-chat/player-slot.model';
+import { GameManagerService } from '@features/entertainment/asian-poker/services/game-manager.service';
 
 @Component({
   selector: 'app-player-gui',
@@ -10,52 +10,59 @@ import { SessionGameDataPair } from '@features/entertainment/asian-poker/models/
 })
 export class PlayerGuiComponent {
   @Input({ required: true }) currentUser: Partial<PlayerWithHand> | undefined;
-  @Input({ required: true }) data: SessionGameDataPair | undefined;
+  @Input({ required: true }) dataPair: SessionGameDataPair | undefined;
   get gameLastTick() {
-    return this.data?.game?.ticks.at(-1);
-  }
-
-  get currentPlayerIndex() {
-    return this.gameLastTick?.currentPlayerIndex || 0;
+    return this.dataPair?.game?.ticks.at(-1);
   }
 
   get currentDealerIndex() {
-    return this.gameLastTick?.currentDealerIndex || 0;
+    return this.gameLastTick?.roundInfo?.currentDealerIndex || 0;
+  }
+
+  get currentPlayerIndex() {
+    return this.gameLastTick?.cycleInfo?.currentPlayerIndex || 0;
   }
 
   get currentPlayer() {
     if (this.gameLastTick) {
-      return this.gameLastTick.playersWithHands[this.currentPlayerIndex];
+      return this.gameLastTick.cycleInfo?.gameSlots[this.currentPlayerIndex];
     }
     return undefined;
   }
 
   get currentDealer() {
     if (this.gameLastTick) {
-      return this.gameLastTick.playersWithHands[this.currentDealerIndex];
+      return this.gameLastTick.cycleInfo?.gameSlots[this.currentDealerIndex];
     }
     return undefined;
   }
 
+  get isCurrentUserDealer() {
+    return this.currentDealer?.playerWithHand.displayName === this.currentUser?.displayName || false;
+  }
+
   get isCurrentUserMoving() {
-    return this.currentPlayer?.displayName === this.currentUser?.displayName || false;
+    return this.currentPlayer?.playerWithHand.displayName === this.currentUser?.displayName || false;
   }
 
   get publicCards() {
-    return this.gameLastTick?.publicCards || [];
+    return this.gameLastTick?.roundInfo?.publicCards || [];
   }
 
   get turnPlayers() {
-    return this.gameLastTick?.playersWithHands || [];
+    return this.gameLastTick?.cycleInfo?.gameSlots || [];
   }
-  startTurn() {
-    // this.croupier.startTurn(this.sessionId);
+
+  constructor(private manager: GameManagerService) {}
+
+  startFirstRound() {
+    this.manager.getNextRoundSettings();
   }
 
   call() {
     // if (this.session && this.currentPlayer) {
     // this.croupier.play(this.sessionId, {
-    //   type: PlayerActions.PLAY_CALL,
+    //   type: PlayerTickActions.PLAY_CALL,
     //   data: {
     //     playerId: this.currentPlayer?.id || '',
     //     playerIndex: this.session?.currentPlayerIndex,
@@ -70,7 +77,7 @@ export class PlayerGuiComponent {
   check() {
     // if (this.session && this.currentPlayer) {
     // this.croupier.play(this.sessionId, {
-    //   type: PlayerActions.PLAY_CHECK,
+    //   type: PlayerTickActions.PLAY_CHECK,
     //   data: {
     //     playerId: this.currentPlayer?.id || '',
     //     playerIndex: this.session?.currentPlayerIndex,

@@ -1,6 +1,12 @@
-import { UserAppAccount } from '@store/auth/auth.state';
-import { Flatten } from 'frotsi';
-import { PlayerWithHand } from './game.model';
+import { SessionSlot } from './player-slot.model';
+
+export type AsianPokerSessionDTO = {
+  id: string;
+  sessionSettings: AsianPokerSessionSettings;
+  sessionActivity: AsianPokerSessionActivity;
+  gameId: string;
+  chatId: string;
+};
 
 export type AsianPokerSessionSettings = {
   title: string;
@@ -9,15 +15,16 @@ export type AsianPokerSessionSettings = {
   accessibility: SessionAccessibility;
   visibility: SessionVisibility;
   actionDurationSeconds: number;
+  spectatorsAllowed: boolean;
 };
 
 export type AsianPokerSessionActivity = {
   hostId: string;
   hostDisplayName: string;
-  playersSlots: SessionPlayerSlot[];
+  playersSlots: SessionSlot[];
   playersJoinedAmount: number;
   invitations: SessionInvitation[];
-  sessionState: SessionState;
+  status: SessionStatus;
   finishResult: {
     cause: SessionResult;
   } | null; // 'undefined' means some kind of error;
@@ -25,7 +32,17 @@ export type AsianPokerSessionActivity = {
 
 export type SessionVisibility = 'private' | 'public';
 export type SessionAccessibility = 'invite' | 'all';
-export type SessionState = 'setup' | 'in-game' | 'finished';
+
+/**
+ * 'session-started' - session was just opened, at lobby page
+ * 'game-created' - session's game was just started, session is moving to the game page and the game is being initialized
+ * 'running' - game was initalized and is running in game page, players are making their moves
+ * 'paused' - game was paused, session is in game page
+ * 'finished' - game was finished, session gathered last informations about the game
+ */
+
+export type SessionStatus = 'session-started' | 'game-created' | 'running' | 'paused' | 'finished';
+
 export type SessionSlotStatus = 'empty' | 'occupied' | 'invited' | 'disconnected';
 export type SessionResult = 'game-finished' | 'players-cancelled';
 export type SessionInvitation = {
@@ -40,13 +57,3 @@ export type SessionInvitation = {
   slotOrder: number;
   additionalText: string;
 };
-export type SessionPlayerSlot = {
-  order: number;
-  playerId: string | null;
-  invitedId: string | null;
-  status: SessionSlotStatus;
-  locked: boolean;
-};
-
-export type WaitingSlot = Flatten<SessionPlayerSlot & { user?: UserAppAccount | null }>;
-export type GameSlot = Flatten<SessionPlayerSlot & { playerWithHand?: PlayerWithHand }>;

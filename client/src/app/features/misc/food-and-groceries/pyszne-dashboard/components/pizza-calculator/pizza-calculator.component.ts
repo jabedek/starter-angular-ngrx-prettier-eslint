@@ -29,11 +29,9 @@ export type PizzaComparability = {
   selector: 'app-pizza-calculator',
   templateUrl: './pizza-calculator.component.html',
   styleUrls: ['./pizza-calculator.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  // changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PizzaCalculatorComponent extends BaseComponent implements OnInit {
-  // @Input() data: PizzaBasicInfo[] = [];
-
   @Input() set data(data: PizzaBasicInfo[]) {
     this._data = data;
     this.dataOnSet(data);
@@ -45,7 +43,7 @@ export class PizzaCalculatorComponent extends BaseComponent implements OnInit {
   private dataOnSet(data: PizzaBasicInfo[]) {
     if (data?.length > 0) {
       data.forEach((pizza) =>
-        this.addRow({ name: `${pizza.slug} ${pizza.type} ${pizza.size}cm `, size: pizza.size, price: pizza.price }),
+        this.addRow({ name: `${pizza.type} ${pizza.size}cm \n(${pizza.slug})`, size: pizza.size, price: pizza.price }),
       );
     }
     return;
@@ -104,7 +102,6 @@ export class PizzaCalculatorComponent extends BaseComponent implements OnInit {
       }),
     );
 
-    // focus on the latest added row 'name' input - using Angular approach
     setTimeout(() => {
       const inputs = document.querySelectorAll('input');
       const lastInput = inputs[inputs.length - 6] as HTMLInputElement;
@@ -115,8 +112,13 @@ export class PizzaCalculatorComponent extends BaseComponent implements OnInit {
         container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' });
       }, 50);
     }, 0);
+  }
 
-    console.log(this.form);
+  removeRow(index: number) {
+    const pizzas = this.form.controls.pizzas as FormArray;
+    console.log(pizzas.length);
+    pizzas.removeAt(index);
+    console.log(pizzas.length, pizzas);
   }
 
   reset() {

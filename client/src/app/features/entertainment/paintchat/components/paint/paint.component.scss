@@ -13,15 +13,35 @@
   position: relative;
 }
 
-.canvas {
+.canvas-bg {
+  position: absolute;
+  z-index: -1;
+  background: green;
+  left: 0;
+  top: 0;
+
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   height: 500px;
   border-bottom: 2px solid #555;
+  cursor: crosshair;
+}
+
+.canvas {
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 500px;
+  border-bottom: 2px solid #555;
+  cursor: crosshair;
 }
 
 .gui {
+  position: relative;
+  z-index: 1;
   margin: 6px;
   padding: 6px;
   height: 200px;

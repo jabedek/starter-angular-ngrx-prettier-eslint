@@ -7,7 +7,7 @@
     <div formArrayName="pizzas" *ngFor="let pizza of form.controls.pizzas?.value; let i = index; trackBy: trackByInputs">
       <div class="calc-row" [formGroupName]="i">
         <div class="calc-detail">
-          <label for="name">Etykieta</label>
+          <label for="name">Opis</label>
           <textarea formControlName="name" name="name" class="name"></textarea>
         </div>
 
@@ -32,6 +32,10 @@
             <input formControlName="priceAvg" name="priceAvg" type="text" />
           </div>
         </section>
+
+        <div class="actions">
+          <button class="btn" (click)="removeRow(i)">Remove</button>
+        </div>
       </div>
     </div>
   </ng-container>

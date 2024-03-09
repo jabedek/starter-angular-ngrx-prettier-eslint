@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import 'frotsi';
 
-import { PlayerWithHand } from './models/game.model';
-import { AsianPokerGameDTO } from './models/dto';
+import { AsianPokerGameDTO } from './models/session-game-chat/game.model';
+import { PlayerWithHand } from './models/session-game-chat/player-slot.model';
 
 const somePlayers = [
   new PlayerWithHand('456', 'Simon', 3),

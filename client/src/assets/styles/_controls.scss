@@ -19,7 +19,7 @@
   font-family: Manrope;
   font-weight: 600;
   text-align: center;
-  text-shadow: 0.13em 0.13em 2px rgba(0, 0, 0, 0.75);
+  text-shadow: 0.1em 0.1em 2px rgba(0, 0, 0, 0.75);
   color: #fff;
 
   text-transform: uppercase;
@@ -49,6 +49,7 @@
 @mixin app_button_0 {
   @extend %control-base-style;
   text-align: center;
+  justify-content: center;
 }
 
 @mixin app_button_1 {
@@ -58,6 +59,8 @@
   color: #000;
   text-shadow: none;
   border-top: variables.$border-top-width solid variables.$bg-roof;
+
+  justify-content: center;
 
   &:not(.disabled):hover {
     color: #000;

@@ -10,7 +10,7 @@
           <div class="playersJoinedAmount">Gracze</div>
         </div>
         <div class="accessibility">Dostęp</div>
-        <div class="sessionState">Status</div>
+        <div class="status">Status</div>
       </div>
       <div class="list">
         <div
@@ -30,8 +30,8 @@
           <div class="accessibility" [ngClass]="{ password: session.sessionSettings.password }">
             {{ session.sessionSettings.accessibility }}
           </div>
-          <div class="sessionState state-{{ session.sessionActivity.sessionState }}">
-            {{ session.sessionActivity.sessionState }}
+          <div class="status state-{{ session.sessionActivity.status }}">
+            {{ session.sessionActivity.status }}
           </div>
         </div>
       </div>

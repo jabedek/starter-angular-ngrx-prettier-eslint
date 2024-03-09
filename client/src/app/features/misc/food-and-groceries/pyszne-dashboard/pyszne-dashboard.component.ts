@@ -4,6 +4,7 @@ import { Pyszne_SimpleRestaurant } from '@assets/pyszne/pyszne-data-real.model';
 import { RestaurantsPizzasData, PyszneHttpService } from './pyszne-http-service.service';
 import { PizzaBasicInfo } from './components/pizza-calculator/pizza-calculator.component';
 import { PizzaVariant } from './restaurant-products.model';
+import { AppCheckboxEvent } from '@shared/components/controls/checkbox/checkbox.component';
 
 type PyszneItemData = {
   id: string;
@@ -75,7 +76,6 @@ export class PyszneDashboardComponent {
 
   prepareTableData() {
     const data = handlePyszneData();
-
     const restaurants: TablePyszneRecord[] = [];
 
     Object.entries(data.restaurants).forEach(([key, value]) => {
@@ -113,10 +113,6 @@ export class PyszneDashboardComponent {
     });
 
     this.allRestaurants = [...restaurants];
-
-    const cuisinesIndex = restaurants[0].cells.findIndex((c) => c.key === 'cuisineTypes');
-    this.restaurantsWithPizza = [...restaurants].filter((r) => r.cells[cuisinesIndex].value.includes('pizza'));
-
     this.table.data = this.allRestaurants;
   }
 
@@ -139,6 +135,10 @@ export class PyszneDashboardComponent {
     });
 
     return sorted.join(', ');
+  }
+
+  test(event: AppCheckboxEvent) {
+    console.log(event);
   }
 
   handlePizzaSizes() {
@@ -170,15 +170,14 @@ export class PyszneDashboardComponent {
     }
   }
 
-  handlePizza() {
-    this.withPizza = !this.withPizza;
-    this.table.data = this.withPizza ? this.restaurantsWithPizza : this.allRestaurants;
+  filterPizzasRestaurants() {
+    const items = this.allRestaurants;
+    const cuisinesIndex = items[0].cells.findIndex((c) => c.key === 'cuisineTypes');
+    const sortedItems = [...items].filter((r) => r.cells[cuisinesIndex].value.includes('pizza'));
+    this.table.data = this.withPizza ? sortedItems : this.allRestaurants;
   }
 
   sortData(key: keyof PyszneItemData, mode: 'asc' | 'desc' | 'none', valueType: 'number' | 'string' | 'date') {
-    // if (key === 'link') {
-    //   return;
-    // }
     // Switch mode in circular fashion
     if (mode === 'none') {
       mode = 'asc';
@@ -216,8 +215,6 @@ export class PyszneDashboardComponent {
   }
 
   handleClickRow(el: HTMLElement, record: TablePyszneRecord) {
-    console.log(el);
-
     if (this.pizzasComparison.selectingActive) {
       const slugs = this.pizzasComparison.selectedSlugs;
 
@@ -232,9 +229,10 @@ export class PyszneDashboardComponent {
   }
 
   handleComparison() {
+    this.withPizza = true;
     this.pizzasComparison.selectingActive = !this.pizzasComparison.selectingActive;
     if (this.pizzasComparison.selectingActive) {
-      this.handlePizza();
+      this.filterPizzasRestaurants();
       this.handlePizzaSizes();
     } else {
       this.pizzasComparison.selectedSlugs.clear();

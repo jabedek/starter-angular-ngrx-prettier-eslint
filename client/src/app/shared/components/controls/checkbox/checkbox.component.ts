@@ -1,6 +1,8 @@
 import { ChangeDetectorRef, Component, ElementRef, EventEmitter, Input, Output, Renderer2, forwardRef } from '@angular/core';
 import { CheckboxControlValueAccessor, ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
+import { AccessEvent } from '@shared/models/events.models';
 
+export type AppCheckboxEvent = { value: boolean; inputEvent: MouseEvent | KeyboardEvent; inputWrapper: CheckboxComponent };
 @Component({
   selector: 'app-checkbox',
   templateUrl: './checkbox.component.html',
@@ -16,18 +18,18 @@ import { CheckboxControlValueAccessor, ControlValueAccessor, NG_VALUE_ACCESSOR }
 export class CheckboxComponent extends CheckboxControlValueAccessor {
   elementRef: ElementRef;
   renderer: Renderer2;
+
   @Input({ required: true }) label = '';
+  @Input() disabled = false;
   @Input() mini = false;
-  @Output() change = new EventEmitter<{ target: { checked: boolean } }>();
-  onTouch = (arg: boolean) => ({});
 
-  @Input() set value(val: boolean) {
+  @Input() set value(value: boolean) {
+    console.log(value);
+
     if (!this.disabled) {
-      console.log(val);
-
-      this._value = val;
-      this.emitChange(val);
-      this.onTouch(val);
+      this._value = value;
+      this.onChange(value); // ?
+      this.onTouched();
     }
   }
   get value(): boolean {
@@ -35,7 +37,7 @@ export class CheckboxComponent extends CheckboxControlValueAccessor {
   }
   private _value = false;
 
-  @Input() disabled = false;
+  @Output() appChange = new EventEmitter<AppCheckboxEvent>();
 
   constructor(_elementRef: ElementRef, _renderer: Renderer2) {
     super(_renderer, _elementRef);
@@ -43,11 +45,40 @@ export class CheckboxComponent extends CheckboxControlValueAccessor {
     this.renderer = _renderer;
   }
 
-  emitChange(val: boolean) {
+  override writeValue(value: any): void {
+    this._value = value;
+  }
+
+  override registerOnChange(fn: (_: any) => {}): void {
+    this.onChange = fn;
+  }
+
+  override registerOnTouched(fn: any): void {
+    this.onTouched = fn;
+  }
+
+  override setDisabledState(isDisabled: boolean): void {
+    this.disabled = isDisabled;
+    this.renderer.setProperty(this.elementRef.nativeElement, 'disabled', isDisabled); // ?
+  }
+
+  override onChange: (_: any) => void = (_: any) => ({});
+  override onTouched: () => void = () => ({});
+
+  handleSelect(event: AccessEvent): void {
     if (!this.disabled) {
-      this.change.emit({ target: { ...this, checked: val } });
+      this.value = !this.value;
+      this.emitChange(this.value, event.event);
+    }
+  }
+
+  emitChange(val: boolean, event: MouseEvent | KeyboardEvent): void {
+    if (!this.disabled) {
+      this.appChange.emit({ value: val, inputEvent: event, inputWrapper: this });
       this.onChange(val);
       console.log(val);
     }
   }
+
+  // ngOnInit(): void {
 }

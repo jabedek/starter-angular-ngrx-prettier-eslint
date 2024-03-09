@@ -7,25 +7,25 @@
 
     <div class="hand-name" *ngIf="choices.selection.picked as selection">
       <ng-container>
-        {{ selection ? " " + ("ASIAN_POKER.HANDS." + selection | translate) : "" }}
+        {{ selection ? " " + ("ASIAN_POKER.IN_GAME.VALUES.HANDS." + selection | translate) : "" }}
         <ng-container *ngIf="choices.variant.picked as variant">
-          {{ variant ? "/ " + ("ASIAN_POKER.HANDS." + variant | translate) : "" }}
+          {{ variant ? "/ " + ("ASIAN_POKER.IN_GAME.VALUES.HANDS." + variant | translate) : "" }}
         </ng-container>
       </ng-container>
 
       <ng-container *ngIf="choices.specification.picked as spec">
         <ng-container *ngIf="choices.specification.pickedData as specData">
           <ng-container *ngIf="spec === 'suit'">
-            {{ specData[0]?.suit ? "/ " + ("ASIAN_POKER.SUITS." + specData[0]?.suit | translate) + "" : "" }}
+            {{ specData[0]?.suit ? "/ " + ("ASIAN_POKER.IN_GAME.VALUES.SUITS." + specData[0]?.suit | translate) + "" : "" }}
           </ng-container>
 
           <ng-container *ngIf="spec === 'rank'">
-            {{ specData[0]?.rank ? "/ " + ("ASIAN_POKER.RANKS." + specData[0]?.rank | translate) + "" : "" }}
+            {{ specData[0]?.rank ? "/ " + ("ASIAN_POKER.IN_GAME.VALUES.RANKS." + specData[0]?.rank | translate) + "" : "" }}
           </ng-container>
 
           <ng-container *ngIf="spec === 'double-rank'">
-            {{ specData[0]?.rank ? "/ " + ("ASIAN_POKER.RANKS." + specData[0]?.rank | translate) : "" }}
-            {{ specData[1]?.rank ? "+ " + ("ASIAN_POKER.RANKS." + specData[1]?.rank | translate) + "" : "" }}
+            {{ specData[0]?.rank ? "/ " + ("ASIAN_POKER.IN_GAME.VALUES.RANKS." + specData[0]?.rank | translate) : "" }}
+            {{ specData[1]?.rank ? "+ " + ("ASIAN_POKER.IN_GAME.VALUES.RANKS." + specData[1]?.rank | translate) + "" : "" }}
           </ng-container>
         </ng-container>
       </ng-container>
@@ -73,7 +73,7 @@
       appAccess
       (access)="handleMainSteps(choice, step)">
       <div class="card-wrapper">
-        {{ choice.name ? ("ASIAN_POKER.HANDS." + choice.name | translate) : "?" }}
+        {{ choice.name ? ("ASIAN_POKER.IN_GAME.VALUES.HANDS." + choice.name | translate) : "?" }}
         <span class="index">
           {{ choice.key }}
         </span>
