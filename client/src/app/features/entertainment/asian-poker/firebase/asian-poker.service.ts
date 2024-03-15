@@ -5,32 +5,26 @@ import {
   DbSubFeature,
   DbSubFeaturePart,
   FirebaseDbService,
-  ListenerCallback,
 } from '../../../../core/firebase/firebase-db.service';
-import { consoleError } from '@shared/helpers/common.utils';
-import { arrayUnion } from 'firebase/firestore';
 import { SessionGameData } from '@features/entertainment/asian-poker/pages/game-page/game-session.resolver';
-import { AsianPokerGameDTO, GameActivityTickLogDTO } from '../models/session-game-chat/game.model';
+import { AsianPokerGameDTO } from '../models/session-game-chat/game.model';
 import { FirebaseUsersService } from '@core/firebase/firebase-users.service';
-import { UserAppAccount } from '@store/auth/auth.state';
-import { AsianPokerSessionCreationForm } from '../pages/lobby-page/create-session/create-session.component';
-import { computePlayersAmount } from '../utils/session.utils';
-import { generateDocumentId } from 'frotsi';
-import { AsianPokerSessionDTO, SessionStatus, SessionInvitation } from '../models/session-game-chat/session.model';
-import { SessionSlot } from '../models/session-game-chat/player-slot.model';
+import { AsianPokerSessionDTO } from '../models/session-game-chat/session.model';
+import { SessionStatus } from '../models/session-game-chat/session.status.model';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AsianPokerService {
+  topFeature: DbFeature = 'features-entertainment';
+  subFeature: DbSubFeature = 'asian-poker';
+
   constructor(
     private fdb: FirebaseDbService,
     private fdbUsers: FirebaseUsersService,
   ) {}
 
-  topFeature: DbFeature = 'features-entertainment';
-  subFeature: DbSubFeature = 'asian-poker';
-
+  // Base methods
   async insertData(dbRes: DbSubFeaturePart, docId: string, data: any) {
     const dbResDetails: DbResDetails = [this.topFeature, this.subFeature, dbRes];
     this.fdb.insertDataGlobal(dbResDetails, docId, data); //.catch((e) => consoleError(e, 'Error while creating new' + dbRes));
@@ -51,26 +45,13 @@ export class AsianPokerService {
     return this.fdb.readManyByGlobal<T>(dbResDetails, readDetails); //.catch((e) => consoleError(e, 'Error while reading' + dbRes));
   }
 
+  // Specific methods
   async getSessionsByIds(sessionIds: string[]): Promise<AsianPokerSessionDTO[]> {
     return this.readManyBy('sessions', { key: 'id', values: sessionIds });
   }
 
   async getSessionsByStates(states: SessionStatus[]): Promise<AsianPokerSessionDTO[]> {
     return this.readManyBy('sessions', { key: 'sessionActivity.status', values: states });
-  }
-
-  async getGamesByIds(gamesIds: string[]) {
-    return this.readManyBy<AsianPokerGameDTO>('games', { key: 'id', values: gamesIds });
-  }
-
-  async addGameTick(gameId: string, tick: GameActivityTickLogDTO) {
-    await this.updateData('games', gameId, { ticks: arrayUnion(tick) });
-    // await updateDoc(this.fdb.documentRef(DbRes.asianpoker_games, gameId), { ticks: arrayUnion(tick) });
-  }
-
-  async getPlayerById(playerId: string) {
-    const [result] = await this.fdbUsers.getUsersByIds([playerId]);
-    return result;
   }
 
   async getSessionAndGame(sessionId: string): Promise<SessionGameData | undefined> {
@@ -85,275 +66,12 @@ export class AsianPokerService {
     }
   }
 
-  async listenToSessionChanges(sessionId: string, cb: ListenerCallback<AsianPokerSessionDTO[]>) {
-    const readDetails = { key: 'id', values: [sessionId] };
-    const dbResDetails: DbResDetails = [this.topFeature, this.subFeature, 'sessions'];
-    this.fdb.listenToChangesSnapshots<AsianPokerSessionDTO>(readDetails, dbResDetails, cb);
+  async getGamesByIds(gamesIds: string[]) {
+    return this.readManyBy<AsianPokerGameDTO>('games', { key: 'id', values: gamesIds });
   }
 
-  async listenToGameChanges(gameId: string, cb: ListenerCallback<AsianPokerGameDTO[]>) {
-    const readDetails = { key: 'id', values: [gameId] };
-    const dbResDetails: DbResDetails = [this.topFeature, this.subFeature, 'games'];
-    this.fdb.listenToChangesSnapshots<AsianPokerGameDTO>(readDetails, dbResDetails, cb);
-    // this.fdb.listenToChangesSnapshots<AsianPokerGameDTO>(DbRes.asianpoker_games, 'id', [gameId], cb);
-  }
-
-  async createNewSession(sessionSettings: AsianPokerSessionCreationForm) {
-    const { hostId, hostDisplayName, id, ...settings } = sessionSettings;
-
-    const slots: SessionSlot[] = Array.from({ length: settings.playersLimit }, (_, index) => ({
-      order: index,
-      invitedId: null,
-      playerId: null,
-      status: 'empty',
-      locked: false,
-    }));
-
-    slots[0] = {
-      order: 0,
-      invitedId: null,
-      playerId: hostId,
-      status: 'occupied',
-      locked: true,
-    };
-
-    // Create session
-    const session: AsianPokerSessionDTO = {
-      id,
-      gameId: `${id}_game`,
-      chatId: `${id}_chat`,
-      sessionSettings: { ...settings },
-      sessionActivity: {
-        hostId,
-        hostDisplayName,
-        playersJoinedAmount: 1,
-        playersSlots: slots,
-        invitations: [],
-        status: 'session-started',
-        finishResult: null,
-      },
-    };
-
-    // Create chat
-    const chat = {
-      id: session.chatId,
-      messages: [
-        {
-          id: `msg_${Date.now()}`,
-          senderId: 'system',
-          senderNickname: 'system',
-          sentAtMS: Date.now(),
-          content: 'Session created',
-        },
-      ],
-    };
-
-    // Create game
-    const game: AsianPokerGameDTO = {
-      id: session.gameId,
-      sessionId: id,
-      ticks: [],
-    };
-
-    return Promise.all([
-      this.insertData('sessions', session.id, session),
-      this.insertData('chats', chat.id, chat),
-      this.insertData('games', game.id, game),
-    ]);
-  }
-
-  async addPlayerToSession(playerId: string, sessionId: string) {
-    const [session] = await this.getSessionsByIds([sessionId]);
-    if (!session) {
-      consoleError(`Session ${sessionId} not found`);
-      return;
-    }
-
-    const presentPlayersIds = session.sessionActivity.playersSlots.map((slot) => slot.playerId);
-    const presentInvitedIds = session.sessionActivity.playersSlots.map((slot) => slot.invitedId);
-
-    // Check if player is joining after disconnect - he gets his slot back (if he locked it)
-    if (presentPlayersIds.includes(playerId)) {
-      const playerSlot = session.sessionActivity.playersSlots.find((slot) => slot.playerId === playerId);
-
-      if (playerSlot && playerSlot.locked) {
-        playerSlot.status = 'occupied';
-      }
-    }
-
-    // Check if player is joining after being invited
-    if (presentInvitedIds.includes(playerId)) {
-      const playerSlot = session.sessionActivity.playersSlots.find((slot) => slot.invitedId === playerId);
-
-      if (playerSlot) {
-        playerSlot.status = 'occupied';
-      }
-    }
-
-    // Check if player is joining for the first time
-    if (!presentPlayersIds.includes(playerId) && !presentInvitedIds.includes(playerId)) {
-      const emptySlot = session.sessionActivity.playersSlots.find((slot) => slot.status === 'empty');
-
-      if (emptySlot) {
-        emptySlot.status = 'occupied';
-        emptySlot.playerId = playerId;
-      }
-    }
-
-    session.sessionActivity.playersJoinedAmount = computePlayersAmount(session);
-
-    await this.updateData('sessions', sessionId, session);
-    // await updateDoc(this.fdb.documentRef(DbRes.asianpoker_sessions, sessionId), session);
-
-    await this.fdb.updateDataGlobal(['users'], playerId, {
-      'appFeaturesData.asianPoker.currentSessionId': sessionId,
-    });
-
-    // await updateDoc(this.fdb.documentRef(DbRes.users, playerId), {
-    //   'appFeaturesData.asianPoker.currentSessionId': sessionId,
-    // });
-  }
-
-  async invite(sessionId: string, data: { playerEmail: string; additionalText: string }, slotOrder: number) {
-    const playerEmail = data.playerEmail;
-    const [session] = await this.getSessionsByIds([sessionId]);
-    if (!session) {
-      const errMsg = `Session ${sessionId} not found`;
-      consoleError(errMsg);
-      throw new Error(errMsg);
-    }
-
-    const player = await this.fdb.readOneByGlobal<UserAppAccount>(['users'], { key: 'email', value: playerEmail });
-
-    if (!player) {
-      const errMsg = `Player with email ${playerEmail} not found`;
-      consoleError(errMsg);
-      throw new Error(errMsg);
-    }
-
-    // // Check if player is already in session
-    const presentPlayersIds = session.sessionActivity.playersSlots.map((slot) => slot.playerId);
-    if (presentPlayersIds.includes(player.id)) {
-      const errMsg = `Player ${playerEmail} is already in session`;
-      consoleError(errMsg);
-      throw new Error(errMsg);
-    }
-
-    // // Check if player is already invited
-    const presentInvitedIds = session.sessionActivity.playersSlots.map((slot) => slot.invitedId);
-    if (presentInvitedIds.includes(player.id)) {
-      const errMsg = `Player ${playerEmail} is already invited`;
-      consoleError(errMsg);
-      throw new Error(errMsg);
-    }
-
-    const invitation: SessionInvitation = {
-      id: generateDocumentId(),
-      sessionId,
-      invitedId: player.id,
-      hostId: session.sessionActivity.hostId,
-      hostDisplayName: session.sessionActivity.hostDisplayName,
-      active: true,
-      seen: false,
-      accepted: false,
-      slotOrder,
-      additionalText: data.additionalText,
-    };
-
-    session.sessionActivity.playersSlots[slotOrder].invitedId = player.id;
-    session.sessionActivity.playersSlots[slotOrder].status = 'invited';
-    session.sessionActivity.playersSlots[slotOrder].locked = true;
-    session.sessionActivity.invitations = [...session.sessionActivity.invitations, invitation];
-
-    // success
-    console.log('success', session);
-    return await Promise.allSettled([
-      this.updateData('sessions', sessionId, session),
-      this.fdb.updateDataGlobal(['users'], player.id, {
-        'appFeaturesData.asianPoker.invitations': arrayUnion(invitation.id),
-      }),
-    ]);
-    // await updateDoc(this.fdb.documentRef(DbRes.asianpoker_sessions, sessionId), session);
-  }
-
-  async kickFromWaiting(sessionId: string, playerId: string) {
-    const [session] = await this.getSessionsByIds([sessionId]);
-    if (!session) {
-      consoleError(`Session ${sessionId} not found`);
-      return;
-    }
-
-    const playerSlotIndex = session.sessionActivity.playersSlots.findIndex((slot) => slot.playerId === playerId);
-
-    if (playerSlotIndex < 0) {
-      consoleError(`Slot with Player ${playerId} not found`);
-      return;
-    }
-
-    session.sessionActivity.playersSlots[playerSlotIndex].status = 'empty';
-    session.sessionActivity.playersSlots[playerSlotIndex].playerId = null;
-    session.sessionActivity.playersSlots[playerSlotIndex].locked = false;
-    session.sessionActivity.playersJoinedAmount = session.sessionActivity.playersJoinedAmount - 1;
-
-    return Promise.all([
-      this.updateData('sessions', sessionId, session),
-      await this.fdb.updateDataGlobal(['users'], playerId, {
-        'appFeaturesData.asianPoker.currentSessionId': null,
-      }),
-    ]);
-  }
-
-  async toggleSlot(sessionId: string, userId: string, force = undefined) {
-    const [session] = await this.getSessionsByIds([sessionId]);
-    const [player] = await this.fdbUsers.getUsersByIds([userId]);
-
-    if (!session) {
-      consoleError(`Session ${sessionId} not found`);
-      return;
-    }
-
-    if (!player) {
-      consoleError(`Player ${userId} not found`);
-      return;
-    }
-
-    const playerSlotIndex = session.sessionActivity.playersSlots.findIndex((slot) => slot.playerId === userId);
-
-    if (playerSlotIndex < 0) {
-      consoleError(`Slot with Player ${userId} not found`);
-      return;
-    }
-
-    if (force !== undefined) {
-      session.sessionActivity.playersSlots[playerSlotIndex].locked = force;
-    } else {
-      session.sessionActivity.playersSlots[playerSlotIndex].locked =
-        !session.sessionActivity.playersSlots[playerSlotIndex].locked;
-    }
-
-    return this.updateData('sessions', sessionId, session);
-  }
-
-  async startGame(sessionId: string) {
-    const res = await this.getSessionAndGame(sessionId);
-
-    if (!res) {
-      consoleError(`Session ${sessionId} or game not found`);
-      return;
-    }
-
-    const { session, game } = res;
-
-    // Update session
-    session.sessionActivity.status = 'game-created';
-
-    game.ticks = [...game.ticks];
-
-    return Promise.all([this.updateData('sessions', session.id, session)]).catch((e) =>
-      consoleError(e, 'Error while starting game'),
-    );
-    // return Promise.all([this.updateData('sessions', session.id, session), this.updateData('games', game.id, game)]).catch((e) =>
-    //   consoleError(e, 'Error while starting game'),
-    // );
+  async getPlayerById(playerId: string) {
+    const [result] = await this.fdbUsers.getUsersByIds([playerId]);
+    return result;
   }
 }

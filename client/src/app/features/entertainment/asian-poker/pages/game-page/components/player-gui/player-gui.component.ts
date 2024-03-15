@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { SessionGameDataPair } from '@features/entertainment/asian-poker/models/common.model';
+import { GameInternalData } from '@features/entertainment/asian-poker/models/session-game-chat/game.model';
 import { PlayerWithHand } from '@features/entertainment/asian-poker/models/session-game-chat/player-slot.model';
 import { GameManagerService } from '@features/entertainment/asian-poker/services/game-manager.service';
 
@@ -11,6 +12,8 @@ import { GameManagerService } from '@features/entertainment/asian-poker/services
 export class PlayerGuiComponent {
   @Input({ required: true }) currentUser: Partial<PlayerWithHand> | undefined;
   @Input({ required: true }) dataPair: SessionGameDataPair | undefined;
+  @Input() gameInternalDataSnapshot: GameInternalData | null = null;
+
   get gameLastTick() {
     return this.dataPair?.game?.ticks.at(-1);
   }
@@ -56,7 +59,7 @@ export class PlayerGuiComponent {
   constructor(private manager: GameManagerService) {}
 
   startFirstRound() {
-    this.manager.getNextRoundSettings();
+    this.manager.setupNextRoundAndStart();
   }
 
   call() {

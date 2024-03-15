@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { PopupService } from '@core/modules/layout/components/popup/popup.service';
+import { AsianPokerSessionService } from '@features/entertainment/asian-poker/firebase/asian-poker-session.service';
 import { AsianPokerService } from '@features/entertainment/asian-poker/firebase/asian-poker.service';
 
 @Component({
@@ -20,19 +21,19 @@ export class InvitePlayerPopupComponent {
   });
 
   constructor(
-    private ap: AsianPokerService,
+    private apSession: AsianPokerSessionService,
     private popup: PopupService,
     private router: Router,
   ) {}
 
-  invite() {
+  sendInvite() {
     console.log('invite');
 
     this.error = '';
     const { playerEmail, additionalText } = this.inviteForm.getRawValue();
     if (this.order && playerEmail) {
-      this.ap
-        .invite(this.sessionId, { playerEmail, additionalText: additionalText || '' }, this.order)
+      this.apSession
+        .sendInvite(this.sessionId, { playerEmail, additionalText: additionalText || '' }, this.order)
         .then(() => {
           // show toast
           this.popup.hidePopup();

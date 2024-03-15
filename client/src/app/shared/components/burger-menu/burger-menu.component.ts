@@ -3,6 +3,7 @@ import { Store } from '@ngrx/store';
 import { AppState } from '@store/app-state';
 import { setBurger } from '@store/layout/layout.actions';
 import { selectBurgerOpen } from '@store/layout/layout.selectors';
+import { fromEvent } from 'rxjs';
 
 @Component({
   selector: 'app-burger-menu',

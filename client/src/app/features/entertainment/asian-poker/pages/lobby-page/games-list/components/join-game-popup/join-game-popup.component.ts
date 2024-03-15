@@ -6,6 +6,7 @@ import { PopupService } from '@core/modules/layout/components/popup/popup.servic
 import { consoleError, tryCatch } from '@shared/helpers/common.utils';
 import { UserAppAccount } from '@store/auth/auth.state';
 import { AsianPokerSessionDTO } from '@features/entertainment/asian-poker/models/session-game-chat/session.model';
+import { AsianPokerSessionService } from '@features/entertainment/asian-poker/firebase/asian-poker-session.service';
 /**
  * Variant I: join public game -> pass selected session id. SessionId is set into the input field.
  * Variant II: join private game -> pass nothing. User must enter session id manually.
@@ -59,6 +60,7 @@ export class JoinGamePopupComponent {
 
   constructor(
     private ap: AsianPokerService,
+    private apSession: AsianPokerSessionService,
     private popup: PopupService,
     private router: Router,
   ) {}
@@ -95,7 +97,7 @@ export class JoinGamePopupComponent {
               return;
             }
 
-            const [res, err] = await tryCatch(this.ap.addPlayerToSession(playerId, id));
+            const [res, err] = await tryCatch(this.apSession.addPlayerToSession(playerId, id));
             if (err) {
               consoleError(err);
 

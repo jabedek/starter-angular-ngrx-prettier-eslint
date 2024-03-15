@@ -1,4 +1,4 @@
-import { Component, ElementRef, HostBinding, HostListener } from '@angular/core';
+import { Component, ElementRef, EventEmitter, HostBinding, HostListener, Output } from '@angular/core';
 import { APP_ROUTES } from './routes.const';
 import { Observable, first, fromEvent, skipUntil, takeUntil, takeWhile, tap } from 'rxjs';
 import { BaseComponent } from '@shared/abstracts/base/base.component';
@@ -12,26 +12,29 @@ import { selectBurgerOpen } from '@store/layout/layout.selectors';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
 })
-export class NavbarComponent {
+export class NavbarComponent extends BaseComponent {
   routes = APP_ROUTES;
 
-  // @HostListener('document:click', ['$event'])
-  // clickout(event: Event) {
-  //   if (this.el.nativeElement.contains(event.target)) {
-  //   } else {
-  //     this.store
-  //       .select(selectBurgerOpen)
-  //       .pipe(first())
-  //       .subscribe((open) => {
-  //         if (open) {
-  //           this.store.dispatch(setBurger({ set: 'close' }));
-  //         }
-  //       });
-  //   }
-  // }
+  @Output() closeOutclick = new EventEmitter<void>();
+
+  fromEvent$ = fromEvent(document, 'mousedown').pipe(
+    tap((event) => {
+      const target = event.target as HTMLElement;
+      const classes = target.classList;
+      if (classes.contains('burger__line') || classes.contains('burger')) {
+        return;
+      } else if (!this.el.nativeElement.contains(target)) {
+        this.closeOutclick.emit();
+      }
+    }),
+  );
 
   constructor(
     public el: ElementRef,
     private store: Store<AppState>,
-  ) {}
+  ) {
+    super('NavbarComponent');
+
+    this.fromEvent$.pipe(takeUntil(this.__destroy)).subscribe();
+  }
 }

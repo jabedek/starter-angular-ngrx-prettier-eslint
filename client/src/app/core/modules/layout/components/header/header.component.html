@@ -1,31 +1,33 @@
 <header>
-  <div class="left-section">
-    <app-logo />
+  <div class="main-content-layout">
+    <div class="left-section">
+      <app-logo />
 
-    <!-- Regular header stuff -->
-    <ng-container *ngIf="currentUrl$ | async as url">
-      <h4 class="url">
-        <p *ngFor="let part of url.parts" class="url-part">
-          {{ part }}
-        </p>
-      </h4>
-    </ng-container>
-  </div>
-
-  <!-- Absolute 'most top' elements -->
-  <div class="right-section">
-    <ng-container *ngIf="authLoader$ | async as authLoader">
-      <app-account-display *ngIf="authLoader === 'inactive'"></app-account-display>
-      <app-spinner *ngIf="authLoader === 'active'"></app-spinner>
-      <ng-container *ngIf="userLoggedIn$ | async as userLoggedIn">
-        <div class="menu-wrapper" *ngIf="authLoader === 'inactive' && userLoggedIn">
-          <app-burger-menu></app-burger-menu>
-          <div class="navbar-wrapper" [ngClass]="{ burgerOpen: (burgerOpen$ | async) === true }">
-            <app-navbar></app-navbar>
-          </div>
-        </div>
+      <!-- Regular header stuff -->
+      <ng-container *ngIf="currentUrl$ | async as url">
+        <h4 class="url">
+          <p *ngFor="let part of url.parts" class="url-part">
+            {{ part }}
+          </p>
+        </h4>
       </ng-container>
-    </ng-container>
+    </div>
+
+    <!-- Absolute 'most top' elements -->
+    <div class="right-section">
+      <ng-container *ngIf="authLoader$ | async as authLoader">
+        <app-account-display *ngIf="authLoader === 'inactive'"></app-account-display>
+        <app-spinner *ngIf="authLoader === 'active'"></app-spinner>
+        <ng-container *ngIf="userLoggedIn$ | async as userLoggedIn">
+          <div class="menu-wrapper" *ngIf="authLoader === 'inactive' && userLoggedIn">
+            <app-burger-menu #burger></app-burger-menu>
+            <div class="navbar-wrapper" [ngClass]="{ burgerOpen: (burgerOpen$ | async) === true }">
+              <app-navbar (closeOutclick)="burger.close()"></app-navbar>
+            </div>
+          </div>
+        </ng-container>
+      </ng-container>
+    </div>
   </div>
 </header>
 <!--

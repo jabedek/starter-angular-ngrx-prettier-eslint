@@ -1,18 +1,42 @@
-import { Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { SessionGameDataPair } from '@features/entertainment/asian-poker/models/common.model';
+import { GameInternalData } from '@features/entertainment/asian-poker/models/session-game-chat/game.model';
 import { UserAppAccount } from '@store/auth/auth.state';
 
 @Component({
   selector: 'app-playing-table',
   templateUrl: './playing-table.component.html',
   styleUrls: ['./playing-table.component.scss'],
+  // changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PlayingTableComponent {
-  @Input({ required: true }) currentUser: UserAppAccount | undefined;
-  @Input({ required: true }) data: SessionGameDataPair | undefined;
+  @Input({ required: true }) set currentUser(currentUser: UserAppAccount | undefined) {
+    console.log('##', currentUser);
+
+    this._currentUser = currentUser;
+  }
+  get currentUser(): UserAppAccount | undefined {
+    return this._currentUser;
+  }
+
+  private _currentUser: UserAppAccount | undefined;
+
+  @Input() set dataPair(dataPair: SessionGameDataPair | undefined) {
+    console.log('##', dataPair);
+
+    this._dataPair = dataPair;
+  }
+
+  get dataPair(): SessionGameDataPair | undefined {
+    return this._dataPair;
+  }
+
+  private _dataPair: SessionGameDataPair | undefined;
+
+  @Input() gameInternalDataSnapshot: GameInternalData | null = null;
 
   get gameLastTick() {
-    return this.data?.game?.ticks.at(-1);
+    return this.dataPair?.game?.ticks.at(-1);
   }
 
   get currentPlayerIndex() {

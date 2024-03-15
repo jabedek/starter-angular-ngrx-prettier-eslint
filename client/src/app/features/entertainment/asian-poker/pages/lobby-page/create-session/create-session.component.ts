@@ -18,6 +18,7 @@ import { generateDocumentId } from 'frotsi';
 import { Observable, tap, takeUntil } from 'rxjs';
 import { AppCheckboxEvent } from '@shared/components/controls/checkbox/checkbox.component';
 import { OFFICIAL_CONFIG } from '@features/entertainment/asian-poker/config';
+import { AsianPokerSessionService } from '@features/entertainment/asian-poker/firebase/asian-poker-session.service';
 
 export type AsianPokerSessionCreationForm = AsianPokerSessionSettings & { id: string; hostId: string; hostDisplayName: string };
 
@@ -82,6 +83,7 @@ export class CreateSessionComponent extends BaseComponent {
   constructor(
     private store: Store<AppState>,
     private ap: AsianPokerService,
+    private apSession: AsianPokerSessionService,
     private router: Router,
   ) {
     super('CreateSessionComponent');
@@ -91,11 +93,11 @@ export class CreateSessionComponent extends BaseComponent {
 
   create() {
     if (this.sessionForm.valid) {
-      const id = generateDocumentId('ap_session');
+      const id = generateDocumentId('session');
       const data = { ...this.sessionForm.getRawValue(), id } as AsianPokerSessionCreationForm;
 
-      this.ap.createNewSession(data).then(() => {
-        this.ap
+      this.apSession.createNewSession(data).then(() => {
+        this.apSession
           .addPlayerToSession(data.hostId, id)
           .then(() => {
             // this.router.navigate(['/asian-poker/game/' + id]);
