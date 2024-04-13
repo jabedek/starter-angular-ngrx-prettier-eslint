@@ -1,5 +1,5 @@
-import { CardTuples } from '../constants/card.constant';
-import { Suit, SuitSymbol } from '../models/card.model';
+import { CardTuples } from '../models/related-constants/card.constant';
+import { Suit, SuitSymbol } from '../models/types/card.model';
 
 type SuitWrapper = Suit | SuitSymbol;
 export type SuitDisplayItem = SuitWrapper | Record<string, SuitWrapper>;

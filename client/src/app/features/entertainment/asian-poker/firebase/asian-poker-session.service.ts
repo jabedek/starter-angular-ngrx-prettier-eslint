@@ -6,12 +6,12 @@ import { consoleError } from '@shared/helpers/common.utils';
 import { UserAppAccount } from '@store/auth/auth.state';
 import { arrayUnion } from 'firebase/firestore';
 import { generateDocumentId } from 'frotsi';
-import { AsianPokerGameDTO, GameActivityTickLogDTO } from '../models/session-game-chat/game.model';
-import { SessionSlot } from '../models/session-game-chat/player-slot.model';
-import { AsianPokerSessionDTO, SessionInvitation } from '../models/session-game-chat/session.model';
-import { AsianPokerSessionCreationForm } from '../pages/lobby-page/create-session/create-session.component';
+import { AsianPokerGameDTO, GameActivityTickLogDTO } from '../models/types/session-game-chat/game.model';
+import { SessionSlot } from '../models/types/session-game-chat/player-slot.model';
+import { AsianPokerSessionDTO, SessionInvitation } from '../models/types/session-game-chat/session.model';
 import { computePlayersAmount } from '../utils/session.utils';
 import { getNextStatus } from '../utils/session-status.helper';
+import { AsianPokerSessionCreationForm } from '../pages/main-lobby-page/components/create-session/create-session.component';
 
 @Injectable({
   providedIn: 'root',

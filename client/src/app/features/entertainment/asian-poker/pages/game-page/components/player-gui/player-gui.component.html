@@ -3,13 +3,13 @@
   <p class="monotype">1m 20s</p>
 </div>
 
-<div class="center" *ngIf="dataPair?.session?.sessionActivity?.status === 'game-ready'">
+<div class="center" *ngIf="session?.sessionActivity?.status === 'game-ready'">
   <app-asian-poker-button *ngIf="true || isCurrentUserDealer" variant="default" (click)="startFirstRound()" class="">
     <span>Start</span>
   </app-asian-poker-button>
 </div>
 
-<div *ngIf="currentUser && dataPair" class="wrapper">
+<div *ngIf="currentUser" class="wrapper">
   <ng-container *ngIf="gameLastTick?.roundInfo?.deckVariant as deckVariant">
     <app-hand-picker [deckVariant]="deckVariant"></app-hand-picker>
   </ng-container>

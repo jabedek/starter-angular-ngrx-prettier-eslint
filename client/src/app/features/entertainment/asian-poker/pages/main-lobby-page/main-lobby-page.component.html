@@ -1,0 +1,10 @@
+<div>
+  <section>
+    <app-games-list></app-games-list>
+    <app-create-session></app-create-session>
+  </section>
+
+  <section>
+    <app-countdown-timer [milliseconds]="10000" (timeup)="handleCountdown()"></app-countdown-timer>
+  </section>
+</div>

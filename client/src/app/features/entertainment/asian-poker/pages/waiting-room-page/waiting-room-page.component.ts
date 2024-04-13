@@ -6,11 +6,11 @@ import { BaseComponent } from '@shared/abstracts/base/base.component';
 import { FirebaseUsersService } from '@core/firebase/firebase-users.service';
 import { PopupService } from '@core/modules/layout/components/popup/popup.service';
 import { InvitePlayerPopupComponent } from './components/invite-player-popup/invite-player-popup.component';
-import { AsianPokerSessionDTO } from '../../models/session-game-chat/session.model';
+import { AsianPokerSessionDTO } from '../../models/types/session-game-chat/session.model';
 import { takeUntil } from 'rxjs';
 import { FirebaseAuthService } from '@core/firebase/firebase-auth.service';
-import { AsianPokerGameDTO } from '../../models/session-game-chat/game.model';
-import { SessionSlot } from '../../models/session-game-chat/player-slot.model';
+import { AsianPokerGameDTO } from '../../models/types/session-game-chat/game.model';
+import { SessionSlot } from '../../models/types/session-game-chat/player-slot.model';
 import { AsianPokerSessionService } from '../../firebase/asian-poker-session.service';
 
 @Component({
@@ -72,12 +72,10 @@ export class WaitingRoomPageComponent extends BaseComponent implements OnDestroy
 
   listenToSessionChanges() {
     if (this.session) {
-      console.log('listenToSessionChanges');
-
       this.apSession.listenToSessionChanges(
         this.session.id,
         (data: AsianPokerSessionDTO[] | undefined, unsub: Unsubscribe | undefined) => {
-          console.log('new changes', data);
+          console.log('WaitingRoomPageComponent new changes', data);
           if (data && unsub) {
             this.__addFirebaseListener('listenToSessionChanges', unsub);
             if (data) {
@@ -131,8 +129,6 @@ export class WaitingRoomPageComponent extends BaseComponent implements OnDestroy
           showCloseButton: true,
           closeOnOutclick: true,
           callbackOnDestroy: async () => {
-            console.log('callbackOnDestroy');
-
             // const [newSession] = await this.apSession.getSessionsByIds([session.id]);
             // this.session = newSession;
             // console.log(newSession);
@@ -151,8 +147,6 @@ export class WaitingRoomPageComponent extends BaseComponent implements OnDestroy
   }
 
   async setSlotLock(userId: string, slot: SessionSlot) {
-    console.log(userId, slot.order);
-
     if (this.session) {
       await this.apSession.setSlotLock(this.session.id, userId);
     }

@@ -29,6 +29,10 @@ const routes: Routes = [
     loadChildren: () => import('@features/entertainment/asian-poker/asian-poker.module').then((m) => m.AsianPokerModule),
   },
   {
+    path: 'some-fast-game',
+    loadChildren: () => import('@features/entertainment/some-fast-game/some-fast-game.module').then((m) => m.SomeFastGameModule),
+  },
+  {
     path: 'casino',
     canActivate: [],
     loadChildren: () => import('@features/entertainment/casino/casino.module').then((m) => m.CasinoModule),

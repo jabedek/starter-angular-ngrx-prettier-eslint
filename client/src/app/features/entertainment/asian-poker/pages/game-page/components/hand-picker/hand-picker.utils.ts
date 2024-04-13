@@ -1,4 +1,4 @@
-import { CHOICE_SUB_SET } from '@features/entertainment/asian-poker/constants/hand.constant';
+import { CHOICE_SUB_SET } from '@features/entertainment/asian-poker/models/related-constants/hand.constant';
 import { RanksPropositions, SelectionPropositions, SuitsPropositions, VariantPropositionsPoker } from './hand-picker.constant';
 import { BettingHand } from './hand-picker.model';
 

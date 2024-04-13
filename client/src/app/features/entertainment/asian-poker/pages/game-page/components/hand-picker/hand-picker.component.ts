@@ -1,5 +1,5 @@
 import { Component, ElementRef, Input } from '@angular/core';
-import { SimpleRank, SimpleSuit } from '../../../../models/card.model';
+import { SimpleRank, SimpleSuit } from '../../../../models/types/card.model';
 import {
   BettingHand,
   Proposition,
@@ -9,9 +9,9 @@ import {
   SelectionVariant,
   SpecificationAttribute,
 } from './hand-picker.model';
-import { HandName } from '../../../../models/hand.model';
-import { DeckVariant } from '../../../../constants/deck.constant';
-import { HandInstance } from '../../../../models/in-game-analysis.model';
+import { HandName } from '../../../../models/types/hand.model';
+import { DeckVariant } from '../../../../models/related-constants/deck.constant';
+import { HandInstance } from '../../../../models/types/in-game-analysis.model';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { getChoiceSubSet, getEmptyBettingSlotsGroups, getEmptySlots, getPropositionsKeys } from './hand-picker.utils';
 import { debounce, fromEvent, takeUntil, tap, timer } from 'rxjs';
@@ -24,7 +24,7 @@ import {
   RanksPropositions,
   SuitsPropositions,
 } from './hand-picker.constant';
-import { HandsDetails } from '@features/entertainment/asian-poker/constants/hand.constant';
+import { HandsDetails } from '@features/entertainment/asian-poker/models/related-constants/hand.constant';
 
 @Component({
   selector: 'app-hand-picker',

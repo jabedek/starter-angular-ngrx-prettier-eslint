@@ -24,8 +24,6 @@ export class CheckboxComponent extends CheckboxControlValueAccessor {
   @Input() mini = false;
 
   @Input() set value(value: boolean) {
-    console.log(value);
-
     if (!this.disabled) {
       this._value = value;
       this.onChange(value); // ?
@@ -76,7 +74,6 @@ export class CheckboxComponent extends CheckboxControlValueAccessor {
     if (!this.disabled) {
       this.appChange.emit({ value: val, inputEvent: event, inputWrapper: this });
       this.onChange(val);
-      console.log(val);
     }
   }
 

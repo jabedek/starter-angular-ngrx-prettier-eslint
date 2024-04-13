@@ -1,0 +1,320 @@
+@mixin cloud($size, $color) {
+  $basic-top: 12%;
+  $basic-left: 12%;
+  $set-top: $basic-top;
+  $set-left: $basic-left;
+
+  position: absolute;
+  margin-top: 70px;
+  width: 350px;
+  height: 120px;
+  background: #eceff1;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
+
+  &::after,
+  &::before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    background: inherit;
+    border-radius: inherit;
+  }
+  &::after {
+    width: 100px;
+    height: 100px;
+    top: -120px;
+    left: -130px;
+  }
+  &::before {
+    width: 180px;
+    height: 180px;
+    top: -70px;
+    left: 130px;
+  }
+
+  @if $color == "white" {
+    $set-top: calc($basic-top - 9.5%);
+    background: white;
+
+    @if $size == "small" {
+      transform: scale(0.5);
+      $set-top: calc($basic-top - 10%);
+      box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+      animation: moveAcross 22s linear infinite;
+    }
+
+    @if $size == "medium" {
+      transform: scale(0.75);
+      $set-top: calc($basic-top - 9.5%);
+      box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.3);
+      animation: moveAcross 26s linear infinite;
+    }
+
+    @if $size == "big" {
+      transform: scale(1);
+      $set-top: calc($basic-top - 9%);
+      box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.4);
+      animation: moveAcross 30s linear infinite;
+    }
+  }
+
+  @if $color == "gray" {
+    $set-top: calc($basic-top + 9.5%);
+    background: gray;
+
+    @if $size == "small" {
+      transform: scale(0.5);
+      $set-top: calc($basic-top + 9%);
+      box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+      animation: moveAcross 32s linear infinite;
+    }
+
+    @if $size == "medium" {
+      transform: scale(0.75);
+      $set-top: calc($basic-top + 9.5%);
+      box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.3);
+      animation: moveAcross 36s linear infinite;
+    }
+
+    @if $size == "big" {
+      transform: scale(1);
+      $set-top: calc($basic-top + 10%);
+      box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.4);
+      animation: moveAcross 40s linear infinite;
+    }
+  }
+
+  top: $set-top;
+  left: $set-left;
+}
+
+// type: tree, rock, puddle
+@mixin obstacle($size, $type) {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #eceff1;
+  background: #ff2;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  // box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
+  left: 50%;
+  bottom: 0;
+
+  &::after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    background: inherit;
+    border-radius: inherit;
+    background: rgba(0, 0, 0, 0.1);
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+
+    z-index: 1;
+    top: 100%;
+    left: 25%;
+
+    // rotate so the shadow is flat on the ground in 3d, as if the sun if further to the left, the obstacle is closer to us
+    transform: rotate3d(2, 1, 1, 45deg);
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #909090;
+  flex-direction: column;
+  position: relative;
+
+  .game-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #606060;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .game-window {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #303030;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+.scene {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #303030;
+  border-radius: 10px;
+  position: relative;
+}
+
+.spacecraft {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid #fff;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  rotate: 90deg;
+}
+
+.parallax {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: rgba(200, 0, 200, 0.1);
+
+  // .trees {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   // background: url("assets/images/trees.png") repeat-x;
+  //   background: rgba(0, 255, 0, 0.1);
+  //   animation: moveTrees 20s linear infinite;
+  // }
+
+  // .ground {
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 20%;
+  //   background: rgba(100, 100, 100, 0.4);
+  //   // background: url("assets/images/ground.png") repeat-x;
+  //   animation: moveGround 20s linear infinite;
+  // }
+}
+
+.clouds {
+  background-color: #66d0ff;
+  position: relative;
+  display: flex;
+
+  width: 100%;
+  height: 30%;
+
+  .cloud_0 {
+    @include cloud("small", "white");
+    animation-delay: 0s !important;
+    animation-fill-mode: backwards;
+  }
+
+  .cloud_1 {
+    @include cloud("small", "gray");
+    animation-delay: 5s !important;
+    animation-fill-mode: backwards;
+  }
+
+  .cloud_2 {
+    @include cloud("medium", "white");
+    animation-delay: 10s !important;
+    animation-fill-mode: backwards;
+  }
+
+  .cloud_3 {
+    @include cloud("big", "gray");
+    animation-delay: 15s !important;
+    animation-fill-mode: backwards;
+  }
+
+  .cloud_4 {
+    @include cloud("medium", "white");
+    animation-delay: 20s !important;
+    animation-fill-mode: backwards;
+  }
+
+  .cloud_5 {
+    @include cloud("big", "gray");
+    animation-delay: 25s !important;
+    animation-fill-mode: backwards;
+  }
+
+  .cloud_6 {
+    @include cloud("small", "white");
+    animation-delay: 30s !important;
+    animation-fill-mode: backwards;
+  }
+
+  .cloud_7 {
+    @include cloud("medium", "gray");
+    animation-delay: 35s !important;
+    animation-fill-mode: backwards;
+  }
+}
+
+.obstacles {
+  background-color: rgba(30, 255, 30, 0.1);
+  background: rgb(102, 208, 255);
+  background: linear-gradient(180deg, rgba(102, 208, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  position: relative;
+  display: flex;
+
+  width: 100%;
+  height: 40%;
+
+  .obstacle_0 {
+    @include obstacle("small", "tree");
+  }
+
+  .obstacle_1 {
+    @include obstacle("small", "rock");
+  }
+
+  .obstacle_2 {
+    @include obstacle("medium", "tree");
+  }
+
+  .obstacle_3 {
+    @include obstacle("big", "rock");
+  }
+
+  .obstacle_3 {
+    @include obstacle("big", "puddle");
+  }
+}
+
+.ground {
+  background-color: #cbba76;
+  position: relative;
+  display: flex;
+
+  width: 100%;
+  height: 30%;
+
+  border-top: 2px solid #000;
+}
+
+@keyframes moveAcross {
+  from {
+    left: 100%;
+  }
+  to {
+    left: calc(0% - 500px);
+  }
+}

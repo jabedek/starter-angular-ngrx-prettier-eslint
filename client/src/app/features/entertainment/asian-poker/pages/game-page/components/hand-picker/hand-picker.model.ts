@@ -1,4 +1,4 @@
-import { SimpleRank, SimpleSuit } from '@features/entertainment/asian-poker/models/card.model';
+import { SimpleRank, SimpleSuit } from '@features/entertainment/asian-poker/models/types/card.model';
 
 export type HandCategory = {
   topCategory: string;

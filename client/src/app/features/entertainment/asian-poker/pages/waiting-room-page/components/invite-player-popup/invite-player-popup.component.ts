@@ -27,8 +27,6 @@ export class InvitePlayerPopupComponent {
   ) {}
 
   sendInvite() {
-    console.log('invite');
-
     this.error = '';
     const { playerEmail, additionalText } = this.inviteForm.getRawValue();
     if (this.order && playerEmail) {

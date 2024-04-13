@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
-import { Card } from '../models/card.model';
-import { DeckVariant } from '../constants/deck.constant';
-import { CycleAnalyticsA, CycleAnalyticsB, HandInstance } from '../models/in-game-analysis.model';
-import { HighHandsNames, LowHandsNames } from '../constants/hand.constant';
-import { AsianPokerGameDTO } from '../models/session-game-chat/game.model';
+import { Card } from '../models/types/card.model';
+import { DeckVariant } from '../models/related-constants/deck.constant';
+import { CycleAnalyticsA, CycleAnalyticsB, HandInstance } from '../models/types/in-game-analysis.model';
+import { HighHandsNames, LowHandsNames } from '../models/related-constants/hand.constant';
+import { AsianPokerGameDTO } from '../models/types/session-game-chat/game.model';
 
 @Injectable({
   providedIn: 'root',

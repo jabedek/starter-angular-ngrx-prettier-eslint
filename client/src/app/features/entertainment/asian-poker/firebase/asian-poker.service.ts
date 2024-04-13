@@ -7,10 +7,10 @@ import {
   FirebaseDbService,
 } from '../../../../core/firebase/firebase-db.service';
 import { SessionGameData } from '@features/entertainment/asian-poker/pages/game-page/game-session.resolver';
-import { AsianPokerGameDTO } from '../models/session-game-chat/game.model';
+import { AsianPokerGameDTO } from '../models/types/session-game-chat/game.model';
 import { FirebaseUsersService } from '@core/firebase/firebase-users.service';
-import { AsianPokerSessionDTO } from '../models/session-game-chat/session.model';
-import { SessionStatus } from '../models/session-game-chat/session.status.model';
+import { AsianPokerSessionDTO } from '../models/types/session-game-chat/session.model';
+import { SessionStatus } from '../models/types/session-game-chat/session.status.model';
 
 @Injectable({
   providedIn: 'root',

@@ -60,8 +60,6 @@ export class PopupComponent {
     if (this.closeOnOutclick) {
       const target = event.target as HTMLElement;
       if (target.classList.contains('_popup_')) {
-        console.log('handleOutclick');
-
         this.popup.hidePopup();
       }
     }

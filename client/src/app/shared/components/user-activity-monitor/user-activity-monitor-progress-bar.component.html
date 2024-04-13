@@ -1,4 +1,4 @@
-<div class="ticks-wrapper">
+<div class="ticks-wrapper" [ngStyle]="{ display: hidden ? 'none' : 'flex' }">
   <div *ngIf="checkingIntervalTicks | async as ticks">
     <p>checks interval</p>
     <app-progress-bar [currentValue]="ticks.start" [maxValue]="ticks.end" color="rgb(255, 87, 0)"></app-progress-bar>

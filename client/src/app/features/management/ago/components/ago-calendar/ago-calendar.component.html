@@ -1,0 +1,76 @@
+<div class="table-container">
+  <table class="table">
+    <ng-container *ngTemplateOutlet="yearsMonthsHeaders; context: { years: years, months: months }"></ng-container>
+    <ng-container
+      *ngTemplateOutlet="yearsMonthsData; context: { years: years, months: months, slots: voyageAxisSlots }"></ng-container>
+  </table>
+</div>
+
+<ng-template #yearsMonthsHeaders let-years="years" let-months="months">
+  <tr class="row-header">
+    <th class="header-year" *ngFor="let year of years">
+      {{ year }}
+    </th>
+  </tr>
+  <tr class="row-header">
+    <th class="header-month" *ngFor="let year of years">
+      <ng-container *ngFor="let month of months; let m = index">
+        <ng-container *ngIf="year | pos: m as pos">
+          <div
+            #monthHeaderCell
+            class="cell-month"
+            [ngClass]="{
+              'future-header': futureCellsPositions?.positions?.get(pos | slice: 0 : 8) === (pos | slice: 0 : 8),
+              'border-future': futureCellsPositions?.firstPos === (pos | slice: 0 : 8)
+            }"
+            [attr.month-cell]="pos"
+            (mouseenter)="handleMouseEnter($event)">
+            <div class="cell-content">
+              {{ month | slice: 0 : 1 }}
+            </div>
+          </div>
+        </ng-container>
+      </ng-container>
+    </th>
+  </tr>
+</ng-template>
+
+<ng-template #yearsMonthsData let-years="years" let-months="months" let-slots="slots">
+  <tr class="row-data" *ngFor="let slot of slots; let i = index">
+    <td class="data-year" *ngFor="let year of years">
+      <ng-container *ngFor="let month of months; let m = index">
+        <ng-container *ngIf="year | pos: m : i as pos">
+          <!-- attr.month-cell is used to highlight cells in same months -->
+          <div
+            #monthDataCell
+            class="cell-month"
+            [ngClass]="{
+              'future-data': futureCellsPositions?.positions?.get(pos | slice: 0 : 8) === (pos | slice: 0 : 8),
+              'border-future': futureCellsPositions?.firstPos === (pos | slice: 0 : 8)
+            }"
+            [attr.month-cell]="pos"
+            (mouseenter)="handleMouseEnter($event)"
+            (click)="handleClick(pos, $event)">
+            <div class="cell-content timeslot">
+              <ng-container *ngIf="activeCells.get(pos) as obj">
+                <!-- id is used as position to add and display new points -->
+                <p *ngIf="obj.point" class="voyage-point voyage-point--big" [style.backgroundColor]="obj.cellDisplay.color"></p>
+                <p
+                  class="voyage-line voyage-line--{{ obj.point ? obj.cellDisplay.lineStage : '' }}"
+                  [style.backgroundColor]="obj.cellDisplay.color"></p>
+              </ng-container>
+            </div>
+          </div>
+        </ng-container>
+      </ng-container>
+    </td>
+  </tr>
+</ng-template>
+
+<!-- Todo1
+Klikasz w dany rok i nastepuje animacja: z prawej strony nadjedza kalendarz dla tego roku wg miesiecy i tygodni.
+-->
+
+<!-- Todo2
+Oznaczyc linie do "teraz"
+-->

@@ -4,10 +4,10 @@ import {
   RanksWithHierarchyExtended,
   RanksWithHierarchyStandard,
   SuitsWithHierarchy,
-} from '../constants/card.constant';
-import { DeckAmountStandard, DeckVariant } from '../constants/deck.constant';
-import { Card } from '../models/card.model';
-import { GameSlot } from '../models/session-game-chat/player-slot.model';
+} from '../models/related-constants/card.constant';
+import { DeckAmountStandard, DeckVariant } from '../models/related-constants/deck.constant';
+import { Card } from '../models/types/card.model';
+import { GameSlot } from '../models/types/session-game-chat/player-slot.model';
 
 export function createNewDeck(players: GameSlot[]) {
   const publicCardsAmount = players.every((player) => player?.playerWithHand?.fixedHandSize > 1) ? 1 : 2;

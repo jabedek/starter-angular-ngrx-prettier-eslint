@@ -1,13 +1,19 @@
-<div class="table-wrapper" *ngIf="dataPair && ticksNumber > 0">
-  <app-playing-table
-    [dataPair]="dataPair"
-    [currentUser]="currentUser"
-    [gameInternalDataSnapshot]="gameInternalDataSnapshot$ | async"></app-playing-table>
-</div>
+<ng-container *ngIf="{ session: session$ | async, game: game$ | async, ticksNumber: ticksNumber$ | async } as observables">
+  <ng-container *ngIf="observables.ticksNumber && observables.session && observables.game">
+    <div class="table-wrapper" *ngIf="observables.ticksNumber > 0">
+      <app-playing-table
+        [session]="observables.session"
+        [game]="observables.game"
+        [currentUser]="currentUser"
+        [gameInternalDataSnapshot]="gameInternalDataSnapshot$ | async"></app-playing-table>
+    </div>
 
-<div class="gui-wrapper" *ngIf="dataPair && ticksNumber > 0">
-  <app-player-gui
-    [dataPair]="dataPair"
-    [currentUser]="currentUser"
-    [gameInternalDataSnapshot]="gameInternalDataSnapshot$ | async"></app-player-gui>
-</div>
+    <div class="gui-wrapper" *ngIf="observables.ticksNumber > 0">
+      <app-player-gui
+        [session]="observables.session"
+        [game]="observables.game"
+        [currentUser]="currentUser"
+        [gameInternalDataSnapshot]="gameInternalDataSnapshot$ | async"></app-player-gui>
+    </div>
+  </ng-container>
+</ng-container>

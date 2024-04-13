@@ -1,4 +1,4 @@
-import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, Input, ViewChild } from '@angular/core';
 
 import { ProgressBarComponent } from '@shared/components/progress-bar/progress-bar.component';
 import { debounceTime, interval, map, of, skip, switchMap, take, takeUntil, tap, timer } from 'rxjs';
@@ -10,6 +10,7 @@ import { MonitorWaiting, MonitorTracking, UserActivityMonitorService } from './u
   styleUrls: ['./user-activity-monitor-progress-bar.component.scss'],
 })
 export class UserActivityMonitorProgressBarComponent {
+  @Input() hidden = false;
   @ViewChild('progressLength', { read: ProgressBarComponent }) set progressLength(progressLength: ProgressBarComponent) {
     this._progressLength = progressLength;
   }

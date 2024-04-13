@@ -35,8 +35,6 @@ export abstract class BaseComponent implements OnDestroy {
   }
 
   ngOnDestroy(): void {
-    console.log('# ngOnDestroy', this.___className);
-
     this.__deleteFirebaseListeners();
     this.__deleteTimers();
     this.__destroy.next();

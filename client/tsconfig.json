@@ -27,6 +27,9 @@
       "@core/*": ["src/app/core/*"],
       "@store/*": ["src/app/store/*"],
       "@features/*": ["src/app/features/*"],
+      "@models/asian-poker": [
+        "src/app/features/entertainment/asian-poker/models/index"
+      ],
       "@shared/*": ["src/app/shared/*"],
       "@env/*": ["src/environments/*"],
       "@assets/*": ["src/assets/*"]

@@ -68,7 +68,7 @@ header {
   .navbar-wrapper {
     position: fixed;
     right: variables.$thumbWidth;
-    right: calc($main-content-layout-width / 2 + 80px);
+    // right: calc($main-content-layout-width / 2 + 80px);
     top: variables.$header-height;
 
     overflow: hidden;

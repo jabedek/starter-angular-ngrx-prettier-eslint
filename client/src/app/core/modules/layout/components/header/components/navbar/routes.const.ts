@@ -3,6 +3,7 @@ import { AppRoute } from './routes.model';
 export const APP_ROUTES: AppRoute[] = [
   // entertainment
   { type: 'single', path: '/asian-poker', label: 'asian-poker *' },
+  { type: 'single', path: '/some-fast-game', label: 'some-fast-game *' },
   { type: 'single', path: '/casino', label: 'casino #' },
   { type: 'single', path: '/cbbg', label: 'cbbg #' },
   { type: 'single', path: '/paintchat', label: 'paintchat *' },

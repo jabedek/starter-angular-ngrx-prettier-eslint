@@ -1,7 +1,11 @@
 import { Component, Input } from '@angular/core';
-import { SessionGameDataPair } from '@features/entertainment/asian-poker/models/common.model';
-import { GameInternalData } from '@features/entertainment/asian-poker/models/session-game-chat/game.model';
-import { PlayerWithHand } from '@features/entertainment/asian-poker/models/session-game-chat/player-slot.model';
+import { AsianPokerSessionDTO } from '@features/entertainment/asian-poker/models';
+import { SessionGameDataPair } from '@features/entertainment/asian-poker/models/types/common.model';
+import {
+  AsianPokerGameDTO,
+  GameInternalData,
+} from '@features/entertainment/asian-poker/models/types/session-game-chat/game.model';
+import { PlayerWithHand } from '@features/entertainment/asian-poker/models/types/session-game-chat/player-slot.model';
 import { GameManagerService } from '@features/entertainment/asian-poker/services/game-manager.service';
 
 @Component({
@@ -10,12 +14,13 @@ import { GameManagerService } from '@features/entertainment/asian-poker/services
   styleUrls: ['./player-gui.component.scss'],
 })
 export class PlayerGuiComponent {
+  @Input() session?: AsianPokerSessionDTO;
+  @Input() game?: AsianPokerGameDTO;
   @Input({ required: true }) currentUser: Partial<PlayerWithHand> | undefined;
-  @Input({ required: true }) dataPair: SessionGameDataPair | undefined;
   @Input() gameInternalDataSnapshot: GameInternalData | null = null;
 
   get gameLastTick() {
-    return this.dataPair?.game?.ticks.at(-1);
+    return this.game?.ticks.at(-1);
   }
 
   get currentDealerIndex() {

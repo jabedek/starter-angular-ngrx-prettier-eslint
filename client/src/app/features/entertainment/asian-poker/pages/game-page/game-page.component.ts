@@ -4,16 +4,17 @@ import { ActivatedRoute } from '@angular/router';
 import { AsianPokerService } from '@features/entertainment/asian-poker/firebase/asian-poker.service';
 import { GameAnalyzerService } from '../../services/game-analyzer.service';
 import { GameManagerService } from '../../services/game-manager.service';
-import { SessionGameDataPair } from '../../models/common.model';
+import { SessionGameDataPair } from '../../models/types/common.model';
 import { FirebaseAuthService } from '@core/firebase/firebase-auth.service';
 import { UserAppAccount } from '@store/auth/auth.state';
-import { Observable, takeUntil, tap } from 'rxjs';
+import { Observable, map, takeUntil, tap } from 'rxjs';
 import { BaseComponent } from '@shared/abstracts/base/base.component';
-import { PlayerWithHand } from '../../models/session-game-chat/player-slot.model';
+import { PlayerWithHand } from '../../models/types/session-game-chat/player-slot.model';
 import { AsianPokerSessionService } from '../../firebase/asian-poker-session.service';
 import { Unsubscribe } from 'firebase/firestore';
-import { AsianPokerGameDTO, GameInternalData } from '../../models/session-game-chat/game.model';
-import { AsianPokerSessionDTO } from '../../models/session-game-chat/session.model';
+import { AsianPokerGameDTO, GameInternalData } from '../../models/types/session-game-chat/game.model';
+import { AsianPokerSessionDTO } from '../../models/types/session-game-chat/session.model';
+import { SessionGameListenerService } from '../../services/session-game-listener.service';
 
 const somePlayers = [
   new PlayerWithHand('456', 'Simon', 3),
@@ -32,14 +33,13 @@ export class GamePageComponent extends BaseComponent {
   appAccount$: Observable<UserAppAccount | undefined> = this.auth.appAccount$.pipe(takeUntil(this.__destroy));
   currentUser: UserAppAccount | undefined;
 
-  dataPair: SessionGameDataPair | undefined;
+  session$ = this.sessionGameListener.session$;
+  game$ = this.sessionGameListener.game$;
 
-  gameInternalDataSnapshot$: Observable<GameInternalData> = this.manager.gameInternalDataSnapshot$.pipe(
-    takeUntil(this.__destroy),
-  );
+  gameInternalDataSnapshot$: Observable<GameInternalData> = this.manager.producedDataSnapshot$.pipe(takeUntil(this.__destroy));
 
-  get ticksNumber() {
-    return this.dataPair?.game.ticks.length || 0;
+  get ticksNumber$(): Observable<number> {
+    return this.game$.pipe(map((game) => game?.ticks?.length || 0));
   }
 
   constructor(
@@ -48,7 +48,7 @@ export class GamePageComponent extends BaseComponent {
     private as: AsianPokerService,
     private apSession: AsianPokerSessionService,
     private route: ActivatedRoute,
-
+    private sessionGameListener: SessionGameListenerService,
     private auth: FirebaseAuthService,
   ) {
     super('GamePageComponent');
@@ -56,51 +56,22 @@ export class GamePageComponent extends BaseComponent {
     this.appAccount$.subscribe((user) => (this.currentUser = user));
     this.route.data.subscribe(({ data }) => {
       if (data) {
-        this.dataPair = data as SessionGameDataPair;
-        this.listenToSessionChanges(data);
-        this.listenToGameChanges(data);
+        const dataPair = data as SessionGameDataPair;
 
-        if (this.dataPair.session.sessionActivity.status === 'game-entered') {
-          this.setupGame(this.dataPair);
+        if (dataPair.session) {
+          this.sessionGameListener.listenToSessionChanges(dataPair.session?.id);
+          this.sessionGameListener.listenToGameChanges(dataPair.session?.gameId);
+
+          if (dataPair.session.sessionActivity.status === 'game-entered') {
+            this.setupGame();
+          }
         }
       }
     });
   }
 
-  private listenToSessionChanges(data: SessionGameDataPair) {
-    this.apSession.listenToSessionChanges(
-      data.session.id,
-      (changes: AsianPokerSessionDTO[] | undefined, unsub: Unsubscribe | undefined) => {
-        if (changes && unsub) {
-          this.__addFirebaseListener('listenToSessionChanges', unsub);
-          if (this.dataPair?.session) {
-            this.dataPair.session = changes[0];
-          }
-        }
-      },
-    );
+  private async setupGame() {
+    console.log('## GamePageComponent setupGame');
+    await this.manager.setupGame();
   }
-
-  private listenToGameChanges(data: SessionGameDataPair) {
-    this.apSession.listenToGameChanges(
-      data.game.id,
-      (changes: AsianPokerGameDTO[] | undefined, unsub: Unsubscribe | undefined) => {
-        if (changes && unsub) {
-          this.__addFirebaseListener('listenToGameChanges', unsub);
-          if (changes) {
-            if (this.dataPair?.game) {
-              this.dataPair.game = changes[0];
-            }
-          }
-        }
-      },
-    );
-  }
-
-  private async setupGame(dataPair: SessionGameDataPair) {
-    console.log('## setupGame');
-
-    await this.manager.setupGame(dataPair);
-  }
-  // listenToPlayersLeaveGame() {}
 }

@@ -5,18 +5,20 @@ import {
   GameActivityTickLogDTO,
   GameInternalData,
   TickTriggeringAction,
-} from '../models/session-game-chat/game.model';
-import { Card } from '../models/card.model';
+} from '../models/types/session-game-chat/game.model';
+import { Card } from '../models/types/card.model';
 import { createNewDeck, drawCards } from '../utils/game.utils';
 import { FirebaseUsersService } from '@core/firebase/firebase-users.service';
-import { SessionGameDataPair } from '../models/common.model';
+import { SessionGameDataPair } from '../models/types/common.model';
 import { AsianPokerService } from '../firebase/asian-poker.service';
-import { SessionSlot, GameSlot, GameTickAction, PlayerTickAction } from '../models/session-game-chat/player-slot.model';
+import { SessionSlot, GameSlot, GameTickAction, PlayerTickAction } from '../models/types/session-game-chat/player-slot.model';
 import { BehaviorSubject, EMPTY, Observable, ReplaySubject, Subject, filter, from, switchMap, takeUntil } from 'rxjs';
-import { AsianPokerSessionDTO } from '../models/session-game-chat/session.model';
-import { DeckVariant } from '../constants/deck.constant';
+import { AsianPokerSessionDTO } from '../models/types/session-game-chat/session.model';
+import { DeckVariant } from '../models/related-constants/deck.constant';
 import { AsianPokerSessionService } from '../firebase/asian-poker-session.service';
 import { getNextStatus } from '../utils/session-status.helper';
+import { SessionGameListenerService } from './session-game-listener.service';
+import { BaseComponent } from '@shared/abstracts/base/base.component';
 
 export type ActionTickPayload = {
   action: PlayerTickAction | GameTickAction;
@@ -26,52 +28,58 @@ export type ActionTickPayload = {
 @Injectable({
   providedIn: 'root',
 })
-export class GameManagerService {
-  private destroy$ = new Subject<void>();
-  private externalData: { session: AsianPokerSessionDTO | undefined; game: AsianPokerGameDTO | undefined } = {
-    session: undefined,
-    game: undefined,
-  };
+export class GameManagerService extends BaseComponent {
+  private cachedData$ = this.sessionGameListener.asDataPair.pipe(takeUntil(this.__destroy));
+  cachedData?: SessionGameDataPair;
 
-  set gameInternalData(gameInternalData: GameInternalData) {
-    this._gameInternalData = gameInternalData;
-    this.gameInternalDataSnapshotNext.next(gameInternalData);
+  set producedData(producedData: GameInternalData) {
+    this._producedData = producedData;
+    this.producedDataSnapshotNext.next(producedData);
   }
 
-  get gameInternalData(): GameInternalData {
-    return this._gameInternalData;
+  get producedData(): GameInternalData {
+    return this._producedData;
   }
 
-  private _gameInternalData: GameInternalData = {
+  private _producedData: GameInternalData = {
     roundInfo: { counter: -1, currentDealerIndex: -1, deckVariant: 'standard' as DeckVariant, publicCards: [] as Card[] },
     cycleInfo: { counter: -1, currentPlayerIndex: -1, gameSlots: [] as GameSlot[] },
   };
 
-  private readonly gameInternalDataSnapshotNext = new ReplaySubject<GameInternalData>(1);
-  readonly gameInternalDataSnapshot$ = this.gameInternalDataSnapshotNext.asObservable().pipe(takeUntil(this.destroy$));
+  private readonly producedDataSnapshotNext = new ReplaySubject<GameInternalData>(1);
+  readonly producedDataSnapshot$ = this.producedDataSnapshotNext.asObservable().pipe(takeUntil(this.__destroy));
 
   private readonly tickTriggeringActionsNext = new ReplaySubject<ActionTickPayload>(1);
   readonly tickTriggeringActions$ = this.tickTriggeringActionsNext.asObservable().pipe(
     switchMap((action) => this.sendoutIncomingActions(action)),
-    takeUntil(this.destroy$),
+    takeUntil(this.__destroy),
   );
 
   constructor(
     private firebaseUsers: FirebaseUsersService,
     private as: AsianPokerService,
     private apSession: AsianPokerSessionService,
+    private sessionGameListener: SessionGameListenerService,
   ) {
+    super('GameManagerService');
     this.tickTriggeringActions$.subscribe();
+
+    this.cachedData$.subscribe((dataPair) => {
+      this.cachedData = dataPair;
+    });
   }
 
-  async setupGame(dataPair: SessionGameDataPair) {
-    this.externalData = dataPair;
+  async setupGame() {
+    const dataPair = this.cachedData;
+    if (!dataPair?.session?.id) {
+      return;
+    }
 
-    const players = dataPair.session.sessionActivity.playersSlots || [];
+    const players = dataPair.session?.sessionActivity.playersSlots || [];
     const unshuffled: GameSlot[] = await this.createGameSlots(players);
     const shuffled: GameSlot[] = await this.getShuffledPlayers(unshuffled);
 
-    const hostSlotIndex = shuffled.findIndex((slot) => slot.playerId === dataPair.session.sessionActivity.hostId);
+    const hostSlotIndex = shuffled.findIndex((slot) => slot.playerId === dataPair.session?.sessionActivity.hostId);
     const hostSlot = { ...shuffled[hostSlotIndex] };
     const lastSlot = { ...shuffled[shuffled.length - 1] };
 
@@ -86,14 +94,14 @@ export class GameManagerService {
     };
 
     return this.as
-      .updateData('sessions', dataPair.session.id, {
-        'sessionActivity.status': getNextStatus(dataPair.session.sessionActivity.status),
+      .updateData('sessions', dataPair.session?.id, {
+        'sessionActivity.status': getNextStatus(dataPair.session?.sessionActivity.status),
       })
       .then(() => this.tickTriggeringActionsNext.next({ action: newAction, tickLog: newTick }));
   }
 
   setupNextRoundAndStart() {
-    const { roundInfo, cycleInfo } = this.gameInternalData;
+    const { roundInfo, cycleInfo } = this.producedData;
 
     const roundIndex = roundInfo.counter;
     const cycleIndex = cycleInfo.counter;
@@ -114,24 +122,24 @@ export class GameManagerService {
       },
     };
 
-    this.gameInternalData = newGameData;
+    this.producedData = newGameData;
   }
 
   private sendoutIncomingActions<T = {}>(payload: ActionTickPayload): Observable<T | void> {
     console.log('Action', payload.action.type);
 
-    if (!(this.externalData.session && this.externalData.game)) {
+    if (!(this.cachedData?.session && this.cachedData?.game)) {
       return EMPTY;
     }
 
     const newTick: GameActivityTickLogDTO = {
-      ...(payload.tickLog || this.gameInternalData),
+      ...(payload.tickLog || this.producedData),
       tickTriggeredBy: payload.action,
     };
 
     switch (payload.action.type) {
       case 'GAME_CREATE':
-        return from(this.apSession.addGameTick(this.externalData.game.id, newTick));
+        return from(this.apSession.addGameTick(this.cachedData?.game.id, newTick));
       default:
         return EMPTY;
     }

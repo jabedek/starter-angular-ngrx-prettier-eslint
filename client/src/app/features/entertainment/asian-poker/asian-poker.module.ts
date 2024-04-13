@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { AsianPokerRoutingModule } from './asian-poker-routing.module';
-import { AsianPokerComponent } from './asian-poker.component';
 import { CardStyleDirective } from './directives/card-style.directive';
 import { PlayerGuiComponent } from './pages/game-page/components/player-gui/player-gui.component';
 import { PlayingTableComponent } from './pages/game-page/components/playing-table/playing-table.component';
@@ -12,22 +10,21 @@ import { HandPickerComponent } from './pages/game-page/components/hand-picker/ha
 import { CardPipe } from './pipes/card.pipe';
 import { TranslateModule } from '@ngx-translate/core';
 import { GamePageComponent } from './pages/game-page/game-page.component';
-import { LobbyPageComponent } from './pages/lobby-page/lobby-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { WaitingRoomPageComponent } from './pages/waiting-room-page/waiting-room-page.component';
 import { BasicCardComponent } from './components/basic-card/basic-card.component';
 import { BasicShelfComponent } from './components/basic-shelf/basic-shelf.component';
-import { GamesListComponent } from './pages/lobby-page/games-list/games-list.component';
-import { JoinGamePopupComponent } from './pages/lobby-page/games-list/components/join-game-popup/join-game-popup.component';
-import { CreateSessionComponent } from './pages/lobby-page/create-session/create-session.component';
 import { InvitePlayerPopupComponent } from './pages/waiting-room-page/components/invite-player-popup/invite-player-popup.component';
+import { CreateSessionComponent } from './pages/main-lobby-page/components/create-session/create-session.component';
+import { JoinGamePopupComponent } from './pages/main-lobby-page/components/join-game-popup/join-game-popup.component';
+import { GamesListComponent } from './pages/main-lobby-page/components/games-list/games-list.component';
+import { MainLobbyPageComponent } from './pages/main-lobby-page/main-lobby-page.component';
 @NgModule({
   declarations: [
+    MainLobbyPageComponent,
     GamePageComponent,
-    LobbyPageComponent,
     WaitingRoomPageComponent,
 
-    AsianPokerComponent,
     PlayerGuiComponent,
     PlayingTableComponent,
     HandPickerComponent,

@@ -11,9 +11,7 @@ export class ProgressBarComponent {
   @Input() maxValue: number | undefined = 0;
   @Input() color = '#00aeff';
 
-  constructor() {
-    console.log('ProgressBarComponent');
-  }
+  constructor() {}
 
   setValue(value: number) {
     this.currentValue = value;

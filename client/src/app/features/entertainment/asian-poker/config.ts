@@ -1,4 +1,4 @@
-import { SessionAccessibility, SessionVisibility } from './models/session-game-chat/session.model';
+import { SessionAccessibility, SessionVisibility } from './models/types/session-game-chat/session.model';
 
 export type Config = {
   devOnly?: {

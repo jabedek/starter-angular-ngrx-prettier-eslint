@@ -2,7 +2,7 @@
 click on player to see a 3-second tooltip (also throttled for next 5 seconds) with info what they called - only most-last call;
 -->
 
-<div *ngIf="currentUser && dataPair" class="playing-table">
+<div *ngIf="currentUser" class="playing-table">
   <div class="public-wrapper">
     <ul class="public-deck">
       <li *ngFor="let card of publicCards" class="card" [ngClass]="{ 'card-hidden': cardsHidden }" [appCardStyle]="card">

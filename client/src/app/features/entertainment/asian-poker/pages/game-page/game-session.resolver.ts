@@ -1,8 +1,8 @@
 import { ActivatedRouteSnapshot, ResolveFn, RouterStateSnapshot } from '@angular/router';
 import { inject } from '@angular/core';
 import { AsianPokerService } from '@features/entertainment/asian-poker/firebase/asian-poker.service';
-import { AsianPokerGameDTO } from '../../models/session-game-chat/game.model';
-import { AsianPokerSessionDTO } from '../../models/session-game-chat/session.model';
+import { AsianPokerGameDTO } from '../../models/types/session-game-chat/game.model';
+import { AsianPokerSessionDTO } from '../../models/types/session-game-chat/session.model';
 
 export type SessionGameData = {
   session: AsianPokerSessionDTO;
