@@ -47,11 +47,11 @@ export class AsianPokerService {
 
   // Specific methods
   async getSessionsByIds(sessionIds: string[]): Promise<AsianPokerSessionDTO[]> {
-    return this.readManyBy('sessions', { key: 'id', values: sessionIds });
+    return this.readManyBy('sessions', { key: 'metadata.id', values: sessionIds });
   }
 
   async getSessionsByStates(states: SessionStatus[]): Promise<AsianPokerSessionDTO[]> {
-    return this.readManyBy('sessions', { key: 'sessionActivity.status', values: states });
+    return this.readManyBy('sessions', { key: 'activity.status', values: states });
   }
 
   async getSessionAndGame(sessionId: string): Promise<SessionGameData | undefined> {

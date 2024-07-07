@@ -11,7 +11,9 @@ export class MainLobbyPageComponent implements AfterViewInit {
     age: new AppFormControl(20),
   });
 
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef) {
+    console.log('AppFormGroup', this.form);
+  }
 
   ngAfterViewInit(): void {
     const el = this.el.nativeElement as HTMLElement;

@@ -1,8 +1,8 @@
 export function getNextStatus(currentStatus: string | undefined | null) {
   switch (currentStatus) {
     case 'session-created':
-      return 'game-entered';
-    case 'game-entered':
+      return 'game-created';
+    case 'game-created':
       return 'game-ready';
     case 'game-ready':
       return 'running';

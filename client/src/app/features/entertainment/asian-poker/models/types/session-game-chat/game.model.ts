@@ -1,6 +1,6 @@
 import { Card } from '../card.model';
 import { DeckVariant } from '../../related-constants/deck.constant';
-import { GameSlot, GameTickAction, PlayerTickAction } from './player-slot.model';
+import { GameSlot, GameTickAction, PlayerTickAction } from '../player-slot.model';
 
 type AsianPokerGameDTO = {
   id: string;
@@ -10,20 +10,24 @@ type AsianPokerGameDTO = {
 };
 
 type GameActivityTickLogDTO = {
-  roundInfo: {
-    counter: number;
-    currentDealerIndex: number;
-    deckVariant: DeckVariant | null;
-    publicCards: Card[];
-    // paused?: boolean;
-  };
-  cycleInfo: {
-    counter: number;
-    currentPlayerIndex: number;
-    gameSlots: GameSlot[];
-    //  paused?: boolean
-  };
+  roundInfo: RoundInfoDTO;
+  cycleInfo: CycleInfoDTO;
   tickTriggeredBy: TickTriggeringAction;
+};
+
+export type RoundInfoDTO = {
+  counter: number;
+  currentDealerIndex: number;
+  deckVariant: DeckVariant | null;
+  publicCards: Card[];
+  // paused?: boolean;
+};
+
+export type CycleInfoDTO = {
+  counter: number;
+  currentPlayerIndex: number;
+  gameSlots: GameSlot[];
+  //  paused?: boolean
 };
 
 type GameInternalData = Omit<GameActivityTickLogDTO, 'tickTriggeredBy'>;

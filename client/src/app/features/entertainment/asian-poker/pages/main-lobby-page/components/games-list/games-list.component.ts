@@ -6,7 +6,7 @@ import { FirebaseAuthService } from '@core/firebase/firebase-auth.service';
 import { take } from 'rxjs';
 import { JoinGamePopupComponent } from '../join-game-popup/join-game-popup.component';
 import { AsianPokerSessionDTO } from '@features/entertainment/asian-poker/models/types/session-game-chat/session.model';
-import { JoinableSessionStatuses } from '@features/entertainment/asian-poker/models/types/session-game-chat/session.status.model';
+import { AllSessionStatuses } from '@features/entertainment/asian-poker/models/types/session-game-chat/session.status.model';
 
 @Component({
   selector: 'app-games-list',
@@ -35,12 +35,15 @@ export class GamesListComponent extends BaseComponent {
   }
 
   async fetchJoinableSessions() {
-    this.ap.getSessionsByStates(JoinableSessionStatuses).then((sessions) => {
+    // this.ap.getSessionsByStates(JoinableSessionStatuses).then((sessions) => {
+    this.ap.getSessionsByStates(AllSessionStatuses).then((sessions) => {
+      console.log(sessions);
+
       this.sessions = sessions;
     });
   }
 
-  joinPopup(sessionId = '') {
+  joinPopup(mode: 'public' | 'private' | 'invite', sessionId?: string) {
     this.auth.appAccount$.pipe(take(1)).subscribe((userPlayer) => {
       if (userPlayer) {
         this.popup.showPopup({
@@ -51,6 +54,7 @@ export class GamesListComponent extends BaseComponent {
               sessionId,
               disabled: !!sessionId,
               userPlayer,
+              popupMode: mode,
             },
           },
           config: {

@@ -112,27 +112,32 @@
   overflow-wrap: break-word;
 }
 
-.isHost {
-  .playerName p {
-    position: relative;
+.playerName p {
+  position: relative;
+  color: white;
 
-    &::after {
-      font-family: Manrope;
-      content: "HOST";
-      $size: 14px;
-      background-color: variables.$bg-main;
-      padding: 1px 2px;
-      border-radius: 3px;
+  &::after {
+    $size: 14px;
+    background-color: variables.$bg-main;
+    padding: 1px 2px;
+    border-radius: 3px;
+    color: white;
 
-      font-size: 11px;
-      font-weight: 700;
+    font-size: 11px;
+    font-weight: 700;
 
-      width: fit-content;
-      height: $size;
-      position: absolute;
-      text-shadow: variables.$shadow-4;
-      transform: translate(2px, -8px);
-    }
+    width: fit-content;
+    height: $size;
+    position: absolute;
+    text-shadow: variables.$shadow-4;
+    transform: translate(2px, -8px);
+  }
+}
+
+.isHost .playerName p {
+  &::after {
+    font-family: Manrope;
+    content: "HOST";
   }
 }
 

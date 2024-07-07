@@ -1,5 +1,5 @@
-<app-basic-card>
-  <ng-container title>Dołącz do sesji</ng-container>
+<app-basic-card height="900px">
+  <ng-container title>Lista aktywnych sesji</ng-container>
 
   <ng-container content>
     <div class="list-wrapper">
@@ -14,24 +14,26 @@
       </div>
       <div class="list">
         <div
-          (dblclick)="joinPopup(selected)"
+          (dblclick)="joinPopup('public', selected)"
           *ngFor="let session of sessions; trackBy: trackBySessions"
           class="list-item"
-          [ngClass]="{ selected: selected === session.id }"
+          [ngClass]="{ selected: selected === session.metadata.id }"
           appAccess
-          (access)="selected = session.id">
-          <div class="title">{{ session.sessionSettings.title }}</div>
-          <div class="hostDisplayName">{{ session.sessionActivity.hostDisplayName }}</div>
+          (access)="selected = session.metadata.id">
+          <div class="title">{{ session.title }}</div>
+          <div class="hostDisplayName">{{ session.activity.hostDisplayName }}</div>
           <div class="players">
-            <div class="playersJoinedAmount">{{ session.sessionActivity.playersJoinedAmount }}</div>
+            <div class="playersJoinedAmount">{{ session.activity.playersJoinedAmount }}</div>
             /
-            <div class="playersLimit">{{ session.sessionSettings.playersLimit }}</div>
+            <div class="playersLimit">{{ session.restrictions.playersLimit }}</div>
           </div>
-          <div class="accessibility" [ngClass]="{ password: session.sessionSettings.password }">
-            {{ session.sessionSettings.accessibility }}
+          <div class="accessibility" [ngClass]="{ password: session.accessibility.password }">
+            {{ session.accessibility.inviteNeeded ? "Invite" : "All" }}
           </div>
-          <div class="status state-{{ session.sessionActivity.status }}">
-            {{ session.sessionActivity.status }}
+          <div class="status status-{{ session.activity.status }}">
+            <!-- {{ session.activity.status }} -->
+
+            {{ "ASIAN_POKER.SESSION_STATUS." + session.activity.status | translate }}
           </div>
         </div>
       </div>
@@ -39,7 +41,8 @@
   </ng-container>
 
   <ng-container actions>
-    <app-button [disabled]="!selected" (click)="joinPopup(selected)">Dołącz</app-button>
-    <app-button (click)="joinPopup()">Dołącz po id</app-button>
+    <app-button [disabled]="!selected" (click)="joinPopup('public', selected)">Dołącz</app-button>
+    <app-button (click)="joinPopup('private')">Dołącz po id</app-button>
+    <app-button (click)="joinPopup('invite')">Dołącz z zaproszenia</app-button>
   </ng-container>
 </app-basic-card>

@@ -1,10 +1,9 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { AsianPokerSessionDTO } from '@features/entertainment/asian-poker/models';
-import { SessionGameDataPair } from '@features/entertainment/asian-poker/models/types/common.model';
+import { Component, Input } from '@angular/core';
 import {
   AsianPokerGameDTO,
   GameInternalData,
 } from '@features/entertainment/asian-poker/models/types/session-game-chat/game.model';
+import { AsianPokerSessionDTO } from '@features/entertainment/asian-poker/models/types/session-game-chat/session.model';
 import { UserAppAccount } from '@store/auth/auth.state';
 
 @Component({

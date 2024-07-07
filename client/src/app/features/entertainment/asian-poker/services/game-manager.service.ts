@@ -11,7 +11,7 @@ import { createNewDeck, drawCards } from '../utils/game.utils';
 import { FirebaseUsersService } from '@core/firebase/firebase-users.service';
 import { SessionGameDataPair } from '../models/types/common.model';
 import { AsianPokerService } from '../firebase/asian-poker.service';
-import { SessionSlot, GameSlot, GameTickAction, PlayerTickAction } from '../models/types/session-game-chat/player-slot.model';
+import { SessionSlot, GameSlot, GameTickAction, PlayerTickAction } from '../models/types/player-slot.model';
 import { BehaviorSubject, EMPTY, Observable, ReplaySubject, Subject, filter, from, switchMap, takeUntil } from 'rxjs';
 import { AsianPokerSessionDTO } from '../models/types/session-game-chat/session.model';
 import { DeckVariant } from '../models/related-constants/deck.constant';
@@ -71,15 +71,15 @@ export class GameManagerService extends BaseComponent {
 
   async setupGame() {
     const dataPair = this.cachedData;
-    if (!dataPair?.session?.id) {
+    if (!dataPair?.session?.metadata.id) {
       return;
     }
 
-    const players = dataPair.session?.sessionActivity.playersSlots || [];
+    const players = dataPair.session?.activity.playersSlots || [];
     const unshuffled: GameSlot[] = await this.createGameSlots(players);
     const shuffled: GameSlot[] = await this.getShuffledPlayers(unshuffled);
 
-    const hostSlotIndex = shuffled.findIndex((slot) => slot.playerId === dataPair.session?.sessionActivity.hostId);
+    const hostSlotIndex = shuffled.findIndex((slot) => slot.playerId === dataPair.session?.activity.hostId);
     const hostSlot = { ...shuffled[hostSlotIndex] };
     const lastSlot = { ...shuffled[shuffled.length - 1] };
 
@@ -94,8 +94,8 @@ export class GameManagerService extends BaseComponent {
     };
 
     return this.as
-      .updateData('sessions', dataPair.session?.id, {
-        'sessionActivity.status': getNextStatus(dataPair.session?.sessionActivity.status),
+      .updateData('sessions', dataPair.session?.metadata.id, {
+        'activity.status': getNextStatus(dataPair.session?.activity.status),
       })
       .then(() => this.tickTriggeringActionsNext.next({ action: newAction, tickLog: newTick }));
   }

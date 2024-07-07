@@ -1,7 +1,7 @@
 import { UserAppAccount } from '@store/auth/auth.state';
 import { Flatten } from 'frotsi';
-import { SessionSlotStatus } from './session.model';
-import { Card } from '../card.model';
+import { SessionSlotStatus } from './session-game-chat/session.model';
+import { Card } from './card.model';
 
 type SessionSlot = {
   order: number;

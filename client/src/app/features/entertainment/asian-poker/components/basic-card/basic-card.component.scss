@@ -10,11 +10,10 @@
   box-shadow: variables.$shadow-3;
 
   width: 600px;
-  height: 670px;
 
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
 
   &__title {
     display: flex;
@@ -33,7 +32,6 @@
 
   &__content {
     width: calc(552px - scrollbar.$scrollbar-width);
-    height: 500px;
     display: flex;
     flex-direction: column;
     border-radius: 3px;
@@ -60,7 +58,7 @@
 
 :host::ng-deep.basic-card__content .list-wrapper {
   width: calc(552px - scrollbar.$scrollbar-width);
-  height: 500px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   border-radius: 3px;
@@ -74,7 +72,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 470px;
+    height: 100%;
     background: (0, 0, 0, 0, 0.1);
     width: 100%;
     overflow-y: scroll;

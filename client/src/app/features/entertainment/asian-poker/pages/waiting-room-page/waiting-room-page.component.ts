@@ -1,7 +1,5 @@
 import { AfterContentInit, Component, OnDestroy } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { AsianPokerService } from '@features/entertainment/asian-poker/firebase/asian-poker.service';
-import { Unsubscribe } from 'firebase/firestore';
 import { BaseComponent } from '@shared/abstracts/base/base.component';
 import { FirebaseUsersService } from '@core/firebase/firebase-users.service';
 import { PopupService } from '@core/modules/layout/components/popup/popup.service';
@@ -10,8 +8,9 @@ import { AsianPokerSessionDTO } from '../../models/types/session-game-chat/sessi
 import { takeUntil } from 'rxjs';
 import { FirebaseAuthService } from '@core/firebase/firebase-auth.service';
 import { AsianPokerGameDTO } from '../../models/types/session-game-chat/game.model';
-import { SessionSlot } from '../../models/types/session-game-chat/player-slot.model';
+import { SessionSlot } from '../../models/types/player-slot.model';
 import { AsianPokerSessionService } from '../../firebase/asian-poker-session.service';
+import { SessionGameListenerService, UserPlayerCheck } from '../../services/session-game-listener.service';
 
 @Component({
   selector: 'app-waiting-room-page',
@@ -44,7 +43,7 @@ export class WaitingRoomPageComponent extends BaseComponent implements OnDestroy
 
   private sessionOnSet() {
     if (this.session) {
-      this.slots = this.session.sessionActivity.playersSlots || [];
+      this.slots = this.session.activity.playersSlots || [];
       this.getPlayersDetails();
     }
   }
@@ -53,6 +52,7 @@ export class WaitingRoomPageComponent extends BaseComponent implements OnDestroy
   constructor(
     private route: ActivatedRoute,
     private apSession: AsianPokerSessionService,
+    protected listener: SessionGameListenerService,
     private auth: FirebaseAuthService,
     private firebaseUsers: FirebaseUsersService,
     private router: Router,
@@ -65,31 +65,43 @@ export class WaitingRoomPageComponent extends BaseComponent implements OnDestroy
   }
 
   ngAfterContentInit(): void {
-    this.listenToSessionChanges();
+    // this.listenToSessionChanges();
+    if (this.session) {
+      const { id, gameId } = this.session.metadata;
+
+      if (id && gameId) {
+        this.listener.listenToSessionChanges(id);
+        // this.listener.listenToGameChanges(gameId);
+      }
+    }
   }
 
   trackBySlots = this.__getTrackByFn('slots');
 
-  listenToSessionChanges() {
-    if (this.session) {
-      this.apSession.listenToSessionChanges(
-        this.session.id,
-        (data: AsianPokerSessionDTO[] | undefined, unsub: Unsubscribe | undefined) => {
-          console.log('WaitingRoomPageComponent new changes', data);
-          if (data && unsub) {
-            this.__addFirebaseListener('listenToSessionChanges', unsub);
-            if (data) {
-              this.session = data[0];
-            }
-          }
-        },
-      );
-    }
+  // listenToSessionChanges() {
+  //   if (this.session) {
+  //     this.apSession.listenToSessionChanges(
+  //       this.session.metadata.id,
+  //       (data: AsianPokerSessionDTO[] | undefined, unsub: Unsubscribe | undefined) => {
+  //         console.log('WaitingRoomPageComponent new changes', data);
+  //         if (data && unsub) {
+  //           this.__addFirebaseListener('listenToSessionChanges', unsub);
+  //           if (data) {
+  //             this.session = data[0];
+  //           }
+  //         }
+  //       },
+  //     );
+  //   }
+  // }
+
+  checkIfUser(userId: string, args: string[] = []) {
+    return this.listener.checkIfUser(userId, args as UserPlayerCheck[]);
   }
 
   private async getPlayersDetails() {
     if (this.session) {
-      const slots: SessionSlot[] = [...this.session.sessionActivity.playersSlots];
+      const slots: SessionSlot[] = [...this.session.activity.playersSlots];
 
       const playersIds = slots
         .filter((slot) => !!(slot.playerId || slot.invitedId))
@@ -108,7 +120,9 @@ export class WaitingRoomPageComponent extends BaseComponent implements OnDestroy
   startGame() {
     const session = this.session;
     if (session) {
-      this.apSession.startGame(session.id).then(() => this.router.navigate(['/asian-poker/game/' + session.id]));
+      this.apSession
+        .startGame(session.metadata.id)
+        .then(() => this.router.navigate(['/asian-poker/game/' + session.metadata.id]));
     }
   }
 
@@ -121,7 +135,7 @@ export class WaitingRoomPageComponent extends BaseComponent implements OnDestroy
         content: {
           component: InvitePlayerPopupComponent,
           inputs: {
-            sessionId: session.id,
+            sessionId: session.metadata.id,
             order,
           },
         },
@@ -129,7 +143,7 @@ export class WaitingRoomPageComponent extends BaseComponent implements OnDestroy
           showCloseButton: true,
           closeOnOutclick: true,
           callbackOnDestroy: async () => {
-            // const [newSession] = await this.apSession.getSessionsByIds([session.id]);
+            // const [newSession] = await this.apSession.getSessionsByIds([session.metadata.id]);
             // this.session = newSession;
             // console.log(newSession);
           },
@@ -142,13 +156,13 @@ export class WaitingRoomPageComponent extends BaseComponent implements OnDestroy
 
   async kick(playerId: string) {
     if (this.session) {
-      await this.apSession.kickFromWaiting(this.session.id, playerId);
+      await this.apSession.kickFromWaiting(this.session.metadata.id, playerId);
     }
   }
 
   async setSlotLock(userId: string, slot: SessionSlot) {
     if (this.session) {
-      await this.apSession.setSlotLock(this.session.id, userId);
+      await this.apSession.setSlotLock(this.session.metadata.id, userId);
     }
   }
 

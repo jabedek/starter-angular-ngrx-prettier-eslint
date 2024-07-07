@@ -9,7 +9,7 @@ import { FirebaseAuthService } from '@core/firebase/firebase-auth.service';
 import { UserAppAccount } from '@store/auth/auth.state';
 import { Observable, map, takeUntil, tap } from 'rxjs';
 import { BaseComponent } from '@shared/abstracts/base/base.component';
-import { PlayerWithHand } from '../../models/types/session-game-chat/player-slot.model';
+import { PlayerWithHand } from '../../models/types/player-slot.model';
 import { AsianPokerSessionService } from '../../firebase/asian-poker-session.service';
 import { Unsubscribe } from 'firebase/firestore';
 import { AsianPokerGameDTO, GameInternalData } from '../../models/types/session-game-chat/game.model';
@@ -45,7 +45,6 @@ export class GamePageComponent extends BaseComponent {
   constructor(
     private analyzer: GameAnalyzerService,
     private manager: GameManagerService,
-    private as: AsianPokerService,
     private apSession: AsianPokerSessionService,
     private route: ActivatedRoute,
     private sessionGameListener: SessionGameListenerService,
@@ -59,10 +58,10 @@ export class GamePageComponent extends BaseComponent {
         const dataPair = data as SessionGameDataPair;
 
         if (dataPair.session) {
-          this.sessionGameListener.listenToSessionChanges(dataPair.session?.id);
-          this.sessionGameListener.listenToGameChanges(dataPair.session?.gameId);
+          this.sessionGameListener.listenToSessionChanges(dataPair.session?.metadata.id);
+          this.sessionGameListener.listenToGameChanges(dataPair.session?.metadata.gameId);
 
-          if (dataPair.session.sessionActivity.status === 'game-entered') {
+          if (dataPair.session.activity.status === 'game-created') {
             this.setupGame();
           }
         }

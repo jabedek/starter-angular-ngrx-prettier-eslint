@@ -1,11 +1,10 @@
 import { Component, Input } from '@angular/core';
-import { AsianPokerSessionDTO } from '@features/entertainment/asian-poker/models';
-import { SessionGameDataPair } from '@features/entertainment/asian-poker/models/types/common.model';
 import {
   AsianPokerGameDTO,
   GameInternalData,
 } from '@features/entertainment/asian-poker/models/types/session-game-chat/game.model';
-import { PlayerWithHand } from '@features/entertainment/asian-poker/models/types/session-game-chat/player-slot.model';
+import { PlayerWithHand } from '@features/entertainment/asian-poker/models/types/player-slot.model';
+import { AsianPokerSessionDTO } from '@features/entertainment/asian-poker/models/types/session-game-chat/session.model';
 import { GameManagerService } from '@features/entertainment/asian-poker/services/game-manager.service';
 
 @Component({

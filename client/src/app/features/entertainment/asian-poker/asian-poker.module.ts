@@ -19,6 +19,7 @@ import { CreateSessionComponent } from './pages/main-lobby-page/components/creat
 import { JoinGamePopupComponent } from './pages/main-lobby-page/components/join-game-popup/join-game-popup.component';
 import { GamesListComponent } from './pages/main-lobby-page/components/games-list/games-list.component';
 import { MainLobbyPageComponent } from './pages/main-lobby-page/main-lobby-page.component';
+import { UserIsPipe } from './pipes/user-is.pipe';
 @NgModule({
   declarations: [
     MainLobbyPageComponent,
@@ -39,6 +40,7 @@ import { MainLobbyPageComponent } from './pages/main-lobby-page/main-lobby-page.
     CardStyleDirective,
     CardPipe,
     InvitePlayerPopupComponent,
+    UserIsPipe,
   ],
   imports: [
     CommonModule,

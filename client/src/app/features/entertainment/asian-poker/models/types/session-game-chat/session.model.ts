@@ -1,25 +1,29 @@
-import { SessionSlot } from './player-slot.model';
+import { SessionSlot } from '../player-slot.model';
 import { SessionStatus } from './session.status.model';
 
-type AsianPokerSessionDTO = {
-  id: string;
-  sessionSettings: AsianPokerSessionSettings;
-  sessionActivity: AsianPokerSessionActivity;
-  gameId: string;
-  chatId: string;
+export type AsianPokerSessionDTO = {
+  metadata: SessionMetadata;
+  title: string;
+  restrictions: SessionRestrictions;
+  accessibility: SessionAccessibility;
+  activity: SessionActivity;
 };
 
-type AsianPokerSessionSettings = {
-  title: string;
-  password: string | null;
+export type SessionMetadata = { id: string; gameId: string; chatId: string };
+
+export type SessionRestrictions = {
   playersLimit: number;
-  accessibility: SessionAccessibility;
-  visibility: SessionVisibility;
   actionDurationSeconds: number;
   spectatorsAllowed: boolean;
 };
 
-type AsianPokerSessionActivity = {
+export type SessionAccessibility = {
+  password: string | null;
+  inviteNeeded: boolean;
+  listability: SessionListVisibility;
+};
+
+export type SessionActivity = {
   hostId: string;
   hostDisplayName: string;
   playersSlots: SessionSlot[];
@@ -31,12 +35,10 @@ type AsianPokerSessionActivity = {
   } | null; // 'undefined' means some kind of error;
 };
 
-type SessionVisibility = 'private' | 'public';
-type SessionAccessibility = 'invite' | 'all';
-
-type SessionSlotStatus = 'empty' | 'occupied' | 'invited' | 'disconnected';
-type SessionResult = 'game-finished' | 'players-cancelled';
-type SessionInvitation = {
+export type SessionListVisibility = 'private' | 'public';
+export type SessionSlotStatus = 'empty' | 'occupied' | 'invited' | 'disconnected';
+export type SessionResult = 'game-finished' | 'players-cancelled';
+export type SessionInvitation = {
   id: string;
   sessionId: string;
   invitedId: string;
@@ -47,15 +49,4 @@ type SessionInvitation = {
   accepted: boolean;
   slotOrder: number;
   additionalText: string;
-};
-
-export {
-  AsianPokerSessionDTO,
-  AsianPokerSessionSettings,
-  AsianPokerSessionActivity,
-  SessionVisibility,
-  SessionAccessibility,
-  SessionSlotStatus,
-  SessionResult,
-  SessionInvitation,
 };

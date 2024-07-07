@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AsianPokerService } from '@features/entertainment/asian-poker/firebase/asian-poker.service';
@@ -19,9 +19,27 @@ import { AsianPokerSessionService } from '@features/entertainment/asian-poker/fi
   templateUrl: './join-game-popup.component.html',
   styleUrls: ['./join-game-popup.component.scss'],
 })
-export class JoinGamePopupComponent {
+export class JoinGamePopupComponent implements OnInit {
   private session: AsianPokerSessionDTO | undefined;
   error = '';
+  header = '';
+
+  @Input() set popupMode(popupMode: 'public' | 'private' | 'invite' | undefined) {
+    this._popupMode = popupMode || 'public';
+
+    const header =
+      this._popupMode === 'invite'
+        ? 'Dołączanie z zaproszenia'
+        : this._popupMode === 'public'
+        ? 'Dołącz do wybranej sesji'
+        : 'Podaj id aby odszukać sesję i spróbować do niej dołączyć';
+
+    this.header = header;
+  }
+  get popupMode(): 'public' | 'private' | 'invite' {
+    return this._popupMode;
+  }
+  private _popupMode: 'public' | 'private' | 'invite' = 'public';
 
   @Input() userPlayer: UserAppAccount | undefined;
 
@@ -56,12 +74,22 @@ export class JoinGamePopupComponent {
     password: new FormControl({ value: '', disabled: false }),
   });
 
+  get pwd() {
+    return this.session?.accessibility.password;
+  }
+
   constructor(
     private ap: AsianPokerService,
     private apSession: AsianPokerSessionService,
     private popup: PopupService,
     private router: Router,
   ) {}
+
+  ngOnInit(): void {
+    if (this.pwd && this.popupMode === 'invite') {
+      this.joinForm.get('password')?.patchValue(this.pwd);
+    }
+  }
 
   join() {
     const { id, password } = this.joinForm.getRawValue();
@@ -75,7 +103,7 @@ export class JoinGamePopupComponent {
           this.session = sessions[0];
 
           if (this.session) {
-            const sessionPwd = this.session.sessionSettings.password;
+            const sessionPwd = this.session.accessibility.password;
 
             if (sessionPwd) {
               if (password !== sessionPwd) {
@@ -87,11 +115,11 @@ export class JoinGamePopupComponent {
               }
             }
 
-            if (this.session.sessionActivity.playersJoinedAmount < this.session.sessionSettings.playersLimit) {
+            if (this.session.activity.playersJoinedAmount < this.session.restrictions.playersLimit) {
               console.log('Can join.');
             } else {
-              consoleError(`Too many players (reached limit: ${this.session.sessionSettings.playersLimit}).`);
-              this.error += `Too many players (reached limit: ${this.session.sessionSettings.playersLimit}).`;
+              consoleError(`Too many players (reached limit: ${this.session.restrictions.playersLimit}).`);
+              this.error += `Too many players (reached limit: ${this.session.restrictions.playersLimit}).`;
               return;
             }
 

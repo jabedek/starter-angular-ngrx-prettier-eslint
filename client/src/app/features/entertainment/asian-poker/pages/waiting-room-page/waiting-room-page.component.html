@@ -12,7 +12,7 @@
         <div class="lock">Przytrzymanie</div>
       </div>
       <div class="list">
-        <ng-container *ngFor="let slot of slots | slice: 0 : session.sessionSettings.playersLimit + 1; trackBy: trackBySlots">
+        <ng-container *ngFor="let slot of slots | slice: 0 : session.restrictions.playersLimit + 1; trackBy: trackBySlots">
           <ng-container *ngTemplateOutlet="player; context: { $implicit: slot, session }"></ng-container>
           <!-- <ng-container *ngIf="slot.user">
           </ng-container>
@@ -23,7 +23,7 @@
       </div>
     </div>
 
-    <div class="info">{{ session.sessionActivity.playersJoinedAmount }} / {{ session.sessionSettings.playersLimit }}</div>
+    <div class="info">{{ session.activity.playersJoinedAmount }} / {{ session.restrictions.playersLimit }}</div>
     <div class="info">Gra rozpoczyna się automatycznie gdy dołączy max graczy</div>
     <div class="info">TODO: JAKO HOST MOZESZ ZAZNACZYC GRACZY I NASTEPNIE ICH USUNAC</div>
   </ng-container>
@@ -36,7 +36,7 @@
     <div class="action-item">
       <div class="action-buttons">
         <app-button (click)="leavePopup()">Zrezygnuj</app-button>
-        <app-button [disabled]="session.sessionActivity.playersJoinedAmount < 3">Zacznij grę natychmiast</app-button>
+        <app-button [disabled]="session.activity.playersJoinedAmount < 3">Zacznij grę natychmiast</app-button>
       </div>
       <div class="info">Min 3 graczy</div>
     </div>
@@ -49,15 +49,20 @@
   <ng-container [ngSwitch]="slot.status">
     <ng-container *ngSwitchDefault>
       <ng-container *ngIf="slot.user?.id as userId">
+        <!-- isHost: userId === session.activity.hostId, -->
+        <!-- currentUser: userId === currentUserId, -->
         <div
           class="list-item wrapper-status-{{ slot.status }} "
           [ngClass]="{
-            isHost: userId === session.sessionActivity.hostId,
-            currentUser: userId === currentUserId,
+            isHost: userId | userIs: ['host', 'dealer'],
+            currentUser: userId | userIs: ['current-player'],
             invitePending: slot.status === 'invited'
           }">
           <div class="actions">
-            <div *ngIf="userId !== currentUserId" class="remove" (click)="kick(userId)"></div>
+            <div
+              *ngIf="userId === session.activity.hostId && userId !== currentUserId"
+              class="remove"
+              (click)="kick(userId)"></div>
           </div>
           <div class="playerName">
             <p>
@@ -75,7 +80,7 @@
           <!-- <div class="status status-{{ slot.status }}">{{ slot.status || "" }}</div> -->
           <div
             class="lock lock-{{ slot.locked }}"
-            (click)="userId !== session.sessionActivity.hostId && userId === currentUserId && setSlotLock(userId, slot)">
+            (click)="userId !== session.activity.hostId && userId === currentUserId && setSlotLock(userId, slot)">
             <div class="icon-{{ slot.locked }}"></div>
           </div>
         </div>
@@ -84,7 +89,11 @@
 
     <ng-container *ngSwitchCase="'empty'">
       <div class="list-item empty" (click)="invitePopup(slot.order)">
-        <ng-container *ngIf="slot.status === 'empty'">PUSTE</ng-container>
+        <ng-container *ngIf="slot.status === 'empty'">
+          PUSTE
+          {{ checkIfUser(currentUserId, ["host"]) ? "Zaproś" : "" }}
+          {{ checkIfUser(currentUserId, ["not-host", "not-occupies-slot"]) ? "Zajmij" : "" }}
+        </ng-container>
         <!-- <div class="status status-{{ slot.status }}">{{ slot.status || "" }}</div> -->
       </div>
     </ng-container>

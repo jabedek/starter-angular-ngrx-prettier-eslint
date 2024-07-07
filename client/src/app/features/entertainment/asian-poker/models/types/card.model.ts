@@ -15,10 +15,15 @@ type SimpleSuit = (typeof Suits)[number];
 type SimpleRank = (typeof Ranks)[number];
 
 type Card = {
-  suit: (typeof SuitsWithHierarchy)[number];
-  rank: RanksWithHierarchy[number];
+  suit: SuitsWithHierarchyType;
+  rank: RanksWithHierarchyType;
 };
 
-type RanksWithHierarchy = typeof RanksWithHierarchyStandard | typeof RanksWithHierarchyExtended | typeof RanksWithHierarchyFinale;
+type SuitsWithHierarchyType = (typeof SuitsWithHierarchy)[number];
+type RanksWithHierarchyType = (
+  | typeof RanksWithHierarchyStandard
+  | typeof RanksWithHierarchyExtended
+  | typeof RanksWithHierarchyFinale
+)[number];
 
-export { Suit, SuitSymbol, SimpleSuit, SimpleRank, Card, RanksWithHierarchy };
+export { Suit, SuitSymbol, SimpleSuit, SimpleRank, Card, SuitsWithHierarchyType, RanksWithHierarchyType };

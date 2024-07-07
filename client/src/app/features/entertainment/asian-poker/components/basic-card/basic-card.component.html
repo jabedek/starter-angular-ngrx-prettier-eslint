@@ -1,9 +1,9 @@
-<div class="basic-card">
+<div class="basic-card" [style.height]="height">
   <h3 class="basic-card__title">
     <ng-content select="[title]"></ng-content>
   </h3>
 
-  <div class="basic-card__content">
+  <div class="basic-card__content" [style.height]="_contentHeight">
     <ng-content select="[content]"></ng-content>
   </div>
 

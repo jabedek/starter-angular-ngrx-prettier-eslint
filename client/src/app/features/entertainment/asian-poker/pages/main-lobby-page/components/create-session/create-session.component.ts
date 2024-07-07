@@ -3,9 +3,8 @@ import { FormGroup, FormControl, Validators, ControlValueAccessor } from '@angul
 import { Router } from '@angular/router';
 import { AsianPokerService } from '@features/entertainment/asian-poker/firebase/asian-poker.service';
 import {
-  AsianPokerSessionSettings,
   SessionAccessibility,
-  SessionVisibility,
+  SessionListVisibility,
 } from '@features/entertainment/asian-poker/models/types/session-game-chat/session.model';
 import { Store } from '@ngrx/store';
 import { InputOption } from '@shared/models/common.models';
@@ -17,54 +16,59 @@ import { UserAppAccount } from '@store/auth/auth.state';
 import { generateDocumentId } from 'frotsi';
 import { Observable, tap, takeUntil } from 'rxjs';
 import { AppCheckboxEvent } from '@shared/components/controls/checkbox/checkbox.component';
-import { OFFICIAL_CONFIG } from '@features/entertainment/asian-poker/config';
+// import { OFFICIAL_CONFIG } from '@features/entertainment/asian-poker/config';
 import { AsianPokerSessionService } from '@features/entertainment/asian-poker/firebase/asian-poker-session.service';
 
-export type AsianPokerSessionCreationForm = AsianPokerSessionSettings & { id: string; hostId: string; hostDisplayName: string };
+export type AsianPokerSessionCreationForm = {
+  id: string;
+  hostId: string;
+  hostDisplayName: string;
+  title: string;
+  playersLimit: number;
+  actionDurationSeconds: number;
+  spectatorsAllowed: boolean;
+  password: string | null;
+  inviteNeeded: boolean;
+  listability: SessionListVisibility;
+};
 
-const CONFIG = OFFICIAL_CONFIG.sessionCreation;
+// const CONFIG = OFFICIAL_CONFIG.sessionCreation;
 @Component({
   selector: 'app-create-session',
   templateUrl: './create-session.component.html',
   styleUrls: ['./create-session.component.scss'],
 })
 export class CreateSessionComponent extends BaseComponent {
-  durationStep = CONFIG.actionDurationSeconds.durationStep;
+  durationStep = 15;
+  duration = this.durationStep * 3;
 
   sessionForm = new FormGroup({
     hostId: new FormControl({ value: '', disabled: true }, [Validators.required]),
     hostDisplayName: new FormControl({ value: '', disabled: true }, [Validators.required]),
-    title: new FormControl({ value: CONFIG.title.defaultVal, disabled: false }, [
+    title: new FormControl({ value: this.defaultTitle(), disabled: false }, [
       Validators.required,
-      Validators.minLength(CONFIG.title.minLength),
-      Validators.maxLength(CONFIG.title.maxLength),
+      Validators.minLength(3),
+      Validators.maxLength(15),
     ]),
     password: new FormControl({ value: '', disabled: false }),
-    playersLimit: new FormControl({ value: CONFIG.playersLimit.minVal, disabled: false }, [
+    playersLimit: new FormControl({ value: 3, disabled: false }, [Validators.required, Validators.min(3), Validators.max(6)]),
+    listability: new FormControl<SessionListVisibility>({ value: 'public', disabled: false }, [Validators.required]),
+    inviteNeeded: new FormControl<boolean>({ value: false, disabled: false }, [Validators.required]),
+    spectatorsAllowed: new FormControl({ value: true, disabled: false }, [Validators.required]),
+    actionDurationSeconds: new FormControl({ value: this.duration, disabled: false }, [
       Validators.required,
-      Validators.min(CONFIG.playersLimit.minVal),
-    ]),
-    accessibility: new FormControl<SessionAccessibility>({ value: CONFIG.accessibility.defaultVal, disabled: false }, [
-      Validators.required,
-    ]),
-    visibility: new FormControl<SessionVisibility>({ value: CONFIG.visibility.defaultVal, disabled: false }, [
-      Validators.required,
-    ]),
-    spectatorsAllowed: new FormControl({ value: CONFIG.spectatorsAllowed.defaultVal, disabled: false }, [Validators.required]),
-    actionDurationSeconds: new FormControl({ value: CONFIG.actionDurationSeconds.minVal, disabled: false }, [
-      Validators.required,
-      Validators.min(CONFIG.actionDurationSeconds.minVal),
+      Validators.min(this.duration),
     ]),
   });
 
-  visibilityValues: InputOption[] = ['public', 'private'].map((value) => ({
-    label: `ASIAN_POKER.IN_LOBBY.SETTINGS.VISIBILITY_${value.toUpperCase()}`,
+  listabilityValues: InputOption[] = ['public', 'private'].map((value) => ({
+    label: `ASIAN_POKER.IN_LOBBY.SETTINGS.LISTABILITY_${value.toUpperCase()}`,
     value,
   }));
 
-  accessibilityValues: InputOption[] = ['all', 'invite'].map((value) => ({
+  inviteValues: InputOption[] = ['all', 'invite'].map((value) => ({
     label: `ASIAN_POKER.IN_LOBBY.SETTINGS.ACCESSIBILITY_${value.toUpperCase()}`,
-    value,
+    value: value === 'invite',
   }));
 
   appAccount$: Observable<UserAppAccount | undefined> = this.store.select(selectUserAppAccount).pipe(
@@ -129,5 +133,10 @@ export class CreateSessionComponent extends BaseComponent {
       ctrl.enable();
       ctrl.setValue(0);
     }
+  }
+
+  private defaultTitle() {
+    const now = Date.now().toString();
+    return `Session ${now.substring(1, 4)}${now.substring(5, 9)}`;
   }
 }

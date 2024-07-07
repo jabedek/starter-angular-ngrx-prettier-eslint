@@ -6,12 +6,13 @@ import { consoleError } from '@shared/helpers/common.utils';
 import { UserAppAccount } from '@store/auth/auth.state';
 import { arrayUnion } from 'firebase/firestore';
 import { generateDocumentId } from 'frotsi';
-import { AsianPokerGameDTO, GameActivityTickLogDTO } from '../models/types/session-game-chat/game.model';
-import { SessionSlot } from '../models/types/session-game-chat/player-slot.model';
+import { AsianPokerGameDTO, GameActivityTickLogDTO, RoundInfoDTO } from '../models/types/session-game-chat/game.model';
+import { SessionSlot } from '../models/types/player-slot.model';
 import { AsianPokerSessionDTO, SessionInvitation } from '../models/types/session-game-chat/session.model';
 import { computePlayersAmount } from '../utils/session.utils';
 import { getNextStatus } from '../utils/session-status.helper';
 import { AsianPokerSessionCreationForm } from '../pages/main-lobby-page/components/create-session/create-session.component';
+import { mapCardsTo } from '../utils/mappers/cards.mapper';
 
 @Injectable({
   providedIn: 'root',
@@ -22,27 +23,29 @@ export class AsianPokerSessionService {
 
   constructor(
     private ap: AsianPokerService,
-    private fdb: FirebaseDbService,
-    private fdbUsers: FirebaseUsersService,
+    private fbDb: FirebaseDbService,
+    private fbUsers: FirebaseUsersService,
   ) {}
 
   /* # Listeners # */
   async listenToSessionChanges(sessionId: string, cb: ListenerCallback<AsianPokerSessionDTO[]>) {
     const readDetails = { key: 'id', values: [sessionId] };
     const dbResDetails: DbResDetails = [this.topFeature, this.subFeature, 'sessions'];
-    this.fdb.listenToChangesSnapshots<AsianPokerSessionDTO>(readDetails, dbResDetails, cb);
+    this.fbDb.listenToChangesSnapshots<AsianPokerSessionDTO>(readDetails, dbResDetails, cb);
   }
 
   async listenToGameChanges(gameId: string, cb: ListenerCallback<AsianPokerGameDTO[]>) {
     const readDetails = { key: 'id', values: [gameId] };
     const dbResDetails: DbResDetails = [this.topFeature, this.subFeature, 'games'];
-    this.fdb.listenToChangesSnapshots<AsianPokerGameDTO>(readDetails, dbResDetails, cb);
-    // this.fdb.listenToChangesSnapshots<AsianPokerGameDTO>(DbRes.asianpoker_games, 'id', [gameId], cb);
+    this.fbDb.listenToChangesSnapshots<AsianPokerGameDTO>(readDetails, dbResDetails, cb);
+    // this.fbDb.listenToChangesSnapshots<AsianPokerGameDTO>(DbRes.asianpoker_games, 'id', [gameId], cb);
   }
 
   /* # Session and players management (in initial stages - Lobby and Waiting) # */
 
   async createNewSession(sessionSettings: AsianPokerSessionCreationForm) {
+    console.log(sessionSettings);
+
     const { hostId, hostDisplayName, id, ...settings } = sessionSettings;
 
     const slots: SessionSlot[] = Array.from({ length: settings.playersLimit }, (_, index) => ({
@@ -63,11 +66,23 @@ export class AsianPokerSessionService {
 
     // Create session
     const session: AsianPokerSessionDTO = {
-      id,
-      gameId: `${id}_game`,
-      chatId: `${id}_chat`,
-      sessionSettings: { ...settings },
-      sessionActivity: {
+      metadata: {
+        id,
+        gameId: `${id}_game`,
+        chatId: `${id}_chat`,
+      },
+      title: settings.title,
+      restrictions: {
+        playersLimit: settings.playersLimit,
+        actionDurationSeconds: settings.actionDurationSeconds,
+        spectatorsAllowed: settings.spectatorsAllowed,
+      },
+      accessibility: {
+        password: settings.password,
+        inviteNeeded: settings.inviteNeeded,
+        listability: settings.listability,
+      },
+      activity: {
         hostId,
         hostDisplayName,
         playersJoinedAmount: 1,
@@ -80,7 +95,7 @@ export class AsianPokerSessionService {
 
     // Create chat
     const chat = {
-      id: session.chatId,
+      id: session.metadata.chatId,
       messages: [
         {
           id: generateDocumentId('msg'),
@@ -94,13 +109,13 @@ export class AsianPokerSessionService {
 
     // Create game
     const game: AsianPokerGameDTO = {
-      id: session.gameId,
+      id: session.metadata.gameId,
       sessionId: id,
       ticks: [],
     };
 
     return Promise.all([
-      this.ap.insertData('sessions', session.id, session),
+      this.ap.insertData('sessions', session.metadata.id, session),
       this.ap.insertData('chats', chat.id, chat),
       this.ap.insertData('games', game.id, game),
     ]);
@@ -113,12 +128,12 @@ export class AsianPokerSessionService {
       return;
     }
 
-    const presentPlayersIds = session.sessionActivity.playersSlots.map((slot) => slot.playerId);
-    const presentInvitedIds = session.sessionActivity.playersSlots.map((slot) => slot.invitedId);
+    const presentPlayersIds = session.activity.playersSlots.map((slot) => slot.playerId);
+    const presentInvitedIds = session.activity.playersSlots.map((slot) => slot.invitedId);
 
     // Check if player is joining after disconnect - he gets his slot back if he locked it
     if (presentPlayersIds.includes(playerId)) {
-      const playerSlot = session.sessionActivity.playersSlots.find((slot) => slot.playerId === playerId);
+      const playerSlot = session.activity.playersSlots.find((slot) => slot.playerId === playerId);
 
       if (playerSlot && playerSlot.locked) {
         playerSlot.status = 'occupied';
@@ -127,7 +142,7 @@ export class AsianPokerSessionService {
 
     // Check if player is joining after being invited - he gets his slot back
     if (presentInvitedIds.includes(playerId)) {
-      const playerSlot = session.sessionActivity.playersSlots.find((slot) => slot.invitedId === playerId);
+      const playerSlot = session.activity.playersSlots.find((slot) => slot.invitedId === playerId);
 
       if (playerSlot) {
         playerSlot.status = 'occupied';
@@ -136,7 +151,7 @@ export class AsianPokerSessionService {
 
     // Check if player is joining for the first time
     if (!presentPlayersIds.includes(playerId) && !presentInvitedIds.includes(playerId)) {
-      const emptySlot = session.sessionActivity.playersSlots.find((slot) => slot.status === 'empty');
+      const emptySlot = session.activity.playersSlots.find((slot) => slot.status === 'empty');
 
       if (emptySlot) {
         emptySlot.status = 'occupied';
@@ -144,16 +159,16 @@ export class AsianPokerSessionService {
       }
     }
 
-    session.sessionActivity.playersJoinedAmount = computePlayersAmount(session);
+    session.activity.playersJoinedAmount = computePlayersAmount(session);
 
     await this.ap.updateData('sessions', sessionId, session);
-    // await updateDoc(this.fdb.documentRef(DbRes.asianpoker_sessions, sessionId), session);
+    // await updateDoc(this.fbDb.documentRef(DbRes.asianpoker_sessions, sessionId), session);
 
-    await this.fdb.updateDataGlobal(['users'], playerId, {
+    await this.fbDb.updateDataGlobal(['users'], playerId, {
       'appFeaturesData.asianPoker.currentSessionId': sessionId,
     });
 
-    // await updateDoc(this.fdb.documentRef(DbRes.users, playerId), {
+    // await updateDoc(this.fbDb.documentRef(DbRes.users, playerId), {
     //   'appFeaturesData.asianPoker.currentSessionId': sessionId,
     // });
   }
@@ -167,7 +182,7 @@ export class AsianPokerSessionService {
       throw new Error(errMsg);
     }
 
-    const player = await this.fdb.readOneByGlobal<UserAppAccount>(['users'], { key: 'email', value: playerEmail });
+    const player = await this.fbDb.readOneByGlobal<UserAppAccount>(['users'], { key: 'email', value: playerEmail });
 
     if (!player) {
       const errMsg = `Player with email ${playerEmail} not found`;
@@ -176,7 +191,7 @@ export class AsianPokerSessionService {
     }
 
     // // Check if player is already in session
-    const presentPlayersIds = session.sessionActivity.playersSlots.map((slot) => slot.playerId);
+    const presentPlayersIds = session.activity.playersSlots.map((slot) => slot.playerId);
     if (presentPlayersIds.includes(player.id)) {
       const errMsg = `Player ${playerEmail} is already in session`;
       consoleError(errMsg);
@@ -184,7 +199,7 @@ export class AsianPokerSessionService {
     }
 
     // // Check if player is already invited
-    const presentInvitedIds = session.sessionActivity.playersSlots.map((slot) => slot.invitedId);
+    const presentInvitedIds = session.activity.playersSlots.map((slot) => slot.invitedId);
     if (presentInvitedIds.includes(player.id)) {
       const errMsg = `Player ${playerEmail} is already invited`;
       consoleError(errMsg);
@@ -195,8 +210,8 @@ export class AsianPokerSessionService {
       id: generateDocumentId(),
       sessionId,
       invitedId: player.id,
-      hostId: session.sessionActivity.hostId,
-      hostDisplayName: session.sessionActivity.hostDisplayName,
+      hostId: session.activity.hostId,
+      hostDisplayName: session.activity.hostDisplayName,
       active: true,
       seen: false,
       accepted: false,
@@ -204,20 +219,20 @@ export class AsianPokerSessionService {
       additionalText: data.additionalText,
     };
 
-    session.sessionActivity.playersSlots[slotOrder].invitedId = player.id;
-    session.sessionActivity.playersSlots[slotOrder].status = 'invited';
-    session.sessionActivity.playersSlots[slotOrder].locked = true;
-    session.sessionActivity.invitations = [...session.sessionActivity.invitations, invitation];
+    session.activity.playersSlots[slotOrder].invitedId = player.id;
+    session.activity.playersSlots[slotOrder].status = 'invited';
+    session.activity.playersSlots[slotOrder].locked = true;
+    session.activity.invitations = [...session.activity.invitations, invitation];
 
     // success
     console.log('success', session);
     return await Promise.allSettled([
       this.ap.updateData('sessions', sessionId, session),
-      this.fdb.updateDataGlobal(['users'], player.id, {
+      this.fbDb.updateDataGlobal(['users'], player.id, {
         'appFeaturesData.asianPoker.invitations': arrayUnion(invitation.id),
       }),
     ]);
-    // await updateDoc(this.fdb.documentRef(DbRes.asianpoker_sessions, sessionId), session);
+    // await updateDoc(this.fbDb.documentRef(DbRes.asianpoker_sessions, sessionId), session);
   }
 
   async kickFromWaiting(sessionId: string, playerId: string) {
@@ -227,21 +242,21 @@ export class AsianPokerSessionService {
       return;
     }
 
-    const playerSlotIndex = session.sessionActivity.playersSlots.findIndex((slot) => slot.playerId === playerId);
+    const playerSlotIndex = session.activity.playersSlots.findIndex((slot) => slot.playerId === playerId);
 
     if (playerSlotIndex < 0) {
       consoleError(`Slot with Player ${playerId} not found`);
       return;
     }
 
-    session.sessionActivity.playersSlots[playerSlotIndex].status = 'empty';
-    session.sessionActivity.playersSlots[playerSlotIndex].playerId = null;
-    session.sessionActivity.playersSlots[playerSlotIndex].locked = false;
-    session.sessionActivity.playersJoinedAmount = session.sessionActivity.playersJoinedAmount - 1;
+    session.activity.playersSlots[playerSlotIndex].status = 'empty';
+    session.activity.playersSlots[playerSlotIndex].playerId = null;
+    session.activity.playersSlots[playerSlotIndex].locked = false;
+    session.activity.playersJoinedAmount = session.activity.playersJoinedAmount - 1;
 
     return Promise.all([
       this.ap.updateData('sessions', sessionId, session),
-      await this.fdb.updateDataGlobal(['users'], playerId, {
+      await this.fbDb.updateDataGlobal(['users'], playerId, {
         'appFeaturesData.asianPoker.currentSessionId': null,
       }),
     ]);
@@ -249,7 +264,7 @@ export class AsianPokerSessionService {
 
   async setSlotLock(sessionId: string, userId: string, force = undefined) {
     const [session] = await this.ap.getSessionsByIds([sessionId]);
-    const [player] = await this.fdbUsers.getUsersByIds([userId]);
+    const [player] = await this.fbUsers.getUsersByIds([userId]);
 
     if (!session) {
       consoleError(`Session ${sessionId} not found`);
@@ -261,7 +276,7 @@ export class AsianPokerSessionService {
       return;
     }
 
-    const playerSlotIndex = session.sessionActivity.playersSlots.findIndex((slot) => slot.playerId === userId);
+    const playerSlotIndex = session.activity.playersSlots.findIndex((slot) => slot.playerId === userId);
 
     if (playerSlotIndex < 0) {
       consoleError(`Slot with Player ${userId} not found`);
@@ -269,10 +284,9 @@ export class AsianPokerSessionService {
     }
 
     if (force !== undefined) {
-      session.sessionActivity.playersSlots[playerSlotIndex].locked = force;
+      session.activity.playersSlots[playerSlotIndex].locked = force;
     } else {
-      session.sessionActivity.playersSlots[playerSlotIndex].locked =
-        !session.sessionActivity.playersSlots[playerSlotIndex].locked;
+      session.activity.playersSlots[playerSlotIndex].locked = !session.activity.playersSlots[playerSlotIndex].locked;
     }
 
     return this.ap.updateData('sessions', sessionId, session);
@@ -292,18 +306,40 @@ export class AsianPokerSessionService {
     const { session, game } = res;
 
     // Update session
-    session.sessionActivity.status = getNextStatus(session.sessionActivity.status);
+    session.activity.status = getNextStatus(session.activity.status);
 
     game.ticks = [...game.ticks];
 
-    return Promise.all([this.ap.updateData('sessions', session.id, session)]).catch((e) =>
+    return Promise.all([this.ap.updateData('sessions', session.metadata.id, session)]).catch((e) =>
       consoleError(e, 'Error while starting game'),
     );
   }
 
   async addGameTick(gameId: string, tick: GameActivityTickLogDTO) {
-    console.log('##', tick);
+    const tickMutated: GameActivityTickLogDTO = {
+      ...tick,
+      roundInfo: {
+        ...tick.roundInfo,
+        publicCards: mapCardsTo('backend', tick.roundInfo.publicCards) as any,
+      },
+      cycleInfo: {
+        ...tick.cycleInfo,
+        gameSlots: tick.cycleInfo.gameSlots.map((slot) => {
+          slot.playerWithHand.hand = mapCardsTo('backend', slot.playerWithHand.hand) as any;
+          return slot;
+        }),
+      },
+    };
 
-    await this.ap.updateData('games', gameId, { ticks: arrayUnion(tick) });
+    await this.ap.updateData('games', gameId, { ticks: arrayUnion(tickMutated) });
+  }
+
+  async getGameTicks(gameId: string): Promise<GameActivityTickLogDTO[]> {
+    const [game] = await this.ap.getGamesByIds([gameId]);
+    game.ticks.forEach((tick) => {
+      tick.roundInfo.publicCards = mapCardsTo('frontend', tick.roundInfo.publicCards) as any;
+    });
+
+    return game.ticks;
   }
 }

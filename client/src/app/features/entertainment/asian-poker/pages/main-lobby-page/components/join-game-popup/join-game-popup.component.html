@@ -1,12 +1,12 @@
 <div class="popup-wrapper">
-  <h3 class="main-form-title">Dołączanie do sesji</h3>
+  <h3 class="main-form-title">{{ header }}</h3>
   <form class="main-form" [formGroup]="joinForm">
     <div class="control mini" [ngClass]="{ disabled }">
       <label class="label" for="id">Identyfikator gry</label>
       <input class="input" id="id" [minLength]="35" [maxLength]="35" formControlName="id" />
     </div>
 
-    <div class="control">
+    <div class="control" *ngIf="pwd || popupMode === 'private'">
       <label class="label" for="password">Hasło (opcjonalnie)</label>
       <input class="input" id="password" type="text" [maxLength]="20" formControlName="password" />
     </div>

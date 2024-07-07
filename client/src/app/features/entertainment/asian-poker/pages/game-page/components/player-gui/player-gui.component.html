@@ -3,7 +3,7 @@
   <p class="monotype">1m 20s</p>
 </div>
 
-<div class="center" *ngIf="session?.sessionActivity?.status === 'game-ready'">
+<div class="center" *ngIf="session?.activity?.status === 'game-ready'">
   <app-asian-poker-button *ngIf="true || isCurrentUserDealer" variant="default" (click)="startFirstRound()" class="">
     <span>Start</span>
   </app-asian-poker-button>
